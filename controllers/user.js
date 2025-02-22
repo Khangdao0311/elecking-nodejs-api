@@ -3,33 +3,9 @@ var userModel = require("../models/user");
 const { ObjectId } = require("mongodb");
 
 module.exports = {
-    getAll,
     getById,
     getQuery
 };
-
-async function getAll() {
-    try {
-        const users = await userModel.find().sort({ _id: -1 });
-        return users.map((user) => ({
-            id: user._id,
-            fullname: user.fullname,
-            avatar: `${process.env.URL}${user.avatar}`,
-            email: user.email,
-            phone: user.phone,
-            username: user.username,
-            role: user.role,
-            status: user.status,
-            register_dat: user.register_dat,
-            description: user.description,
-            cart: user.cart,
-            wish: user.cart,
-        }));
-    } catch (error) {
-        console.log(error);
-        throw error;
-    }
-}
 
 async function getById(id) {
     try {
@@ -53,7 +29,6 @@ async function getById(id) {
         throw error;
     }
 }
-
 
 async function getQuery(query) {
     try {

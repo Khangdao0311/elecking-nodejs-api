@@ -3,26 +3,9 @@ var categoryModel = require("../models/category");
 const { ObjectId } = require("mongodb");
 
 module.exports = {
-    getAll,
     getById,
     getQuery
 };
-
-async function getAll() {
-    try {
-        const categories = await categoryModel.find().sort({ _id: -1 });
-        return categories.map((category) => ({
-            id: category._id,
-            name: category.name,
-            image: `${process.env.URL}${category.image}`,
-            status: category.status,
-            description: category.description,
-        }));
-    } catch (error) {
-        console.log(error);
-        throw error;
-    }
-}
 
 async function getById(id) {
     try {
@@ -40,10 +23,8 @@ async function getById(id) {
     }
 }
 
-async function getQuery(query) {
+async function getQuery({ id, search, orderby, page = 1, limit = 5 }) {
     try {
-        const { id, search, orderby, page = 1, limit = 5 } = query;
-
         let matchCondition = {};
 
         if (search) {

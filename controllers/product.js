@@ -7,73 +7,9 @@ const propertyModel = require("../models/property");
 const { ObjectId } = require("mongodb");
 
 module.exports = {
-    getAll,
     getById,
     getQuery
 };
-
-async function getAll() {
-    try {
-        const products = await productModel.find().sort({ _id: -1 });
-
-        const data = [];
-
-        for (const product of products) {
-
-            const variants = [];
-
-            for (const variant of product.variants) {
-
-                const propertyNames = [];
-
-                for (const property_id of variant.property_ids) {
-                    const property = await propertyModel.findById(property_id);
-                    propertyNames.push(property?.name);
-                }
-
-                variants.push({
-                    properties: propertyNames,
-                    price_extra: variant.price_extra,
-                    price_sale: variant.price_sale,
-                    colors: variant.colors.map((color) => ({
-                        name: color.name,
-                        image: `${process.env.URL}${color.image}`,
-                        price_extra: color.price_extra,
-                        status: product.status,
-                        quantity: color.quantity,
-                    })),
-                });
-            }
-
-            const brand = await brandModel.findById(product.brand_id)
-            const category = await categoryModel.findById(product.category_id)
-
-            data.push({
-                id: product._id,
-                name: product.name,
-                images: product.images.map((image) => `${process.env.URL}${image}`),
-                price: product.price,
-                variants: variants,
-                sale: product.sale,
-                view: product.view,
-                description: product.description,
-                brand: {
-                    id: brand._id,
-                    name: brand.name
-                },
-                category: {
-                    id: category._id,
-                    name: category.name
-                },
-            });
-        }
-
-        return data;
-    } catch (error) {
-        console.log(error);
-        throw error;
-    }
-}
 
 async function getById(id) {
     try {
@@ -133,10 +69,11 @@ async function getById(id) {
 }
 
 
-async function getQuery(search, id, categoryid, sale, price, orderby, page = 1, limit = 5) {
+async function getQuery({ search, id, categoryid, sale, price, orderby, page = 1, limit = 5 }) {
     try {
         let matchCondition = {};
 
+        // Tìm kiếm sản phẩm theo tên Ví dụ: /product?search=tên sản phẩm
         if (search) {
             matchCondition.name = {
                 $regex: search,
@@ -144,22 +81,26 @@ async function getQuery(search, id, categoryid, sale, price, orderby, page = 1, 
             };
         }
 
+        // Tìm kiếm sản phẩm theo nhiều id nối bằng dâu '-' Ví dụ: /product?id=321315135131221-45646465sa4dsad654-adasd65sad65sa4
         if (id) {
             matchCondition._id = {
                 $in: id.split("-").map((_id) => new ObjectId(_id)),
             };
         }
 
+        // Tìm kiếm sản phẩm theo nhiều id danh mục nối bằng dấu '-' Ví dụ: /product?categoryid=321315135131221-45646465sa4dsad654-adasd65sad65sa4
         if (categoryid) {
             matchCondition.category_id = {
                 $in: categoryid.split("-").map((idCat) => new ObjectId(idCat)),
             };
         }
 
+        // Tìm kiếm sản phẩm theo sale Ví dụ: /product?sale=true
         if (sale) {
             matchCondition.sale = true;
         }
 
+        // Tìm kiếm sản phẩm theo giá từ đên nối bằng dấu '-' Ví dụ: /product?price=100000-900000
         if (price) {
             const [min, max] = price.split("-");
             matchCondition.finalPrice = {
@@ -170,6 +111,7 @@ async function getQuery(search, id, categoryid, sale, price, orderby, page = 1, 
 
         let sortCondition = {};
 
+        // sắp xếp sản phẩm theo sort và so nối bằng '-' Ví dụ: /product?orderby=_id-desc
         if (orderby) {
             const [sort, so] = orderby.split("-");
             sortCondition[sort] = so == "desc" ? -1 : 1;
