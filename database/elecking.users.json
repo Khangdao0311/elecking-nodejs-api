@@ -1,0 +1,53 @@
+[{
+  "_id": {
+    "$oid": "67b6b0bdbfe3474f1ec40f44"
+  },
+  "fullname": "Nguyễn Văn Admin",
+  "avatar": "image.png",
+  "email": "elecking.store@gmail.com",
+  "phone": "0976767676",
+  "username": "admin",
+  "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
+  "role": 1,
+  "status": 1,
+  "register_date": "20250220",
+  "cart": [],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67b6b0bdbfe3474f1ec40f45"
+  },
+  "fullname": "Đào Vĩnh Khang",
+  "avatar": "image.png",
+  "email": "khangdao0311@gmail.com",
+  "phone": "0976767676",
+  "username": "khangdao",
+  "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250220",
+  "cart": [
+    {
+      "quantity": 1,
+      "product": {
+        "product_id": {
+          "$oid": "67b60039c78b59dfd66cd597"
+        },
+        "variant": 0,
+        "color": 0
+      }
+    }
+  ],
+  "wish": [
+    {
+      "product": {
+        "product_id": {
+          "$oid": "67b60039c78b59dfd66cd597"
+        },
+        "variant": 0,
+        "color": 0
+      }
+    }
+  ]
+}]

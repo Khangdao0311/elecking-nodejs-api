@@ -1,8 +1,11 @@
 var categoryModel = require("../models/category");
 
+const { ObjectId } = require("mongodb");
+
 module.exports = {
     getAll,
     getById,
+    getQuery
 };
 
 async function getAll() {
@@ -37,52 +40,59 @@ async function getById(id) {
     }
 }
 
-// async function getQuery(query) {
-//     try {
-//         const { search, orderby, page = 1, limit = 5 } = query;
+async function getQuery(query) {
+    try {
+        const { id, search, orderby, page = 1, limit = 5 } = query;
 
-//         let matchCondition = {};
+        let matchCondition = {};
 
-//         if (search) {
-//             matchCondition.name = {
-//                 $regex: search,
-//                 $options: "i",
-//             };
-//         }
+        if (search) {
+            matchCondition.name = {
+                $regex: search,
+                $options: "i",
+            };
+        }
 
-//         let sortCondition = {};
+        if (id) {
+            matchCondition._id = {
+                $in: id.split("-").map((_id) => new ObjectId(_id)),
+            };
+        }
 
-//         if (orderby) {
-//             const [sort, so] = sort.split("-");
-//             sortCondition[sort] = so == "desc" ? -1 : 1;
-//         } else {
-//             sortCondition._id = -1;
-//         }
+        let sortCondition = {};
 
-//         const skip = (page - 1) * limit;
+        if (orderby) {
+            const [sort, so] = sort.split("-");
+            sortCondition[sort] = so == "desc" ? -1 : 1;
+        } else {
+            sortCondition._id = -1;
+        }
 
-//         const pipeline = [
-//             { $match: matchCondition },
-//             { $sort: sortCondition },
-//             { $skip: skip },
-//             { $limit: +limit },
-//         ];
+        const skip = (page - 1) * limit;
 
-//         const categories = await categoryModel.aggregate(pipeline);
+        const pipeline = [
+            { $match: matchCondition },
+            { $sort: sortCondition },
+            { $skip: skip },
+            { $limit: +limit },
+        ];
 
-//         const data = categories.map((category) => ({
-//             id: category._id,
-//             name: category.name,
-//             image: `${process.env.URL}${category.image}`,
-//             status: category.status,
-//             description: category.description,
-//         }));
-//         return data;
-//     } catch (error) {
-//         console.log(error);
-//         throw error;
-//     }
-// }
+        const categories = await categoryModel.aggregate(pipeline);
+
+        const data = categories.map((category) => ({
+            id: category._id,
+            name: category.name,
+            image: `${process.env.URL}${category.image}`,
+            status: category.status,
+            description: category.description,
+        }));
+        return data;
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
 
 // async function getTotalPagesQuery(query) {
 //   try {

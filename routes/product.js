@@ -13,22 +13,10 @@ router.get('/', async function (req, res, next) {
   }
 });
 
-
-
-// lấy các sản phẩm dự theo query được gửi
+// lấy các sản phẩm dự theo dữ liệu của query
 router.get("/query", async function (req, res, next) {
   try {
-    const { search, id, categoryid, sale, price, orderby, page, limit } = req.query;
-    const data = await productController.getQuery(
-      search,
-      id,
-      categoryid,
-      sale,
-      price,
-      orderby,
-      page,
-      limit
-    );
+    const data = await productController.getQuery(req.query);
     return res.status(200).json(data);
   } catch (error) {
     return res.status(500).json({ status: false, message: "Lỗi hệ thống" });

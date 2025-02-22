@@ -6,7 +6,6 @@ const propertyModel = require("../models/property");
 
 const { ObjectId } = require("mongodb");
 
-
 module.exports = {
     getAll,
     getById,

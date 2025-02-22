@@ -1,0 +1,200 @@
+[{
+  "_id": {
+    "$oid": "67b6cf123a893726b539855f"
+  },
+  "name": "Apple",
+  "logo": "image.png",
+  "benner": "image.png",
+  "status": 1,
+  "description": "Apple là thương hiệu công nghệ hàng đầu thế giới, nổi tiếng với thiết kế tinh tế, hiệu suất cao và hệ sinh thái đồng bộ. Thành lập năm 1976, Apple đã tạo ra những sản phẩm mang tính biểu tượng như iPhone, MacBook, iPad và Apple Watch, tập trung vào trải nghiệm người dùng, bảo mật và sáng tạo."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398560"
+  },
+  "name": "Samsung",
+  "logo": "image.png",
+  "benner": "image.png",
+  "status": 1,
+  "description": "Samsung là tập đoàn công nghệ toàn cầu, nổi bật với sự đổi mới và đa dạng sản phẩm. Thành lập năm 1938, Samsung dẫn đầu trong các lĩnh vực điện tử tiêu dùng, smartphone, TV, thiết bị gia dụng và linh kiện bán dẫn. Các dòng sản phẩm như Galaxy, QLED TV và chip Exynos thể hiện cam kết về chất lượng, hiệu suất và công nghệ tiên tiến."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398561"
+  },
+  "name": "Xiaomi",
+  "logo": "image.png",
+  "benner": "image.png",
+  "status": 1,
+  "description": "Xiaomi là tập đoàn công nghệ Trung Quốc, nổi bật với các sản phẩm hiệu năng cao, giá cạnh tranh. Thành lập năm 2010, Xiaomi phát triển mạnh trong lĩnh vực smartphone, thiết bị nhà thông minh và điện tử tiêu dùng. Các dòng sản phẩm như Mi, Redmi, POCO và hệ sinh thái AIoT thể hiện sự sáng tạo và chiến lược tối ưu hóa chi phí."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398562"
+  },
+  "name": "OPPO",
+  "logo": "image.png",
+  "benner": "image.png",
+  "status": 1,
+  "description": "OPPO là thương hiệu công nghệ Trung Quốc, chuyên về smartphone và thiết bị thông minh. Thành lập năm 2004, OPPO nổi bật với thiết kế tinh tế, camera chất lượng cao và công nghệ sạc nhanh. Các dòng sản phẩm như Find, Reno và A-Series thể hiện sự đổi mới trong nhiếp ảnh di động và trải nghiệm người dùng."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398563"
+  },
+  "name": "Vivo",
+  "logo": "image.png",
+  "benner": "image.png",
+  "status": 1,
+  "description": "Vivo là thương hiệu công nghệ Trung Quốc, chuyên về smartphone và thiết bị thông minh. Thành lập năm 2009, Vivo nổi bật với thiết kế thời trang, công nghệ camera tiên tiến và âm thanh chất lượng cao. Các dòng sản phẩm như X, V và Y-Series thể hiện sự đổi mới trong nhiếp ảnh di động, hiệu suất và trải nghiệm người dùng."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398564"
+  },
+  "name": "Realme",
+  "logo": "image.png",
+  "benner": "image.png",
+  "status": 1,
+  "description": "Realme là thương hiệu công nghệ Trung Quốc, chuyên về smartphone và thiết bị AIoT. Thành lập năm 2018, Realme tập trung vào hiệu năng mạnh mẽ, thiết kế trẻ trung và giá cả cạnh tranh. Các dòng sản phẩm như GT, Number Series và C-Series hướng đến người dùng trẻ, mang lại trải nghiệm công nghệ cao với mức giá hợp lý."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398565"
+  },
+  "name": "MSI",
+  "logo": "image.png",
+  "benner": "image.png",
+  "status": 1,
+  "description": "MSI (Micro-Star International) là thương hiệu Đài Loan chuyên sản xuất laptop gaming, bo mạch chủ, card đồ họa, màn hình và linh kiện máy tính. Họ nổi bật với hiệu suất cao, thiết kế mạnh mẽ và công nghệ tiên tiến, đặc biệt trong lĩnh vực gaming và sáng tạo nội dung."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398566"
+  },
+  "name": "Sony",
+  "logo": "image.png",
+  "benner": "image.png",
+  "status": 1,
+  "description": "Sony là tập đoàn công nghệ và giải trí Nhật Bản, nổi bật với các sản phẩm điện tử cao cấp. Thành lập năm 1946, Sony dẫn đầu trong các lĩnh vực âm thanh, hình ảnh, gaming và cảm biến camera. Các dòng sản phẩm như Xperia, Bravia, Alpha, PlayStation thể hiện chất lượng, sáng tạo và trải nghiệm vượt trội."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398567"
+  },
+  "name": "Asus",
+  "logo": "image.png",
+  "benner": "image.png",
+  "status": 1,
+  "description": "ASUS là tập đoàn công nghệ Đài Loan, chuyên về máy tính, gaming và linh kiện phần cứng. Thành lập năm 1989, ASUS nổi bật với hiệu suất mạnh mẽ, thiết kế bền bỉ và công nghệ tiên tiến. Các dòng sản phẩm như ROG, TUF, ZenBook và VivoBook hướng đến game thủ, dân văn phòng và người dùng sáng tạo."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398568"
+  },
+  "name": "Google",
+  "logo": "image.png",
+  "benner": "image.png",
+  "status": 1,
+  "description": "Google là tập đoàn công nghệ Mỹ, nổi bật với công cụ tìm kiếm, trí tuệ nhân tạo và hệ sinh thái phần mềm. Thành lập năm 1998, Google phát triển các sản phẩm như Android, Chrome, Google Search, YouTube và Pixel, tập trung vào kết nối, dữ liệu và trải nghiệm người dùng thông minh."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398569"
+  },
+  "name": "Huawei",
+  "logo": "image.png",
+  "benner": "image.png",
+  "status": 1,
+  "description": "Huawei là tập đoàn công nghệ Trung Quốc, chuyên về viễn thông, smartphone và thiết bị thông minh. Thành lập năm 1987, Huawei dẫn đầu trong mạng 5G, chip Kirin và hệ sinh thái HarmonyOS. Các dòng sản phẩm như Mate, P-Series và Watch GT nổi bật với công nghệ camera tiên tiến, hiệu suất mạnh mẽ và thiết kế cao cấp."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b539856a"
+  },
+  "name": "Nokia",
+  "logo": "image.png",
+  "benner": "image.png",
+  "status": 1,
+  "description": "Nokia là tập đoàn công nghệ Phần Lan, nổi tiếng với thiết bị viễn thông và điện thoại di động bền bỉ. Thành lập năm 1865, Nokia từng dẫn đầu thị trường di động và hiện tập trung vào mạng 5G, hạ tầng viễn thông và smartphone Android qua thương hiệu HMD Global."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b539856b"
+  },
+  "name": "DELL",
+  "logo": "image.png",
+  "benner": "image.png",
+  "status": 1,
+  "description": "Dell là một công ty công nghệ của Mỹ, chuyên sản xuất máy tính xách tay, máy tính để bàn, màn hình và thiết bị lưu trữ. Dell nổi tiếng với độ bền cao, hiệu suất ổn định và nhiều dòng sản phẩm phù hợp từ doanh nghiệp đến gaming."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b539856c"
+  },
+  "name": "Lenovo",
+  "logo": "image.png",
+  "benner": "image.png",
+  "status": 1,
+  "description": "Lenovo là tập đoàn công nghệ Trung Quốc, chuyên về máy tính, thiết bị di động và hạ tầng số. Thành lập năm 1984, Lenovo nổi bật với các dòng sản phẩm như ThinkPad, Legion, Yoga và IdeaPad, mang đến hiệu suất mạnh mẽ, thiết kế bền bỉ và giải pháp sáng tạo cho người dùng cá nhân lẫn doanh nghiệp."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b539856d"
+  },
+  "name": "Nothing",
+  "logo": "image.png",
+  "benner": "image.png",
+  "status": 1,
+  "description": "Nothing là thương hiệu công nghệ Anh, thành lập năm 2020 bởi Carl Pei. Nothing tập trung vào thiết kế tối giản, sáng tạo và trải nghiệm khác biệt. Các sản phẩm như Nothing Phone (1), Phone (2) và tai nghe Ear Series nổi bật với phong cách trong suốt, giao diện tinh gọn và hệ sinh thái kết nối thông minh."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b539856e"
+  },
+  "name": "Tecno",
+  "logo": "image.png",
+  "benner": "image.png",
+  "status": 1,
+  "description": "Tecno là thương hiệu công nghệ Trung Quốc, chuyên về smartphone và thiết bị điện tử. Thành lập năm 2006, Tecno tập trung vào thị trường châu Phi, Nam Á và Đông Nam Á với các dòng sản phẩm như Phantom, Camon, Spark và Pova, nổi bật với camera AI, pin lớn và giá cả cạnh tranh."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b539856f"
+  },
+  "name": "Infinix",
+  "logo": "image.png",
+  "benner": "image.png",
+  "status": 1,
+  "description": "Infinix là thương hiệu công nghệ Trung Quốc, chuyên về smartphone giá rẻ và tầm trung. Thành lập năm 2013, Infinix tập trung vào thị trường châu Phi, Nam Á và Đông Nam Á với các dòng sản phẩm như Zero, Note, Hot và Smart, nổi bật với pin dung lượng lớn, màn hình rộng và hiệu năng ổn định."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398570"
+  },
+  "name": "Honor",
+  "logo": "image.png",
+  "benner": "image.png",
+  "status": 1,
+  "description": "Honor là thương hiệu công nghệ Trung Quốc, chuyên về smartphone và thiết bị thông minh. Thành lập năm 2013, tách khỏi Huawei năm 2020, Honor tập trung vào hiệu suất mạnh mẽ, thiết kế cao cấp và công nghệ tiên tiến. Các dòng sản phẩm như Magic, Number Series và X-Series nổi bật với camera chất lượng, màn hình đẹp và trải nghiệm phần mềm tối ưu."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398571"
+  },
+  "name": "ZTE",
+  "logo": "image.png",
+  "benner": "image.png",
+  "status": 1,
+  "description": "ZTE là tập đoàn công nghệ Trung Quốc, chuyên về viễn thông và smartphone. Thành lập năm 1985, ZTE nổi bật trong lĩnh vực hạ tầng mạng 5G và thiết bị di động. Các dòng sản phẩm như Axon, Nubia và Blade tập trung vào camera sáng tạo, hiệu suất mạnh mẽ và công nghệ tiên tiến."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398572"
+  },
+  "name": "Meizu",
+  "logo": "image.png",
+  "benner": "image.png",
+  "status": 1,
+  "description": "Meizu là thương hiệu công nghệ Trung Quốc, chuyên về smartphone và thiết bị âm thanh. Thành lập năm 2003, Meizu nổi bật với thiết kế tinh tế, giao diện Flyme OS và hiệu suất ổn định. Các dòng sản phẩm như Meizu 20, 21 và dòng M-Series tập trung vào trải nghiệm mượt mà, camera chất lượng và giá cả cạnh tranh."
+}]

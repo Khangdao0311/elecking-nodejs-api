@@ -1,0 +1,2981 @@
+[{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  },
+  "name": "Samsung Galaxy S24 Ultra",
+  "images": [
+    "samsung_galaxy_s24_ultra.webp",
+    "samsung_galaxy_s24_ultra2.webp",
+    "samsung_galaxy_s24_ultra_8.webp",
+    "samsung_galaxy_s24_ultra_256gb_-_10.webp",
+    "samsung_galaxy_s24_ultra_256gb_-_9.webp",
+    "samsung_galaxy_s24_ultra_256gb_-_7.webp",
+    "samsung_galaxy_s24_ultra_256gb_-_12.webp",
+    "samsung_galaxy_s24_ultra_256gb_-_15.webp",
+    "samsung_galaxy_s24_ultra_256gb_-_6.webp",
+    "samsung_galaxy_s24_ultra_256gb_-_3.webp",
+    "samsung_galaxy_s24_ultra_256gb_-_4.webp",
+    "samsung_galaxy_s24_ultra_256gb_-_5.webp",
+    "samsung_galaxy_s24_ultra_256gb_-_11.webp",
+    "samsung_galaxy_s24_ultra_1tb_-_17.webp",
+    "samsung_galaxy_s24_ultra_256gb_-_14.webp"
+  ],
+  "price": 33990000,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67bf2"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67bf8"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 8000000,
+      "colors": [
+        {
+          "name": "Xám",
+          "image": "galaxy-s24-ultra-xam_1_3.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Vàng",
+          "image": "galaxy-s24-ultra-vang_1_3.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Đen",
+          "image": "galaxy-s24-ultra-den-1_1_3.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Tím",
+          "image": "galaxy-s24-ultra-tim_1_3.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67bf2"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67bf9"
+        }
+      ],
+      "price_extra": 3500000,
+      "price_sale": 6500000,
+      "colors": [
+        {
+          "name": "Xám",
+          "image": "galaxy-s24-ultra-xam_1_3.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Vàng",
+          "image": "galaxy-s24-ultra-vang_1_3.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Đen",
+          "image": "galaxy-s24-ultra-den-1_1_3.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Tím",
+          "image": "galaxy-s24-ultra-tim_1_3.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67bf2"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67bfa"
+        }
+      ],
+      "price_extra": 10500000,
+      "price_sale": 0,
+      "colors": [
+        {
+          "name": "Xám",
+          "image": "galaxy-s24-ultra-xam_1_3.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Vàng",
+          "image": "galaxy-s24-ultra-vang_1_3.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Đen",
+          "image": "galaxy-s24-ultra-den-1_1_3.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Tím",
+          "image": "galaxy-s24-ultra-tim_1_3.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 132132257,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398560"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398574"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2c8"
+  },
+  "name": "iPhone 15 Pro Max | Chính hãng VN/A",
+  "images": [
+    "iphone-15-pro-max_7__1.webp",
+    "iphone-15-pro-max_8__1.webp",
+    "iphone-15-pro-max_9__1.webp",
+    "iphone-15-pro-max_1__1.webp",
+    "iphone-15-pro-max_10__1.webp",
+    "iphone-15-pro-max_5.webp",
+    "iphone-15-pro-max_4__2.webp",
+    "iphone-15-pro-max_5__2.webp",
+    "iphone-15-pro-max_6__2.webp"
+  ],
+  "price": 0,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67bf8"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 6000000,
+      "colors": [
+        {
+          "name": "Titan tự nhiên",
+          "image": "iphone15-pro-max-titan-nau.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Titan đen",
+          "image": "iphone15-pro-max-titan-den.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Titan trắng",
+          "image": "iphone15-pro-max-titan-trang.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Titan xanh",
+          "image": "iphone15-pro-max-titan-xanh.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67bf9"
+        }
+      ],
+      "price_extra": 6000000,
+      "price_sale": 7000000,
+      "colors": [
+        {
+          "name": "Titan tự nhiên",
+          "image": "iphone15-pro-max-titan-nau.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Titan đen",
+          "image": "iphone15-pro-max-titan-den.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Titan trắng",
+          "image": "iphone15-pro-max-titan-trang.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Titan xanh",
+          "image": "iphone15-pro-max-titan-xanh.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67bfa"
+        }
+      ],
+      "price_extra": 12000000,
+      "price_sale": 7500000,
+      "colors": [
+        {
+          "name": "Titan tự nhiên",
+          "image": "iphone15-pro-max-titan-nau.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Titan đen",
+          "image": "iphone15-pro-max-titan-den.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Titan trắng",
+          "image": "iphone15-pro-max-titan-trang.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Titan xanh",
+          "image": "iphone15-pro-max-titan-xanh.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 894561238,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b539855f"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398574"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2c9"
+  },
+  "name": "iPhone 15 | Chính hãng VN/A",
+  "images": [
+    "vn_iphone_15_pink_pdp_image_position-5_colors_2.webp",
+    "vn_iphone_15_pink_pdp_image_position-6_dynamic_island_2.webp",
+    "vn_iphone_15_pink_pdp_image_position-7_features_specs_2.webp",
+    "vn_iphone_15_pink_pdp_image_position-9_accessory_2.webp",
+    "vn_iphone_15_pink_pdp_image_position-8_usb-c_charge_cable_2.webp",
+    "vn_iphone_15_pink_pdp_image_position-3_design_detail_2.webp",
+    "vn1b93_1_2.webp"
+  ],
+  "price": 22990000,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67bf7"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 4300000,
+      "colors": [
+        {
+          "name": "Hồng",
+          "image": "iphone-15-hong.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Đen",
+          "image": "iphone-15-den.webp",
+          "price_extra": 100000,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Vàng",
+          "image": "iphone-15-vang.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xanh dương",
+          "image": "iphone-15-xanh-duong.webp",
+          "price_extra": 200000,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xanh lá",
+          "image": "iphone-15-xanh-la.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67bf8"
+        }
+      ],
+      "price_extra": 3000000,
+      "price_sale": 3800000,
+      "colors": [
+        {
+          "name": "Hồng",
+          "image": "iphone-15-hong.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Đen",
+          "image": "iphone-15-den.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Vàng",
+          "image": "iphone-15-vang.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xanh dương",
+          "image": "iphone-15-xanh-duong.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xanh lá",
+          "image": "iphone-15-xanh-la.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 898541654,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b539855f"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398574"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2ca"
+  },
+  "name": "Samsung Galaxy M55",
+  "images": [
+    "dien-thoai-samsung-galaxy-m55.webp",
+    "samsung_galaxy_m55_12gb_256gb_-_1.webp",
+    "samsung_galaxy_m55_12gb_256gb_-_2.webp",
+    "samsung_galaxy_m55_12gb_256gb_-_3.webp",
+    "samsung_galaxy_m55_12gb_256gb_-_4.webp",
+    "samsung_galaxy_m55_12gb_256gb_-_5.webp",
+    "dien-thoai-samsung-galaxy-m55_1_.webp"
+  ],
+  "price": 0,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67bf2"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67bf8"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 1800000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "m55-den.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xanh lá",
+          "image": "m55-xanh-la.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 97984651,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398560"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398574"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2cb"
+  },
+  "name": "Samsung Galaxy Z Flip6",
+  "images": [
+    "samsung_galaxy_z_flip_6_-_1_1.webp",
+    "samsung_galaxy_z_flip_6_-_2_1.webp",
+    "samsung_galaxy_z_flip_6_-_3_1.webp",
+    "samsung_galaxy_z_flip_6_-_4_1.webp",
+    "samsung_galaxy_z_flip_6_-_5_1.webp",
+    "samsung-galaxy-z-flip-6-xanh-duong-3_2_1.webp",
+    "samsung-galaxy-z-flip-6-xanh-duong-1_2_1.webp",
+    "samsung-galaxy-z-flip-6-xanh-duong-2_2_1.webp",
+    "samsung-galaxy-z-flip-6-xanh-duong-4_2_1.webp",
+    "samsung-galaxy-z-flip-6-xanh-duong-5_2_1.webp"
+  ],
+  "price": 28990000,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67bf2"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67bf8"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 7640000,
+      "colors": [
+        {
+          "name": "Xanh dương",
+          "image": "flip-xanh_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xanh lá",
+          "image": "flip-xanh-la_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xám",
+          "image": "flip-den_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Vàng",
+          "image": "flip-vang_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67bf2"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67bf9"
+        }
+      ],
+      "price_extra": 4000000,
+      "price_sale": 8000000,
+      "colors": [
+        {
+          "name": "Xanh dương",
+          "image": "flip-xanh_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xanh lá",
+          "image": "flip-xanh-la_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xám",
+          "image": "flip-den_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Vàng",
+          "image": "flip-vang_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 9841652,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398560"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398574"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2cc"
+  },
+  "name": "iPad Gen 10 10.9 inch 2022 Wifi + 5G I Chính hãng Apple Việt Nam",
+  "images": [
+    "ipad_gen_10_256gb_5g_-_221.webp",
+    "ipad_gen_10_64gb_-_2_3.webp",
+    "ipad_gen_10_64gb_-_4_3.webp",
+    "ipad_gen_10_64gb_-_5_3.webp",
+    "ipad_gen_10_64gb_-_6_3.webp",
+    "ipad_gen_10_64gb_-_8_3.webp",
+    "ipad_gen_10_64gb_-_3_3.webp",
+    "ipad_gen_10_5g_64gb_-_9_2.webp"
+  ],
+  "price": 16990000,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c03"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 4500000,
+      "colors": [
+        {
+          "name": "Bạc",
+          "image": "b_ccc_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Vàng",
+          "image": "vnaggf_1.webp",
+          "price_extra": 200000,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xanh",
+          "image": "xnah_d__1.webp",
+          "price_extra": 200000,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Hồng",
+          "image": "h_ngff_1.webp",
+          "price_extra": 200000,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c05"
+        }
+      ],
+      "price_extra": 4000000,
+      "price_sale": 4000000,
+      "colors": [
+        {
+          "name": "Bạc",
+          "image": "b_ccc_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Vàng",
+          "image": "vnaggf_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xanh",
+          "image": "xnah_d__1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Hồng",
+          "image": "h_ngff_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 5373570,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b539855f"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398575"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2cd"
+  },
+  "name": "Xiaomi Redmi Pad Pro wifi",
+  "images": [
+    "dien-thoai-xiaomi-poco-f6_23_.webp",
+    "dien-thoai-xiaomi-poco-f6_22_.webp",
+    "dien-thoai-xiaomi-poco-f6_30_.webp",
+    "dien-thoai-xiaomi-poco-f6_29_.webp",
+    "dien-thoai-xiaomi-poco-f6_25_.webp",
+    "dien-thoai-xiaomi-poco-f6_27_.webp",
+    "dien-thoai-xiaomi-poco-f6_26_.webp",
+    "dien-thoai-xiaomi-poco-f6_28_.webp",
+    "dien-thoai-xiaomi-poco-f6_31_.webp",
+    "dien-thoai-xiaomi-poco-f6_35_.webp",
+    "dien-thoai-xiaomi-poco-f6_34_.webp"
+  ],
+  "price": 7990000,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67bfe"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c04"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 900000,
+      "colors": [
+        {
+          "name": "Xám",
+          "image": "dien-thoai-xiaomi-poco-f6_23__1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xanh bạc hà",
+          "image": "dien-thoai-xiaomi-poco-f6_36_.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xanh dương",
+          "image": "dien-thoai-xiaomi-poco-f6_22__1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 65163,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398561"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398575"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2ce"
+  },
+  "name": "iPad Air 6 M2 11 inch Wifi | Chính hãng Apple Việt Nam",
+  "images": [
+    "ipad-air-6-m2-11-inch_2_1.webp",
+    "ipad-air-6-m2-11-inch_2__1_1.webp",
+    "ipad-air-6-m2-11-inch_3__1_1.webp",
+    "ipad-air-6-m2-11-inch_4__1_1.webp",
+    "ipad-air-6-m2-11-inch_3_1.webp",
+    "ipad-air-6-m2-11-inch_5__4.webp",
+    "ipad-air-6-m2-11-inch_6__4.webp",
+    "ipad-air-6-m2-11-inch_7__4.webp",
+    "ipad-air-6-m2-11-inch_8_.webp"
+  ],
+  "price": 16990000,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c04"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 2000000,
+      "colors": [
+        {
+          "name": "Xanh dương",
+          "image": "ipad-air-6-m2-11-inch.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Trắng vàng",
+          "image": "ipad-air-6-m2-11-inch_3_.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xám",
+          "image": "frame_100_5__3.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Tím",
+          "image": "ipad-air-6-m2-11-inch_2_.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c05"
+        }
+      ],
+      "price_extra": 2500000,
+      "price_sale": 2100000,
+      "colors": [
+        {
+          "name": "Xanh dương",
+          "image": "ipad-air-6-m2-11-inch.webp",
+          "price_extra": 100000,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Trắng vàng",
+          "image": "ipad-air-6-m2-11-inch_3_.webp",
+          "price_extra": 100000,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xám",
+          "image": "frame_100_5__3.webp",
+          "price_extra": 100000,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Tím",
+          "image": "ipad-air-6-m2-11-inch_2_.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c06"
+        }
+      ],
+      "price_extra": 8000000,
+      "price_sale": 2400000,
+      "colors": [
+        {
+          "name": "Xanh dương",
+          "image": "ipad-air-6-m2-11-inch.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Trắng vàng",
+          "image": "ipad-air-6-m2-11-inch_3_.webp",
+          "price_extra": 300000,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xám",
+          "image": "frame_100_5__3.webp",
+          "price_extra": 300000,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Tím",
+          "image": "ipad-air-6-m2-11-inch_2_.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c07"
+        }
+      ],
+      "price_extra": 13500000,
+      "price_sale": 3000000,
+      "colors": [
+        {
+          "name": "Xanh dương",
+          "image": "ipad-air-6-m2-11-inch.webp",
+          "price_extra": 500000,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Trắng vàng",
+          "image": "ipad-air-6-m2-11-inch_3_.webp",
+          "price_extra": 500000,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xám",
+          "image": "frame_100_5__3.webp",
+          "price_extra": 500000,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Tím",
+          "image": "ipad-air-6-m2-11-inch_2_.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 4156123,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b539855f"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398575"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2cf"
+  },
+  "name": "Huawei MatePad SE 11 inch",
+  "images": [
+    "huawei_matepad_se_11_inch_6gb_128gb_-_1.webp",
+    "huawei_matepad_se_11_inch_6gb_128gb_-_2.webp",
+    "huawei_matepad_se_11_inch_6gb_128gb_-_3.webp",
+    "huawei_matepad_se_11_inch_6gb_128gb_-_4.webp",
+    "huawei_matepad_se_11_inch_6gb_128gb_-_5.webp",
+    "may-tinh-bang-huawei-matepad-se-11-inch-co-but.webp",
+    "may-tinh-bang-huawei-matepad-se-11-inch_5_.webp",
+    "may-tinh-bang-huawei-matepad-se-11-inch_6_.webp",
+    "may-tinh-bang-huawei-matepad-se-11-inch_7_.webp",
+    "may-tinh-bang-huawei-matepad-se-11-inch_8_.webp",
+    "may-tinh-bang-huawei-matepad-se-11-inch_10_.webp",
+    "may-tinh-bang-huawei-matepad-se-11-inch_9_.webp",
+    "may-tinh-bang-huawei-matepad-se-11-inch_1_.webp"
+  ],
+  "price": 5490000,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67bfd"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c04"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 700000,
+      "colors": [
+        {
+          "name": "Xám",
+          "image": "may-tinh-bang-huawei-matepad-se.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 1321320,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398569"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398575"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2d0"
+  },
+  "name": "Máy Tính Bảng Lenovo Tab M11",
+  "images": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "price": 5790000,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67bfc"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c03"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 1200000,
+      "colors": [
+        {
+          "name": "Xám",
+          "image": "may-tinh-bang-lenovo-tab-m11-xam.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67bfc"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c04"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 1100000,
+      "colors": [
+        {
+          "name": "Xám",
+          "image": "may-tinh-bang-lenovo-tab-m11-xam.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67bfe"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c04"
+        }
+      ],
+      "price_extra": 900000,
+      "price_sale": 1000000,
+      "colors": [
+        {
+          "name": "Xám",
+          "image": "may-tinh-bang-lenovo-tab-m11-xam.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 5132,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b539856c"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398575"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2d1"
+  },
+  "name": "Laptop Lenovo IdeaPad Flex 5 14IAU7 82R700JQVN",
+  "images": [
+    "text_d_i_2__2_11.webp",
+    "laptop_lenovo_ideapad_flex_5_14iau7_82r700jqvn.webp",
+    "text_ng_n_6__146.webp",
+    "text_ng_n_1__2_61.webp",
+    "text_ng_n_9__1_121.webp",
+    "text_ng_n_10__2_99.webp",
+    "text_ng_n_11__2_99.webp",
+    "text_ng_n_5_59.webp",
+    "text_ng_n_2__3_55.webp"
+  ],
+  "price": 15990000,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c0a"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c55"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c5c"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 4500000,
+      "colors": [
+        {
+          "name": "Xám",
+          "image": "text_ng_n_6__147.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 6513,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b539856c"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398576"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2d2"
+  },
+  "name": "Laptop Acer Aspire Lite Gen 2 AL14-52M-32KV",
+  "images": [
+    "group_659_1__4.webp",
+    "laptop_acer_aspire_lite_gen_2_al14-52m-32kv_-_1.webp",
+    "laptop_acer_aspire_lite_gen_2_al14-52m-32kv_-_2.webp",
+    "laptop_acer_aspire_lite_gen_2_al14-52m-32kv_-_3.webp",
+    "text_ng_n_15__7_128.webp",
+    "text_ng_n_16__6_96.webp",
+    "text_ng_n_14__6_108.webp",
+    "text_ng_n_18__6_42.webp",
+    "text_ng_n_17__8_50.webp",
+    "text_ng_n_19__4_46.webp",
+    "text_ng_n_20__5_41.webp"
+  ],
+  "price": 9990000,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c09"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c55"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c5b"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 0,
+      "colors": [
+        {
+          "name": "Xám",
+          "image": "text_ng_n_13__6_151.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 45495,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398567"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398576"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2d3"
+  },
+  "name": "Laptop HP 240 G9 9E5W3PT",
+  "images": [
+    "group_659_1__7.webp",
+    "laptop_hp_240_g9_9e5w3pt_-_1.webp",
+    "laptop_hp_240_g9_9e5w3pt_-_2.webp",
+    "laptop_hp_240_g9_9e5w3pt_-_3.webp",
+    "text_ng_n_9_64.webp",
+    "text_ng_n_1__6_36.webp",
+    "text_ng_n_2__6_41.webp",
+    "text_ng_n_3__5_42.webp"
+  ],
+  "price": 16990000,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c0c"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c56"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c5c"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 2000000,
+      "colors": [
+        {
+          "name": "Bạc",
+          "image": "text_ng_n_9_65.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 4656,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b539856b"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398576"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2d4"
+  },
+  "name": "Apple MacBook Pro 13 M2 2022 I Chính hãng Apple Việt Nam",
+  "images": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "price": 35990000,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c55"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c5b"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 6200000,
+      "colors": [
+        {
+          "name": "Bạc",
+          "image": "mbp-silver-select-202206.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xám",
+          "image": "mbp-spacegray-select-202206.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c55"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c5c"
+        }
+      ],
+      "price_extra": 6000000,
+      "price_sale": 8300000,
+      "colors": [
+        {
+          "name": "Bạc",
+          "image": "mbp-silver-select-202206.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xám",
+          "image": "mbp-spacegray-select-202206.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c56"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c5b"
+        }
+      ],
+      "price_extra": 6000000,
+      "price_sale": 8300000,
+      "colors": [
+        {
+          "name": "Bạc",
+          "image": "mbp-silver-select-202206.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xám",
+          "image": "mbp-spacegray-select-202206.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c56"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c5c"
+        }
+      ],
+      "price_extra": 11000000,
+      "price_sale": 7000000,
+      "colors": [
+        {
+          "name": "Bạc",
+          "image": "mbp-silver-select-202206.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xám",
+          "image": "mbp-spacegray-select-202206.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 4561321,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b539855f"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398576"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2d5"
+  },
+  "name": "Laptop MSI Modern 14 C13M-607VN",
+  "images": [
+    "laptop-msi-modern-14-c13m-607vn.webp",
+    "laptop_msi_modern_14_c13m-607vn.webp",
+    "text_ng_n_-_2023-04-27t221511.576.webp",
+    "text_ng_n_-_2023-04-27t221530.789.webp",
+    "text_ng_n_-_2023-04-27t221546.258.webp",
+    "text_ng_n_-_2023-04-27t221602.385.webp",
+    "text_ng_n_-_2023-04-27t221638.501.webp",
+    "text_ng_n_-_2023-04-27t221619.706.webp"
+  ],
+  "price": 21490000,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c56"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c5c"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 5500000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "text_ng_n_-_2023-04-27t221511.576_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 132132,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398565"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398576"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2d6"
+  },
+  "name": "Màn hình Dell UltraSharp",
+  "images": [
+    "1_75_29.webp",
+    "54_1_20.webp",
+    "55_1_23.webp",
+    "56_1_26.webp",
+    "57_1_19.webp",
+    "58_1_18.webp",
+    "59_1_15.webp",
+    "60_1_19.webp"
+  ],
+  "price": 11990000,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c68"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c6d"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c71"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 2000000,
+      "colors": [
+        {
+          "name": "Trắng",
+          "image": "54_1_21.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c68"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c6e"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c71"
+        }
+      ],
+      "price_extra": 3300000,
+      "price_sale": 2900000,
+      "colors": [
+        {
+          "name": "Trắng",
+          "image": "54_1_21.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 8456132,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b539856b"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398577"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2d7"
+  },
+  "name": "Màn hình Gaming Asus ROG Strix XG27ACS",
+  "images": [
+    "man-hinh-gaming-asus-rog-strix-xg27acs-27-inch.webp",
+    "man-hinh-gaming-asus-rog-strix-xg27acs-27-inch_6_.webp",
+    "man-hinh-gaming-asus-rog-strix-xg27acs-27-inch_1_.webp",
+    "man-hinh-gaming-asus-rog-strix-xg27acs-27-inch_5_.webp",
+    "man-hinh-gaming-asus-rog-strix-xg27acs-27-inch_4_.webp",
+    "man-hinh-gaming-asus-rog-strix-xg27acs-27-inch_3_.webp"
+  ],
+  "price": 8990000,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c68"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c77"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c6d"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 2100000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "man-hinh-gaming-asus-rog-strix-xg27acs-27-inch_2_.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 8794651,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398567"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398577"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2d8"
+  },
+  "name": "Màn hình Lenovo L24I-4A 67BCKAC6VN",
+  "images": [
+    "group_179_1__4.webp",
+    "m_n_h_nh_lenovo_l24i-4a_24_inch_67bckac6vn_-_2.webp",
+    "m_n_h_nh_lenovo_l24i-4a_24_inch_67bckac6vn_-_3.webp",
+    "text_ng_n_25__6_2.webp",
+    "text_ng_n_26__5_3.webp",
+    "text_ng_n_28__7_3.webp",
+    "text_ng_n_31__6_1.webp",
+    "text_ng_n_32__6_1.webp",
+    "text_ng_n_29__8_2.webp",
+    "text_ng_n_30__7_4.webp"
+  ],
+  "price": 2690000,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c67"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c9c"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c6c"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 200000,
+      "colors": [
+        {
+          "name": "Trắng",
+          "image": "text_ng_n_27__6_2.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 741564165,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b539856c"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398577"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2d9"
+  },
+  "name": "Màn hình MSI Pro MP242L",
+  "images": [
+    "group_635_2.webp",
+    "m_n_h_nh_msi_pro_mp242l_24_inch_-_1.webp",
+    "m_n_h_nh_msi_pro_mp242l_24_inch_-_2.webp",
+    "m_n_h_nh_msi_pro_mp242l_24_inch_-_3_1.webp",
+    "text_ng_n_4__7_12.webp",
+    "text_ng_n_2__7_16.webp",
+    "text_ng_n_5__8_13.webp",
+    "text_ng_n_3__6_13.webp"
+  ],
+  "price": 2490000,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c67"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c9c"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c6c"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 500000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "text_ng_n_1__7_24.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 6451,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398565"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398577"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2da"
+  },
+  "name": "Màn hình Samsung ViewFinity S9 (S90PC)",
+  "images": [
+    "man-hinh-samsung-viewfinity-s9-5k-27-inch.webp",
+    "man-hinh-samsung-viewfinity-s9-5k-27-inch_9_.webp",
+    "man-hinh-samsung-viewfinity-s9-5k-27-inch_7_.webp",
+    "man-hinh-samsung-viewfinity-s9-5k-27-inch_6_.webp",
+    "man-hinh-samsung-viewfinity-s9-5k-27-inch_1_.webp",
+    "man-hinh-samsung-viewfinity-s9-5k-27-inch_5_.webp",
+    "man-hinh-samsung-viewfinity-s9-5k-27-inch_11_.webp",
+    "man-hinh-samsung-viewfinity-s9-5k-27-inch_2_.webp",
+    "man-hinh-samsung-viewfinity-s9-5k-27-inch_3_.webp"
+  ],
+  "price": 29990000,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c68"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c71"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c6f"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 8000000,
+      "colors": [
+        {
+          "name": "Trắng",
+          "image": "man-hinh-samsung-viewfinity-s9-5k-27-inch_8_.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 465132,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398560"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398577"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2db"
+  },
+  "name": "Smart Tivi Samsung QLED 4K 2024",
+  "images": [
+    "smart_tivi_samsung_qled_4k_2024_75q60d_-_1.webp",
+    "smart_tivi_samsung_qled_4k_2024_75q60d_-_2_1.webp",
+    "smart_tivi_samsung_qled_4k_2024_75q60d_-_3_1.webp",
+    "smart-tivi-samsung-qled-75q60d-4k-2024.webp",
+    "smart-tivi-samsung-qled-85q80d-4k-2024_14_.webp",
+    "smart-tivi-samsung-qled-85q80d-4k-2024_13_.webp",
+    "smart-tivi-samsung-qled-85q80d-4k-2024_15_.webp"
+  ],
+  "price": 12900000,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c7e"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 2910000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "smart-tivi-samsung-qled-85q80d-4k-2024_12__1_1_1_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c80"
+        }
+      ],
+      "price_extra": 3090000,
+      "price_sale": 4100000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "smart-tivi-samsung-qled-85q80d-4k-2024_12__1_1_1_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c81"
+        }
+      ],
+      "price_extra": 5000000,
+      "price_sale": 5410000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "smart-tivi-samsung-qled-85q80d-4k-2024_12__1_1_1_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c83"
+        }
+      ],
+      "price_extra": 9000000,
+      "price_sale": 6010000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "smart-tivi-samsung-qled-85q80d-4k-2024_12__1_1_1_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c84"
+        }
+      ],
+      "price_extra": 21090000,
+      "price_sale": 10000000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "smart-tivi-samsung-qled-85q80d-4k-2024_12__1_1_1_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 156465,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398560"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398578"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2dc"
+  },
+  "name": "Google Tivi Coocaa khung tranh QLED (55LN7000G)",
+  "images": [
+    "file_4.webp",
+    "google_tivi_coocaa_4k_qled_55_inch_55ln7000g_-_1_1.webp",
+    "google_tivi_coocaa_4k_qled_55_inch_55ln7000g_-_2_1.webp",
+    "google_tivi_coocaa_4k_qled_55_inch_55ln7000g_-_3_1.webp",
+    "image_1274.webp",
+    "image_1276.webp",
+    "image_1275.webp",
+    "image_1278.webp"
+  ],
+  "price": 12990000,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c8a"
+        },
+        {
+          "$oid": "67b6de7341eb49476cd67c81"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 2000000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "image_1277.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 849561,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398568"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398578"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2dd"
+  },
+  "name": "Tivi Xiaomi A 4K 2025",
+  "images": [
+    "1_691.webp",
+    "tivi-xiaomi-a-55-inch-4k-2025.webp",
+    "tivi-xiaomi-a-55-inch-4k-2025_1_2.webp",
+    "image_1082_3.webp",
+    "image_1083_2.webp"
+  ],
+  "price": 10490000,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c81"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 2000000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "0_21_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 489561,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398561"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398578"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2de"
+  },
+  "name": "Tivi Xiaomi A HD",
+  "images": [
+    "xiaomi_a55_4k_-_3_1_.webp",
+    "xiaomi_a55_4k_-_8_1_.webp",
+    "xiaomi_a55_4k_-_2_1_.webp",
+    "xiaomi_a55_4k_-_4_1_.webp",
+    "xiaomi_a55_4k_-_5_1_.webp",
+    "xiaomi_a55_4k_-_9_1_.webp",
+    "xiaomi_a55_4k_-_6_1_.webp",
+    "tv2_2.webp",
+    "tv4_2.webp",
+    "tv1_2.webp",
+    "tv3_2.webp",
+    "tivi-xiaomi-a-32-inch-hd_2__1_1.webp",
+    "tivi-xiaomi-a-32-inch-hd_1__1_1.webp"
+  ],
+  "price": 4490000,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c7c"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 500000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "tv1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c7e"
+        }
+      ],
+      "price_extra": 2000000,
+      "price_sale": 2000000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "tv1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c81"
+        }
+      ],
+      "price_extra": 6500000,
+      "price_sale": 2000000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "tv1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 9416313,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398561"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398578"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2df"
+  },
+  "name": "Smart Tivi Samsung khung tranh 4K 2024",
+  "images": [
+    "smart_tivi_samsung_khung_tranh_4k_75_inch_2024_-_1.webp",
+    "smart_tivi_samsung_khung_tranh_4k_75_inch_2024_-_2.webp",
+    "smart_tivi_samsung_khung_tranh_4k_50_inch_2024_-_3.webp",
+    "image_9782_3.webp",
+    "image_9772_3.webp",
+    "image_980_3.webp",
+    "image_979_2.webp",
+    "image_982_3.webp",
+    "image_9762_3.webp",
+    "image_981_3.webp"
+  ],
+  "price": 22900000,
+  "variants": [
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c80"
+        }
+      ],
+      "price_extra": 0,
+      "price_sale": 210000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "image_9752_3.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c81"
+        }
+      ],
+      "price_extra": 6500000,
+      "price_sale": 6410000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "image_9752_3.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c83"
+        }
+      ],
+      "price_extra": 14000000,
+      "price_sale": 8910000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "image_9752_3.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "property_ids": [
+        {
+          "$oid": "67b6de7341eb49476cd67c84"
+        }
+      ],
+      "price_extra": 31000000,
+      "price_sale": 17910000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "image_9752_3.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 71542,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398560"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398578"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2e0"
+  },
+  "name": "Tai nghe chụp tai Sony WH-ULT900N",
+  "images": [
+    "tai-nghe-chup-tai-sony-wh-ult900n_2.webp",
+    "tai-nghe-chup-tai-sony-wh-ult900n-00q.webp",
+    "tai-nghe-chup-tai-sony-wh-ult900n_5_.webp",
+    "tai-nghe-chup-tai-sony-wh-ult900n_3_.webp",
+    "tai-nghe-chup-tai-sony-wh-ult900n_2_.webp",
+    "tai-nghe-chup-tai-sony-wh-ult900n_1_.webp",
+    "tai-nghe-chup-tai-sony-wh-ult900n_4_.webp",
+    "tai-nghe-chup-tai-sony-wh-ult900n_14_.webp",
+    "tai-nghe-chup-tai-sony-wh-ult900n_10_.webp",
+    "tai-nghe-chup-tai-sony-wh-ult900n_11_.webp",
+    "tai-nghe-chup-tai-sony-wh-ult900n_12_.webp",
+    "tai-nghe-chup-tai-sony-wh-ult900n_6_.webp",
+    "tai-nghe-chup-tai-sony-wh-ult900n_9_.webp",
+    "tai-nghe-chup-tai-sony-wh-ult900n_8_.webp",
+    "tai-nghe-chup-tai-sony-wh-ult900n_7_.webp"
+  ],
+  "price": 4490000,
+  "variants": [
+    {
+      "property_ids": [],
+      "price_extra": 0,
+      "price_sale": 4090000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "tai-nghe-chup-tai-sony-wh-ult900n_13__1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Trắng",
+          "image": "tai-nghe-chup-tai-sony-wh-ult900n_22__1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xám",
+          "image": "tai-nghe-chup-tai-sony-wh-ult900n_18__1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 496511,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398566"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398579"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2e1"
+  },
+  "name": "Tai nghe Bluetooth chụp tai Sony WH-CH520",
+  "images": [
+    "tai-nghe-chup-tai-sony-wh-ch520-trang.webp",
+    "tai-nghe-chup-tai-sony-wh-ch520-ksp-3.webp",
+    "tai-nghe-chup-tai-sony-wh-ch520-_3_.webp",
+    "tai-nghe-chup-tai-sony-wh-ch520-_1_.webp",
+    "tai-nghe-chup-tai-sony-wh-ch520-_4_.webp",
+    "tai-nghe-chup-tai-sony-wh-ch520-_1.webp",
+    "tai-nghe-chup-tai-sony-wh-ch520-8.webp",
+    "tai-nghe-chup-tai-sony-wh-ch520_3_.webp",
+    "tai-nghe-chup-tai-sony-wh-ch520_2_.webp",
+    "tai-nghe-chup-tai-sony-wh-ch520_1_.webp",
+    "tai-nghe-chup-tai-sony-wh-ch520_2.webp",
+    "tai-nghe-chup-tai-sony-wh-ch520_4_.webp"
+  ],
+  "price": 1290000,
+  "variants": [
+    {
+      "property_ids": [],
+      "price_extra": 0,
+      "price_sale": 200000,
+      "colors": [
+        {
+          "name": "Trắng",
+          "image": "sony-wh-ch520_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Đen",
+          "image": "tai-nghe-chup-tai-sony-wh-ch520-11_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xanh dương",
+          "image": "tai-nghe-chup-tai-sony-wh-ch520-10_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Kem",
+          "image": "tai-nghe-chup-tai-sony-wh-ch520-9_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 946153,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398566"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398579"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2e2"
+  },
+  "name": "Tai nghe chụp tai chống ồn Apple AirPods Max 2024 | Chính hãng Apple Việt Nam",
+  "images": [
+    "apple-airpods-max-1_1.webp",
+    "apple-airpods-max-2_1.webp",
+    "apple-airpods-max-3_1.webp",
+    "apple-airpods-max-4.webp",
+    "apple-airpods-max-5_1.webp",
+    "apple-airpods-max-6_1.webp",
+    "apple-airpods-max-7_1.webp",
+    "apple-airpods-max-8.webp",
+    "apple-airpods-max-9_1.webp"
+  ],
+  "price": 13190000,
+  "variants": [
+    {
+      "property_ids": [],
+      "price_extra": 0,
+      "price_sale": 400000,
+      "colors": [
+        {
+          "name": "Tím",
+          "image": "apple-airpods-max_1__1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Cam",
+          "image": "apple-airpods-max_3__1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Trắng vàng",
+          "image": "apple-airpods-max_5__1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xanh dương",
+          "image": "apple-airpods-max_4__1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Đen",
+          "image": "apple-airpods-max_2__1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 8946,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b539855f"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398579"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2e3"
+  },
+  "name": "Tai nghe Bluetooth chụp tai Beats Solo 4",
+  "images": [
+    "group_1148.webp",
+    "tai-nghe-chup-tai-beats-solo-4_19_.webp",
+    "tai-nghe-chup-tai-beats-solo-4_1_.webp",
+    "tai-nghe-chup-tai-beats-solo-4_2_.webp",
+    "tai-nghe-chup-tai-beats-solo-4_3_.webp",
+    "tai-nghe-chup-tai-beats-solo-4_9_.webp",
+    "tai-nghe-chup-tai-beats-solo-4_10_.webp",
+    "tai-nghe-chup-tai-beats-solo-4_17_.webp",
+    "tai-nghe-chup-tai-beats-solo-4_18_.webp"
+  ],
+  "price": 4990000,
+  "variants": [
+    {
+      "property_ids": [],
+      "price_extra": 0,
+      "price_sale": 0,
+      "colors": [
+        {
+          "name": "Hồng",
+          "image": "tai-nghe-chup-tai-beats-solo-4-hong.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Đen",
+          "image": "tai-nghe-chup-tai-beats-solo-4-_en.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xanh dương",
+          "image": "tai-nghe-chup-tai-beats-solo-4-xanh.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 894651,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b539855f"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398579"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2e4"
+  },
+  "name": "Tai nghe Gaming chụp tai không dây Sony INZONE H5",
+  "images": [
+    "tai-nghe-chup-tai-sony-inzone-h5_1.webp",
+    "tai-nghe-chup-tai-sony-inzone-h5-ksp-2.webp",
+    "tai-nghe-chup-tai-sony-inzone-h5_8_.webp",
+    "tai-nghe-chup-tai-sony-inzone-h5_7_.webp",
+    "tai-nghe-chup-tai-sony-inzone-h5_2_.webp",
+    "tai-nghe-chup-tai-sony-inzone-h5_4_.webp",
+    "tai-nghe-chup-tai-sony-inzone-h5_1_.webp",
+    "tai-nghe-chup-tai-sony-inzone-h5_3__1_1.webp",
+    "tai-nghe-chup-tai-sony-inzone-h5_4__1_1.webp",
+    "tai-nghe-chup-tai-sony-inzone-h5_2__1_1.webp"
+  ],
+  "price": 3790000,
+  "variants": [
+    {
+      "property_ids": [],
+      "price_extra": 0,
+      "price_sale": 1300000,
+      "colors": [
+        {
+          "name": "Trắng",
+          "image": "tai-nghe-chup-tai-sony-inzone-h5_10_.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Đen",
+          "image": "tai-nghe-chup-tai-sony-inzone-h5_9_.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 85321,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398566"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b5398579"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2e5"
+  },
+  "name": "Loa tháp Samsung MX-T70",
+  "images": [
+    "loa-thap-samsung-mx-t70-thumb.webp",
+    "loa-thap-samsung-mx-t70-ksp.webp",
+    "loa-thap-samsung-mx-t70_1__1.webp",
+    "loa-thap-samsung-mx-t70_4__1.webp",
+    "loa-thap-samsung-mx-t70_5__1.webp",
+    "loa-thap-samsung-mx-t70_6__1.webp",
+    "loa-thap-samsung-mx-t70_7__1.webp",
+    "loa-thap-samsung-mx-t70_3__1.webp",
+    "loa-thap-samsung-mx-t70_11__1.webp",
+    "loa-thap-samsung-mx-t70_10__1.webp",
+    "loa-thap-samsung-mx-t70_8__1.webp",
+    "loa-thap-samsung-mx-t70_9__1.webp",
+    "loa-thap-samsung-mx-t70_15_.webp",
+    "loa-thap-samsung-mx-t70_14__1.webp",
+    "loa-thap-samsung-mx-t70_13__1.webp",
+    "loa-thap-samsung-mx-t70_12__1.webp"
+  ],
+  "price": 10990000,
+  "variants": [
+    {
+      "property_ids": [],
+      "price_extra": 0,
+      "price_sale": 6800000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "download_1__4_1_1_2.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 651233,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398560"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b539857a"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2e6"
+  },
+  "name": "Loa Karaoke xách tay ACNOS CS201V",
+  "images": [
+    "group_1132_2_.webp",
+    "image_1262702458.webp",
+    "image_1262702457_1.webp",
+    "image_1262702460.webp",
+    "image_1262702459.webp",
+    "image_1262702461.webp"
+  ],
+  "price": 3990000,
+  "variants": [
+    {
+      "property_ids": [],
+      "price_extra": 0,
+      "price_sale": 1400000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "image_1262702456_2.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 9416,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398566"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b539857a"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2e7"
+  },
+  "name": "Loa Bluetooth Sony SRS-XB100 Extra Bass",
+  "images": [
+    "loa-bluetooth-sony-srs-xb100-spa-0.webp",
+    "loa-bluetooth-sony-srs-xb100-ksp_1.webp",
+    "loa-bluetooth-sony-srs-xb100-8.webp",
+    "loa-bluetooth-sony-srs-xb100-3_2.webp",
+    "loa-bluetooth-sony-srs-xb100-1_3.webp",
+    "loa-bluetooth-sony-srs-xb100-4_2.webp",
+    "loa-bluetooth-sony-srs-xb100-2_2.webp",
+    "loa-bluetooth-sony-srs-xb100-4.webp",
+    "loa-bluetooth-sony-srs-xb100-3.webp",
+    "loa-bluetooth-sony-srs-xb100-2.webp"
+  ],
+  "price": 1490000,
+  "variants": [
+    {
+      "property_ids": [],
+      "price_extra": 0,
+      "price_sale": 400000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "loa-bluetooth-sony-srs-xb100-1_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xám",
+          "image": "loa-bluetooth-sony-srs-xb100-5_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Cam",
+          "image": "loa-bluetooth-sony-srs-xb100-7_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Xanh dương",
+          "image": "loa-bluetooth-sony-srs-xb100-6_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 41653,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398566"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b539857a"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2e8"
+  },
+  "name": "Loa thanh Soundbar Samsung HW T420",
+  "images": [
+    "group_274_1__2.webp",
+    "samsung-hw-t420-8-org.webp",
+    "samsung-hw-t420-10-org.webp",
+    "samsung-hw-t420-17-org.webp",
+    "samsung-hw-t420-4-org.webp",
+    "samsung-hw-t420-1-org.webp",
+    "samsung_hw_t420_2.webp",
+    "samsung_hw_t420_1.webp"
+  ],
+  "price": 3090000,
+  "variants": [
+    {
+      "property_ids": [],
+      "price_extra": 0,
+      "price_sale": 1800000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "vn-soundbar-hw-t420-hw-t420-xv-setrperspectiveblack-234221550-_1__1_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 156115,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398560"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b539857a"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2e9"
+  },
+  "name": "Loa Bluetooth Xiaomi Speaker Mini",
+  "images": [
+    "loa-bluetooth-xiaomi-speaker-mini-spa_1.webp",
+    "loa-bluetooth-xiaomi-speaker-mini_4_.webp",
+    "loa-bluetooth-xiaomi-speaker-mini_8_.webp",
+    "loa-bluetooth-xiaomi-speaker-mini_7_.webp",
+    "loa-bluetooth-xiaomi-speaker-mini_5_.webp",
+    "loa-bluetooth-xiaomi-speaker-mini_3_.webp",
+    "loa-bluetooth-xiaomi-speaker-mini_1_.webp",
+    "loa-bluetooth-xiaomi-speaker-mini.webp",
+    "loa-bluetooth-xiaomi-speaker-mini_6_.webp"
+  ],
+  "price": 990000,
+  "variants": [
+    {
+      "property_ids": [],
+      "price_extra": 0,
+      "price_sale": 140000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "loa-bluetooth-xiaomi-speaker-min-1_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 1516516,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398561"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b539857a"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2ea"
+  },
+  "name": "Đồng hồ Samsung Galaxy Watch FE 40mm",
+  "images": [
+    "samsung-galaxy-watch-fe_1_.webp",
+    "samsung_galaxy_watch_fe_-_1.webp",
+    "samsung_galaxy_watch_fe_-_3.webp",
+    "samsung_galaxy_watch_fe_-_5.webp",
+    "samsung-galaxy-watch-fe_4_.webp",
+    "samsung-galaxy-watch-fe_5_.webp",
+    "samsung-galaxy-watch-fe_6_.webp",
+    "samsung-galaxy-watch-fe_7_.webp",
+    "samsung-galaxy-watch-fe_8_.webp"
+  ],
+  "price": 4990000,
+  "variants": [
+    {
+      "property_ids": [],
+      "price_extra": 0,
+      "price_sale": 2800000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "samsung-galaxy-watch-fe_2__1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Hồng",
+          "image": "samsung-galaxy-watch-fe_3__1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 451562,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398560"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b539857b"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2eb"
+  },
+  "name": "Đồng hồ thông minh Huawei Watch D2",
+  "images": [
+    "huawei_3.webp",
+    "_ng_h__4_3.webp",
+    "_ng_h_2__1_6.webp",
+    "_ng_h_3__1_6.webp",
+    "_ng_h_4__1_4.webp",
+    "_ng_h_1__1_6.webp",
+    "text_ng_n_1__6_111.webp",
+    "text_ng_n_13_5.webp",
+    "text_ng_n_3__5_117.webp",
+    "text_ng_n_2__6_129.webp",
+    "text_ng_n_4__6_112.webp"
+  ],
+  "price": 9990000,
+  "variants": [
+    {
+      "property_ids": [],
+      "price_extra": 0,
+      "price_sale": 1000000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "text_ng_n_1__6_112.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Vàng",
+          "image": "text_ng_n_9__4_150.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 85161,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398569"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b539857b"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2ec"
+  },
+  "name": "Đồng hồ thông minh OPPO Watch X",
+  "images": [
+    "text_ng_n_-_2024-08-06t160715.494.webp",
+    "dong-ho-thong-minh-oppo-watch-x_2__1.webp",
+    "dong-ho-thong-minh-oppo-watch-x_1__1.webp",
+    "dong-ho-thong-minh-oppo-watch-x_3__1.webp",
+    "dong-ho-thong-minh-oppo-watch-x_5_.webp",
+    "dong-ho-thong-minh-oppo-watch-x_4__1.webp",
+    "dong-ho-thong-minh-oppo-watch-x_6_.webp",
+    "dong-ho-thong-minh-oppo-watch-x_7_.webp",
+    "dong-ho-thong-minh-oppo-watch-x_1_.webp",
+    "dong-ho-thong-minh-oppo-watch-x_3_.webp",
+    "dong-ho-thong-minh-oppo-watch-x_7__1.webp",
+    "dong-ho-thong-minh-oppo-watch-x_8__1.webp"
+  ],
+  "price": 7490000,
+  "variants": [
+    {
+      "property_ids": [],
+      "price_extra": 0,
+      "price_sale": 1500000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "dong-ho-thong-minh-oppo-watch-x_4_.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Nâu",
+          "image": "dong-ho-thong-minh-oppo-watch-x_2_.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 6513216,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398562"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b539857b"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2ed"
+  },
+  "name": "Vòng đeo tay thông minh Xiaomi Mi Band 7",
+  "images": [
+    "mi_band_7.webp",
+    "1_675_2.webp",
+    "2_652.webp",
+    "band_7_1_.webp",
+    "4_527.webp",
+    "6_383.webp",
+    "3_593.webp",
+    "5_456.webp",
+    "band_7_4_.webp",
+    "band_7_3_.webp",
+    "band_7_2_.webp",
+    "sforum-mi-band-7-17.webp",
+    "sforum-mi-band-7-18.webp"
+  ],
+  "price": 1290000,
+  "variants": [
+    {
+      "property_ids": [],
+      "price_extra": 0,
+      "price_sale": 640000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "xi_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 765210,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398561"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b539857b"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b96ee667788c638a22e2ee"
+  },
+  "name": "Vòng đeo tay thông minh Huawei Band 9",
+  "images": [
+    "huawei_band_9.webp",
+    "download_1__15.webp",
+    "download_2__14.webp",
+    "download_3__11_2.webp"
+  ],
+  "price": 1090000,
+  "variants": [
+    {
+      "property_ids": [],
+      "price_extra": 0,
+      "price_sale": 3000000,
+      "colors": [
+        {
+          "name": "Đen",
+          "image": "vong-deo-tay-thong-minh-huawei-band-9__1_-removebg-preview_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Trắng",
+          "image": "download_36_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Hồng",
+          "image": "vong-deo-tay-thong-minh-huawei-band-9__2_-removebg-preview_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        },
+        {
+          "name": "Vàng",
+          "image": "vong-deo-tay-thong-minh-huawei-band-9__3_-removebg-preview_1.webp",
+          "price_extra": 0,
+          "status": 1,
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "sale": false,
+  "status": 1,
+  "view": 4515132,
+  "description": "mota",
+  "brand_id": {
+    "$oid": "67b6cf123a893726b5398569"
+  },
+  "category_id": {
+    "$oid": "67b6cf1a3a893726b539857b"
+  }
+}]
