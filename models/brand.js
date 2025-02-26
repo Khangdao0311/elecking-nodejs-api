@@ -8,7 +8,7 @@ const brandSchema = new Schema({
   benner: { type: String },
   status: { type: Number },
   description: { type: String },
-});
+}, { versionKey: false });
 
 module.exports =
   mongoose.models.brand || mongoose.model("brand", brandSchema);

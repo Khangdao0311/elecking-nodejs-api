@@ -6,8 +6,9 @@ const categorySchema = new Schema({
   name: { type: String },
   image: { type: String },
   status: { type: Number },
+  properties: [{ type: Number }],
   description: { type: String },
-});
+}, { versionKey: false });
 
 module.exports =
   mongoose.models.category || mongoose.model("category", categorySchema);

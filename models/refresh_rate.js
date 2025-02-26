@@ -2,10 +2,10 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const ObjectId = Schema.ObjectId;
 
-const payment_methodSchema = new Schema({
+const refresh_rateSchema = new Schema({
     name: { type: String },
-    description: { type: String },
+
 }, { versionKey: false });
 
 module.exports =
-    mongoose.models.payment_method || mongoose.model("payment_method", payment_methodSchema);
+    mongoose.models.refresh_rate || mongoose.model("refresh_rate", refresh_rateSchema);

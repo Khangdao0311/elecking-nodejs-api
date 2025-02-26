@@ -20,15 +20,22 @@ var corsOptionsDelegate = function (req, callback) {
   callback(null, corsOptions);
 };
 
-var indexRouter = require('./routes/index');
 var categoryRouter = require('./routes/category');
 var brandRouter = require('./routes/brand');
 var productRouter = require('./routes/product');
 var userRouter = require('./routes/user');
+var checkoutRouter = require('./routes/checkout');
+var orderRouter = require('./routes/order');
 
 var app = express();
 
+
 app.use(cors(corsOptionsDelegate));
+// app.use(cors({
+//   origin: "http://localhost:3000", // Cho phép gọi từ Next.js
+//   methods: "GET,POST",
+//   allowedHeaders: "Content-Type",
+// }));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -40,11 +47,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
 app.use('/category', categoryRouter);
 app.use('/brand', brandRouter);
 app.use('/product', productRouter);
 app.use('/user', userRouter);
+app.use('/checkout', checkoutRouter);
+app.use('/order', orderRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

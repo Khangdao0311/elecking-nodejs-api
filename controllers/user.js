@@ -1,29 +1,37 @@
 var userModel = require("../models/user");
+var productModel = require("../models/product");
 
 const { ObjectId } = require("mongodb");
+const product = require("../models/product");
 
 module.exports = {
     getById,
-    getQuery
+    getQuery,
+    cart,
+    wish
 };
 
 async function getById(id) {
     try {
         const user = await userModel.findById(id);
+        if (!user) return { status: 400, message: "Người dùng không tồn tại !" }
+
         return {
-            id: user._id,
-            fullname: user.fullname,
-            avatar: `${process.env.URL}${user.avatar}`,
-            email: user.email,
-            phone: user.phone,
-            username: user.username,
-            role: user.role,
-            status: user.status,
-            register_dat: user.register_dat,
-            description: user.description,
-            cart: user.cart,
-            wish: user.cart,
-        };
+            status: 200, message: "Thành công !", data: {
+                id: user._id,
+                fullname: user.fullname,
+                avatar: `${process.env.URL}${user.avatar}`,
+                email: user.email,
+                phone: user.phone,
+                username: user.username,
+                role: user.role,
+                status: user.status,
+                register_dat: user.register_dat,
+                description: user.description,
+                cart: user.cart,
+                wish: user.cart,
+            }
+        }
     } catch (error) {
         console.log(error);
         throw error;
@@ -83,7 +91,58 @@ async function getQuery(query) {
             cart: user.cart,
             wish: user.cart,
         }));
-        return data;
+
+        return { status: 200, message: "Thành công !", data: data };
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
+async function cart(body) {
+    try {
+        const { user_id, cart } = body
+
+        const user = await userModel.findById(user_id)
+        if (!user) return { status: 400, message: "Người dùng không tồn tại !" }
+
+        const cartNew = JSON.parse(cart).map(c => ({
+            ...c,
+            product: {
+                ...c.product,
+                id: new ObjectId(c.product.id)
+            }
+        }))
+
+        await userModel.findByIdAndUpdate(user_id, { $set: { cart: cartNew } }, { new: true, runValidators: true })
+
+
+        return { status: 200, message: "Thành công !" }
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
+async function wish(body) {
+    try {
+        const { user_id, wish } = body
+
+        const user = await userModel.findById(user_id)
+        if (!user) return { status: 400, message: "Người dùng không tồn tại !" }
+
+        const wishNew = JSON.parse(wish).map(c => ({
+            ...c,
+            product: {
+                ...c.product,
+                id: new ObjectId(c.product.id)
+            }
+        }))
+
+        await userModel.findByIdAndUpdate(user_id, { $set: { wish: wishNew } }, { new: true, runValidators: true })
+
+
+        return { status: 200, message: "Thành công !" }
     } catch (error) {
         console.log(error);
         throw error;

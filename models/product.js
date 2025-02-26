@@ -1,7 +1,23 @@
 const mongoose = require("mongoose");
-const properties = require("./property");
 const Schema = mongoose.Schema;
 const ObjectId = Schema.ObjectId;
+
+const colorSchema = new Schema({
+  name: { type: String },
+  image: { type: String },
+  price_extra: { type: String },
+  status: { type: Number },
+  quantity: { type: Number },
+}, { _id: false, versionKey: false });
+
+const variantSchema = new Schema({
+  property_ids: [
+    { type: ObjectId, ref: "property" }
+  ],
+  price_extra: { type: Number },
+  price_sale: { type: Number },
+  colors: [colorSchema],
+}, { _id: false, versionKey: false });
 
 const productSchema = new Schema({
   name: { type: String },
@@ -9,34 +25,13 @@ const productSchema = new Schema({
     { type: String }
   ],
   price: { type: Number },
-  variants: [
-    {
-      property_ids: [
-        {
-          type: Schema.Types.ObjectId,
-          ref: "property"
-        }
-      ],
-      price_extra: { type: Number },
-      price_sale: { type: Number },
-      colors: [
-        {
-          name: { type: String },
-          image: { type: String },
-          price_extra: { type: String },
-          status: { type: Number },
-          quantity: { type: Number },
-        },
-      ],
-    },
-  ],
-  sale: { type: Boolean },
+  variants: [variantSchema],
   status: { type: Number },
   view: { type: Number },
   description: { type: String },
   brand_id: { type: ObjectId, ref: "brand" },
   category_id: { type: ObjectId, ref: "category" },
-});
+}, { versionKey: false });
 
 module.exports =
   mongoose.models.product || mongoose.model("product", productSchema);

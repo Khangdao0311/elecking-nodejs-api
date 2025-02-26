@@ -2,6 +2,23 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const ObjectId = Schema.ObjectId;
 
+const cartItemSchema = new Schema({
+  quantity: { type: Number },
+  product: {
+    id: { type: ObjectId, ref: "product" },
+    variant: { type: Number },
+    color: { type: Number },
+  },
+}, { _id: false, versionKey: false });
+
+const wishItemSchema = new Schema({
+  product: {
+    id: { type: ObjectId, ref: "product" },
+    variant: { type: Number },
+    color: { type: Number },
+  },
+}, { _id: false, versionKey: false });
+
 const userSchema = new Schema({
   fullname: { type: String },
   avatar: { type: String },
@@ -9,31 +26,12 @@ const userSchema = new Schema({
   phone: { type: String },
   username: { type: String },
   password: { type: String },
-  role: { type: Number }, 
+  role: { type: Number },
   status: { type: Number },
   register_date: { type: String },
-  cart: [
-    {
-      quantity: { type: String },
-      product: {
-        product_id: { type: ObjectId, ref: "product" },
-        variant: { type: Number },
-        color: { type: Number },
-      },
-      
-    }
-  ],
-  wish: [
-    {
-      product: {
-        product_id: { type: ObjectId, ref: "product" },
-        variant: { type: Number },
-        color: { type: Number },
-      },
-    }
-  ]
-
-});
+  cart: [cartItemSchema],
+  wish: [wishItemSchema]
+}, { versionKey: false });
 
 module.exports =
   mongoose.models.user || mongoose.model("user", userSchema);

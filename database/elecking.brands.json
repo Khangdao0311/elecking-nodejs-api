@@ -142,59 +142,59 @@
   "_id": {
     "$oid": "67b6cf123a893726b539856d"
   },
-  "name": "Nothing",
+  "name": "HP",
   "logo": "image.png",
   "benner": "image.png",
   "status": 1,
-  "description": "Nothing là thương hiệu công nghệ Anh, thành lập năm 2020 bởi Carl Pei. Nothing tập trung vào thiết kế tối giản, sáng tạo và trải nghiệm khác biệt. Các sản phẩm như Nothing Phone (1), Phone (2) và tai nghe Ear Series nổi bật với phong cách trong suốt, giao diện tinh gọn và hệ sinh thái kết nối thông minh."
+  "description": "HP (Hewlett-Packard) là một trong những tập đoàn công nghệ hàng đầu thế giới, chuyên cung cấp các sản phẩm và dịch vụ về máy tính, máy in, giải pháp phần cứng và phần mềm. Thành lập năm 1939 tại Mỹ, HP đã trở thành thương hiệu đáng tin cậy trong lĩnh vực công nghệ thông tin, phục vụ cả doanh nghiệp và người tiêu dùng cá nhân."
 },
 {
   "_id": {
     "$oid": "67b6cf123a893726b539856e"
   },
-  "name": "Tecno",
+  "name": "LG",
   "logo": "image.png",
   "benner": "image.png",
   "status": 1,
-  "description": "Tecno là thương hiệu công nghệ Trung Quốc, chuyên về smartphone và thiết bị điện tử. Thành lập năm 2006, Tecno tập trung vào thị trường châu Phi, Nam Á và Đông Nam Á với các dòng sản phẩm như Phantom, Camon, Spark và Pova, nổi bật với camera AI, pin lớn và giá cả cạnh tranh."
+  "description": "LG (Lucky Goldstar) là tập đoàn đa quốc gia của Hàn Quốc, chuyên sản xuất các sản phẩm điện tử, gia dụng và giải pháp công nghệ. Thành lập năm 1958, LG đã trở thành thương hiệu toàn cầu với danh tiếng về chất lượng, sự đổi mới và thiết kế tinh tế."
 },
 {
   "_id": {
     "$oid": "67b6cf123a893726b539856f"
   },
-  "name": "Infinix",
+  "name": "Razer",
   "logo": "image.png",
   "benner": "image.png",
   "status": 1,
-  "description": "Infinix là thương hiệu công nghệ Trung Quốc, chuyên về smartphone giá rẻ và tầm trung. Thành lập năm 2013, Infinix tập trung vào thị trường châu Phi, Nam Á và Đông Nam Á với các dòng sản phẩm như Zero, Note, Hot và Smart, nổi bật với pin dung lượng lớn, màn hình rộng và hiệu năng ổn định."
+  "description": "Razer là một trong những thương hiệu hàng đầu trong lĩnh vực thiết bị gaming, nổi tiếng với các sản phẩm dành cho game thủ chuyên nghiệp. Thành lập năm 2005 tại Singapore và Mỹ, Razer nhanh chóng trở thành biểu tượng trong cộng đồng gaming với thiết kế mạnh mẽ, hiệu suất cao và hệ sinh thái phần mềm độc quyền."
 },
 {
   "_id": {
     "$oid": "67b6cf123a893726b5398570"
   },
-  "name": "Honor",
+  "name": "HAVIT",
   "logo": "image.png",
   "benner": "image.png",
   "status": 1,
-  "description": "Honor là thương hiệu công nghệ Trung Quốc, chuyên về smartphone và thiết bị thông minh. Thành lập năm 2013, tách khỏi Huawei năm 2020, Honor tập trung vào hiệu suất mạnh mẽ, thiết kế cao cấp và công nghệ tiên tiến. Các dòng sản phẩm như Magic, Number Series và X-Series nổi bật với camera chất lượng, màn hình đẹp và trải nghiệm phần mềm tối ưu."
+  "description": "HAVIT là một thương hiệu chuyên sản xuất phụ kiện công nghệ, đặc biệt là thiết bị gaming và âm thanh. Thành lập tại Trung Quốc, HAVIT nổi bật với các sản phẩm có giá thành hợp lý nhưng vẫn đảm bảo chất lượng tốt, phù hợp với cả game thủ và người dùng phổ thông."
 },
 {
   "_id": {
     "$oid": "67b6cf123a893726b5398571"
   },
-  "name": "ZTE",
+  "name": "GIGABYTE",
   "logo": "image.png",
   "benner": "image.png",
   "status": 1,
-  "description": "ZTE là tập đoàn công nghệ Trung Quốc, chuyên về viễn thông và smartphone. Thành lập năm 1985, ZTE nổi bật trong lĩnh vực hạ tầng mạng 5G và thiết bị di động. Các dòng sản phẩm như Axon, Nubia và Blade tập trung vào camera sáng tạo, hiệu suất mạnh mẽ và công nghệ tiên tiến."
+  "description": "GIGABYTE là một trong những hãng công nghệ hàng đầu đến từ Đài Loan, chuyên sản xuất linh kiện máy tính và thiết bị chơi game. Thành lập năm 1986, GIGABYTE nổi tiếng với bo mạch chủ, card đồ họa và laptop gaming chất lượng cao, phục vụ từ người dùng phổ thông đến game thủ và dân công nghệ chuyên nghiệp."
 },
 {
   "_id": {
     "$oid": "67b6cf123a893726b5398572"
   },
-  "name": "Meizu",
+  "name": "Masstel",
   "logo": "image.png",
   "benner": "image.png",
   "status": 1,
-  "description": "Meizu là thương hiệu công nghệ Trung Quốc, chuyên về smartphone và thiết bị âm thanh. Thành lập năm 2003, Meizu nổi bật với thiết kế tinh tế, giao diện Flyme OS và hiệu suất ổn định. Các dòng sản phẩm như Meizu 20, 21 và dòng M-Series tập trung vào trải nghiệm mượt mà, camera chất lượng và giá cả cạnh tranh."
+  "description": "Masstel (Mass Technology) là thương hiệu công nghệ của Việt Nam, chuyên sản xuất điện thoại, máy tính bảng và thiết bị thông minh với mức giá hợp lý. Thành lập vào năm 2010, Masstel tập trung vào phân khúc phổ thông, đáp ứng nhu cầu của người dùng Việt với sản phẩm có độ bền cao, dễ sử dụng."
 }]

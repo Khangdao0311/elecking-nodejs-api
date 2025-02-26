@@ -15,6 +15,7 @@ async function getById(id) {
             name: category.name,
             image: `${process.env.URL}${category.image}`,
             status: category.status,
+            properties: category.properties,
             description: category.description,
         };
     } catch (error) {
@@ -65,6 +66,7 @@ async function getQuery({ id, search, orderby, page = 1, limit = 5 }) {
             name: category.name,
             image: `${process.env.URL}${category.image}`,
             status: category.status,
+            properties: category.properties,
             description: category.description,
         }));
         return data;

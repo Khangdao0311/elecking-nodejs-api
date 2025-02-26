@@ -14,7 +14,7 @@ const voucherSchema = new Schema({
   quantity: { type: Number },
   user_id: { type: ObjectId, ref: "user" },
 
-});
+}, { versionKey: false });
 
 module.exports =
   mongoose.models.voucher || mongoose.model("voucher", voucherSchema);

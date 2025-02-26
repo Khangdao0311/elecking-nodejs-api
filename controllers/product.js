@@ -8,7 +8,9 @@ const { ObjectId } = require("mongodb");
 
 module.exports = {
     getById,
-    getQuery
+    getQuery,
+    getTotalPageByQuery,
+    getSame
 };
 
 async function getById(id) {
@@ -50,7 +52,6 @@ async function getById(id) {
             images: product.images.map((image) => `${process.env.URL}${image}`),
             price: product.price,
             variants: variants,
-            sale: product.sale,
             view: product.view,
             description: product.description,
             brand: {
@@ -68,8 +69,7 @@ async function getById(id) {
     }
 }
 
-
-async function getQuery({ search, id, categoryid, sale, price, orderby, page = 1, limit = 5 }) {
+async function getQuery({ search, id, categoryid, price, orderby, page = 1, limit = 5 }) {
     try {
         let matchCondition = {};
 
@@ -95,11 +95,6 @@ async function getQuery({ search, id, categoryid, sale, price, orderby, page = 1
             };
         }
 
-        // Tìm kiếm sản phẩm theo sale Ví dụ: /product?sale=true
-        if (sale) {
-            matchCondition.sale = true;
-        }
-
         // Tìm kiếm sản phẩm theo giá từ đên nối bằng dấu '-' Ví dụ: /product?price=100000-900000
         if (price) {
             const [min, max] = price.split("-");
@@ -111,10 +106,22 @@ async function getQuery({ search, id, categoryid, sale, price, orderby, page = 1
 
         let sortCondition = {};
 
-        // sắp xếp sản phẩm theo sort và so nối bằng '-' Ví dụ: /product?orderby=_id-desc
+        // sắp xếp sản phẩm theo sort và so, nối bằng dấu '-' Ví dụ: /product?orderby=_id-desc
         if (orderby) {
             const [sort, so] = orderby.split("-");
-            sortCondition[sort] = so == "desc" ? -1 : 1;
+            switch (sort) {
+                case "price":
+                    sortCondition.finalPrice = so == "desc" ? -1 : 1;
+                    break;
+
+                case "sale":
+                    sortCondition.percent = so == "desc" ? -1 : 1;
+                    break;
+
+                default:
+                    sortCondition[sort] = so == "desc" ? -1 : 1;
+                    break;
+            }
         } else {
             sortCondition._id = -1;
         }
@@ -126,16 +133,42 @@ async function getQuery({ search, id, categoryid, sale, price, orderby, page = 1
                 $addFields: {
                     finalPrice: {
                         $subtract: [
-                            { $add: ["$price", { $arrayElemAt: ["$variants.price_extra", 0] }] },
-                            { $arrayElemAt: ["$variants.price_sale", 0] },
-                        ],
+                            { $add: ["$price", { $ifNull: [{ $arrayElemAt: ["$variants.price_extra", 0] }, 0] }] },
+                            { $ifNull: [{ $arrayElemAt: ["$variants.price_sale", 0] }, 0] }
+                        ]
                     },
-                },
+                    percent: {
+                        $round: [
+                            {
+                                $multiply: [
+                                    {
+                                        $divide: [
+                                            {
+                                                $subtract: [
+                                                    "$price",
+                                                    {
+                                                        $subtract: [
+                                                            { $add: ["$price", { $ifNull: [{ $arrayElemAt: ["$variants.price_extra", 0] }, 0] }] },
+                                                            { $ifNull: [{ $arrayElemAt: ["$variants.price_sale", 0] }, 0] }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "$price"
+                                        ]
+                                    },
+                                    100
+                                ]
+                            },
+                            0 // Làm tròn số nguyên ví dụ: 10.123 --> 10
+                        ]
+                    }
+                }
             },
             { $match: matchCondition },
             { $sort: sortCondition },
             { $skip: skip },
-            { $limit: +limit },
+            { $limit: +limit }
         ];
 
         const products = await productModel.aggregate(pipeline);
@@ -143,6 +176,162 @@ async function getQuery({ search, id, categoryid, sale, price, orderby, page = 1
         const data = [];
 
         for (const product of products) {
+
+            const variants = [];
+
+            for (const variant of product?.variants) {
+
+                const propertyNames = [];
+
+                for (const property_id of variant.property_ids) {
+                    const property = await propertyModel.findById(property_id);
+                    propertyNames.push(property?.name);
+                }
+
+                variants.push({
+                    properties: propertyNames,
+                    price_extra: variant.price_extra,
+                    price_sale: variant.price_sale,
+                    colors: variant.colors.map((color) => ({
+                        name: color.name,
+                        image: `${process.env.URL}${color.image}`,
+                        price_extra: color.price_extra,
+                        status: product.status,
+                        quantity: color.quantity,
+                    })),
+                });
+            }
+
+            const brand = await brandModel.findById(product.brand_id)
+            const category = await categoryModel.findById(product.category_id)
+
+            data.push({
+                id: product._id,
+                name: product.name,
+                images: product.images.map((image) => `${process.env.URL}${image}`),
+                price: product.price,
+                variants: variants,
+                view: product.view,
+                description: product.description,
+                brand: {
+                    id: brand._id,
+                    name: brand.name
+                },
+                category: {
+                    id: category._id,
+                    name: category.name
+                },
+            });
+        }
+
+        return data;
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
+async function getTotalPageByQuery({ search, id, categoryid, price, limit = 5 }) {
+    try {
+        let matchCondition = {};
+
+        // Tìm kiếm sản phẩm theo tên Ví dụ: /product?search=tên sản phẩm
+        if (search) {
+            matchCondition.name = {
+                $regex: search,
+                $options: "i",
+            };
+        }
+
+        // Tìm kiếm sản phẩm theo nhiều id nối bằng dâu '-' Ví dụ: /product?id=321315135131221-45646465sa4dsad654-adasd65sad65sa4
+        if (id) {
+            matchCondition._id = {
+                $in: id.split("-").map((_id) => new ObjectId(_id)),
+            };
+        }
+
+        // Tìm kiếm sản phẩm theo nhiều id danh mục nối bằng dấu '-' Ví dụ: /product?categoryid=321315135131221-45646465sa4dsad654-adasd65sad65sa4
+        if (categoryid) {
+            matchCondition.category_id = {
+                $in: categoryid.split("-").map((idCat) => new ObjectId(idCat)),
+            };
+        }
+
+        // Tìm kiếm sản phẩm theo giá từ đên nối bằng dấu '-' Ví dụ: /product?price=100000-900000
+        if (price) {
+            const [min, max] = price.split("-");
+            matchCondition.finalPrice = {
+                $gte: +min,
+                $lte: +max,
+            };
+        }
+
+        const pipeline = [
+            {
+                $addFields: {
+                    finalPrice: {
+                        $subtract: [
+                            { $add: ["$price", { $ifNull: [{ $arrayElemAt: ["$variants.price_extra", 0] }, 0] }] },
+                            { $ifNull: [{ $arrayElemAt: ["$variants.price_sale", 0] }, 0] }
+                        ]
+                    },
+                    percent: {
+                        $round: [
+                            {
+                                $multiply: [
+                                    {
+                                        $divide: [
+                                            {
+                                                $subtract: [
+                                                    "$price",
+                                                    {
+                                                        $subtract: [
+                                                            { $add: ["$price", { $ifNull: [{ $arrayElemAt: ["$variants.price_extra", 0] }, 0] }] },
+                                                            { $ifNull: [{ $arrayElemAt: ["$variants.price_sale", 0] }, 0] }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "$price"
+                                        ]
+                                    },
+                                    100
+                                ]
+                            },
+                            0 // Làm tròn số nguyên ví dụ: 10.123 --> 10
+                        ]
+                    }
+                }
+            },
+            { $match: matchCondition },
+        ];
+
+        const products = await productModel.aggregate(pipeline);
+
+        const data = Math.ceil(products.length / limit);
+
+        return data;
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
+async function getSame(id, limit) {
+    try {
+        const product = await productModel.findById(id);
+        if (!product) throw new Error("Sản phẩm không tồn tại !");
+
+        const category = await categoryModel.findById(product.category_id);
+
+        const productsSame = await productModel
+            .find({ category_id: category._id, _id: { $ne: product._id } })
+            .sort({ _id: -1 })
+            .limit(limit);
+
+        const data = [];
+
+        for (const product of productsSame) {
 
             const variants = [];
 
@@ -178,7 +367,6 @@ async function getQuery({ search, id, categoryid, sale, price, orderby, page = 1
                 images: product.images.map((image) => `${process.env.URL}${image}`),
                 price: product.price,
                 variants: variants,
-                sale: product.sale,
                 view: product.view,
                 description: product.description,
                 brand: {
@@ -200,99 +388,7 @@ async function getQuery({ search, id, categoryid, sale, price, orderby, page = 1
 }
 
 
-// async function getSame(id, limit) {
-//   try {
-//     const product = await productModel.findById(id);
-//     if (!product) throw new Error("Sản phẩm không tồn tại !");
-//     const category = await categoryModel.findById(product.category_id);
-//     const productsSame = await productModel
-//       .find({ category_id: category._id, _id: { $ne: product._id } })
-//       .sort({ _id: -1 })
-//       .limit(limit);
-//     const data = productsSame.map((product) => ({
-//       id: product._id,
-//       name: product.name,
-//       images: product.images.map((image) => `${process.env.URL}${image}`),
-//       price: product.price,
-//       variants: product.variants.map((type) => ({
-//         name: type.name,
-//         price_extra: type.price_extra,
-//         price_sale: type.price_sale,
-//         price_update: type.price_update,
-//         colors: type.colors.map((color) => ({
-//           name: color.name,
-//           image: `${process.env.URL}${color.image}`,
-//           price_extra: color.price_extra,
-//           quantity: color.quantity,
-//         })),
-//       })),
-//       rating: product.rating,
-//       view: product.view,
-//       sale: product.sale,
-//       description: product.description,
-//       category_id: product.category_id,
-//     }));
-//     return data;
-//   } catch (error) {
-//     console.log(error);
-//     throw error;
-//   }
-// }
 
-// async function getTotalPagesQuery(search, categoryid, sale, price, limit = 5) {
-//   try {
-//     let matchCondition = {};
-
-//     if (search) {
-//       matchCondition.name = {
-//         $regex: search,
-//         $options: "i",
-//       };
-//     }
-//     if (categoryid) {
-//       matchCondition.category_id = {
-//         $in: categoryid.split("-").map((idCat) => new ObjectId(idCat)),
-//       };
-//     }
-
-//     if (sale) {
-//       matchCondition.sale = true;
-//     }
-
-//     if (price) {
-//       const [min, max] = price.split("-");
-//       matchCondition.finalPrice = {
-//         $gte: +min,
-//         $lte: +max,
-//       };
-//     }
-
-//     let sortCondition = {};
-
-//     const pipeline = [
-//       {
-//         $addFields: {
-//           finalPrice: {
-//             $subtract: [
-//               { $add: ["$price", { $arrayElemAt: ["$variants.price_extra", 0] }] },
-//               { $arrayElemAt: ["$variants.price_sale", 0] },
-//             ],
-//           },
-//         },
-//       },
-//       { $match: matchCondition },
-//     ];
-
-//     const products = await productModel.aggregate(pipeline);
-
-//     const data = Math.ceil(products.length / limit);
-
-//     return data;
-//   } catch (error) {
-//     console.log(error);
-//     throw error;
-//   }
-// }
 
 // async function insert(body) {
 //   try {

@@ -3,7 +3,7 @@ var router = express.Router();
 
 const productController = require('../controllers/product')
 
-// lấy các sản phẩm dựa theo dữ liệu của query
+// lấy các sản phẩm tương tự dựa theo dữ liệu của query
 router.get('/', async function (req, res, next) {
   try {
     const data = await productController.getQuery(req.query);

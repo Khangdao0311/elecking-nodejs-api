@@ -29,12 +29,22 @@
   "register_date": "20250220",
   "cart": [
     {
-      "quantity": 1,
+      "quantity": 18,
       "product": {
-        "product_id": {
-          "$oid": "67b60039c78b59dfd66cd597"
+        "id": {
+          "$oid": "67b96ee667788c638a22e2c7"
         },
         "variant": 0,
+        "color": 0
+      }
+    },
+    {
+      "quantity": 20,
+      "product": {
+        "id": {
+          "$oid": "67b96ee667788c638a22e2c7"
+        },
+        "variant": 2,
         "color": 0
       }
     }
@@ -42,11 +52,11 @@
   "wish": [
     {
       "product": {
-        "product_id": {
-          "$oid": "67b60039c78b59dfd66cd597"
-        },
         "variant": 0,
-        "color": 0
+        "color": 0,
+        "id": {
+          "$oid": "67b96ee667788c638a22e2c7"
+        }
       }
     }
   ]

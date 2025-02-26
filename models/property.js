@@ -7,7 +7,7 @@ const propertySchema = new Schema({
   type: { type: String },
   category_id: { type: ObjectId, ref: "category" },
 
-});
+}, { versionKey: false });
 
 module.exports =
   mongoose.models.property || mongoose.model("property", propertySchema);

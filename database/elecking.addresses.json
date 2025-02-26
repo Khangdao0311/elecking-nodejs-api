@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "67be81d5447c10378c42365b"
+  },
+  "provine": "Thành phố Hồ Chí Minh",
+  "district": "Quận 12",
+  "ward": "Phường Tân Thới Hiệp",
+  "description": "Đường Nguyễn Thị Đặng",
+  "phone": "0976676767",
+  "fullname": "Đào Vĩnh Khang",
+  "type": 2,
+  "default": true,
+  "user_id": {
+    "$oid": "67b6b0bdbfe3474f1ec40f45"
+  }
+}]

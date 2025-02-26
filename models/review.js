@@ -7,8 +7,9 @@ const reviewSchema = new Schema({
     rating: { type: String },
     creation_date: { type: String },
     updation_date: { type: String },
-    user_id
-});
+    user_id: { type: ObjectId, ref: "user" },
+
+}, { versionKey: false });
 
 module.exports =
     mongoose.models.review || mongoose.model("review", reviewSchema);
