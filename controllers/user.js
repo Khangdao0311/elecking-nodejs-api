@@ -16,22 +16,23 @@ async function getById(id) {
         const user = await userModel.findById(id);
         if (!user) return { status: 400, message: "Người dùng không tồn tại !" }
 
-        return {
-            status: 200, message: "Thành công !", data: {
-                id: user._id,
-                fullname: user.fullname,
-                avatar: `${process.env.URL}${user.avatar}`,
-                email: user.email,
-                phone: user.phone,
-                username: user.username,
-                role: user.role,
-                status: user.status,
-                register_dat: user.register_dat,
-                description: user.description,
-                cart: user.cart,
-                wish: user.cart,
-            }
+        const data = {
+            id: user._id,
+            fullname: user.fullname,
+            avatar: `${process.env.URL}${user.avatar}`,
+            email: user.email,
+            phone: user.phone,
+            username: user.username,
+            role: user.role,
+            status: user.status,
+            register_dat: user.register_dat,
+            description: user.description,
+            cart: user.cart,
+            wish: user.cart,
         }
+
+        return { status: 200, message: "Thành công !", data: data }
+
     } catch (error) {
         console.log(error);
         throw error;
@@ -61,7 +62,7 @@ async function getQuery(query) {
 
         if (orderby) {
             const [sort, so] = sort.split("-");
-            sortCondition[sort] = so == "desc" ? -1 : 1;
+            sortCondition[sort] = so ? so == "desc" ? -1 : 1 : -1;
         } else {
             sortCondition._id = -1;
         }
@@ -116,7 +117,6 @@ async function cart(body) {
 
         await userModel.findByIdAndUpdate(user_id, { $set: { cart: cartNew } }, { new: true, runValidators: true })
 
-
         return { status: 200, message: "Thành công !" }
     } catch (error) {
         console.log(error);
@@ -140,7 +140,6 @@ async function wish(body) {
         }))
 
         await userModel.findByIdAndUpdate(user_id, { $set: { wish: wishNew } }, { new: true, runValidators: true })
-
 
         return { status: 200, message: "Thành công !" }
     } catch (error) {

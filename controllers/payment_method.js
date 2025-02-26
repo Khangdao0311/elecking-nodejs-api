@@ -10,11 +10,15 @@ module.exports = {
 async function getById(id) {
     try {
         const payment_method = await payment_methodModel.findById(id);
-        return {
+        if (!payment_method) return { status: 400, message: "Phương thức thanh toán không tồn tại !" }
+
+        const data = {
             id: payment_method._id,
             name: payment_method.name,
-            description: payment_methodModel.description,
+            description: payment_method.description,
         };
+
+        return { status: 200, message: "Thành công !", data: data }
     } catch (error) {
         console.log(error);
         throw error;
@@ -66,7 +70,8 @@ async function getQuery(query) {
             name: payment_method.name,
             description: payment_methodModel.description,
         }));
-        return data;
+
+        return { status: 200, message: "Thành công !", data: data }
     } catch (error) {
         console.log(error);
         throw error;

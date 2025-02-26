@@ -16,6 +16,7 @@ module.exports = {
 async function getById(id) {
     try {
         const product = await productModel.findById(id);
+        if (!product) return { status: 400, message: "Sản phẩm không tồn tại !" }
 
         const variants = [];
 
@@ -46,7 +47,7 @@ async function getById(id) {
         const brand = await brandModel.findById(product.brand_id)
         const category = await categoryModel.findById(product.category_id)
 
-        return {
+        const data = {
             id: product._id,
             name: product.name,
             images: product.images.map((image) => `${process.env.URL}${image}`),
@@ -63,6 +64,8 @@ async function getById(id) {
                 name: category.name
             },
         };
+
+        return { status: 200, message: "Thành công !", data: data }
     } catch (error) {
         console.log(error);
         throw error;
@@ -73,7 +76,7 @@ async function getQuery({ search, id, categoryid, price, orderby, page = 1, limi
     try {
         let matchCondition = {};
 
-        // Tìm kiếm sản phẩm theo tên Ví dụ: /product?search=tên sản phẩm
+        // Tìm kiếm sản phẩm theo tên
         if (search) {
             matchCondition.name = {
                 $regex: search,
@@ -81,21 +84,21 @@ async function getQuery({ search, id, categoryid, price, orderby, page = 1, limi
             };
         }
 
-        // Tìm kiếm sản phẩm theo nhiều id nối bằng dâu '-' Ví dụ: /product?id=321315135131221-45646465sa4dsad654-adasd65sad65sa4
+        // Tìm kiếm sản phẩm theo nhiều id nối bằng dâu '-'
         if (id) {
             matchCondition._id = {
                 $in: id.split("-").map((_id) => new ObjectId(_id)),
             };
         }
 
-        // Tìm kiếm sản phẩm theo nhiều id danh mục nối bằng dấu '-' Ví dụ: /product?categoryid=321315135131221-45646465sa4dsad654-adasd65sad65sa4
+        // Tìm kiếm sản phẩm theo nhiều id danh mục nối bằng dấu '-'
         if (categoryid) {
             matchCondition.category_id = {
                 $in: categoryid.split("-").map((idCat) => new ObjectId(idCat)),
             };
         }
 
-        // Tìm kiếm sản phẩm theo giá từ đên nối bằng dấu '-' Ví dụ: /product?price=100000-900000
+        // Tìm kiếm sản phẩm theo giá từ đên nối bằng dấu '-'
         if (price) {
             const [min, max] = price.split("-");
             matchCondition.finalPrice = {
@@ -106,20 +109,20 @@ async function getQuery({ search, id, categoryid, price, orderby, page = 1, limi
 
         let sortCondition = {};
 
-        // sắp xếp sản phẩm theo sort và so, nối bằng dấu '-' Ví dụ: /product?orderby=_id-desc
+        // sắp xếp sản phẩm theo sort và so, nối bằng dấu '-'
         if (orderby) {
             const [sort, so] = orderby.split("-");
             switch (sort) {
                 case "price":
-                    sortCondition.finalPrice = so == "desc" ? -1 : 1;
+                    sortCondition.finalPrice = so ? so == "desc" ? -1 : 1 : -1;
                     break;
 
                 case "sale":
-                    sortCondition.percent = so == "desc" ? -1 : 1;
+                    sortCondition.percent = so ? so == "desc" ? -1 : 1 : -1;
                     break;
 
                 default:
-                    sortCondition[sort] = so == "desc" ? -1 : 1;
+                    sortCondition[sort] = so ? so == "desc" ? -1 : 1 : -1;
                     break;
             }
         } else {
@@ -160,7 +163,7 @@ async function getQuery({ search, id, categoryid, price, orderby, page = 1, limi
                                     100
                                 ]
                             },
-                            0 // Làm tròn số nguyên ví dụ: 10.123 --> 10
+                            0 // Làm tròn số nguyên
                         ]
                     }
                 }
@@ -224,7 +227,7 @@ async function getQuery({ search, id, categoryid, price, orderby, page = 1, limi
             });
         }
 
-        return data;
+        return { status: 200, message: "Thành công !", data: data }
     } catch (error) {
         console.log(error);
         throw error;
@@ -235,7 +238,7 @@ async function getTotalPageByQuery({ search, id, categoryid, price, limit = 5 })
     try {
         let matchCondition = {};
 
-        // Tìm kiếm sản phẩm theo tên Ví dụ: /product?search=tên sản phẩm
+        // Tìm kiếm sản phẩm theo tên
         if (search) {
             matchCondition.name = {
                 $regex: search,
@@ -243,21 +246,21 @@ async function getTotalPageByQuery({ search, id, categoryid, price, limit = 5 })
             };
         }
 
-        // Tìm kiếm sản phẩm theo nhiều id nối bằng dâu '-' Ví dụ: /product?id=321315135131221-45646465sa4dsad654-adasd65sad65sa4
+        // Tìm kiếm sản phẩm theo nhiều id nối bằng dâu '-'
         if (id) {
             matchCondition._id = {
                 $in: id.split("-").map((_id) => new ObjectId(_id)),
             };
         }
 
-        // Tìm kiếm sản phẩm theo nhiều id danh mục nối bằng dấu '-' Ví dụ: /product?categoryid=321315135131221-45646465sa4dsad654-adasd65sad65sa4
+        // Tìm kiếm sản phẩm theo nhiều id danh mục nối bằng dấu '-'
         if (categoryid) {
             matchCondition.category_id = {
                 $in: categoryid.split("-").map((idCat) => new ObjectId(idCat)),
             };
         }
 
-        // Tìm kiếm sản phẩm theo giá từ đên nối bằng dấu '-' Ví dụ: /product?price=100000-900000
+        // Tìm kiếm sản phẩm theo giá từ đên nối bằng dấu '-'
         if (price) {
             const [min, max] = price.split("-");
             matchCondition.finalPrice = {
@@ -298,7 +301,7 @@ async function getTotalPageByQuery({ search, id, categoryid, price, limit = 5 })
                                     100
                                 ]
                             },
-                            0 // Làm tròn số nguyên ví dụ: 10.123 --> 10
+                            0 // Làm tròn số nguyên
                         ]
                     }
                 }
@@ -310,8 +313,8 @@ async function getTotalPageByQuery({ search, id, categoryid, price, limit = 5 })
 
         const data = Math.ceil(products.length / limit);
 
-        return data;
-    } catch (error) {
+        return { status: 200, message: "Thành công !", data: data }
+        } catch (error) {
         console.log(error);
         throw error;
     }
@@ -323,7 +326,7 @@ async function getSame(query) {
         const { id, limit = 5 } = query
 
         const product = await productModel.findById(id);
-        if (!product) throw new Error("Sản phẩm không tồn tại !");
+        if (!product) return { status: 400, message: "Sản phẩm không tồn tại !" }
 
         const category = await categoryModel.findById(product.category_id);
 
@@ -383,7 +386,7 @@ async function getSame(query) {
             });
         }
 
-        return data;
+        return { status: 200, message: "Thành công !", data: data }
     } catch (error) {
         console.log(error);
         throw error;

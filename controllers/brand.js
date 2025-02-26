@@ -10,7 +10,9 @@ module.exports = {
 async function getById(id) {
     try {
         const brand = await brandModel.findById(id);
-        return {
+        if (!brand) return { status: 400, message: "Thương hiệu không tồn tại !" }
+
+        const data = {
             id: brand._id,
             name: brand.name,
             logo: `${process.env.URL}${brand.logo}`,
@@ -18,6 +20,8 @@ async function getById(id) {
             status: brand.status,
             description: brand.description,
         };
+
+        return { status: 200, message: "Thành công !", data: data }
     } catch (error) {
         console.log(error);
         throw error;
@@ -48,7 +52,7 @@ async function getQuery(query) {
 
         if (orderby) {
             const [sort, so] = sort.split("-");
-            sortCondition[sort] = so == "desc" ? -1 : 1;
+            sortCondition[sort] = so ? so == "desc" ? -1 : 1 : -1;
         } else {
             sortCondition._id = -1;
         }
@@ -72,7 +76,8 @@ async function getQuery(query) {
             status: brand.status,
             description: brand.description,
         }));
-        return data;
+
+        return { status: 200, message: "Thành công !", data: data }
     } catch (error) {
         console.log(error);
         throw error;

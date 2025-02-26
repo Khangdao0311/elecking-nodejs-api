@@ -10,7 +10,9 @@ module.exports = {
 async function getById(id) {
     try {
         const category = await categoryModel.findById(id);
-        return {
+        if (!category) return { status: 400, message: "Danh mục không tồn tại !" }
+
+        const data = {
             id: category._id,
             name: category.name,
             image: `${process.env.URL}${category.image}`,
@@ -18,6 +20,8 @@ async function getById(id) {
             properties: category.properties,
             description: category.description,
         };
+
+        return { status: 200, messgae: "Thành công !", data: data }
     } catch (error) {
         console.log(error);
         throw error;
@@ -69,7 +73,8 @@ async function getQuery({ id, search, orderby, page = 1, limit = 5 }) {
             properties: category.properties,
             description: category.description,
         }));
-        return data;
+
+        return { status: 200, message: "Thành công !", data: data };
     } catch (error) {
         console.log(error);
         throw error;

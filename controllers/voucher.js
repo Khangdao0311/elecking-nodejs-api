@@ -10,7 +10,9 @@ module.exports = {
 async function getById(id) {
     try {
         const voucher = await voucherModel.findById(id);
-        return {
+        if (!voucher) return { status: 400, message: "Voucher không tồn tại !" }
+
+        const data = {
             id: voucher._id,
             code: voucher.code,
             discount_type: voucher.discount_type,
@@ -23,6 +25,8 @@ async function getById(id) {
             quantity: voucher.quantity,
             user_id: voucher.user_id,
         };
+
+        return { status: 200, message: "Thành công !", data: data }
     } catch (error) {
         console.log(error);
         throw error;
@@ -53,7 +57,7 @@ async function getQuery(query) {
 
         if (orderby) {
             const [sort, so] = sort.split("-");
-            sortCondition[sort] = so == "desc" ? -1 : 1;
+            sortCondition[sort] = so ? so == "desc" ? -1 : 1 : -1;
         } else {
             sortCondition._id = -1;
         }
@@ -82,7 +86,8 @@ async function getQuery(query) {
             quantity: voucher.quantity,
             user_id: voucher.user_id,
         }));
-        return data;
+
+        return { status: 200, message: "Thành công !", data: data }
     } catch (error) {
         console.log(error);
         throw error;

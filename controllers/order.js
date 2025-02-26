@@ -52,8 +52,8 @@ async function create(body) {
             address_id: new ObjectId(address_id)
         }, { versionKey: false });
 
-
         await orderNew.save();
+
         return { status: 200, message: "Thành công !" }
     } catch (error) {
         console.log(error);

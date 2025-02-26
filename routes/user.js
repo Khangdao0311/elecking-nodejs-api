@@ -3,7 +3,6 @@ var router = express.Router();
 
 const userController = require('../controllers/user')
 
-// lấy danh sách người dùng theo dữ liệu query
 router.get('/', async function (req, res, next) {
   try {
     const result = await userController.getQuery(req.query);
@@ -13,7 +12,6 @@ router.get('/', async function (req, res, next) {
   }
 });
 
-// lấy chi tiết người dùng dựa trên id
 router.get('/:id', async function (req, res, next) {
   try {
     const { id } = req.params
@@ -24,7 +22,6 @@ router.get('/:id', async function (req, res, next) {
   }
 });
 
-// 
 router.post('/cart', async function (req, res, next) {
   try {
     const result = await userController.cart(req.body)
@@ -34,7 +31,6 @@ router.post('/cart', async function (req, res, next) {
   }
 });
 
-// 
 router.post('/wish', async function (req, res, next) {
   try {
     const result = await userController.cart(req.body)

@@ -10,7 +10,9 @@ module.exports = {
 async function getById(id) {
     try {
         const address = await addressModel.findById(id);
-        return {
+        if (!address) return { status: 400, message: "Địa chỉ không tồn tại !" }
+
+        const data = {
             id: address._id,
             province: address.province,
             district: address.district,
@@ -22,6 +24,8 @@ async function getById(id) {
             default: address.name,
             user_id: address.user_id,
         };
+
+        return { status: 200, message: "Thành công !", data: data }
     } catch (error) {
         console.log(error);
         throw error;
@@ -52,7 +56,7 @@ async function getQuery(query) {
 
         if (orderby) {
             const [sort, so] = sort.split("-");
-            sortCondition[sort] = so == "desc" ? -1 : 1;
+            sortCondition[sort] = so ? so == "desc" ? -1 : 1 : -1;
         } else {
             sortCondition._id = -1;
         }
@@ -80,7 +84,8 @@ async function getQuery(query) {
             default: address.default,
             user_id: address.user_id,
         }));
-        return data;
+
+        return { status: 200, message: "Thành công !", data: data }
     } catch (error) {
         console.log(error);
         throw error;
