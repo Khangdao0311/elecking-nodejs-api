@@ -5,7 +5,7 @@ const ObjectId = Schema.ObjectId;
 const colorSchema = new Schema({
   name: { type: String },
   image: { type: String },
-  price_extra: { type: String },
+  price_extra: { type: Number },
   status: { type: Number },
   quantity: { type: Number },
 }, { _id: false, versionKey: false });

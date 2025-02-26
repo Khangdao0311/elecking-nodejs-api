@@ -317,8 +317,11 @@ async function getTotalPageByQuery({ search, id, categoryid, price, limit = 5 })
     }
 }
 
-async function getSame(id, limit) {
+async function getSame(query) {
     try {
+
+        const { id, limit = 5 } = query
+        
         const product = await productModel.findById(id);
         if (!product) throw new Error("Sản phẩm không tồn tại !");
 

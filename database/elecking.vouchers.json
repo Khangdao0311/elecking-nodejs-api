@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "67be9526ba2a5f843bca85b8"
+  },
+  "code": "VOUCHER 212313",
+  "discount_type": 1,
+  "discount_value": 100000,
+  "min_order_value": 0,
+  "max_discount": 100000,
+  "stare_date": 20250226,
+  "end_date": 20250228,
+  "status": 1,
+  "quantity": 10,
+  "user_id": null
+},
+{
+  "_id": {
+    "$oid": "67be9526ba2a5f843bca85b9"
+  },
+  "code": "DGSD 879461",
+  "discount_type": 2,
+  "discount_value": "10%",
+  "min_order_value": 0,
+  "max_discount": 100000,
+  "stare_date": 20250226,
+  "end_date": 20250228,
+  "status": 1,
+  "quantity": 10,
+  "user_id": null
+}]

@@ -6,6 +6,8 @@ const moment = require('moment');
 // nếu thanh toán thành công vnp_ResponseCode=00
 router.post('/create_payment_url', function (req, res, next) {
 
+    const { order_id, total } = req.body
+
     process.env.TZ = 'Asia/Ho_Chi_Minh';
 
     let date = new Date();
@@ -21,9 +23,9 @@ router.post('/create_payment_url', function (req, res, next) {
     let vnpUrl = process.env.vnp_Url;
     let returnUrl = process.env.vnp_ReturnUrl;
 
-    let orderId = req.body.order_id;
-    let amount = req.body.total;
-    let bankCode = req.body.bankCode;
+    let orderId = order_id;
+    let amount = total;
+    let bankCode = req.body.bankCode || "";
     // let bankCode = "NCB";
 
     let locale = req.body.language;
