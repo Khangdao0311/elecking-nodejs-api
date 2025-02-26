@@ -29,6 +29,7 @@ var orderRouter = require('./routes/order');
 var payment_methodRouter = require('./routes/payment_method');
 var addressRouter = require('./routes/address');
 var voucherRouter = require('./routes/voucher');
+var authRouter = require('./routes/auth');
 
 var app = express();
 
@@ -59,6 +60,7 @@ app.use('/order', orderRouter);
 app.use('/payment_method', payment_methodRouter);
 app.use('/voucher', voucherRouter);
 app.use('/address', addressRouter);
+app.use('/auth', authRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
