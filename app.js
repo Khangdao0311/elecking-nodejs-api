@@ -26,6 +26,9 @@ var productRouter = require('./routes/product');
 var userRouter = require('./routes/user');
 var checkoutRouter = require('./routes/checkout');
 var orderRouter = require('./routes/order');
+var payment_methodRouter = require('./routes/payment_method');
+var addressRouter = require('./routes/address');
+var voucherRouter = require('./routes/voucher');
 
 var app = express();
 
@@ -53,6 +56,9 @@ app.use('/product', productRouter);
 app.use('/user', userRouter);
 app.use('/checkout', checkoutRouter);
 app.use('/order', orderRouter);
+app.use('/payment_method', payment_methodRouter);
+app.use('/voucher', voucherRouter);
+app.use('/address', addressRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

@@ -8,7 +8,9 @@ const { ObjectId } = require("mongodb");
 const moment = require("moment");
 
 module.exports = {
-    create
+    create,
+    updateTransactionCode,
+    updateStatus
 };
 
 async function create(body) {
@@ -45,13 +47,46 @@ async function create(body) {
                 status: false
             })),
             user_id: new ObjectId(user_id),
-            voucher: voucher_id ? new ObjectId(voucher_id) : null,
+            voucher_id: voucher_id ? new ObjectId(voucher_id) : null,
             payment_method_id: payment_method_id,
             address_id: new ObjectId(address_id)
         }, { versionKey: false });
 
 
         await orderNew.save();
+        return { status: 200, message: "Thành công !" }
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
+async function updateTransactionCode(body) {
+    try {
+        const { order_id, transaction_code } = body
+        const order = await orderModel.findById(order_id)
+        if (!order) return { status: 400, message: "Đơn hàng không tồn tại !" }
+
+        await orderModel.findByIdAndUpdate(order_id, { $set: { transaction_code: transaction_code, payment_status: true } }, { new: true, runValidators: true })
+
+        return { status: 200, message: "Thành công !" }
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
+async function updateStatus(body) {
+    try {
+        const { order_id, status } = body
+
+        if (![0, 1, 2, 3].includes(+status)) return { status: 400, message: "Trạng thái không hợp lệ !" }
+
+        const order = await orderModel.findById(order_id)
+        if (!order) return { status: 400, message: "Đơn hàng không tồn tại !" }
+
+        await orderModel.findByIdAndUpdate(order_id, { $set: { status: status } }, { new: true, runValidators: true })
+
         return { status: 200, message: "Thành công !" }
     } catch (error) {
         console.log(error);

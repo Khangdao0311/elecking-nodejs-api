@@ -321,7 +321,7 @@ async function getSame(query) {
     try {
 
         const { id, limit = 5 } = query
-        
+
         const product = await productModel.findById(id);
         if (!product) throw new Error("Sản phẩm không tồn tại !");
 
@@ -389,9 +389,6 @@ async function getSame(query) {
         throw error;
     }
 }
-
-
-
 
 // async function insert(body) {
 //   try {
