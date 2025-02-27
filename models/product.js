@@ -26,7 +26,6 @@ const productSchema = new Schema({
   ],
   price: { type: Number },
   variants: [variantSchema],
-  status: { type: Number },
   view: { type: Number },
   description: { type: String },
   brand_id: { type: ObjectId, ref: "brand" },
