@@ -1,10 +1,12 @@
 var addressModel = require("../models/address");
+var userModel = require("../models/user");
 
 const { ObjectId } = require("mongodb");
 
 module.exports = {
     getById,
-    getQuery
+    getQuery,
+    getTotalPagesQuery
 };
 
 async function getById(id) {
@@ -32,10 +34,9 @@ async function getById(id) {
     }
 }
 
-
 async function getQuery(query) {
     try {
-        const { id, search, orderby, page = 1, limit = 5 } = query;
+        const { id, user_id, search, orderby, page = 1, limit = 5 } = query;
 
         let matchCondition = {};
 
@@ -52,11 +53,17 @@ async function getQuery(query) {
             };
         }
 
+        if (user_id) {
+            const user = await userModel.findById(user_id)
+            if (!user) return { status: 400, message: "Người dùng không tồn tại !" }
+            matchCondition.user_id = user._id
+        }
+
         let sortCondition = {};
 
         if (orderby) {
-            const [sort, so] = sort.split("-");
-            sortCondition[sort] = so ? so == "desc" ? -1 : 1 : -1;
+            const [sort, so] = orderby.split("-");
+            sortCondition[sort == "id" ? "_id" : sort] = so ? so == "desc" ? -1 : 1 : -1;
         } else {
             sortCondition._id = -1;
         }
@@ -81,9 +88,49 @@ async function getQuery(query) {
             phone: address.phone,
             fullname: address.fullname,
             type: address.type,
-            default: address.default,
+            setDefault: address.setDefault,
             user_id: address.user_id,
         }));
+
+        return { status: 200, message: "Thành công !", data: data }
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
+async function getTotalPagesQuery(query) {
+    try {
+        const { id, user_id, search, limit = 5 } = query;
+
+        let matchCondition = {};
+
+        if (search) {
+            matchCondition.name = {
+                $regex: search,
+                $options: "i",
+            };
+        }
+
+        if (id) {
+            matchCondition._id = {
+                $in: id.split("-").map((_id) => new ObjectId(_id)),
+            };
+        }
+
+        if (user_id) {
+            const user = await userModel.findById(user_id)
+            if (!user) return { status: 400, message: "Người dùng không tồn tại !" }
+            matchCondition.user_id = user._id
+        }
+
+        const pipeline = [
+            { $match: matchCondition },
+        ];
+
+        const addresss = await addressModel.aggregate(pipeline);
+
+        const data = Math.ceil(addresss.length / limit);
 
         return { status: 200, message: "Thành công !", data: data }
     } catch (error) {

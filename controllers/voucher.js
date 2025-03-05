@@ -4,7 +4,8 @@ const { ObjectId } = require("mongodb");
 
 module.exports = {
     getById,
-    getQuery
+    getQuery,
+    getTotalPagesByQuery
 };
 
 async function getById(id) {
@@ -19,7 +20,7 @@ async function getById(id) {
             discount_value: voucher.discount_value,
             min_order_value: voucher.min_order_value,
             max_discount: voucher.max_discount,
-            stare_date: voucher.stare_date,
+            start_date: voucher.start_date,
             end_date: voucher.end_date,
             status: voucher.status,
             quantity: voucher.quantity,
@@ -33,7 +34,6 @@ async function getById(id) {
     }
 }
 
-
 async function getQuery(query) {
     try {
         const { id, search, orderby, page = 1, limit = 5 } = query;
@@ -41,7 +41,7 @@ async function getQuery(query) {
         let matchCondition = {};
 
         if (search) {
-            matchCondition.name = {
+            matchCondition.code = {
                 $regex: search,
                 $options: "i",
             };
@@ -56,8 +56,8 @@ async function getQuery(query) {
         let sortCondition = {};
 
         if (orderby) {
-            const [sort, so] = sort.split("-");
-            sortCondition[sort] = so ? so == "desc" ? -1 : 1 : -1;
+            const [sort, so] = orderby.split("-");
+            sortCondition[sort == "id" ? "_id" : sort] = so ? so == "desc" ? -1 : 1 : -1;
         } else {
             sortCondition._id = -1;
         }
@@ -80,12 +80,46 @@ async function getQuery(query) {
             discount_value: voucher.discount_value,
             min_order_value: voucher.min_order_value,
             max_discount: voucher.max_discount,
-            stare_date: voucher.stare_date,
+            start_date: voucher.start_date,
             end_date: voucher.end_date,
             status: voucher.status,
             quantity: voucher.quantity,
             user_id: voucher.user_id,
         }));
+
+        return { status: 200, message: "Thành công !", data: data }
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
+async function getTotalPagesByQuery(query) {
+    try {
+        const { id, search, limit = 5 } = query;
+
+        let matchCondition = {};
+
+        if (search) {
+            matchCondition.name = {
+                $regex: search,
+                $options: "i",
+            };
+        }
+
+        if (id) {
+            matchCondition._id = {
+                $in: id.split("-").map((_id) => new ObjectId(_id)),
+            };
+        }
+
+        const pipeline = [
+            { $match: matchCondition },
+        ];
+
+        const vouchers = await voucherModel.aggregate(pipeline);
+
+        const data = Math.ceil(vouchers.length / limit);
 
         return { status: 200, message: "Thành công !", data: data }
     } catch (error) {

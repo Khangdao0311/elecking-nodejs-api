@@ -24,12 +24,16 @@ var categoryRouter = require('./routes/category');
 var brandRouter = require('./routes/brand');
 var productRouter = require('./routes/product');
 var userRouter = require('./routes/user');
-var checkoutRouter = require('./routes/checkout');
+var vnpayRouter = require('./routes/vnpay');
 var orderRouter = require('./routes/order');
 var payment_methodRouter = require('./routes/payment_method');
 var addressRouter = require('./routes/address');
 var voucherRouter = require('./routes/voucher');
 var authRouter = require('./routes/auth');
+var uploadRouter = require('./routes/upload');
+var mailRouter = require('./routes/mail');
+var propertyRouter = require('./routes/property');
+var reviewRouter = require('./routes/review');
 
 var app = express();
 
@@ -55,12 +59,16 @@ app.use('/category', categoryRouter);
 app.use('/brand', brandRouter);
 app.use('/product', productRouter);
 app.use('/user', userRouter);
-app.use('/checkout', checkoutRouter);
+app.use('/vnpay', vnpayRouter);
 app.use('/order', orderRouter);
 app.use('/payment_method', payment_methodRouter);
 app.use('/voucher', voucherRouter);
 app.use('/address', addressRouter);
 app.use('/auth', authRouter);
+app.use('/upload', uploadRouter);
+app.use('/mail', mailRouter);
+app.use('/property', propertyRouter);
+app.use('/review', reviewRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

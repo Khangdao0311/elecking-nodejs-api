@@ -14,7 +14,7 @@ const variantSchema = new Schema({
   property_ids: [
     { type: ObjectId, ref: "property" }
   ],
-  price_extra: { type: Number },
+  price: { type: Number },
   price_sale: { type: Number },
   colors: [colorSchema],
 }, { _id: false, versionKey: false });
@@ -24,7 +24,6 @@ const productSchema = new Schema({
   images: [
     { type: String }
   ],
-  price: { type: Number },
   variants: [variantSchema],
   view: { type: Number },
   description: { type: String },

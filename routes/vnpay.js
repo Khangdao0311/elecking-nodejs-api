@@ -3,7 +3,6 @@ let router = express.Router();
 const moment = require('moment');
 
 // body = {order_id: "HD123456", total: "1000000", bankCode: ""}
-// nếu thanh toán thành công vnp_ResponseCode=00
 router.post('/create_payment_url', function (req, res, next) {
 
     const { order_id, total } = req.body

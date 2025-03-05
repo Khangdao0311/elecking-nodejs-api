@@ -4,9 +4,12 @@ const ObjectId = Schema.ObjectId;
 
 const reviewSchema = new Schema({
     content: { type: String },
-    rating: { type: String },
-    creation_date: { type: String },
-    updation_date: { type: String },
+    images: [{ type: String }],
+    rating: { type: Number },
+    created_at: { type: String },
+    updated_at: { type: String },
+    order_id: { type: ObjectId, ref: "order" },
+    product_id: { type: ObjectId, ref: "product" },
     user_id: { type: ObjectId, ref: "user" },
 
 }, { versionKey: false });

@@ -1,1879 +1,2492 @@
 [{
   "_id": {
-    "$oid": "67b6de7341eb49476cd67bef"
+    "$oid": "67c1838bf8fb1305fa86e3d8"
   },
-  "name": "4GB",
-  "type": "ram",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398574"
-  }
+  "name": "2GB",
+  "type": "ram"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67bf0"
+    "$oid": "67c1838bf8fb1305fa86e3d9"
+  },
+  "name": "3GB",
+  "type": "ram"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3da"
+  },
+  "name": "4GB",
+  "type": "ram"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3db"
   },
   "name": "6GB",
-  "type": "ram",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398574"
-  }
+  "type": "ram"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67bf1"
+    "$oid": "67c1838bf8fb1305fa86e3dc"
   },
   "name": "8GB",
-  "type": "ram",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398574"
-  }
+  "type": "ram"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67bf2"
+    "$oid": "67c1838bf8fb1305fa86e3dd"
   },
   "name": "12GB",
-  "type": "ram",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398574"
-  }
+  "type": "ram"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67bf3"
+    "$oid": "67c1838bf8fb1305fa86e3de"
   },
   "name": "16GB",
-  "type": "ram",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398574"
-  }
+  "type": "ram"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67bf4"
-  },
-  "name": "18GB",
-  "type": "ram",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398574"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67bf5"
-  },
-  "name": "24GB",
-  "type": "ram",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398574"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67bf6"
-  },
-  "name": "64GB",
-  "type": "storage",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398574"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67bf7"
-  },
-  "name": "128GB",
-  "type": "storage",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398574"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67bf8"
-  },
-  "name": "256GB",
-  "type": "storage",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398574"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67bf9"
-  },
-  "name": "512GB",
-  "type": "storage",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398574"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67bfa"
-  },
-  "name": "1TB",
-  "type": "storage",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398574"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67bfb"
-  },
-  "name": "2TB",
-  "type": "storage",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398574"
-  }
-},
-
-
-
-
-
-
-
-
-
-
-
-
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67bfc"
-  },
-  "name": "4GB",
-  "type": "ram",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398575"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67bfd"
-  },
-  "name": "6GB",
-  "type": "ram",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398575"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67bfe"
-  },
-  "name": "8GB",
-  "type": "ram",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398575"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67bff"
-  },
-  "name": "12GB",
-  "type": "ram",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398575"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c00"
-  },
-  "name": "16GB",
-  "type": "ram",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398575"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c01"
-  },
-  "name": "18GB",
-  "type": "ram",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398575"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c02"
-  },
-  "name": "24GB",
-  "type": "ram",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398575"
-  }
-},
-
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c03"
-  },
-  "name": "64GB",
-  "type": "storage",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398575"
-  }
-},
-
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c04"
-  },
-  "name": "128GB",
-  "type": "storage",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398575"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c05"
-  },
-  "name": "256GB",
-  "type": "storage",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398575"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c06"
-  },
-  "name": "512GB",
-  "type": "storage",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398575"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c07"
-  },
-  "name": "1TB",
-  "type": "storage",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398575"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c08"
-  },
-  "name": "2TB",
-  "type": "storage",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398575"
-  }
-},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c09"
-  },
-  "name": "i3-1305U",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c0a"
-  },
-  "name": "i3-1215U",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c0b"
-  },
-  "name": "i5-13500H",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c0c"
-  },
-  "name": "i5-1235U",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c0d"
-  },
-  "name": "i7-13700H",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c0e"
-  },
-  "name": "i7-12650H",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c0f"
-  },
-  "name": "i9-13900HX",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c10"
-  },
-  "name": "i9-12900HK",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c11"
-  },
-  "name": "Xeon W-11955M",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c12"
-  },
-  "name": "R3-7330U",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c13"
-  },
-  "name": "R3-5300U",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c14"
-  },
-  "name": "R5-7640HS",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c15"
-  },
-  "name": "R5-5500U",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c16"
-  },
-  "name": "R7-7840HS",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c17"
-  },
-  "name": "R7-5800H",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c18"
-  },
-  "name": "R9-7945HX",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c19"
-  },
-  "name": "R9-6900HX",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c1a"
-  },
-  "name": "Threadripper Pro 5995WX",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c1b"
-  },
-  "name": "M1",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c1c"
-  },
-  "name": "M1 Pro",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c1d"
-  },
-  "name": "M2",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c1e"
-  },
-  "name": "M2 Max",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c1f"
-  },
-  "name": "M3",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c20"
-  },
-  "name": "M3 Pro",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c21"
-  },
-  "name": "M3 Max",
-  "type": "cpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c22"
-  },
-  "name": "RTX 4090",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c23"
-  },
-  "name": "RTX 4080",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c24"
-  },
-  "name": "RTX 4070",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c25"
-  },
-  "name": "RTX 4060",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c26"
-  },
-  "name": "RTX 4050",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c27"
-  },
-  "name": "RTX 5090",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c28"
-  },
-  "name": "RTX 5080",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c29"
-  },
-  "name": "RTX 5070 Ti",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c2a"
-  },
-  "name": "RTX 5070",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c2b"
-  },
-  "name": "RTX 4060 Ti",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c2c"
-  },
-  "name": "RTX 4060 Ti 16GB",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c2d"
-  },
-  "name": "RTX 4070 Ti",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c2e"
-  },
-  "name": "RTX 3080 Ti",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c2f"
-  },
-  "name": "RTX 3080",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c30"
-  },
-  "name": "RTX 3070 Ti",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c31"
-  },
-  "name": "RTX 3070",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c32"
-  },
-  "name": "RTX 3060",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c33"
-  },
-  "name": "RTX 3050 Ti",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c34"
-  },
-  "name": "RTX 3050",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c35"
-  },
-  "name": "RTX 2080 Super",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c36"
-  },
-  "name": "RTX 2080",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c37"
-  },
-  "name": "RTX 2070 Super",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c38"
-  },
-  "name": "RTX 2070",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c39"
-  },
-  "name": "RTX 2060",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c3a"
-  },
-  "name": "GTX 1660 Ti",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c3b"
-  },
-  "name": "GTX 1650 Ti",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c3c"
-  },
-  "name": "GTX 1650",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c3d"
-  },
-  "name": "MX550",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c3e"
-  },
-  "name": "MX450",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c3f"
-  },
-  "name": "MX350",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c40"
-  },
-  "name": "MX250",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c41"
-  },
-  "name": "Arc A770M",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c42"
-  },
-  "name": "Arc A730M",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c43"
-  },
-  "name": "Arc A550M",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c44"
-  },
-  "name": "Arc A370M",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c45"
-  },
-  "name": "Arc A350M",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c46"
-  },
-  "name": "Radeon RX 7900M",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c47"
-  },
-  "name": "Radeon RX 7800M",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c48"
-  },
-  "name": "Radeon RX 7700M",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c49"
-  },
-  "name": "Radeon RX 7600M",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c4a"
-  },
-  "name": "Radeon RX 7600M XT",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c4b"
-  },
-  "name": "Radeon RX 6800M",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c4c"
-  },
-  "name": "Radeon RX 6700M",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c4d"
-  },
-  "name": "Radeon RX 6600M",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c4e"
-  },
-  "name": "Radeon Pro W6600M",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c4f"
-  },
-  "name": "Radeon Pro W6800M",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c50"
-  },
-  "name": "Intel Iris Xe",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c51"
-  },
-  "name": "Intel UHD Graphics",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c52"
-  },
-  "name": "AMD Radeon Vega 8",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c53"
-  },
-  "name": "AMD Radeon RX 5500M",
-  "type": "gpu",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c54"
-  },
-  "name": "4GB",
-  "type": "ram",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c55"
-  },
-  "name": "8GB",
-  "type": "ram",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c56"
-  },
-  "name": "16GB",
-  "type": "ram",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c57"
+    "$oid": "67c1838bf8fb1305fa86e3df"
   },
   "name": "32GB",
-  "type": "ram",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
+  "type": "ram"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c58"
+    "$oid": "67c1838bf8fb1305fa86e3e0"
   },
   "name": "64GB",
-  "type": "ram",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
+  "type": "ram"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c59"
+    "$oid": "67c1838bf8fb1305fa86e3e1"
   },
   "name": "128GB",
-  "type": "ram",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
+  "type": "ram"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c5a"
-  },
-  "name": "128GB",
-  "type": "SSD",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c5b"
+    "$oid": "67c1838bf8fb1305fa86e3e2"
   },
   "name": "256GB",
-  "type": "SSD",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
+  "type": "ram"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c5c"
+    "$oid": "67c1838bf8fb1305fa86e3e3"
   },
   "name": "512GB",
-  "type": "SSD",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
+  "type": "ram"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c5d"
+    "$oid": "67c1838bf8fb1305fa86e3e4"
+  },
+  "name": "16GB",
+  "type": "storege"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3e5"
+  },
+  "name": "32GB",
+  "type": "storege"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3e6"
+  },
+  "name": "64GB",
+  "type": "storege"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3e7"
+  },
+  "name": "128GB",
+  "type": "storege"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3e8"
+  },
+  "name": "256GB",
+  "type": "storege"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3e9"
+  },
+  "name": "512GB",
+  "type": "storege"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3ea"
   },
   "name": "1TB",
-  "type": "SSD",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
+  "type": "storege"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c5e"
+    "$oid": "67c1838bf8fb1305fa86e3eb"
   },
   "name": "2TB",
-  "type": "SSD",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
+  "type": "storege"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c5f"
+    "$oid": "67c1838bf8fb1305fa86e3ec"
   },
   "name": "4TB",
-  "type": "SSD",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
+  "type": "storege"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c60"
+    "$oid": "67c1838bf8fb1305fa86e3ed"
+  },
+  "name": "8TB",
+  "type": "storege"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3ee"
+  },
+  "name": "i3-1215U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3ef"
+  },
+  "name": "i3-1305U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3f0"
+  },
+  "name": "i3-3220",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3f1"
+  },
+  "name": "i3-4130",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3f2"
+  },
+  "name": "i3-4150",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3f3"
+  },
+  "name": "i3-4330",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3f4"
+  },
+  "name": "i3-4360",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3f5"
+  },
+  "name": "i3-5005U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3f6"
+  },
+  "name": "i3-5020U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3f7"
+  },
+  "name": "i3-6006U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3f8"
+  },
+  "name": "i3-6100",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3f9"
+  },
+  "name": "i3-6300",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3fa"
+  },
+  "name": "i3-7100",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3fb"
+  },
+  "name": "i3-7300",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3fc"
+  },
+  "name": "i3-8100",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3fd"
+  },
+  "name": "i3-8350K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3fe"
+  },
+  "name": "i3-9100",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3ff"
+  },
+  "name": "i3-9350K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e400"
+  },
+  "name": "i3-10100",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e401"
+  },
+  "name": "i3-10100F",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e402"
+  },
+  "name": "i3-10100T",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e403"
+  },
+  "name": "i3-1115G4",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e404"
+  },
+  "name": "i5-2400",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e405"
+  },
+  "name": "i5-2500",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e406"
+  },
+  "name": "i5-3470",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e407"
+  },
+  "name": "i5-3550",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e408"
+  },
+  "name": "i5-3570",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e409"
+  },
+  "name": "i5-4570",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e40a"
+  },
+  "name": "i5-4670",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e40b"
+  },
+  "name": "i5-4690",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e40c"
+  },
+  "name": "i5-5200U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e40d"
+  },
+  "name": "i5-5300U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e40e"
+  },
+  "name": "i5-6300U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e40f"
+  },
+  "name": "i5-6400",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e410"
+  },
+  "name": "i5-6500",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e411"
+  },
+  "name": "i5-6600K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e412"
+  },
+  "name": "i5-7200U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e413"
+  },
+  "name": "i5-7400",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e414"
+  },
+  "name": "i5-7500",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e415"
+  },
+  "name": "i5-7600K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e416"
+  },
+  "name": "i5-8250U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e417"
+  },
+  "name": "i5-8400",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e418"
+  },
+  "name": "i5-8500",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e419"
+  },
+  "name": "i5-8600K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e41a"
+  },
+  "name": "i5-9400F",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e41b"
+  },
+  "name": "i5-9600K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e41c"
+  },
+  "name": "i5-1035G1",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e41d"
+  },
+  "name": "i5-1035G7",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e41e"
+  },
+  "name": "i5-10400",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e41f"
+  },
+  "name": "i5-10600K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e420"
+  },
+  "name": "i5-11400",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e421"
+  },
+  "name": "i5-1235U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e422"
+  },
+  "name": "i5-12600KF",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e423"
+  },
+  "name": "i5-13600K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e424"
+  },
+  "name": "i7-2600",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e425"
+  },
+  "name": "i7-2600K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e426"
+  },
+  "name": "i7-2700K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e427"
+  },
+  "name": "i7-3770",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e428"
+  },
+  "name": "i7-3770K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e429"
+  },
+  "name": "i7-3820",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e42a"
+  },
+  "name": "i7-3930K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e42b"
+  },
+  "name": "i7-3960X",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e42c"
+  },
+  "name": "i7-4770",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e42d"
+  },
+  "name": "i7-4770K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e42e"
+  },
+  "name": "i7-4790K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e42f"
+  },
+  "name": "i7-4930K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e430"
+  },
+  "name": "i7-4960X",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e431"
+  },
+  "name": "i7-5500U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e432"
+  },
+  "name": "i7-5600U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e433"
+  },
+  "name": "i7-6500U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e434"
+  },
+  "name": "i7-6600U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e435"
+  },
+  "name": "i7-7500U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e436"
+  },
+  "name": "i7-7700HQ",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e437"
+  },
+  "name": "i7-7700K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e438"
+  },
+  "name": "i7-8086K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e439"
+  },
+  "name": "i7-8550U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e43a"
+  },
+  "name": "i7-8665U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e43b"
+  },
+  "name": "i7-8700K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e43c"
+  },
+  "name": "i7-9700K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e43d"
+  },
+  "name": "i7-1065G7",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e43e"
+  },
+  "name": "i7-10700K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e43f"
+  },
+  "name": "i7-1165G7",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e440"
+  },
+  "name": "i7-11700K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e441"
+  },
+  "name": "i7-12700K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e442"
+  },
+  "name": "i7-13700K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e443"
+  },
+  "name": "i7-13700KF",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e444"
+  },
+  "name": "i9-7900X",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e445"
+  },
+  "name": "i9-9900K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e446"
+  },
+  "name": "i9-9980XE",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e447"
+  },
+  "name": "i9-10900K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e448"
+  },
+  "name": "i9-10900KF",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e449"
+  },
+  "name": "i9-10980XE",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e44a"
+  },
+  "name": "i9-11900K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e44b"
+  },
+  "name": "i9-12900K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e44c"
+  },
+  "name": "i9-12900KF",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e44d"
+  },
+  "name": "i9-13900K",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e44e"
+  },
+  "name": "R3 1200",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e44f"
+  },
+  "name": "R3 1300X",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e450"
+  },
+  "name": "R3 2200G",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e451"
+  },
+  "name": "R3 2300X",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e452"
+  },
+  "name": "R3 3100",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e453"
+  },
+  "name": "R3 3200G",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e454"
+  },
+  "name": "R3 3250U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e455"
+  },
+  "name": "R3 3300X",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e456"
+  },
+  "name": "R3 4300U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e457"
+  },
+  "name": "R5 1400",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e458"
+  },
+  "name": "R5 1500X",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e459"
+  },
+  "name": "R5 1600",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e45a"
+  },
+  "name": "R5 2400G",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e45b"
+  },
+  "name": "R5 2500U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e45c"
+  },
+  "name": "R5 2600",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e45d"
+  },
+  "name": "R5 3500X",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e45e"
+  },
+  "name": "R5 3500U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e45f"
+  },
+  "name": "R5 3550H",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e460"
+  },
+  "name": "R5 3600",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e461"
+  },
+  "name": "R5 3600X",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e462"
+  },
+  "name": "R5 4500U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e463"
+  },
+  "name": "R5 5600X",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e464"
+  },
+  "name": "R5 5600G",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e465"
+  },
+  "name": "R7 1700",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e466"
+  },
+  "name": "R7 1700X",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e467"
+  },
+  "name": "R7 1800X",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e468"
+  },
+  "name": "R7 2700",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e469"
+  },
+  "name": "R7 2700X",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e46a"
+  },
+  "name": "R7 3700X",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e46b"
+  },
+  "name": "R7 3700U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e46c"
+  },
+  "name": "R7 3750H",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e46d"
+  },
+  "name": "R7 3800X",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e46e"
+  },
+  "name": "R7 4800H",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e46f"
+  },
+  "name": "R7 4800U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e470"
+  },
+  "name": "R7 5800X",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e471"
+  },
+  "name": "R7 5800X3D",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e472"
+  },
+  "name": "R7 5800U",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e473"
+  },
+  "name": "R9 3900X",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e474"
+  },
+  "name": "R9 3900XT",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e475"
+  },
+  "name": "R9 3950X",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e476"
+  },
+  "name": "R9 4900H",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e477"
+  },
+  "name": "R9 4900HS",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e478"
+  },
+  "name": "R9 5900X",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e479"
+  },
+  "name": "R9 5900HX",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e47a"
+  },
+  "name": "R9 5950X",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e47b"
+  },
+  "name": "R9 7900X",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e47c"
+  },
+  "name": "R9 7950X",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e47d"
+  },
+  "name": "M1",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e47e"
+  },
+  "name": "M1 Pro",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e47f"
+  },
+  "name": "M1 Max",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e480"
+  },
+  "name": "M1 Ultra",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e481"
+  },
+  "name": "M2",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e482"
+  },
+  "name": "M2 Pro",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e483"
+  },
+  "name": "M2 Max",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e484"
+  },
+  "name": "M2 Ultra",
+  "type": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e485"
+  },
+  "name": "M1",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e486"
+  },
+  "name": "M2",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e487"
+  },
+  "name": "M3",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e488"
+  },
+  "name": "M4",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e489"
+  },
+  "name": "Adreno",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e48a"
+  },
+  "name": "MX570A",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e48b"
+  },
+  "name": "MX550",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e48c"
+  },
+  "name": "Intel HD",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e48d"
+  },
+  "name": "Intel Arc",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e48e"
+  },
+  "name": "Intel Arc 140V",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e48f"
+  },
+  "name": "Intel UHD",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e490"
+  },
+  "name": "Intel Graphics",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e491"
+  },
+  "name": "Intel Iris Xe",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e492"
+  },
+  "name": "RTX 2050",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e493"
+  },
+  "name": "RTX 2060",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e494"
+  },
+  "name": "RTX 3050",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e495"
+  },
+  "name": "RTX 3050 Ti",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e496"
+  },
+  "name": "RTX 3060 Ti",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e497"
+  },
+  "name": "RTX 3060",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e498"
+  },
+  "name": "RTX 3070",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e499"
+  },
+  "name": "RTX 3080",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e49a"
+  },
+  "name": "RTX 3090",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e49b"
+  },
+  "name": "RTX 4050",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e49c"
+  },
+  "name": "RTX 4060",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e49d"
+  },
+  "name": "RTX 4060 Ti",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e49e"
+  },
+  "name": "RTX 4070",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e49f"
+  },
+  "name": "RTX 4080",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4a0"
+  },
+  "name": "RTX 4090",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4a1"
+  },
+  "name": "RTX 5070",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4a2"
+  },
+  "name": "RTX 5070 Ti",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4a3"
+  },
+  "name": "RTX 5080",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4a4"
+  },
+  "name": "RTX 5090",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4a5"
+  },
+  "name": "GTX 1660 SUPER",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4a6"
+  },
+  "name": "GTX 1650",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4a7"
+  },
+  "name": "GTX 1660 Ti",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4a8"
+  },
+  "name": "AMD 890M",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4a9"
+  },
+  "name": "AMD Radeon",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4aa"
+  },
+  "name": "Radeon 880M",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ab"
+  },
+  "name": "RX 6600 XT",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ac"
+  },
+  "name": "RX 6600",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ad"
+  },
+  "name": "RX 6700 XT",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ae"
+  },
+  "name": "RX 7600S XT",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4af"
+  },
+  "name": "RX 7700 XT",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4b0"
+  },
+  "name": "RX 7800 XT",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4b1"
+  },
+  "name": "RX 6750 XT",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4b2"
+  },
+  "name": "RX 7900 XT",
+  "type": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4b3"
+  },
+  "name": "120GB",
+  "type": "ssd"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4b4"
+  },
+  "name": "128GB",
+  "type": "ssd"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4b5"
+  },
+  "name": "240GB",
+  "type": "ssd"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4b6"
+  },
+  "name": "250GB",
+  "type": "ssd"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4b7"
+  },
+  "name": "256GB",
+  "type": "ssd"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4b8"
+  },
+  "name": "480GB",
+  "type": "ssd"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4b9"
   },
   "name": "500GB",
-  "type": "HDD",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
+  "type": "ssd"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c61"
+    "$oid": "67c1838bf8fb1305fa86e4ba"
+  },
+  "name": "512GB",
+  "type": "ssd"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4bb"
+  },
+  "name": "960GB",
+  "type": "ssd"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4bc"
   },
   "name": "1TB",
-  "type": "HDD",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
+  "type": "ssd"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c62"
+    "$oid": "67c1838bf8fb1305fa86e4bd"
   },
   "name": "2TB",
-  "type": "HDD",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
+  "type": "ssd"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c63"
+    "$oid": "67c1838bf8fb1305fa86e4be"
   },
   "name": "4TB",
-  "type": "HDD",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398576"
-  }
+  "type": "ssd"
 },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c64"
+    "$oid": "67c1838bf8fb1305fa86e4bf"
+  },
+  "name": "8TB",
+  "type": "ssd"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4c0"
+  },
+  "name": "500GB",
+  "type": "hdd"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4c1"
+  },
+  "name": "1TB",
+  "type": "hdd"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4c2"
+  },
+  "name": "2TB",
+  "type": "hdd"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4c3"
+  },
+  "name": "4TB",
+  "type": "hdd"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4c4"
+  },
+  "name": "6TB",
+  "type": "hdd"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4c5"
+  },
+  "name": "8TB",
+  "type": "hdd"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4c6"
+  },
+  "name": "10TB",
+  "type": "hdd"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4c7"
+  },
+  "name": "12TB",
+  "type": "hdd"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4c8"
+  },
+  "name": "14TB",
+  "type": "hdd"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4c9"
+  },
+  "name": "16TB",
+  "type": "hdd"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ca"
+  },
+  "name": "18TB",
+  "type": "hdd"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4cb"
+  },
+  "name": "20TB",
+  "type": "hdd"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4cc"
+  },
+  "name": "22TB",
+  "type": "hdd"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4cd"
+  },
+  "name": "1.44 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ce"
+  },
+  "name": "1.77 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4cf"
+  },
+  "name": "1.8 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4d0"
+  },
+  "name": "2.4 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4d1"
+  },
+  "name": "2.8 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4d2"
+  },
+  "name": "3 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4d3"
+  },
+  "name": "3.5 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4d4"
+  },
+  "name": "4 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4d5"
+  },
+  "name": "4.3 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4d6"
+  },
+  "name": "4.7 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4d7"
+  },
+  "name": "5 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4d8"
+  },
+  "name": "5.5 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4d9"
+  },
+  "name": "5.99 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4da"
+  },
+  "name": "6 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4db"
+  },
+  "name": "6.1 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4dc"
+  },
+  "name": "6.2 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4dd"
+  },
+  "name": "6.3 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4de"
+  },
+  "name": "6.4 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4df"
+  },
+  "name": "6.5 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4e0"
+  },
+  "name": "6.6 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4e1"
+  },
+  "name": "6.67 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4e2"
+  },
+  "name": "6.7 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4e3"
+  },
+  "name": "6.8 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4e4"
+  },
+  "name": "6.9 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4e5"
+  },
+  "name": "7 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4e6"
+  },
+  "name": "7.9 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4e7"
+  },
+  "name": "8 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4e8"
+  },
+  "name": "8.3 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4e9"
+  },
+  "name": "8.7 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ea"
+  },
+  "name": "9 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4eb"
+  },
+  "name": "9.7 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ec"
+  },
+  "name": "10 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ed"
+  },
+  "name": "10.1 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ee"
+  },
+  "name": "10.2 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ef"
+  },
+  "name": "10.4 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4f0"
+  },
+  "name": "10.5 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4f1"
+  },
+  "name": "10.9 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4f2"
+  },
+  "name": "11 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4f3"
+  },
+  "name": "12 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4f4"
+  },
+  "name": "12.3 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4f5"
+  },
+  "name": "12.4 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4f6"
+  },
+  "name": "12.9 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4f7"
+  },
+  "name": "13 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4f8"
+  },
+  "name": "13.3 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4f9"
+  },
+  "name": "13.6 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4fa"
+  },
+  "name": "14 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4fb"
+  },
+  "name": "14.2 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4fc"
+  },
+  "name": "15 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4fd"
+  },
+  "name": "15.3 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4fe"
+  },
+  "name": "15.6 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ff"
+  },
+  "name": "16 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e500"
+  },
+  "name": "16.2 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e501"
+  },
+  "name": "17 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e502"
+  },
+  "name": "17.3 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e503"
+  },
+  "name": "18 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e504"
   },
   "name": "19 inch",
-  "type": "screen_size",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
+  "type": "screen_size"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c65"
+    "$oid": "67c1838bf8fb1305fa86e505"
   },
-  "name": "21.5 inch",
-  "type": "screen_size",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
+  "name": "20 inch",
+  "type": "screen_size"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c66"
+    "$oid": "67c1838bf8fb1305fa86e506"
   },
-  "name": "23 inch",
-  "type": "screen_size",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
+  "name": "21 inch",
+  "type": "screen_size"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c67"
+    "$oid": "67c1838bf8fb1305fa86e507"
+  },
+  "name": "22 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e508"
+  },
+  "name": "23.8 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e509"
   },
   "name": "24 inch",
-  "type": "screen_size",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
+  "type": "screen_size"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c68"
+    "$oid": "67c1838bf8fb1305fa86e50a"
+  },
+  "name": "24.5 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e50b"
+  },
+  "name": "25 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e50c"
   },
   "name": "27 inch",
-  "type": "screen_size",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
+  "type": "screen_size"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c69"
+    "$oid": "67c1838bf8fb1305fa86e50d"
   },
   "name": "29 inch",
-  "type": "screen_size",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
+  "type": "screen_size"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c6a"
+    "$oid": "67c1838bf8fb1305fa86e50e"
+  },
+  "name": "30 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e50f"
+  },
+  "name": "31.5 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e510"
   },
   "name": "32 inch",
-  "type": "screen_size",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
+  "type": "screen_size"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c6b"
+    "$oid": "67c1838bf8fb1305fa86e511"
   },
-  "name": "HD",
-  "type": "resolution",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
+  "name": "34 inch",
+  "type": "screen_size"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c6c"
-  },
-  "name": "Full HD",
-  "type": "resolution",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c6d"
-  },
-  "name": "2K",
-  "type": "resolution",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c6e"
-  },
-  "name": "4K UHD",
-  "type": "resolution",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c6f"
-  },
-  "name": "5K",
-  "type": "resolution",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c70"
-  },
-  "name": "8K UHD",
-  "type": "resolution",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c71"
-  },
-  "name": "60Hz",
-  "type": "refresh_rate",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c72"
-  },
-  "name": "75Hz",
-  "type": "refresh_rate",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c73"
-  },
-  "name": "90Hz",
-  "type": "refresh_rate",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c9c"
-  },
-  "name": "100Hz",
-  "type": "refresh_rate",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b539857b"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c74"
-  },
-  "name": "120Hz",
-  "type": "refresh_rate",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c75"
-  },
-  "name": "144Hz",
-  "type": "refresh_rate",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c76"
-  },
-  "name": "165Hz",
-  "type": "refresh_rate",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c77"
-  },
-  "name": "180Hz",
-  "type": "refresh_rate",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c78"
-  },
-  "name": "240Hz",
-  "type": "refresh_rate",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c79"
-  },
-  "name": "300Hz",
-  "type": "refresh_rate",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c7a"
-  },
-  "name": "360Hz",
-  "type": "refresh_rate",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c7b"
-  },
-  "name": "500Hz",
-  "type": "refresh_rate",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398577"
-  }
-},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c7c"
-  },
-  "name": "32 inch",
-  "type": "screen_size",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398578"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c7d"
+    "$oid": "67c1838bf8fb1305fa86e512"
   },
   "name": "40 inch",
-  "type": "screen_size",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398578"
-  }
+  "type": "screen_size"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c7e"
+    "$oid": "67c1838bf8fb1305fa86e513"
+  },
+  "name": "42 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e514"
   },
   "name": "43 inch",
-  "type": "screen_size",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398578"
-  }
+  "type": "screen_size"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c7f"
+    "$oid": "67c1838bf8fb1305fa86e515"
+  },
+  "name": "48 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e516"
   },
   "name": "49 inch",
-  "type": "screen_size",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398578"
-  }
+  "type": "screen_size"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c80"
+    "$oid": "67c1838bf8fb1305fa86e517"
   },
   "name": "50 inch",
-  "type": "screen_size",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398578"
-  }
+  "type": "screen_size"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c81"
+    "$oid": "67c1838bf8fb1305fa86e518"
   },
   "name": "55 inch",
-  "type": "screen_size",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398578"
-  }
+  "type": "screen_size"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c82"
+    "$oid": "67c1838bf8fb1305fa86e519"
   },
-  "name": "58 inch",
-  "type": "screen_size",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398578"
-  }
+  "name": "60 inch",
+  "type": "screen_size"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c83"
+    "$oid": "67c1838bf8fb1305fa86e51a"
   },
   "name": "65 inch",
-  "type": "screen_size",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398578"
-  }
+  "type": "screen_size"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c84"
+    "$oid": "67c1838bf8fb1305fa86e51b"
+  },
+  "name": "70 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e51c"
   },
   "name": "75 inch",
-  "type": "screen_size",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398578"
-  }
+  "type": "screen_size"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c85"
+    "$oid": "67c1838bf8fb1305fa86e51d"
+  },
+  "name": "77 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e51e"
   },
   "name": "85 inch",
-  "type": "screen_size",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398578"
-  }
+  "type": "screen_size"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c86"
+    "$oid": "67c1838bf8fb1305fa86e51f"
+  },
+  "name": "86 inch",
+  "type": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e520"
   },
   "name": "98 inch",
-  "type": "screen_size",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398578"
-  }
+  "type": "screen_size"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c87"
+    "$oid": "67c1838bf8fb1305fa86e521"
   },
-  "name": "HD",
-  "type": "resolution",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398578"
-  }
+  "name": "30Hz",
+  "type": "refresh_rate"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c88"
+    "$oid": "67c1838bf8fb1305fa86e522"
   },
-  "name": "Full HD",
-  "type": "resolution",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398578"
-  }
+  "name": "48Hz",
+  "type": "refresh_rate"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c89"
+    "$oid": "67c1838bf8fb1305fa86e523"
   },
-  "name": "2K",
-  "type": "resolution",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398578"
-  }
+  "name": "50Hz",
+  "type": "refresh_rate"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c8a"
-  },
-  "name": "4K UHD",
-  "type": "resolution",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398578"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c8b"
-  },
-  "name": "8K UHD",
-  "type": "resolution",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398578"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c8c"
+    "$oid": "67c1838bf8fb1305fa86e524"
   },
   "name": "60Hz",
-  "type": "refresh_rate",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398578"
-  }
+  "type": "refresh_rate"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c8d"
+    "$oid": "67c1838bf8fb1305fa86e525"
   },
   "name": "75Hz",
-  "type": "refresh_rate",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398578"
-  }
+  "type": "refresh_rate"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c8e"
+    "$oid": "67c1838bf8fb1305fa86e526"
+  },
+  "name": "90Hz",
+  "type": "refresh_rate"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e527"
+  },
+  "name": "100Hz",
+  "type": "refresh_rate"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e528"
   },
   "name": "120Hz",
-  "type": "refresh_rate",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398578"
-  }
+  "type": "refresh_rate"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c8f"
+    "$oid": "67c1838bf8fb1305fa86e529"
   },
   "name": "144Hz",
-  "type": "refresh_rate",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398578"
-  }
+  "type": "refresh_rate"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c90"
+    "$oid": "67c1838bf8fb1305fa86e52a"
   },
   "name": "165Hz",
-  "type": "refresh_rate",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398578"
-  }
+  "type": "refresh_rate"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c91"
+    "$oid": "67c1838bf8fb1305fa86e52b"
+  },
+  "name": "170Hz",
+  "type": "refresh_rate"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e52c"
+  },
+  "name": "180Hz",
+  "type": "refresh_rate"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e52d"
+  },
+  "name": "200Hz",
+  "type": "refresh_rate"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e52e"
   },
   "name": "240Hz",
-  "type": "refresh_rate",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b5398578"
-  }
-},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{
-  "_id": {
-    "$oid": "67b6de7341eb49476cd67c92"
-  },
-  "name": "Dây silicon",
-  "type": "watch_band",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b539857b"
-  }
+  "type": "refresh_rate"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c93"
+    "$oid": "67c1838bf8fb1305fa86e52f"
   },
-  "name": "Dây cao su",
-  "type": "watch_band",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b539857b"
-  }
+  "name": "300Hz",
+  "type": "refresh_rate"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c94"
+    "$oid": "67c1838bf8fb1305fa86e530"
   },
-  "name": "Dây kim loại",
-  "type": "watch_band",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b539857b"
-  }
+  "name": "360Hz",
+  "type": "refresh_rate"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c95"
+    "$oid": "67c1838bf8fb1305fa86e531"
   },
-  "name": "Dây thép không gỉ",
-  "type": "watch_band",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b539857b"
-  }
+  "name": "480Hz",
+  "type": "refresh_rate"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c96"
+    "$oid": "67c1838bf8fb1305fa86e532"
   },
-  "name": "Dây da",
-  "type": "watch_band",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b539857b"
-  }
+  "name": "500Hz",
+  "type": "refresh_rate"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c97"
+    "$oid": "67c1838bf8fb1305fa86e533"
   },
-  "name": "Dây vải",
-  "type": "watch_band",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b539857b"
-  }
+  "name": "540Hz",
+  "type": "refresh_rate"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c98"
+    "$oid": "67c1838bf8fb1305fa86e534"
   },
-  "name": "Dây nylon",
-  "type": "watch_band",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b539857b"
-  }
+  "name": "600Hz",
+  "type": "refresh_rate"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c99"
+    "$oid": "67c1838bf8fb1305fa86e535"
   },
-  "name": "Dây gốm",
-  "type": "watch_band",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b539857b"
-  }
+  "name": "HD",
+  "type": "resolution"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c9a"
+    "$oid": "67c1838bf8fb1305fa86e536"
   },
-  "name": "Dây titan",
-  "type": "watch_band",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b539857b"
-  }
+  "name": "Full HD",
+  "type": "resolution"
 },
 {
   "_id": {
-    "$oid": "67b6de7341eb49476cd67c9b"
+    "$oid": "67c1838bf8fb1305fa86e537"
   },
-  "name": "Dây fluoroelastomer",
-  "type": "watch_band",
-  "category_id": {
-    "$oid": "67b6cf1a3a893726b539857b"
-  }
-}
-
-]
+  "name": "2K",
+  "type": "resolution"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e538"
+  },
+  "name": "4K",
+  "type": "resolution"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e539"
+  },
+  "name": "5K",
+  "type": "resolution"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e53a"
+  },
+  "name": "6K",
+  "type": "resolution"
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e53b"
+  },
+  "name": "8K",
+  "type": "resolution"
+}]

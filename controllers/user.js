@@ -7,8 +7,7 @@ const product = require("../models/product");
 module.exports = {
     getById,
     getQuery,
-    cart,
-    wish
+    getTotalPagesByQuery
 };
 
 async function getById(id) {
@@ -19,14 +18,13 @@ async function getById(id) {
         const data = {
             id: user._id,
             fullname: user.fullname,
-            avatar: `${process.env.URL}${user.avatar}`,
+            avatar: user.avatar ? `${process.env.URL}${user.avatar}` : "",
             email: user.email,
             phone: user.phone,
             username: user.username,
             role: user.role,
             status: user.status,
-            register_dat: user.register_dat,
-            description: user.description,
+            register_date: user.register_date,
             cart: user.cart,
             wish: user.cart,
         }
@@ -61,8 +59,8 @@ async function getQuery(query) {
         let sortCondition = {};
 
         if (orderby) {
-            const [sort, so] = sort.split("-");
-            sortCondition[sort] = so ? so == "desc" ? -1 : 1 : -1;
+            const [sort, so] = orderby.split("-");
+            sortCondition[sort == "id" ? "_id" : sort] = so ? so == "desc" ? -1 : 1 : -1;
         } else {
             sortCondition._id = -1;
         }
@@ -81,16 +79,15 @@ async function getQuery(query) {
         const data = users.map((user) => ({
             id: user._id,
             fullname: user.fullname,
-            avatar: `${process.env.URL}${user.avatar}`,
+            avatar: user.avatar ? `${process.env.URL}${user.avatar}` : "",
             email: user.email,
             phone: user.phone,
             username: user.username,
             role: user.role,
             status: user.status,
-            register_dat: user.register_dat,
-            description: user.description,
-            cart: user.cart,
-            wish: user.cart,
+            register_date: user.register_date,
+            // cart: user.cart,
+            // wish: user.cart,
         }));
 
         return { status: 200, message: "Thành công !", data: data };
@@ -100,48 +97,34 @@ async function getQuery(query) {
     }
 }
 
-async function cart(body) {
+async function getTotalPagesByQuery(query) {
     try {
-        const { user_id, cart } = body
+        const { id, search, limit = 5 } = query;
 
-        const user = await userModel.findById(user_id)
-        if (!user) return { status: 400, message: "Người dùng không tồn tại !" }
+        let matchCondition = {};
 
-        const cartNew = JSON.parse(cart).map(c => ({
-            ...c,
-            product: {
-                ...c.product,
-                id: new ObjectId(c.product.id)
-            }
-        }))
+        if (search) {
+            matchCondition.$or = [
+                { fullname: { $regex: search, $options: "i" } },
+                { username: { $regex: search, $options: "i" } }
+            ];
+        }
 
-        await userModel.findByIdAndUpdate(user_id, { $set: { cart: cartNew } }, { new: true, runValidators: true })
+        if (id) {
+            matchCondition._id = {
+                $in: id.split("-").map((_id) => new ObjectId(_id)),
+            };
+        }
 
-        return { status: 200, message: "Thành công !" }
-    } catch (error) {
-        console.log(error);
-        throw error;
-    }
-}
+        const pipeline = [
+            { $match: matchCondition },
+        ];
 
-async function wish(body) {
-    try {
-        const { user_id, wish } = body
+        const users = await userModel.aggregate(pipeline);
 
-        const user = await userModel.findById(user_id)
-        if (!user) return { status: 400, message: "Người dùng không tồn tại !" }
+        const data = Math.ceil(users.length / limit);
 
-        const wishNew = JSON.parse(wish).map(c => ({
-            ...c,
-            product: {
-                ...c.product,
-                id: new ObjectId(c.product.id)
-            }
-        }))
-
-        await userModel.findByIdAndUpdate(user_id, { $set: { wish: wishNew } }, { new: true, runValidators: true })
-
-        return { status: 200, message: "Thành công !" }
+        return { status: 200, message: "Thành công !", data: data };
     } catch (error) {
         console.log(error);
         throw error;

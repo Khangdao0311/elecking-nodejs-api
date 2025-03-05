@@ -1,29 +1,149 @@
 [{
   "_id": {
-    "$oid": "67be9526ba2a5f843bca85b8"
+    "$oid": "67c3e03aa3c0c5e439598e33"
   },
-  "code": "VOUCHER 212313",
+  "code": "SALE100K",
   "discount_type": 1,
   "discount_value": 100000,
-  "min_order_value": 0,
+  "min_order_value": 500000,
   "max_discount": 100000,
-  "stare_date": 20250226,
-  "end_date": 20250228,
+  "start_date": "20250301",
+  "end_date": "20250331",
   "status": 1,
   "quantity": 10,
   "user_id": null
 },
 {
   "_id": {
-    "$oid": "67be9526ba2a5f843bca85b9"
+    "$oid": "67c3e03aa3c0c5e439598e34"
   },
-  "code": "DGSD 879461",
+  "code": "DISCOUNT50K",
+  "discount_type": 1,
+  "discount_value": 50000,
+  "min_order_value": 300000,
+  "max_discount": 50000,
+  "start_date": "20250305",
+  "end_date": "20250405",
+  "status": 1,
+  "quantity": 10,
+  "user_id": null
+},
+{
+  "_id": {
+    "$oid": "67c3e03aa3c0c5e439598e35"
+  },
+  "code": "GIA50",
   "discount_type": 2,
-  "discount_value": "10%",
-  "min_order_value": 0,
+  "discount_value": 50,
+  "min_order_value": 200000,
   "max_discount": 100000,
-  "stare_date": 20250226,
-  "end_date": 20250228,
+  "start_date": "20250220",
+  "end_date": "20250320",
+  "status": 1,
+  "quantity": 10,
+  "user_id": null
+},
+{
+  "_id": {
+    "$oid": "67c3e03aa3c0c5e439598e36"
+  },
+  "code": "VIP20",
+  "discount_type": 2,
+  "discount_value": 20,
+  "min_order_value": 100000,
+  "max_discount": 50000,
+  "start_date": "20250310",
+  "end_date": "20250410",
+  "status": 1,
+  "quantity": 10,
+  "user_id": null
+},
+{
+  "_id": {
+    "$oid": "67c3e03aa3c0c5e439598e37"
+  },
+  "code": "HOTDEAL30K",
+  "discount_type": 1,
+  "discount_value": 30000,
+  "min_order_value": 200000,
+  "max_discount": 30000,
+  "start_date": "20250315",
+  "end_date": "20250330",
+  "status": 1,
+  "quantity": 10,
+  "user_id": null
+},
+{
+  "_id": {
+    "$oid": "67c3e03aa3c0c5e439598e38"
+  },
+  "code": "SUMMER10",
+  "discount_type": 2,
+  "discount_value": 10,
+  "min_order_value": 150000,
+  "max_discount": 30000,
+  "start_date": "20250320",
+  "end_date": "20250420",
+  "status": 1,
+  "quantity": 10,
+  "user_id": null
+},
+{
+  "_id": {
+    "$oid": "67c3e03aa3c0c5e439598e39"
+  },
+  "code": "NEWUSER100K",
+  "discount_type": 1,
+  "discount_value": 100000,
+  "min_order_value": 400000,
+  "max_discount": 100000,
+  "start_date": "20250225",
+  "end_date": "20250325",
+  "status": 1,
+  "quantity": 10,
+  "user_id": null
+},
+{
+  "_id": {
+    "$oid": "67c3e03aa3c0c5e439598e3a"
+  },
+  "code": "LUCKY25",
+  "discount_type": 2,
+  "discount_value": 25,
+  "min_order_value": 500000,
+  "max_discount": 150000,
+  "start_date": "20250305",
+  "end_date": "20250331",
+  "status": 1,
+  "quantity": 10,
+  "user_id": null
+},
+{
+  "_id": {
+    "$oid": "67c3e03aa3c0c5e439598e3b"
+  },
+  "code": "TET200K",
+  "discount_type": 1,
+  "discount_value": 200000,
+  "min_order_value": 800000,
+  "max_discount": 200000,
+  "start_date": "20250115",
+  "end_date": "20250215",
+  "status": 1,
+  "quantity": 10,
+  "user_id": null
+},
+{
+  "_id": {
+    "$oid": "67c3e03aa3c0c5e439598e3c"
+  },
+  "code": "FLASHSALE5",
+  "discount_type": 2,
+  "discount_value": 5,
+  "min_order_value": 100000,
+  "max_discount": 20000,
+  "start_date": "20250301",
+  "end_date": "20250307",
   "status": 1,
   "quantity": 10,
   "user_id": null

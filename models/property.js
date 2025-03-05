@@ -5,7 +5,6 @@ const ObjectId = Schema.ObjectId;
 const propertySchema = new Schema({
   name: { type: String },
   type: { type: String },
-  category_id: { type: ObjectId, ref: "category" },
 
 }, { versionKey: false });
 

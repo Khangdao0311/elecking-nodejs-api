@@ -3,13 +3,14 @@ const productModel = require("../models/product");
 const brandModel = require("../models/brand");
 const categoryModel = require("../models/category");
 const propertyModel = require("../models/property");
+const reviewModel = require("../models/review");
 
 const { ObjectId } = require("mongodb");
 
 module.exports = {
     getById,
     getQuery,
-    getTotalPageByQuery,
+    getTotalPagesByQuery,
     getSame
 };
 
@@ -26,13 +27,13 @@ async function getById(id) {
             const propertyNames = [];
             for (const property_id of variant.property_ids) {
                 const property = await propertyModel.findById(property_id);
-                propertyNames.push(property?.name);
+                propertyNames.push({ name: property?.name, type: property?.type });
             }
 
             // thêm variant vào variants
             variants.push({
                 properties: propertyNames,
-                price_extra: variant.price_extra,
+                price: variant.price,
                 price_sale: variant.price_sale,
                 colors: variant.colors.map((color) => ({
                     name: color.name,
@@ -44,6 +45,10 @@ async function getById(id) {
             });
         }
 
+        const reviews = await reviewModel.find({ product_id: product._id })
+        let rating = null
+        if (reviews.length) rating = reviews.reduce((sum, e) => sum + e.rating, 0) / reviews.length
+
         const brand = await brandModel.findById(product.brand_id)
         const category = await categoryModel.findById(product.category_id)
 
@@ -51,9 +56,9 @@ async function getById(id) {
             id: product._id,
             name: product.name,
             images: product.images.map((image) => `${process.env.URL}${image}`),
-            price: product.price,
             variants: variants,
             view: product.view,
+            rating: rating,
             description: product.description,
             brand: {
                 id: brand._id,
@@ -122,7 +127,7 @@ async function getQuery({ search, id, categoryid, price, orderby, page = 1, limi
                     break;
 
                 default:
-                    sortCondition[sort] = so ? so == "desc" ? -1 : 1 : -1;
+                    sortCondition[sort == "id" ? "_id" : sort] = so ? so == "desc" ? -1 : 1 : -1;
                     break;
             }
         } else {
@@ -136,7 +141,7 @@ async function getQuery({ search, id, categoryid, price, orderby, page = 1, limi
                 $addFields: {
                     finalPrice: {
                         $subtract: [
-                            { $add: ["$price", { $ifNull: [{ $arrayElemAt: ["$variants.price_extra", 0] }, 0] }] },
+                            { $arrayElemAt: ["$variants.price", 0] },
                             { $ifNull: [{ $arrayElemAt: ["$variants.price_sale", 0] }, 0] }
                         ]
                     },
@@ -146,18 +151,8 @@ async function getQuery({ search, id, categoryid, price, orderby, page = 1, limi
                                 $multiply: [
                                     {
                                         $divide: [
-                                            {
-                                                $subtract: [
-                                                    "$price",
-                                                    {
-                                                        $subtract: [
-                                                            { $add: ["$price", { $ifNull: [{ $arrayElemAt: ["$variants.price_extra", 0] }, 0] }] },
-                                                            { $ifNull: [{ $arrayElemAt: ["$variants.price_sale", 0] }, 0] }
-                                                        ]
-                                                    }
-                                                ]
-                                            },
-                                            "$price"
+                                            { $ifNull: [{ $arrayElemAt: ["$variants.price_sale", 0] }, 0] },
+                                            { $arrayElemAt: ["$variants.price", 0] }
                                         ]
                                     },
                                     100
@@ -188,12 +183,12 @@ async function getQuery({ search, id, categoryid, price, orderby, page = 1, limi
 
                 for (const property_id of variant.property_ids) {
                     const property = await propertyModel.findById(property_id);
-                    propertyNames.push(property?.name);
+                    propertyNames.push({ name: property?.name, type: property?.type });
                 }
 
                 variants.push({
                     properties: propertyNames,
-                    price_extra: variant.price_extra,
+                    price: variant.price,
                     price_sale: variant.price_sale,
                     colors: variant.colors.map((color) => ({
                         name: color.name,
@@ -205,6 +200,11 @@ async function getQuery({ search, id, categoryid, price, orderby, page = 1, limi
                 });
             }
 
+            // tính toán xem sản phẩm bao nhiêu sao
+            const reviews = await reviewModel.find({ product_id: product._id })
+            let rating = null
+            if (reviews.length) rating = reviews.reduce((sum, e) => sum + e.rating, 0) / reviews.length
+
             const brand = await brandModel.findById(product.brand_id)
             const category = await categoryModel.findById(product.category_id)
 
@@ -212,9 +212,9 @@ async function getQuery({ search, id, categoryid, price, orderby, page = 1, limi
                 id: product._id,
                 name: product.name,
                 images: product.images.map((image) => `${process.env.URL}${image}`),
-                price: product.price,
                 variants: variants,
                 view: product.view,
+                rating: rating,
                 description: product.description,
                 brand: {
                     id: brand._id,
@@ -234,7 +234,7 @@ async function getQuery({ search, id, categoryid, price, orderby, page = 1, limi
     }
 }
 
-async function getTotalPageByQuery({ search, id, categoryid, price, limit = 5 }) {
+async function getTotalPagesByQuery({ search, id, categoryid, price, limit = 5 }) {
     try {
         let matchCondition = {};
 
@@ -274,7 +274,7 @@ async function getTotalPageByQuery({ search, id, categoryid, price, limit = 5 })
                 $addFields: {
                     finalPrice: {
                         $subtract: [
-                            { $add: ["$price", { $ifNull: [{ $arrayElemAt: ["$variants.price_extra", 0] }, 0] }] },
+                            { $arrayElemAt: ["$variants.price", 0] },
                             { $ifNull: [{ $arrayElemAt: ["$variants.price_sale", 0] }, 0] }
                         ]
                     },
@@ -284,18 +284,8 @@ async function getTotalPageByQuery({ search, id, categoryid, price, limit = 5 })
                                 $multiply: [
                                     {
                                         $divide: [
-                                            {
-                                                $subtract: [
-                                                    "$price",
-                                                    {
-                                                        $subtract: [
-                                                            { $add: ["$price", { $ifNull: [{ $arrayElemAt: ["$variants.price_extra", 0] }, 0] }] },
-                                                            { $ifNull: [{ $arrayElemAt: ["$variants.price_sale", 0] }, 0] }
-                                                        ]
-                                                    }
-                                                ]
-                                            },
-                                            "$price"
+                                            { $ifNull: [{ $arrayElemAt: ["$variants.price_sale", 0] }, 0] },
+                                            { $arrayElemAt: ["$variants.price", 0] }
                                         ]
                                     },
                                     100
@@ -314,7 +304,7 @@ async function getTotalPageByQuery({ search, id, categoryid, price, limit = 5 })
         const data = Math.ceil(products.length / limit);
 
         return { status: 200, message: "Thành công !", data: data }
-        } catch (error) {
+    } catch (error) {
         console.log(error);
         throw error;
     }
@@ -347,12 +337,12 @@ async function getSame(query) {
 
                 for (const property_id of variant.property_ids) {
                     const property = await propertyModel.findById(property_id);
-                    propertyNames.push(property?.name);
+                    propertyNames.push({ name: property?.name, type: property?.type });
                 }
 
                 variants.push({
                     properties: propertyNames,
-                    price_extra: variant.price_extra,
+                    price: variant.price,
                     price_sale: variant.price_sale,
                     colors: variant.colors.map((color) => ({
                         name: color.name,
@@ -364,6 +354,10 @@ async function getSame(query) {
                 });
             }
 
+            const reviews = await reviewModel.find({ product_id: product._id })
+            let rating = null
+            if (reviews.length) rating = reviews.reduce((sum, e) => sum + e.rating, 0) / reviews.length
+
             const brand = await brandModel.findById(product.brand_id)
             const category = await categoryModel.findById(product.category_id)
 
@@ -371,9 +365,9 @@ async function getSame(query) {
                 id: product._id,
                 name: product.name,
                 images: product.images.map((image) => `${process.env.URL}${image}`),
-                price: product.price,
                 variants: variants,
                 view: product.view,
+                rating: rating,
                 description: product.description,
                 brand: {
                     id: brand._id,
@@ -392,113 +386,3 @@ async function getSame(query) {
         throw error;
     }
 }
-
-// async function insert(body) {
-//   try {
-//     const { name, images, price, variants, sale, description, category_id } = body;
-//     const category = await categoryModel.findById(category_id);
-//     if (!category) throw new Error("không tìm thấy danh mục ");
-//     const productNew = new productModel({
-//       name: name,
-//       images: images,
-//       price: Number(price),
-//       variants: JSON.parse(variants),
-//       sale: !!sale,
-//       rating: 0,
-//       view: 0,
-//       description: description,
-//       category_id: category._id,
-//     });
-//     const result = await productNew.save();
-//     return result;
-//   } catch (error) {
-//     console.log(error);
-//     throw error;
-//   }
-// }
-
-// async function update(id, body) {
-//   try {
-//     const product = await productModel.findById(id);
-//     if (!product) throw new Error("Không Tìm Thấy Sản Phẩm !");
-
-//     const { name, images, imagesOld, price, variants, sale, description, category_id } = body;
-
-//     product.images.forEach((image) => {
-//       if (!JSON.parse(imagesOld).includes(image)) {
-//         fs.unlink(`./public/images/${image}`, function (err) {
-//           if (err) return console.log(err);
-//           console.log("file deleted successfully");
-//         });
-//       }
-//     });
-
-//     product.variants.forEach((type, iType) => {
-//       type.colors.forEach((color, iColor) => {
-//         if (JSON.parse(variants)[iType].colors[iColor].image !== color.image)
-//           fs.unlink(`./public/images/${color.image}`, function (err) {
-//             if (err) return console.log(err);
-//             console.log("file deleted successfully");
-//           });
-//       });
-//     });
-
-//     let categoryFind = null;
-//     if (category_id) {
-//       categoryFind = await categoryModel.findById(category_id);
-//       if (!categoryFind) throw new Error("không tìm thấy danh mục ");
-//     }
-//     const categoryUpdate = categoryFind ? categoryFind._id : product.category_id;
-
-//     const imagesNew = [];
-//     imagesNew.push(...JSON.parse(imagesOld));
-//     if (images) imagesNew.push(...images);
-
-//     const result = await productModel.findByIdAndUpdate(
-//       id,
-//       {
-//         name: name,
-//         images: imagesNew,
-//         price: Number(price),
-//         variants: JSON.parse(variants),
-//         sale: !!sale,
-//         rating: product.rating,
-//         view: product.view,
-//         description: description,
-//         category_id: categoryUpdate,
-//       },
-//       { new: true }
-//     );
-
-//     return result;
-//   } catch (error) {
-//     console.log(error);
-//     throw error;
-// }
-// }
-
-// async function cancel(id) {
-//     try {
-//         const product = await productModel.findById(id);
-//         if (!product) throw new Error("Sản phẩm không tồn tại !");
-//         product.images.forEach((image) => {
-//             fs.unlink(`./public/images/${image}`, function (err) {
-//                 if (err) return console.log(err);
-//                 console.log("file deleted successfully");
-//             });
-//         });
-//         product.variants.forEach((type) => {
-//             type.colors.forEach((color) => {
-//                 fs.unlink(`./public/images/${color.image}`, function (err) {
-//                     if (err) return console.log(err);
-//                     console.log("file deleted successfully");
-//                 });
-//             });
-//         });
-//         const result = await productModel.findByIdAndDelete(id);
-//         return result;
-//     } catch (error) {
-//         console.log(error);
-//         throw error;
-//     }
-// }

@@ -5,7 +5,7 @@ const ObjectId = Schema.ObjectId;
 const brandSchema = new Schema({
   name: { type: String },
   logo: { type: String },
-  benner: { type: String },
+  banner: { type: String },
   status: { type: Number },
   description: { type: String },
 }, { versionKey: false });

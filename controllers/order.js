@@ -1,93 +1,115 @@
 var orderModel = require("../models/order");
-var userModel = require("../models/user");
-var voucherModel = require("../models/voucher");
-var payment_methodModel = require("../models/payment_method");
-var addressModel = require("../models/address");
 
 const { ObjectId } = require("mongodb");
-const moment = require("moment");
 
 module.exports = {
-    create,
-    updateTransactionCode,
-    updateStatus
+    getById,
+    getQuery,
+    getTotalPagesByQuery
 };
 
-async function create(body) {
+async function getById(id) {
     try {
-        const { total, price_ship, products, user_id, voucher_id, payment_method_id, address_id } = body
+        const order = await orderModel.findById(id);
+        if (!order) return { status: 400, message: "Đơn hàng không tồn tại !" }
 
-        const user = await userModel.findById(user_id)
-        if (!user) return { status: 400, message: "Người dùng không tồn tại !" }
+        const data = {
+            id: order._id,
+            total: order.total,
+            status: order.status,
+            payment_status: order.payment_status,
+            ordered_at: order.ordered_at,
+            updated_at: order.updated_at,
+            transaction_code: order.transaction_code,
+            price_ship: order.price_ship,
+            products: order.products,
+            user_id: order.user_id,
+            voucher_id: order.voucher_id,
+            payment_method_id: order.payment_method_id,
+            address_id: order.address_id,
+        };
 
-        const payment_method = await payment_methodModel.findById(payment_method_id)
-        if (!payment_method) return { status: 400, message: "Phương thức thanh toán không tồn tại !" }
+        return { status: 200, message: "Thành công !", data: data }
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
 
-        const address = await addressModel.findById(address_id)
-        if (!address) return { status: 400, message: "Địa chỉ không tồn tại !" }
+async function getQuery(query) {
+    try {
+        const { status, orderby, page = 1, limit = 5 } = query;
 
-        if (voucher_id) {
-            const voucher = await voucherModel.findById(voucher_id)
-            if (!voucher) return { status: 400, message: "Voucher không tồn tại !" }
+        let matchCondition = {};
+
+        if (status) {
+            if (![0, 1, 2, 3].includes(+status)) return { status: 400, message: "Trạng thái không tồn tại !" }
+            matchCondition.status = +status
         }
 
-        const date = new Date();
-        const order_date = moment(date).format('YYYYMMDDHHmmss');
+        let sortCondition = {};
 
-        const orderNew = new orderModel({
-            total: +total,
-            status: 1,
-            payment_status: false,
-            order_date: order_date,
-            transaction_code: "",
-            price_ship: +price_ship,
-            products: JSON.parse(products).map(product => ({
-                ...product,
-                product_id: new ObjectId(product.product_id),
-                status: false
-            })),
-            user_id: new ObjectId(user_id),
-            voucher_id: voucher_id ? new ObjectId(voucher_id) : null,
-            payment_method_id: payment_method_id,
-            address_id: new ObjectId(address_id)
-        }, { versionKey: false });
+        if (orderby) {
+            const [sort, so] = orderby.split("-");
+            sortCondition[sort == "id" ? "_id" : sort] = so ? so == "desc" ? -1 : 1 : -1;
+        } else {
+            sortCondition.id = -1;
+        }
 
-        await orderNew.save();
+        const skip = (page - 1) * limit;
 
-        return { status: 200, message: "Thành công !" }
+        const pipeline = [
+            { $match: matchCondition },
+            { $sort: sortCondition },
+            { $skip: skip },
+            { $limit: +limit },
+        ];
+
+        const orders = await orderModel.aggregate(pipeline);
+
+        const data = orders.map((order) => ({
+            id: order._id,
+            total: order.total,
+            status: order.status,
+            payment_status: order.payment_status,
+            ordered_at: order.ordered_at,
+            updated_at: order.updated_at,
+            transaction_code: order.transaction_code,
+            price_ship: order.price_ship,
+            products: order.products,
+            user_id: order.user_id,
+            voucher_id: order.voucher_id,
+            payment_method_id: order.payment_method_id,
+            address_id: order.address_id,
+        }));
+
+        return { status: 200, message: "Thành công !", data: data }
     } catch (error) {
         console.log(error);
         throw error;
     }
 }
 
-async function updateTransactionCode(body) {
+async function getTotalPagesByQuery(query) {
     try {
-        const { order_id, transaction_code } = body
-        const order = await orderModel.findById(order_id)
-        if (!order) return { status: 400, message: "Đơn hàng không tồn tại !" }
+        const { status, limit = 5 } = query;
 
-        await orderModel.findByIdAndUpdate(order_id, { $set: { transaction_code: transaction_code, payment_status: true } }, { new: true, runValidators: true })
+        let matchCondition = {};
 
-        return { status: 200, message: "Thành công !" }
-    } catch (error) {
-        console.log(error);
-        throw error;
-    }
-}
+        if (status) {
+            if (![0, 1, 2, 3].includes(+status)) return { status: 400, message: "Trạng thái không tồn tại !" }
+            matchCondition.status = +status
+        }
 
-async function updateStatus(body) {
-    try {
-        const { order_id, status } = body
+        const pipeline = [
+            { $match: matchCondition },
+        ];
 
-        if (![0, 1, 2, 3].includes(+status)) return { status: 400, message: "Trạng thái không hợp lệ !" }
+        const orders = await orderModel.aggregate(pipeline);
 
-        const order = await orderModel.findById(order_id)
-        if (!order) return { status: 400, message: "Đơn hàng không tồn tại !" }
+        const data = Math.ceil(orders.length / limit);
 
-        await orderModel.findByIdAndUpdate(order_id, { $set: { status: status } }, { new: true, runValidators: true })
-
-        return { status: 200, message: "Thành công !" }
+        return { status: 200, message: "Thành công !", data: data }
     } catch (error) {
         console.log(error);
         throw error;
