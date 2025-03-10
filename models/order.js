@@ -8,7 +8,7 @@ const orderProductSchema = new Schema({
     color: { type: Number },
     quantity: { type: Number },
     price: { type: Number },
-    status: { type: Boolean }
+    reviewed: { type: Boolean }
 }, { _id: false, versionKey: false });
 
 const orderSchema = new Schema({

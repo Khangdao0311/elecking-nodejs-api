@@ -23,7 +23,8 @@ async function getById(id) {
             phone: address.phone,
             fullname: address.fullname,
             type: address.type,
-            default: address.name,
+            status: address.status,
+            setDefault: address.setDefault,
             user_id: address.user_id,
         };
 
@@ -41,7 +42,7 @@ async function getQuery(query) {
         let matchCondition = {};
 
         if (search) {
-            matchCondition.name = {
+            matchCondition.fullname = {
                 $regex: search,
                 $options: "i",
             };
@@ -88,6 +89,7 @@ async function getQuery(query) {
             phone: address.phone,
             fullname: address.fullname,
             type: address.type,
+            status: address.status,
             setDefault: address.setDefault,
             user_id: address.user_id,
         }));

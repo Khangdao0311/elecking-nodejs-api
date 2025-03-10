@@ -1,0 +1,54 @@
+[{
+  "_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ac"
+  },
+  "name": "ram"
+},
+{
+  "_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ad"
+  },
+  "name": "storege"
+},
+{
+  "_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  },
+  "name": "cpu"
+},
+{
+  "_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  },
+  "name": "gpu"
+},
+{
+  "_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b0"
+  },
+  "name": "ssd"
+},
+{
+  "_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b1"
+  },
+  "name": "hdd"
+},
+{
+  "_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  },
+  "name": "screen_size"
+},
+{
+  "_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b3"
+  },
+  "name": "refresh_rate"
+},
+{
+  "_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b4"
+  },
+  "name": "resolution"
+}]

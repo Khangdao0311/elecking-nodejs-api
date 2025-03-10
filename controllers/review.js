@@ -1,4 +1,6 @@
+const orderModel = require("../models/order");
 var reviewModel = require("../models/review");
+var userModel = require("../models/user");
 
 const { ObjectId } = require("mongodb");
 
@@ -13,6 +15,9 @@ async function getById(id) {
         const review = await reviewModel.findById(id);
         if (!review) return { status: 400, message: "review không tồn tại !" }
 
+        const order = await orderModel.findById(review.order_id)
+        const user = await userModel.findById(order.user_id)
+
         const data = {
             id: review._id,
             content: review.content,
@@ -22,7 +27,11 @@ async function getById(id) {
             updated_at: review.updated_at,
             order_id: review.order_id,
             product_id: review.product_id,
-            user_id: review.user_id
+            user: {
+                id: user._id,
+                avatar: user.avatar ? `${process.env.URL}${user.avatar}` : "",
+                fullname: user.fullname
+            }
         };
 
         return { status: 200, message: "Thành công !", data: data }
@@ -67,17 +76,30 @@ async function getQuery(query) {
 
         const reviews = await reviewModel.aggregate(pipeline);
 
-        const data = reviews.map((review) => ({
-            id: review._id,
-            content: review.content,
-            images: review.images.length == 0 ? [] : review.images.map((image) => `${process.env.URL}${image}`),
-            rating: review.rating,
-            created_at: review.created_at,
-            updated_at: review.updated_at,
-            order_id: review.order_id,
-            product_id: review.product_id,
-            user_id: review.user_id
-        }));
+        const data = [];
+
+        for (const review of reviews) {
+
+            const order = await orderModel.findById(review.order_id)
+            const user = await userModel.findById(order.user_id)
+
+            data.push({
+                id: review._id,
+                content: review.content,
+                images: review.images.length == 0 ? [] : review.images.map((image) => `${process.env.URL}${image}`),
+                rating: review.rating,
+                created_at: review.created_at,
+                updated_at: review.updated_at,
+                order_id: review.order_id,
+                product_id: review.product_id,
+                user: {
+                    id: user._id,
+                    avatar: user.avatar,
+                    fullname: user.fullname
+                }
+            })
+
+        }
 
         return { status: 200, message: "Thành công !", data: data }
     } catch (error) {

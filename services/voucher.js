@@ -38,7 +38,7 @@ async function insert(body) {
             end_date: end_date,
             status: 1,
             quantity: +quantity,
-            user_id: user_id && new ObjectId(user_id)
+            user_id: user_id ? new ObjectId(user_id) : null
         })
 
         await voucherNew.save()
@@ -68,7 +68,7 @@ async function update(id, body) {
         if (discount_type == 2 && (+discount_value == 0 || +discount_value > 100)) return { status: 400, message: "discount_value không được quá 100% !" }
         if (discount_type == 2 && !max_discount) return { status: 400, message: "max_discount không được trống !" }
 
-        await voucherModel.findByIdAndUpdate(id, {  
+        await voucherModel.findByIdAndUpdate(id, {
             $set: {
                 discount_type: +discount_type,
                 discount_value: +discount_value,
@@ -78,7 +78,7 @@ async function update(id, body) {
                 end_date: end_date,
                 status: 1,
                 quantity: +quantity,
-                user_id: user_id && new ObjectId(user_id)
+                user_id: user_id ? new ObjectId(user_id) : null
             }
         }, { new: true })
 

@@ -3,6 +3,7 @@ const productModel = require("../models/product");
 const brandModel = require("../models/brand");
 const categoryModel = require("../models/category");
 const propertyModel = require("../models/property");
+const proptypeModel = require("../models/proptype");
 const reviewModel = require("../models/review");
 
 const { ObjectId } = require("mongodb");
@@ -24,15 +25,16 @@ async function getById(id) {
         for (const variant of product.variants) {
 
             // lấy tên của property
-            const propertyNames = [];
+            const properties = [];
             for (const property_id of variant.property_ids) {
                 const property = await propertyModel.findById(property_id);
-                propertyNames.push({ name: property?.name, type: property?.type });
+                const proptype = await proptypeModel.findById(property.proptype_id)
+                properties.push({ name: property?.name, proptype: proptype?.name });
             }
 
             // thêm variant vào variants
             variants.push({
-                properties: propertyNames,
+                properties: properties,
                 price: variant.price,
                 price_sale: variant.price_sale,
                 colors: variant.colors.map((color) => ({
@@ -77,8 +79,11 @@ async function getById(id) {
     }
 }
 
-async function getQuery({ search, id, categoryid, price, orderby, page = 1, limit = 5 }) {
+async function getQuery(query) {
     try {
+
+        const { search, id, categoryid, price, orderby, page = 1, limit = 5 } = query
+
         let matchCondition = {};
 
         // Tìm kiếm sản phẩm theo tên
@@ -179,15 +184,16 @@ async function getQuery({ search, id, categoryid, price, orderby, page = 1, limi
 
             for (const variant of product?.variants) {
 
-                const propertyNames = [];
+                const properties = [];
 
                 for (const property_id of variant.property_ids) {
                     const property = await propertyModel.findById(property_id);
-                    propertyNames.push({ name: property?.name, type: property?.type });
+                    const proptype = await proptypeModel.findById(property.proptype_id)
+                    properties.push({ name: property?.name, proptype: proptype?.name });
                 }
 
                 variants.push({
-                    properties: propertyNames,
+                    properties: properties,
                     price: variant.price,
                     price_sale: variant.price_sale,
                     colors: variant.colors.map((color) => ({
@@ -234,8 +240,10 @@ async function getQuery({ search, id, categoryid, price, orderby, page = 1, limi
     }
 }
 
-async function getTotalPagesByQuery({ search, id, categoryid, price, limit = 5 }) {
+async function getTotalPagesByQuery(query) {
     try {
+        const { search, id, categoryid, price, limit = 5 } = query
+
         let matchCondition = {};
 
         // Tìm kiếm sản phẩm theo tên
@@ -333,15 +341,16 @@ async function getSame(query) {
 
             for (const variant of product.variants) {
 
-                const propertyNames = [];
+                const properties = [];
 
                 for (const property_id of variant.property_ids) {
                     const property = await propertyModel.findById(property_id);
-                    propertyNames.push({ name: property?.name, type: property?.type });
+                    const proptype = await proptypeModel.findById(property.proptype_id)
+                    properties.push({ name: property?.name, proptype: proptype?.name });
                 }
 
                 variants.push({
-                    properties: propertyNames,
+                    properties: properties,
                     price: variant.price,
                     price_sale: variant.price_sale,
                     colors: variant.colors.map((color) => ({

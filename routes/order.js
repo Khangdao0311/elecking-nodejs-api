@@ -81,24 +81,4 @@ router.patch("/update_status/:id", async function (req, res, next) {
   }
 });
 
-router.put("/update_status_review/:id", async function (req, res, next) {
-  try {
-    const { id } = req.params
-    const result = await orderService.updateStatusReview(id, req.body);
-    return res.status(result.status).json(result);
-  } catch (error) {
-    return res.status(500).json({ status: 500, message: "Lỗi hệ thống" });
-  }
-});
-
-router.patch("/update_status_review/:id", async function (req, res, next) {
-  try {
-    const { id } = req.params
-    const result = await orderService.updateStatusReview(id, req.body);
-    return res.status(result.status).json(result);
-  } catch (error) {
-    return res.status(500).json({ status: 500, message: "Lỗi hệ thống" });
-  }
-});
-
 module.exports = router;

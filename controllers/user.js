@@ -1,8 +1,6 @@
 var userModel = require("../models/user");
-var productModel = require("../models/product");
 
 const { ObjectId } = require("mongodb");
-const product = require("../models/product");
 
 module.exports = {
     getById,
@@ -26,7 +24,7 @@ async function getById(id) {
             status: user.status,
             register_date: user.register_date,
             cart: user.cart,
-            wish: user.cart,
+            wish: user.wish,
         }
 
         return { status: 200, message: "Thành công !", data: data }

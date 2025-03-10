@@ -1,4 +1,5 @@
 var propertyModel = require("../models/property");
+var proptypeModel = require("../models/proptype");
 
 module.exports = {
     insert,
@@ -7,14 +8,16 @@ module.exports = {
 
 async function insert(body) {
     try {
-        const { name, type } = body
+        const { name, proptype_id } = body
 
         if (!name) return { status: 400, message: "Không có trường Name (Tên property)" }
-        if (!type) return { status: 400, message: "Không có trường type (Loại property)" }
+
+        const proptype = await proptypeModel.findById(proptype_id)
+        if (!proptype) return { status: 400, message: "propType không tồn tại !" }
 
         const propertyNew = new propertyModel({
             name: name,
-            type: type
+            proptype_id: proptype._id
         })
 
         await propertyNew.save()
@@ -31,12 +34,15 @@ async function update(id, body) {
         const property = await propertyModel.findById(id)
         if (!property) return { status: 400, message: "Property không tồn tại !" }
 
-        const { name, type } = body
+        const { name, proptype_id } = body
+
+        const proptype = await proptypeModel.findById(proptype_id)
+        if (!proptype) return { status: 400, message: "propType không tồn tại !" }
 
         await propertyModel.findByIdAndUpdate(id, {
             $set: {
                 name: name,
-                type: type,
+                property_id: property._id,
             }
         }, { new: true })
 

@@ -3,20 +3,22 @@ var userModel = require("../models/user");
 var voucherModel = require("../models/voucher");
 var payment_methodModel = require("../models/payment_method");
 var addressModel = require("../models/address");
+var productModel = require("../models/product");
+var propertyModel = require("../models/property");
 
 const { ObjectId } = require("mongodb");
 const moment = require("moment");
+var nodemailer = require("nodemailer");
 
 module.exports = {
     create,
     updateTransactionCode,
-    updateStatus,
-    updateStatusReview
+    updateStatus
 };
 
 async function create(body) {
     try {
-        const { total, price_ship, products, user_id, voucher_id, payment_method_id, address_id } = body
+        const { total, price_ship, products, user_id, voucher_id = null, payment_method_id, address_id } = body
 
         const user = await userModel.findById(user_id)
         if (!user) return { status: 400, message: "Người dùng không tồn tại !" }
@@ -46,7 +48,7 @@ async function create(body) {
             products: JSON.parse(products).map(product => ({
                 ...product,
                 product_id: new ObjectId(product.product_id),
-                status: false
+                reviewed: false
             })),
             user_id: new ObjectId(user_id),
             voucher_id: voucher_id ? new ObjectId(voucher_id) : null,
@@ -54,7 +56,100 @@ async function create(body) {
             address_id: new ObjectId(address_id)
         });
 
+        const transporter = nodemailer.createTransport({
+            service: "gmail",
+            auth: {
+                user: "elecking.store@gmail.com",
+                pass: "zauy tcqh mvjh frtj"
+            }
+        });
+
+        let productsOrder = '';
+
+
+        for (const [index, productOrder] of JSON.parse(products).entries()) {
+            const product = await productModel.findById(productOrder.product_id)
+
+            const properties = [];
+            for (const property_id of product.variants[productOrder.variant].property_ids) {
+                const property = await propertyModel.findById(property_id);
+                properties.push(property?.name);
+            }
+
+            await productModel.findByIdAndUpdate(product._id, {
+                $set: {
+                    variants: product.variants.map((variant, iVariant) => {
+                        if (iVariant == productOrder.variant) return {
+                            ...variant.toObject(),
+                            colors: variant.colors.map((color, iColor) => {
+                                if (iColor == productOrder.color) return {
+                                    ...color.toObject(),
+                                    quantity: color.quantity - productOrder.quantity
+                                }
+
+                                return color
+                            })
+                        }
+                        return variant
+                    })
+                }
+            },
+                { new: true, runValidators: true })
+
+            productsOrder += `
+                <tr>
+                    <td style="padding: 5px; text-align: center;">${index + 1}</td>
+                    <td style="padding: 5px; ">${productOrder.product_id}</td>
+                    <td style="padding: 5px; ">${product.name}</td>
+                    <td style="padding: 5px; text-align: center;">${productOrder.quantity}</td>
+                    <td style="padding: 5px; text-align: center;">${properties.join(" - ")}</td>
+                    <td style="padding: 5px; text-align: center;">${product.variants[productOrder.variant].colors[productOrder.color].name}</td>
+                </tr>
+            `
+        }
+
+        const mailOptions = {
+            from: '"Elecking"<elecking.store@gmail.com>',
+            to: "elecking.store@gmail.com",
+            subject: `Đơn hàng của ${user.fullname}`,
+            html: `
+                 <div style="padding: 10px;">
+                    <h1 style="text-align: center;">Thông Tin Đơn Hàng</h1>
+                    <p style="font-size: 18px;">Khách hàng: <b style="font-size: 24px;">${user.fullname}</b></p>
+                    <p>Email: <b>${user.email}</b></p>
+                    <p>Số điện thoại: <b>${user.phone}</b></p>
+                    <hr>
+                    <p>Địa chỉ: <b>${address.province}, ${address.district}, ${address.ward}, ${address.description}</b></p>
+                    <p>Tên người nhận: <b>${address.fullname}</b></p>
+                    <p>Số điện thoại: <b>${address.phone}</b></p>
+                    <p>Loại địa chỉ: <b>${address.type == 1 ? "Nhà Riêng" : "Văn Phòng"}</b></p>
+                    <hr>
+                    <p>Phương thức thanh toán: <b>${payment_method.name}</b></p>
+                    <hr>
+                    <p style="font-size: 18px; font-weight: bold;">Đơn hàng</p>
+                    <table border="1" style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th style="padding: 5px; width: 50px;">STT</th>
+                                <th style="padding: 5px;">ID Sản Phẩm</th>
+                                <th style="padding: 5px;">Tên sản phẩm</th>
+                                <th style="padding: 5px;">Số lượng</th>
+                                <th style="padding: 5px;">Loại</th>
+                                <th style="padding: 5px;">Màu sắc</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${productsOrder}
+                        </tbody>
+                    </table>
+
+
+                </div>
+            `
+        };
+
         await orderNew.save();
+        await transporter.sendMail(mailOptions);
 
         return { status: 200, message: "Thành công !" }
     } catch (error) {
@@ -66,6 +161,9 @@ async function create(body) {
 async function updateTransactionCode(id, body) {
     try {
         const { transaction_code } = body
+
+        if (!transaction_code) return { status: 400, message: "Mã thanh toán không tồn tại !" }
+
         const order = await orderModel.findById(id)
         if (!order) return { status: 400, message: "Đơn hàng không tồn tại !" }
 
@@ -98,42 +196,45 @@ async function updateStatus(id, body) {
         const order = await orderModel.findById(id)
         if (!order) return { status: 400, message: "Đơn hàng không tồn tại !" }
 
+        if (order.status === 0) return { status: 400, message: "Đơn hàng đã bị hủy !" }
+
         const date = new Date();
         const updated_at = moment(date).format('YYYYMMDDHHmmss');
 
         await orderModel.findByIdAndUpdate(id,
             {
                 $set: {
-                    status: status,
+                    status: +status,
                     updated_at: updated_at
                 }
             },
             { new: true, runValidators: true })
 
-        return { status: 200, message: "Thành công !" }
-    } catch (error) {
-        console.log(error);
-        throw error;
-    }
-}
+        if (+status === 0) {
+            for (const productOrder of order.products) {
+                const product = await productModel.findById(productOrder.product_id)
+                await productModel.findByIdAndUpdate(product._id, {
+                    $set: {
+                        variants: product.variants.map((variant, iVariant) => {
+                            if (iVariant == productOrder.variant) return {
+                                ...variant.toObject(),
+                                colors: variant.colors.map((color, iColor) => {
+                                    if (iColor == productOrder.color) return {
+                                        ...color.toObject(),
+                                        quantity: color.quantity + productOrder.quantity
+                                    }
 
-async function updateStatusReview(id, body) {
-    try {
-        const { product_id } = body
+                                    return color
+                                })
+                            }
+                            return variant
+                        })
+                    }
+                }, { new: true, runValidators: true })
+            }
+        }
 
-        const order = await orderModel.findById(id)
-        if (!order) return { status: 400, message: "Đơn hàng không tồn tại !" }
 
-        const products = order.products.map(product => ({
-            product_id: product.product_id,
-            variant: product.variant,
-            color: product.color,
-            quantity: product.quantity,
-            price: product.price,
-            status: product.product_id.equals(new ObjectId(product_id)) || product.status
-        }))
-
-        await orderModel.findByIdAndUpdate(id, { $set: { products: products } }, { new: true, runValidators: true })
 
         return { status: 200, message: "Thành công !" }
     } catch (error) {

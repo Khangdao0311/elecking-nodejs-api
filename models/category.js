@@ -7,7 +7,7 @@ const categorySchema = new Schema({
   image: { type: String },
   status: { type: Number },
   description: { type: String },
-  properties: [{ type: String }],
+  proptypes: [{ type: ObjectId, ref: "proptype" }],
 }, { versionKey: false });
 
 module.exports =

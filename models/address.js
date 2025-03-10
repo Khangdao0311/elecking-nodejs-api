@@ -10,6 +10,7 @@ const addressSchema = new Schema({
     phone: { type: String },
     fullname: { type: String },
     type: { type: Number },
+    status: { type: Number },
     setDefault: { type: Boolean },
     user_id: { type: ObjectId, ref: "user" },
 }, { versionKey: false });

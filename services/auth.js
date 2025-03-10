@@ -2,6 +2,7 @@ var bcryptjs = require("bcryptjs");
 var moment = require("moment");
 var jwt = require("jsonwebtoken");
 var userModel = require("../models/user");
+var { ObjectId } = require('mongodb')
 
 module.exports = {
     login,
@@ -111,6 +112,8 @@ async function updateCart(id, body) {
     try {
         const { cart } = body
 
+
+
         const user = await userModel.findById(id)
         if (!user) return { status: 400, message: "Người dùng không tồn tại !" }
 
@@ -158,3 +161,5 @@ async function updateWish(id, body) {
         throw error;
     }
 }
+
+[{ "product": { "id": "67b96ee667788c638a22e2c7", "variant": 0, "color": 0 } }]

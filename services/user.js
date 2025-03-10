@@ -16,8 +16,8 @@ async function update(id, body) {
 
         await userModel.findByIdAndUpdate(id, {
             $set: {
-                role: role,
-                status: status,
+                role: +role,
+                status: +status,
             }
         }, { new: true })
 

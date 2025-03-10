@@ -1,7 +1,10 @@
 const orderModel = require("../models/order");
 const productModel = require("../models/product");
+const reviewModel = require("../models/review");
 const userModel = require("../models/user");
 const { ObjectId } = require("mongodb");
+
+const moment = require('moment')
 
 module.exports = {
     insert,
@@ -10,25 +13,24 @@ module.exports = {
 
 async function insert(body) {
     try {
-        const { content = "", images = '[]', rating, order_id, product_id, user_id } = body
+        const { content = "", images = '[]', rating, order_id, product_id } = body
 
         const order = await orderModel.findById(order_id)
         if (!order) return { status: 400, message: "Đơn hàng không tồn tại !" }
 
+        if (order.status !== 3) return { status: 400, message: "Đơn hàng chưa được giao thành công !" }
+
         const product = await productModel.findById(product_id)
         if (!product) return { status: 400, message: "Sản phẩm không tồn tại !" }
 
-        const checkProductOrder = order.find(e => e.product_id.equals(product._id))
+        const checkProductOrder = order.products.find(e => e.product_id.equals(product._id))
         if (!checkProductOrder) return { status: 400, message: "Sản phẩm đánh giá không trong đơn hàng !" }
-
-        const user = await userModel.findById(user_id)
-        if (!user) return { status: 400, message: "Người dùng không tồn tại !" }
 
         if (![0, 1, 2, 3, 4, 5].includes(+rating)) return { status: 400, message: "Đánh giá không tồn tại !" }
 
         if (!Array.isArray(JSON.parse(images))) return { status: 400, message: "Images không đúng dữ liệu !" }
 
-        const date = new Date();
+        const date = new Date()
         const created_at = moment(date).format('YYYYMMDDHHmmss');
 
         const reviewNew = new reviewModel({
@@ -39,10 +41,20 @@ async function insert(body) {
             updated_at: created_at,
             order_id: order._id,
             product_id: product._id,
-            user_id: user._id,
         })
 
         await reviewNew.save()
+
+        const productsOrder = order.products.map(productOrder => ({
+            product_id: productOrder.product_id,
+            variant: productOrder.variant,
+            color: productOrder.color,
+            quantity: productOrder.quantity,
+            price: productOrder.price,
+            reviewed: productOrder.product_id.equals(product._id) || productOrder.reviewed
+        }))
+
+        await orderModel.findByIdAndUpdate(order._id, { $set: { products: productsOrder } }, { new: true, runValidators: true })
 
         return { status: 200, message: "Thành công !" }
     } catch (error) {

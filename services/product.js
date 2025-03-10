@@ -1,8 +1,11 @@
+const { ObjectId } = require("mongodb");
+
 const productModel = require("../models/product");
 const userModel = require("../models/user");
 const brandModel = require("../models/brand");
 const categoryModel = require("../models/category");
-const { ObjectId } = require("mongodb");
+
+const { isVariantProduct } = require("../helpers");
 
 module.exports = {
     insert,
@@ -11,6 +14,7 @@ module.exports = {
 
 async function insert(body) {
     try {
+
         const { name, images, variants, description, brand_id, category_id } = body
 
         const brand = await brandModel.findById(brand_id)
@@ -19,8 +23,8 @@ async function insert(body) {
         const category = await categoryModel.findById(category_id)
         if (!category) return { status: 400, message: "Danh mục không tồn tại !" }
 
-        if (!Array.isArray(JSON.parse(images))) return { status: 400, message: "Images không đúng dữ liệu !" }
-        if (!Array.isArray(JSON.parse(variants))) return { status: 400, message: "Variants không đúng dữ liệu !" }
+        if (!Array.isArray(JSON.parse(images)) || !JSON.parse(images).every(item => typeof item === 'string')) return { status: 400, message: "Images không đúng dữ liệu !" }
+        if (!Array.isArray(JSON.parse(variants)) || !isVariantProduct(JSON.parse(variants))) return { status: 400, message: "Variants không đúng dữ liệu !" }
 
         const productNew = new productModel({
             name: name,

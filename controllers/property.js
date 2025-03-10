@@ -1,4 +1,5 @@
 var propertyModel = require("../models/property");
+var proptypeModel = require("../models/proptype");
 
 const { ObjectId } = require("mongodb");
 
@@ -13,10 +14,15 @@ async function getById(id) {
         const property = await propertyModel.findById(id);
         if (!property) return { status: 400, message: "Property không tồn tại !" }
 
+        const proptype = await proptypeModel.findById(property.proptype_id)
+
         const data = {
             id: property._id,
             name: property.name,
-            type: property.type,
+            proptype: {
+                id: proptype._id,
+                name: proptype.name
+            },
         };
 
         return { status: 200, message: "Thành công !", data: data }
@@ -74,11 +80,19 @@ async function getQuery(query) {
 
         const properties = await propertyModel.aggregate(pipeline);
 
-        const data = properties.map((property) => ({
-            id: property._id,
-            name: property.name,
-            type: property.type,
-        }));
+        const data = []
+
+        for (const property of properties) {
+            const proptype = await proptypeModel.findById(property.proptype_id)
+            data.push({
+                id: property._id,
+                name: property.name,
+                proptype: {
+                    id: proptype._id,
+                    name: proptype.name
+                },
+            })
+        }
 
         return { status: 200, message: "Thành công !", data: data }
     } catch (error) {
@@ -89,7 +103,7 @@ async function getQuery(query) {
 
 async function getTotalPagesByQuery(query) {
     try {
-        const { id, search, type, limit = 5 } = query;
+        const { id, search, type, limit = null } = query;
 
         let matchCondition = {};
 
@@ -119,7 +133,9 @@ async function getTotalPagesByQuery(query) {
 
         const properties = await propertyModel.aggregate(pipeline);
 
-        const data = Math.ceil(properties.length / limit);
+        let data = 0;
+
+        if (limit && !isNaN(+limit)) data = Math.ceil(properties.length / limit)
 
         return { status: 200, message: "Thành công !", data: data }
     } catch (error) {

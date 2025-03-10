@@ -1,4 +1,3 @@
-var categoryModel = require("../models/category");
 var proptypeModel = require("../models/proptype");
 
 const { ObjectId } = require("mongodb");
@@ -11,16 +10,12 @@ module.exports = {
 
 async function getById(id) {
     try {
-        const category = await categoryModel.findById(id);
-        if (!category) return { status: 400, message: "Danh mục không tồn tại !" }
+        const proptype = await proptypeModel.findById(id);
+        if (!proptype) return { status: 400, message: "PropType không tồn tại !" }
 
         const data = {
-            id: category._id,
-            name: category.name,
-            image: category.image ? `${process.env.URL}${category.image}` : "",
-            status: category.status,
-            proptypes: category.proptypes,
-            description: category.description,
+            id: proptype._id,
+            name: proptype.name,
         };
 
         return { status: 200, messgae: "Thành công !", data: data }
@@ -30,7 +25,7 @@ async function getById(id) {
     }
 }
 
-async function getQuery({ id, search, orderby, page = 1, limit = 5 }) {
+async function getQuery({ id, search, orderby, page = 1, limit = null }) {
     try {
         let matchCondition = {};
 
@@ -56,40 +51,23 @@ async function getQuery({ id, search, orderby, page = 1, limit = 5 }) {
             sortCondition._id = -1;
         }
 
-        const skip = (page - 1) * limit;
-
         const pipeline = [
             { $match: matchCondition },
             { $sort: sortCondition },
-            { $skip: skip },
-            { $limit: +limit },
         ];
 
-        const categories = await categoryModel.aggregate(pipeline);
-
-        const data = []
-
-        for (const category of categories) {
-
-            const proptypes = []
-
-            for (const proptype_id of category.proptypes) {
-                const proptype = await proptypeModel.findById(proptype_id)
-                proptypes.push({
-                    id: proptype._id,
-                    name: proptype.name
-                })
-            }
-
-            data.push({
-                id: category._id,
-                name: category.name,
-                image: category.image ? `${process.env.URL}${category.image}` : "",
-                status: category.status,
-                proptypes: proptypes,
-                description: category.description,
-            })
+        if (limit && !isNaN(+limit)) {
+            const skip = (page - 1) * limit;
+            pipeline.push({ $skip: skip },);
+            pipeline.push({ $limit: +limit });
         }
+
+        const proptypes = await proptypeModel.aggregate(pipeline);
+
+        const data = proptypes.map((proptype) => ({
+            id: proptype._id,
+            name: proptype.name,
+        }));
 
         return { status: 200, message: "Thành công !", data: data };
     } catch (error) {
@@ -119,9 +97,9 @@ async function getTotalPagesByQuery({ id, search, limit = 5 }) {
             { $match: matchCondition },
         ];
 
-        const categories = await categoryModel.aggregate(pipeline);
+        const proptypes = await proptypeModel.aggregate(pipeline);
 
-        const data = Math.ceil(categories.length / limit);
+        const data = Math.ceil(proptypes.length / limit);
 
         return { status: 200, message: "Thành công !", data: data };
     } catch (error) {

@@ -10,6 +10,7 @@
     "phone": "0976676767",
     "fullname": "Đào Vĩnh Khang",
     "type": 2,
+    "status": 1,
     "setDefault": true,
     "user_id": {
       "$oid": "67b6b0bdbfe3474f1ec40f45"
@@ -26,6 +27,7 @@
     "phone": "0901234567",
     "fullname": "Nguyễn Văn A",
     "type": 1,
+    "status": 1,
     "setDefault": true,
     "user_id": {
       "$oid": "67c3dc46a3c0c5e439598e18"
@@ -42,6 +44,7 @@
     "phone": "0912345678",
     "fullname": "Trần Thị B",
     "type": 2,
+    "status": 1,
     "setDefault": false,
     "user_id": {
       "$oid": "67c3dc46a3c0c5e439598e18"
@@ -58,6 +61,7 @@
     "phone": "0923456789",
     "fullname": "Lê Văn C",
     "type": 1,
+    "status": 1,
     "setDefault": true,
     "user_id": {
       "$oid": "67c3dc46a3c0c5e439598e1a"
@@ -74,6 +78,7 @@
     "phone": "0934567890",
     "fullname": "Phạm Thị D",
     "type": 2,
+    "status": 1,
     "setDefault": true,
     "user_id": {
       "$oid": "67c3dc46a3c0c5e439598e1b"
@@ -90,6 +95,7 @@
     "phone": "0909876543",
     "fullname": "Nguyễn Văn A",
     "type": 1,
+    "status": 1,
     "setDefault": false,
     "user_id": {
       "$oid": "67c3dc46a3c0c5e439598e18"
