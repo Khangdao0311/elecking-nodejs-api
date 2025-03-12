@@ -35,6 +35,7 @@ var mailRouter = require('./routes/mail');
 var propertyRouter = require('./routes/property');
 var reviewRouter = require('./routes/review');
 var proptypeRouter = require('./routes/proptype');
+var statsRouter = require('./routes/stats');
 
 var app = express();
 
@@ -71,6 +72,7 @@ app.use('/mail', mailRouter);
 app.use('/property', propertyRouter);
 app.use('/review', reviewRouter);
 app.use('/proptype', proptypeRouter);
+app.use('/stats', statsRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

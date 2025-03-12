@@ -16,7 +16,7 @@ async function getById(id) {
             id: brand._id,
             name: brand.name,
             logo: brand.logo ? `${process.env.URL}${brand.logo}` : "",
-            banner: brand.banner ? `${process.env.URL}${brand.brand}` : "",
+            banner: brand.banner ? `${process.env.URL}${brand.banner}` : "",
             status: brand.status,
             description: brand.description,
         };
@@ -76,7 +76,7 @@ async function getQuery(query) {
             id: brand._id,
             name: brand.name,
             logo: brand.logo ? `${process.env.URL}${brand.logo}` : "",
-            banner: brand.banner ? `${process.env.URL}${brand.brand}` : "",
+            banner: brand.banner ? `${process.env.URL}${brand.banner}` : "",
             status: brand.status,
             description: brand.description,
         }));

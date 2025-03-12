@@ -40,7 +40,7 @@ async function getById(id) {
                     name: color.name,
                     image: `${process.env.URL}${color.image}`,
                     price_extra: color.price_extra,
-                    status: product.status,
+                    status: color.status,
                     quantity: color.quantity,
                 })),
             });
@@ -229,7 +229,7 @@ async function getQuery(query) {
                         name: color.name,
                         image: `${process.env.URL}${color.image}`,
                         price_extra: color.price_extra,
-                        status: product.status,
+                        status: color.status,
                         quantity: color.quantity,
                     })),
                 });

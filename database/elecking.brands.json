@@ -14,7 +14,7 @@
       "$oid": "67b6cf123a893726b5398560"
     },
     "name": "Samsung",
-    "logo": "Samsung_Logo.svg",
+    "logo": "kisspng-logo-samsung-group-trademark-samsung-electronics-f-samsung-logo-png-hd-samsung-logo-png-image-free-1713906289413.webp",
     "banner": "samsung-banner-dien-thoai.png",
     "status": 1,
     "description": "Samsung là tập đoàn công nghệ toàn cầu, nổi bật với sự đổi mới và đa dạng sản phẩm. Thành lập năm 1938, Samsung dẫn đầu trong các lĩnh vực điện tử tiêu dùng, smartphone, TV, thiết bị gia dụng và linh kiện bán dẫn. Các dòng sản phẩm như Galaxy, QLED TV và chip Exynos thể hiện cam kết về chất lượng, hiệu suất và công nghệ tiên tiến."
@@ -24,7 +24,7 @@
       "$oid": "67b6cf123a893726b5398561"
     },
     "name": "Xiaomi",
-    "logo": "Xiaomi_logo.svg",
+    "logo": "Xiaomi_logo.png",
     "banner": "image.png",
     "status": 1,
     "description": "Xiaomi là tập đoàn công nghệ Trung Quốc, nổi bật với các sản phẩm hiệu năng cao, giá cạnh tranh. Thành lập năm 2010, Xiaomi phát triển mạnh trong lĩnh vực smartphone, thiết bị nhà thông minh và điện tử tiêu dùng. Các dòng sản phẩm như Mi, Redmi, POCO và hệ sinh thái AIoT thể hiện sự sáng tạo và chiến lược tối ưu hóa chi phí."
@@ -44,7 +44,7 @@
       "$oid": "67b6cf123a893726b5398563"
     },
     "name": "Vivo",
-    "logo": "Vivo_logo_2019.svg",
+    "logo": "avfhqtek8.webp",
     "banner": "image.png",
     "status": 1,
     "description": "Vivo là thương hiệu công nghệ Trung Quốc, chuyên về smartphone và thiết bị thông minh. Thành lập năm 2009, Vivo nổi bật với thiết kế thời trang, công nghệ camera tiên tiến và âm thanh chất lượng cao. Các dòng sản phẩm như X, V và Y-Series thể hiện sự đổi mới trong nhiếp ảnh di động, hiệu suất và trải nghiệm người dùng."
@@ -54,7 +54,7 @@
       "$oid": "67b6cf123a893726b5398564"
     },
     "name": "Realme",
-    "logo": "Realme-realme-_logo_box-RGB-01.svg",
+    "logo": "Realme_logo.png",
     "banner": "image.png",
     "status": 1,
     "description": "Realme là thương hiệu công nghệ Trung Quốc, chuyên về smartphone và thiết bị AIoT. Thành lập năm 2018, Realme tập trung vào hiệu năng mạnh mẽ, thiết kế trẻ trung và giá cả cạnh tranh. Các dòng sản phẩm như GT, Number Series và C-Series hướng đến người dùng trẻ, mang lại trải nghiệm công nghệ cao với mức giá hợp lý."
@@ -94,7 +94,7 @@
       "$oid": "67b6cf123a893726b5398568"
     },
     "name": "Google",
-    "logo": "Google__G__logo.svg",
+    "logo": "png-transparent-google-logo-google-text-trademark-logo.png",
     "banner": "image.png",
     "status": 1,
     "description": "Google là tập đoàn công nghệ Mỹ, nổi bật với công cụ tìm kiếm, trí tuệ nhân tạo và hệ sinh thái phần mềm. Thành lập năm 1998, Google phát triển các sản phẩm như Android, Chrome, Google Search, YouTube và Pixel, tập trung vào kết nối, dữ liệu và trải nghiệm người dùng thông minh."
@@ -104,7 +104,7 @@
       "$oid": "67b6cf123a893726b5398569"
     },
     "name": "Huawei",
-    "logo": "Huawei_Standard_logo.svg",
+    "logo": "Huawei_Standard_logo.png",
     "banner": "image.png",
     "status": 1,
     "description": "Huawei là tập đoàn công nghệ Trung Quốc, chuyên về viễn thông, smartphone và thiết bị thông minh. Thành lập năm 1987, Huawei dẫn đầu trong mạng 5G, chip Kirin và hệ sinh thái HarmonyOS. Các dòng sản phẩm như Mate, P-Series và Watch GT nổi bật với công nghệ camera tiên tiến, hiệu suất mạnh mẽ và thiết kế cao cấp."
@@ -124,7 +124,7 @@
       "$oid": "67b6cf123a893726b539856b"
     },
     "name": "DELL",
-    "logo": "Dell_Logo.svg",
+    "logo": "Dell_Logo.png",
     "banner": "image.png",
     "status": 1,
     "description": "Dell là một công ty công nghệ của Mỹ, chuyên sản xuất máy tính xách tay, máy tính để bàn, màn hình và thiết bị lưu trữ. Dell nổi tiếng với độ bền cao, hiệu suất ổn định và nhiều dòng sản phẩm phù hợp từ doanh nghiệp đến gaming."
@@ -134,7 +134,7 @@
       "$oid": "67b6cf123a893726b539856c"
     },
     "name": "Lenovo",
-    "logo": "Lenovo_logo_2015.svg",
+    "logo": "Lenovo_logo_2015.png",
     "banner": "image.png",
     "status": 1,
     "description": "Lenovo là tập đoàn công nghệ Trung Quốc, chuyên về máy tính, thiết bị di động và hạ tầng số. Thành lập năm 1984, Lenovo nổi bật với các dòng sản phẩm như ThinkPad, Legion, Yoga và IdeaPad, mang đến hiệu suất mạnh mẽ, thiết kế bền bỉ và giải pháp sáng tạo cho người dùng cá nhân lẫn doanh nghiệp."
@@ -144,7 +144,7 @@
       "$oid": "67b6cf123a893726b539856d"
     },
     "name": "HP",
-    "logo": "640px-HP_logo_2012.svg",
+    "logo": "hp.jpg",
     "banner": "image.png",
     "status": 1,
     "description": "HP (Hewlett-Packard) là một trong những tập đoàn công nghệ hàng đầu thế giới, chuyên cung cấp các sản phẩm và dịch vụ về máy tính, máy in, giải pháp phần cứng và phần mềm. Thành lập năm 1939 tại Mỹ, HP đã trở thành thương hiệu đáng tin cậy trong lĩnh vực công nghệ thông tin, phục vụ cả doanh nghiệp và người tiêu dùng cá nhân."
@@ -154,7 +154,7 @@
       "$oid": "67b6cf123a893726b539856e"
     },
     "name": "LG",
-    "logo": "LG_logo_(2014).svg",
+    "logo": "av2e6etj8.webp",
     "banner": "image.png",
     "status": 1,
     "description": "LG (Lucky Goldstar) là tập đoàn đa quốc gia của Hàn Quốc, chuyên sản xuất các sản phẩm điện tử, gia dụng và giải pháp công nghệ. Thành lập năm 1958, LG đã trở thành thương hiệu toàn cầu với danh tiếng về chất lượng, sự đổi mới và thiết kế tinh tế."
@@ -184,7 +184,7 @@
       "$oid": "67b6cf123a893726b5398571"
     },
     "name": "GIGABYTE",
-    "logo": "Gigabyte_Technology_logo_20080107.svg",
+    "logo": "GIGABYTE.png",
     "banner": "image.png",
     "status": 1,
     "description": "GIGABYTE là một trong những hãng công nghệ hàng đầu đến từ Đài Loan, chuyên sản xuất linh kiện máy tính và thiết bị chơi game. Thành lập năm 1986, GIGABYTE nổi tiếng với bo mạch chủ, card đồ họa và laptop gaming chất lượng cao, phục vụ từ người dùng phổ thông đến game thủ và dân công nghệ chuyên nghiệp."

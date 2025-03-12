@@ -84,6 +84,7 @@ async function create(body) {
                             colors: variant.colors.map((color, iColor) => {
                                 if (iColor == productOrder.color) return {
                                     ...color.toObject(),
+                                    status: color.quantity - productOrder.quantity === 0 ? 0 : color.status,
                                     quantity: color.quantity - productOrder.quantity
                                 }
 
@@ -221,6 +222,7 @@ async function updateStatus(id, body) {
                                 colors: variant.colors.map((color, iColor) => {
                                     if (iColor == productOrder.color) return {
                                         ...color.toObject(),
+                                        status: 1,
                                         quantity: color.quantity + productOrder.quantity
                                     }
 
