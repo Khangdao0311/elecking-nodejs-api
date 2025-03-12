@@ -11,7 +11,6 @@ const { ObjectId } = require("mongodb");
 module.exports = {
     getById,
     getQuery,
-    getTotalPagesByQuery,
     getSame
 };
 
@@ -173,8 +172,38 @@ async function getQuery(query) {
             { $skip: skip },
             { $limit: +limit }
         ];
+        const pipelineTotal = [
+            {
+                $addFields: {
+                    finalPrice: {
+                        $subtract: [
+                            { $arrayElemAt: ["$variants.price", 0] },
+                            { $ifNull: [{ $arrayElemAt: ["$variants.price_sale", 0] }, 0] }
+                        ]
+                    },
+                    percent: {
+                        $round: [
+                            {
+                                $multiply: [
+                                    {
+                                        $divide: [
+                                            { $ifNull: [{ $arrayElemAt: ["$variants.price_sale", 0] }, 0] },
+                                            { $arrayElemAt: ["$variants.price", 0] }
+                                        ]
+                                    },
+                                    100
+                                ]
+                            },
+                            0 // Làm tròn số nguyên
+                        ]
+                    }
+                }
+            },
+            { $match: matchCondition },
+        ];
 
         const products = await productModel.aggregate(pipeline);
+        const productsTotal = await productModel.aggregate(pipelineTotal);
 
         const data = [];
 
@@ -233,85 +262,7 @@ async function getQuery(query) {
             });
         }
 
-        return { status: 200, message: "Thành công !", data: data }
-    } catch (error) {
-        console.log(error);
-        throw error;
-    }
-}
-
-async function getTotalPagesByQuery(query) {
-    try {
-        const { search, id, categoryid, price, limit = 5 } = query
-
-        let matchCondition = {};
-
-        // Tìm kiếm sản phẩm theo tên
-        if (search) {
-            matchCondition.name = {
-                $regex: search,
-                $options: "i",
-            };
-        }
-
-        // Tìm kiếm sản phẩm theo nhiều id nối bằng dâu '-'
-        if (id) {
-            matchCondition._id = {
-                $in: id.split("-").map((_id) => new ObjectId(_id)),
-            };
-        }
-
-        // Tìm kiếm sản phẩm theo nhiều id danh mục nối bằng dấu '-'
-        if (categoryid) {
-            matchCondition.category_id = {
-                $in: categoryid.split("-").map((idCat) => new ObjectId(idCat)),
-            };
-        }
-
-        // Tìm kiếm sản phẩm theo giá từ đên nối bằng dấu '-'
-        if (price) {
-            const [min, max] = price.split("-");
-            matchCondition.finalPrice = {
-                $gte: +min,
-                $lte: +max,
-            };
-        }
-
-        const pipeline = [
-            {
-                $addFields: {
-                    finalPrice: {
-                        $subtract: [
-                            { $arrayElemAt: ["$variants.price", 0] },
-                            { $ifNull: [{ $arrayElemAt: ["$variants.price_sale", 0] }, 0] }
-                        ]
-                    },
-                    percent: {
-                        $round: [
-                            {
-                                $multiply: [
-                                    {
-                                        $divide: [
-                                            { $ifNull: [{ $arrayElemAt: ["$variants.price_sale", 0] }, 0] },
-                                            { $arrayElemAt: ["$variants.price", 0] }
-                                        ]
-                                    },
-                                    100
-                                ]
-                            },
-                            0 // Làm tròn số nguyên
-                        ]
-                    }
-                }
-            },
-            { $match: matchCondition },
-        ];
-
-        const products = await productModel.aggregate(pipeline);
-
-        const data = Math.ceil(products.length / limit);
-
-        return { status: 200, message: "Thành công !", data: data }
+        return { status: 200, message: "Thành công !", data: data, total: productsTotal.length }
     } catch (error) {
         console.log(error);
         throw error;

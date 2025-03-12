@@ -4,8 +4,7 @@ const { ObjectId } = require("mongodb");
 
 module.exports = {
     getById,
-    getQuery,
-    getTotalPagesByQuery
+    getQuery
 };
 
 async function getById(id) {
@@ -66,7 +65,12 @@ async function getQuery(query) {
             { $limit: +limit },
         ];
 
+        const pipelineTotal = [
+            { $match: matchCondition },
+        ];
+
         const brands = await brandModel.aggregate(pipeline);
+        const brandsTotal = await brandModel.aggregate(pipelineTotal);
 
         const data = brands.map((brand) => ({
             id: brand._id,
@@ -77,41 +81,7 @@ async function getQuery(query) {
             description: brand.description,
         }));
 
-        return { status: 200, message: "Thành công !", data: data }
-    } catch (error) {
-        console.log(error);
-        throw error;
-    }
-}
-
-async function getTotalPagesByQuery(query) {
-    try {
-        const { id, search, limit = 5 } = query;
-
-        let matchCondition = {};
-
-        if (search) {
-            matchCondition.name = {
-                $regex: search,
-                $options: "i",
-            };
-        }
-
-        if (id) {
-            matchCondition._id = {
-                $in: id.split("-").map((_id) => new ObjectId(_id)),
-            };
-        }
-
-        const pipeline = [
-            { $match: matchCondition },
-        ];
-
-        const brands = await brandModel.aggregate(pipeline);
-
-        const data = Math.ceil(brands.length / limit);
-
-        return { status: 200, message: "Thành công !", data: data }
+        return { status: 200, message: "Thành công !", data: data, total: brandsTotal.length }
     } catch (error) {
         console.log(error);
         throw error;

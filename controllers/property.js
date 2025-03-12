@@ -5,8 +5,7 @@ const { ObjectId } = require("mongodb");
 
 module.exports = {
     getById,
-    getQuery,
-    getTotalPagesByQuery
+    getQuery
 };
 
 async function getById(id) {
@@ -34,7 +33,7 @@ async function getById(id) {
 
 async function getQuery(query) {
     try {
-        const { id, search, type, orderby, page = 1, limit = null } = query;
+        const { id, search, proptype_id, orderby, page = 1, limit = null } = query;
 
         let matchCondition = {};
 
@@ -45,16 +44,15 @@ async function getQuery(query) {
             };
         }
 
-        if (type) {
-            matchCondition.type = {
-                $regex: type,
-                $options: "i",
-            };
-        }
-
         if (id) {
             matchCondition._id = {
                 $in: id.split("-").map((_id) => new ObjectId(_id)),
+            };
+        }
+        
+        if (proptype_id) {
+            matchCondition.proptype_id = {
+                $in: proptype_id.split("-").map((_proptype_id) => new ObjectId(_proptype_id)),
             };
         }
 
@@ -72,6 +70,11 @@ async function getQuery(query) {
             { $sort: sortCondition },
         ];
 
+        const pipelineTotal = [
+            { $match: matchCondition },
+            { $sort: sortCondition },
+        ];
+
         if (limit && !isNaN(+limit)) {
             const skip = (page - 1) * limit;
             pipeline.push({ $skip: skip },);
@@ -79,6 +82,7 @@ async function getQuery(query) {
         }
 
         const properties = await propertyModel.aggregate(pipeline);
+        const propertiesTotal = await propertyModel.aggregate(pipelineTotal);
 
         const data = []
 
@@ -94,50 +98,7 @@ async function getQuery(query) {
             })
         }
 
-        return { status: 200, message: "Thành công !", data: data }
-    } catch (error) {
-        console.log(error);
-        throw error;
-    }
-}
-
-async function getTotalPagesByQuery(query) {
-    try {
-        const { id, search, type, limit = null } = query;
-
-        let matchCondition = {};
-
-        if (search) {
-            matchCondition.name = {
-                $regex: search,
-                $options: "i",
-            };
-        }
-
-        if (type) {
-            matchCondition.type = {
-                $regex: type,
-                $options: "i",
-            };
-        }
-
-        if (id) {
-            matchCondition._id = {
-                $in: id.split("-").map((_id) => new ObjectId(_id)),
-            };
-        }
-
-        const pipeline = [
-            { $match: matchCondition },
-        ];
-
-        const properties = await propertyModel.aggregate(pipeline);
-
-        let data = 0;
-
-        if (limit && !isNaN(+limit)) data = Math.ceil(properties.length / limit)
-
-        return { status: 200, message: "Thành công !", data: data }
+        return { status: 200, message: "Thành công !", data: data, total: propertiesTotal.length }
     } catch (error) {
         console.log(error);
         throw error;

@@ -6,8 +6,7 @@ const { ObjectId } = require("mongodb");
 
 module.exports = {
     getById,
-    getQuery,
-    getTotalPagesByQuery
+    getQuery
 };
 
 async function getById(id) {
@@ -74,7 +73,12 @@ async function getQuery(query) {
             { $limit: +limit },
         ];
 
+        const pipelineTotal = [
+            { $match: matchCondition },
+        ];
+
         const reviews = await reviewModel.aggregate(pipeline);
+        const reviewsTotal = await reviewModel.aggregate(pipelineTotal);
 
         const data = [];
 
@@ -101,36 +105,7 @@ async function getQuery(query) {
 
         }
 
-        return { status: 200, message: "Thành công !", data: data }
-    } catch (error) {
-        console.log(error);
-        throw error;
-    }
-}
-
-async function getTotalPagesByQuery(query) {
-    try {
-        const { product_id, rating, limit = 5 } = query;
-
-        let matchCondition = {};
-
-        if (product_id) {
-            matchCondition.product_id = new ObjectId(product_id)
-        }
-
-        if (rating) {
-            matchCondition.rating = +rating
-        }
-
-        const pipeline = [
-            { $match: matchCondition },
-        ];
-
-        const reviews = await reviewModel.aggregate(pipeline);
-
-        const data = Math.ceil(reviews.length / limit);
-
-        return { status: 200, message: "Thành công !", data: data }
+        return { status: 200, message: "Thành công !", data: data, total: reviewsTotal.length }
     } catch (error) {
         console.log(error);
         throw error;

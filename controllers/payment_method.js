@@ -4,8 +4,7 @@ const { ObjectId } = require("mongodb");
 
 module.exports = {
     getById,
-    getQuery,
-    getTotalPagesByQuery
+    getQuery
 };
 
 async function getById(id) {
@@ -63,7 +62,12 @@ async function getQuery(query) {
             { $limit: +limit },
         ];
 
+        const pipelineTotal = [
+            { $match: matchCondition },
+        ];
+
         const payment_methods = await payment_methodModel.aggregate(pipeline);
+        const payment_methodsTotal = await payment_methodModel.aggregate(pipelineTotal);
 
         const data = payment_methods.map((payment_method) => ({
             id: payment_method._id,
@@ -71,41 +75,7 @@ async function getQuery(query) {
             description: payment_methodModel.description,
         }));
 
-        return { status: 200, message: "Thành công !", data: data }
-    } catch (error) {
-        console.log(error);
-        throw error;
-    }
-}
-
-async function getTotalPagesByQuery(query) {
-    try {
-        const { id, search, limit = 5 } = query;
-
-        let matchCondition = {};
-
-        if (search) {
-            matchCondition.name = {
-                $regex: search,
-                $options: "i",
-            };
-        }
-
-        if (id) {
-            matchCondition._id = {
-                $in: id.split("-").map((_id) => new ObjectId(_id)),
-            };
-        }
-
-        const pipeline = [
-            { $match: matchCondition },
-        ];
-
-        const payment_methods = await payment_methodModel.aggregate(pipeline);
-
-        const data = Math.ceil(payment_methods.length / limit);
-
-        return { status: 200, message: "Thành công !", data: data }
+        return { status: 200, message: "Thành công !", data: data, total: payment_methodsTotal.length }
     } catch (error) {
         console.log(error);
         throw error;

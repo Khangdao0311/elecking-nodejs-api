@@ -4,8 +4,7 @@ const { ObjectId } = require("mongodb");
 
 module.exports = {
     getById,
-    getQuery,
-    getTotalPagesByQuery
+    getQuery
 };
 
 async function getById(id) {
@@ -56,6 +55,11 @@ async function getQuery({ id, search, orderby, page = 1, limit = null }) {
             { $sort: sortCondition },
         ];
 
+        const pipelineTotal = [
+            { $match: matchCondition },
+            { $sort: sortCondition },
+        ];
+
         if (limit && !isNaN(+limit)) {
             const skip = (page - 1) * limit;
             pipeline.push({ $skip: skip },);
@@ -63,45 +67,14 @@ async function getQuery({ id, search, orderby, page = 1, limit = null }) {
         }
 
         const proptypes = await proptypeModel.aggregate(pipeline);
+        const proptypesTotal = await proptypeModel.aggregate(pipelineTotal);
 
         const data = proptypes.map((proptype) => ({
             id: proptype._id,
             name: proptype.name,
         }));
 
-        return { status: 200, message: "Thành công !", data: data };
-    } catch (error) {
-        console.log(error);
-        throw error;
-    }
-}
-
-async function getTotalPagesByQuery({ id, search, limit = 5 }) {
-    try {
-        let matchCondition = {};
-
-        if (search) {
-            matchCondition.name = {
-                $regex: search,
-                $options: "i",
-            };
-        }
-
-        if (id) {
-            matchCondition._id = {
-                $in: id.split("-").map((_id) => new ObjectId(_id)),
-            };
-        }
-
-        const pipeline = [
-            { $match: matchCondition },
-        ];
-
-        const proptypes = await proptypeModel.aggregate(pipeline);
-
-        const data = Math.ceil(proptypes.length / limit);
-
-        return { status: 200, message: "Thành công !", data: data };
+        return { status: 200, message: "Thành công !", data: data, total: proptypesTotal.length };
     } catch (error) {
         console.log(error);
         throw error;

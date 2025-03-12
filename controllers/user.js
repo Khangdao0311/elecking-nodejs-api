@@ -4,8 +4,7 @@ const { ObjectId } = require("mongodb");
 
 module.exports = {
     getById,
-    getQuery,
-    getTotalPagesByQuery
+    getQuery
 };
 
 async function getById(id) {
@@ -72,7 +71,12 @@ async function getQuery(query) {
             { $limit: +limit },
         ];
 
+        const pipelineTotal = [
+            { $match: matchCondition },
+        ];
+
         const users = await userModel.aggregate(pipeline);
+        const usersTotal = await userModel.aggregate(pipelineTotal);
 
         const data = users.map((user) => ({
             id: user._id,
@@ -88,7 +92,7 @@ async function getQuery(query) {
             // wish: user.cart,
         }));
 
-        return { status: 200, message: "Thành công !", data: data };
+        return { status: 200, message: "Thành công !", data: data, total: usersTotal.length };
     } catch (error) {
         console.log(error);
         throw error;

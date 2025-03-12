@@ -13,15 +13,6 @@ router.get('/', async function (req, res, next) {
   }
 });
 
-router.get('/total_pages', async function (req, res, next) {
-  try {
-    const result = await productController.getTotalPagesByQuery(req.query);
-    return res.status(result.status).json(result);
-  } catch (error) {
-    return res.status(500).json({ status: 500, message: "Lỗi hệ thống" });
-  }
-});
-
 router.get('/same', async function (req, res, next) {
   try {
     const result = await productController.getSame(req.query);

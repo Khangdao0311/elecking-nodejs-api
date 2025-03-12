@@ -13,15 +13,6 @@ router.get("/", async function (req, res, next) {
   }
 });
 
-router.get("/total_pages", async function (req, res, next) {
-  try {
-    const result = await voucherController.getTotalPagesByQuery(req.query);
-    return res.status(result.status).json(result);
-  } catch (error) {
-    return res.status(500).json({ status: false, message: "Lỗi hệ thống" });
-  }
-});
-
 router.get('/:id', async function (req, res, next) {
   try {
     const { id } = req.params
