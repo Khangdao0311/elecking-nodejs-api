@@ -61,8 +61,9 @@ async function getQuery({ id, search, orderby, page = 1, limit = 5 }) {
             { $match: matchCondition },
             { $sort: sortCondition },
             { $skip: skip },
-            { $limit: +limit },
         ];
+
+        if (+limit) pipeline.push({ $limit: +limit })
 
         const pipelineTotal = [
             { $match: matchCondition },

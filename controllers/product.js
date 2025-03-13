@@ -81,7 +81,7 @@ async function getById(id) {
 async function getQuery(query) {
     try {
 
-        const { search, id, categoryid, price, orderby, page = 1, limit = 5 } = query
+        const { search, id, categoryid, brandid, price, orderby, page = 1, limit = 5 } = query
 
         let matchCondition = {};
 
@@ -104,6 +104,12 @@ async function getQuery(query) {
         if (categoryid) {
             matchCondition.category_id = {
                 $in: categoryid.split("-").map((idCat) => new ObjectId(idCat)),
+            };
+        }
+
+        if (brandid) {
+            matchCondition.brand_id = {
+                $in: brandid.split("-").map((idBrand) => new ObjectId(idBrand)),
             };
         }
 
