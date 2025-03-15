@@ -7,7 +7,7 @@ module.exports = {
 
 async function insert(body) {
     try {
-        const { name, image = "", description = "", properties = "[]" } = body
+        const { name, image = "", icon = '', description = "", properties = "[]" } = body
 
         if (!name) return { status: 400, message: "Tên danh mục không được trống !" }
 
@@ -17,6 +17,7 @@ async function insert(body) {
             name: name,
             image: image,
             status: 1,
+            icon: icon,
             properties: JSON.parse(properties),
             description: description,
         })
@@ -35,7 +36,7 @@ async function update(id, body) {
         const category = await categoryModel.findById(id)
         if (!category) return { status: 400, message: "Danh mục không tồn tại !" }
 
-        const { name, image, status, description, properties } = body
+        const { name, image, status, icon, description, properties } = body
 
         if (![0, 1, 2].includes(+status)) return { status: 400, message: "Trạng thái danh mục không hợp lệ !" }
 
@@ -46,6 +47,7 @@ async function update(id, body) {
                 name: name,
                 image: image,
                 status: +status,
+                icon: icon,
                 properties: JSON.parse(properties),
                 description: description
             }

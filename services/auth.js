@@ -21,21 +21,27 @@ async function login(body) {
 
         if (user) {
             if (bcryptjs.compareSync(password, user.password)) {
-                const data = {
+                const userData = {
                     id: user._id,
                     fullname: user.username,
                     avatar: user.avatar ? `${process.env.URL}${user.avatar}` : "",
                     email: user.email,
                     phone: user.phone,
                     username: user.username,
-                    cart: user.cart,
-                    wish: user.wish
                 };
 
-                // const access_token = jwt.sign({ user: data }, process.env.JWTSECRET, {
-                //     expiresIn: "10s",
-                // });
-                // const refresh_token = jwt.sign({ user: data }, process.env.JWTSECRET);
+                const access_token = jwt.sign({ user: userData }, process.env.JWTSECRET, {
+                    expiresIn: "10s",
+                });
+                const refresh_token = jwt.sign({ user: userData }, process.env.JWTSECRET, {
+                    expiresIn: "3h",
+                });
+
+                const data = {
+                    user: userData,
+                    access_token: access_token,
+                    refresh_token: refresh_token
+                }
 
                 return { status: 200, message: 'Thành công !', data: data }
 
@@ -111,8 +117,6 @@ async function register(body) {
 async function updateCart(id, body) {
     try {
         const { cart } = body
-
-
 
         const user = await userModel.findById(id)
         if (!user) return { status: 400, message: "Người dùng không tồn tại !" }

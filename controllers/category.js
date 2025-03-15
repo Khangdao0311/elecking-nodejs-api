@@ -18,6 +18,7 @@ async function getById(id) {
             name: category.name,
             image: category.image ? `${process.env.URL}${category.image}` : "",
             status: category.status,
+            icon: category.icon,
             proptypes: category.proptypes,
             description: category.description,
         };
@@ -91,6 +92,7 @@ async function getQuery({ id, search, orderby, page = 1, limit = 5 }) {
                 name: category.name,
                 image: category.image ? `${process.env.URL}${category.image}` : "",
                 status: category.status,
+                icon: category.icon,
                 proptypes: proptypes,
                 description: category.description,
             })
