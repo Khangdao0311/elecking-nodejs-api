@@ -149,13 +149,9 @@ async function updateWish(id, body) {
 
         if (!Array.isArray(JSON.parse(wish))) return { status: 400, message: "Wish không phải là mảng !" }
 
-        const wishNew = JSON.parse(wish).map(c => ({
-            ...c,
-            product: {
-                ...c.product,
-                id: new ObjectId(c.product.id)
-            }
-        }))
+        const wishNew = JSON.parse(wish).map(c => (
+            new ObjectId(c.product.id)
+        ))
 
         await userModel.findByIdAndUpdate(id, { $set: { wish: wishNew } }, { new: true, runValidators: true })
 
@@ -165,5 +161,3 @@ async function updateWish(id, body) {
         throw error;
     }
 }
-
-[{ "product": { "id": "67b96ee667788c638a22e2c7", "variant": 0, "color": 0 } }]

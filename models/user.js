@@ -11,14 +11,6 @@ const cartItemSchema = new Schema({
   },
 }, { _id: false, versionKey: false });
 
-const wishItemSchema = new Schema({
-  product: {
-    id: { type: ObjectId, ref: "product" },
-    variant: { type: Number },
-    color: { type: Number },
-  },
-}, { _id: false, versionKey: false });
-
 const userSchema = new Schema({
   fullname: { type: String },
   avatar: { type: String },
@@ -30,7 +22,9 @@ const userSchema = new Schema({
   status: { type: Number },
   register_date: { type: String },
   cart: [cartItemSchema],
-  wish: [wishItemSchema]
+  wish: [
+    { type: ObjectId, ref: "product" }
+  ],
 }, { versionKey: false });
 
 module.exports =

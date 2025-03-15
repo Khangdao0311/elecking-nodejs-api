@@ -1,4 +1,7 @@
 var orderModel = require("../models/order");
+var userModel = require("../models/user");
+var payment_methodModel = require("../models/payment_method");
+var voucherModel = require("../models/voucher");
 
 const { ObjectId } = require("mongodb");
 
@@ -12,6 +15,12 @@ async function getById(id) {
         const order = await orderModel.findById(id);
         if (!order) return { status: 400, message: "Đơn hàng không tồn tại !" }
 
+        const user = await userModel.findById(order.user_id)
+        const payment_method = await payment_methodModel.findById(order.payment_method_id)
+        let voucher = null
+        if (!order.voucher_id) voucher = await voucherModel.findById(order.voucher_id)
+
+
         const data = {
             id: order._id,
             total: order.total,
@@ -22,9 +31,18 @@ async function getById(id) {
             transaction_code: order.transaction_code,
             price_ship: order.price_ship,
             products: order.products,
-            user_id: order.user_id,
-            voucher_id: order.voucher_id,
-            payment_method_id: order.payment_method_id,
+            user: {
+                id: user._id,
+                fullname: user.fullname,
+            },
+            voucher: voucher ? {
+                id: voucher._id,
+                code: voucher.code
+            } : null,
+            payment_method: {
+                id: payment_method._id,
+                name: payment_method.name
+            },
             address_id: order.address_id,
         };
 
@@ -71,21 +89,57 @@ async function getQuery(query) {
         const orders = await orderModel.aggregate(pipeline);
         const ordersTotal = await orderModel.aggregate(pipelineTotal);
 
-        const data = orders.map((order) => ({
-            id: order._id,
-            total: order.total,
-            status: order.status,
-            payment_status: order.payment_status,
-            ordered_at: order.ordered_at,
-            updated_at: order.updated_at,
-            transaction_code: order.transaction_code,
-            price_ship: order.price_ship,
-            products: order.products,
-            user_id: order.user_id,
-            voucher_id: order.voucher_id,
-            payment_method_id: order.payment_method_id,
-            address_id: order.address_id,
-        }));
+        const data = []
+
+        for (const order of orders) {
+
+            const user = await userModel.findById(order.user_id)
+            const payment_method = await payment_methodModel.findById(order.payment_method_id)
+            let voucher = null
+            if (!order.voucher_id) voucher = await voucherModel.findById(order.voucher_id)
+
+            data.push({
+                id: order._id,
+                total: order.total,
+                status: order.status,
+                payment_status: order.payment_status,
+                ordered_at: order.ordered_at,
+                updated_at: order.updated_at,
+                transaction_code: order.transaction_code,
+                price_ship: order.price_ship,
+                products: order.products,
+                user: {
+                    id: user._id,
+                    fullname: user.fullname,
+                },
+                voucher: voucher ? {
+                    id: voucher._id,
+                    code: voucher.code
+                } : null,
+                payment_method: {
+                    id: payment_method._id,
+                    name: payment_method.name
+                },
+                address_id: order.address_id,
+            })
+        }
+
+
+        // const data = orders.map((order) => ({
+        //     id: order._id,
+        //     total: order.total,
+        //     status: order.status,
+        //     payment_status: order.payment_status,
+        //     ordered_at: order.ordered_at,
+        //     updated_at: order.updated_at,
+        //     transaction_code: order.transaction_code,
+        //     price_ship: order.price_ship,
+        //     products: order.products,
+        //     user_id: order.user_id,
+        //     voucher_id: order.voucher_id,
+        //     payment_method_id: order.payment_method_id,
+        //     address_id: order.address_id,
+        // }));
 
         return { status: 200, message: "Thành công !", data: data, total: ordersTotal.length }
     } catch (error) {
