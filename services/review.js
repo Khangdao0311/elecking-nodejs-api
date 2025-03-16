@@ -18,7 +18,7 @@ async function insert(body) {
         const order = await orderModel.findById(order_id)
         if (!order) return { status: 400, message: "Đơn hàng không tồn tại !" }
 
-        if (order.status !== 3) return { status: 400, message: "Đơn hàng chưa được giao thành công !" }
+        if (order.status !== 3) return { status: 400, message: "Đơn hàng chưa được giao Success" }
 
         const product = await productModel.findById(product_id)
         if (!product) return { status: 400, message: "Sản phẩm không tồn tại !" }
@@ -56,7 +56,7 @@ async function insert(body) {
 
         await orderModel.findByIdAndUpdate(order._id, { $set: { products: productsOrder } }, { new: true, runValidators: true })
 
-        return { status: 200, message: "Thành công !" }
+        return { status: 200, message: "Success" }
     } catch (error) {
         console.log(error);
         throw error;
@@ -74,6 +74,17 @@ async function update(id, body) {
 
         if (![0, 1, 2, 3, 4, 5].includes(+rating)) return { status: 400, message: "Đánh giá không tồn tại !" }
 
+        if (review.images.length > 0) {
+            review.images.forEach(image => {
+                if (!JSON.parse(images).includes(image)) {
+                    fs.unlink(`./public/images/${review.image}`, function (err) {
+                        if (err) return console.log(err);
+                        console.log("file deleted successfully");
+                    });
+                }
+            });
+        }
+
         await reviewModel.findByIdAndUpdate(id, {
             $set: {
                 content: content,
@@ -82,7 +93,7 @@ async function update(id, body) {
             }
         }, { new: true })
 
-        return { status: 200, message: "Thành công !" }
+        return { status: 200, message: "Success" }
     } catch (error) {
         console.log(error);
         throw error;

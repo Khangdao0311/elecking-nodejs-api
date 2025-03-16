@@ -32,6 +32,8 @@ async function create(body) {
         if (voucher_id) {
             const voucher = await voucherModel.findById(voucher_id)
             if (!voucher) return { status: 400, message: "Voucher không tồn tại !" }
+            if (+total < +voucher.min_order_value) return { status: 400, message: `Đơn hàng không đủ điều kiện để áp dụng voucher ${voucher.code}` }
+            await voucherModel.findByIdAndUpdate(voucher._id, { $set: { quantity: voucher.quantty - 1, status: voucher.quantty - 1 === 0 ? 0 : 1 } }, { new: true, runValidators: true })
         }
 
         const date = new Date();
@@ -47,7 +49,10 @@ async function create(body) {
             price_ship: +price_ship,
             products: JSON.parse(products).map(product => ({
                 ...product,
-                product_id: new ObjectId(product.product_id),
+                product: {
+                    id: new ObjectId(product.product_id),
+                    ...product.product
+                },
                 reviewed: false
             })),
             user_id: new ObjectId(user_id),
@@ -64,14 +69,17 @@ async function create(body) {
             }
         });
 
+
+
+
         let productsOrder = '';
 
 
         for (const [index, productOrder] of JSON.parse(products).entries()) {
-            const product = await productModel.findById(productOrder.product_id)
+            const product = await productModel.findById(productOrder.product.id)
 
             const properties = [];
-            for (const property_id of product.variants[productOrder.variant].property_ids) {
+            for (const property_id of product.variants[productOrder.product.variant].property_ids) {
                 const property = await propertyModel.findById(property_id);
                 properties.push(property?.name);
             }
@@ -79,15 +87,14 @@ async function create(body) {
             await productModel.findByIdAndUpdate(product._id, {
                 $set: {
                     variants: product.variants.map((variant, iVariant) => {
-                        if (iVariant == productOrder.variant) return {
+                        if (iVariant == productOrder.product.variant) return {
                             ...variant.toObject(),
                             colors: variant.colors.map((color, iColor) => {
-                                if (iColor == productOrder.color) return {
+                                if (iColor == productOrder.product.color) return {
                                     ...color.toObject(),
                                     status: color.quantity - productOrder.quantity === 0 ? 0 : color.status,
                                     quantity: color.quantity - productOrder.quantity
                                 }
-
                                 return color
                             })
                         }
@@ -100,11 +107,11 @@ async function create(body) {
             productsOrder += `
                 <tr>
                     <td style="padding: 5px; text-align: center;">${index + 1}</td>
-                    <td style="padding: 5px; ">${productOrder.product_id}</td>
+                    <td style="padding: 5px; ">${productOrder.product.id}</td>
                     <td style="padding: 5px; ">${product.name}</td>
                     <td style="padding: 5px; text-align: center;">${productOrder.quantity}</td>
                     <td style="padding: 5px; text-align: center;">${properties.join(" - ")}</td>
-                    <td style="padding: 5px; text-align: center;">${product.variants[productOrder.variant].colors[productOrder.color].name}</td>
+                    <td style="padding: 5px; text-align: center;">${product.variants[productOrder.product.variant].colors[productOrder.product.color].name}</td>
                 </tr>
             `
         }
@@ -126,6 +133,7 @@ async function create(body) {
                     <p>Loại địa chỉ: <b>${address.type == 1 ? "Nhà Riêng" : "Văn Phòng"}</b></p>
                     <hr>
                     <p>Phương thức thanh toán: <b>${payment_method.name}</b></p>
+                    <p>Giá trị đơn hàng: <b>${(+total).toLocaleString("vi-VN")} đ</b></p>
                     <hr>
                     <p style="font-size: 18px; font-weight: bold;">Đơn hàng</p>
                     <table border="1" style="width: 100%;">
@@ -152,7 +160,7 @@ async function create(body) {
         await orderNew.save();
         await transporter.sendMail(mailOptions);
 
-        return { status: 200, message: "Thành công !" }
+        return { status: 200, message: "Success" }
     } catch (error) {
         console.log(error);
         throw error;
@@ -181,7 +189,7 @@ async function updateTransactionCode(id, body) {
             },
             { new: true, runValidators: true })
 
-        return { status: 200, message: "Thành công !" }
+        return { status: 200, message: "Success" }
     } catch (error) {
         console.log(error);
         throw error;
@@ -238,7 +246,7 @@ async function updateStatus(id, body) {
 
 
 
-        return { status: 200, message: "Thành công !" }
+        return { status: 200, message: "Success" }
     } catch (error) {
         console.log(error);
         throw error;

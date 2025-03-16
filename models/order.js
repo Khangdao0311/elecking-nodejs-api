@@ -3,11 +3,13 @@ const Schema = mongoose.Schema;
 const ObjectId = Schema.ObjectId;
 
 const orderProductSchema = new Schema({
-    product_id: { type: ObjectId, ref: "product" },
-    variant: { type: Number },
-    color: { type: Number },
+    product: {
+        id: { type: ObjectId, ref: "product" },
+        variant: { type: Number },
+        color: { type: Number },
+        price: { type: Number },
+    },
     quantity: { type: Number },
-    price: { type: Number },
     reviewed: { type: Boolean }
 }, { _id: false, versionKey: false });
 

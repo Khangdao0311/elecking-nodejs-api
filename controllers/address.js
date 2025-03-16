@@ -27,7 +27,7 @@ async function getById(id) {
             user_id: address.user_id,
         };
 
-        return { status: 200, message: "Thành công !", data: data }
+        return { status: 200, message: "Success", data: data }
     } catch (error) {
         console.log(error);
         throw error;
@@ -98,7 +98,7 @@ async function getQuery(query) {
             user_id: address.user_id,
         }));
 
-        return { status: 200, message: "Thành công !", data: data, total: addresssTotal.length }
+        return { status: 200, message: "Success", data: data, total: addresssTotal.length }
     } catch (error) {
         console.log(error);
         throw error;

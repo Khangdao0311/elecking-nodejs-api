@@ -26,7 +26,7 @@ async function getById(id) {
             user_id: voucher.user_id,
         };
 
-        return { status: 200, message: "Thành công !", data: data }
+        return { status: 200, message: "Success", data: data }
     } catch (error) {
         console.log(error);
         throw error;
@@ -91,7 +91,7 @@ async function getQuery(query) {
             user_id: voucher.user_id,
         }));
 
-        return { status: 200, message: "Thành công !", data: data, total: vouchersTotal.length }
+        return { status: 200, message: "Success", data: data, total: vouchersTotal.length }
     } catch (error) {
         console.log(error);
         throw error;

@@ -23,7 +23,7 @@ async function getById(id) {
             description: category.description,
         };
 
-        return { status: 200, messgae: "Thành công !", data: data }
+        return { status: 200, messgae: "Success", data: data }
     } catch (error) {
         console.log(error);
         throw error;
@@ -98,7 +98,7 @@ async function getQuery({ id, search, orderby, page = 1, limit = 5 }) {
             })
         }
 
-        return { status: 200, message: "Thành công !", data: data, total: categoriesTotal.length };
+        return { status: 200, message: "Success", data: data, total: categoriesTotal.length };
     } catch (error) {
         console.log(error);
         throw error;

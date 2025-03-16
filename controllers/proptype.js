@@ -17,7 +17,7 @@ async function getById(id) {
             name: proptype.name,
         };
 
-        return { status: 200, messgae: "Thành công !", data: data }
+        return { status: 200, messgae: "Success", data: data }
     } catch (error) {
         console.log(error);
         throw error;
@@ -74,7 +74,7 @@ async function getQuery({ id, search, orderby, page = 1, limit = null }) {
             name: proptype.name,
         }));
 
-        return { status: 200, message: "Thành công !", data: data, total: proptypesTotal.length };
+        return { status: 200, message: "Success", data: data, total: proptypesTotal.length };
     } catch (error) {
         console.log(error);
         throw error;

@@ -3,6 +3,7 @@
     "$oid": "67be8349447c10378c42365e"
   },
   "name": "Thanh toán khi nhận hàng",
+  "image": "cod.png",
   "description": "Thanh toán khi nhận hàng (COD) là phương thức cho phép khách hàng trả tiền mặt hoặc quẹt thẻ khi nhận được hàng. Đây là lựa chọn phổ biến vì giúp khách hàng kiểm tra sản phẩm trước khi thanh toán, tăng độ tin cậy khi mua sắm online. COD thường áp dụng cho các đơn hàng nội địa, với phí thu hộ có thể phát sinh tùy vào đơn vị vận chuyển."
 },
 {
@@ -10,5 +11,6 @@
     "$oid": "67be8349447c10378c42365f"
   },
   "name": "VNPay",
+  "image": "vnpay.png",
   "description": "VNPay là cổng thanh toán điện tử hỗ trợ QR Code, thẻ ATM, Visa/Mastercard, ví điện tử và kết nối với hơn 40 ngân hàng tại Việt Nam. Nó giúp thanh toán trực tuyến nhanh chóng, an toàn và tiện lợi cho cả cá nhân lẫn doanh nghiệp."
 }]

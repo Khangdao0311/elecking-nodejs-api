@@ -15,7 +15,7 @@ npm i
 [http://localhost:3000/category/{categoryId}](http://localhost:3000/category/{categoryId})
 
 **Trả về**
-{stauts:200,message:"Thành công", data:[
+{stauts:200,message:"Success", data:[
     id: string,
     name: string,
     image: string,
@@ -33,7 +33,7 @@ npm i
 query có **id**, **search**, **orderby** default là sắp xếp theo id giảm dần , **page** default bằng 1 nếu không truyền, **limit** default bằng 5 nếu không truyền
 
 **Trả về**
-{stauts:200,message:"Thành công", data:[
+{stauts:200,message:"Success", data:[
     id: string,
     name: string,
     image: string,

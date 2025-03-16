@@ -43,7 +43,7 @@ async function insert(body) {
 
         await voucherNew.save()
 
-        return { status: 200, message: "Thành công !" }
+        return { status: 200, message: "Success" }
     } catch (error) {
         console.log(error);
         throw error;
@@ -82,7 +82,7 @@ async function update(id, body) {
             }
         }, { new: true })
 
-        return { status: 200, message: "Thành công !" }
+        return { status: 200, message: "Success" }
     } catch (error) {
         console.log(error);
         throw error;

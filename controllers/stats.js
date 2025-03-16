@@ -102,7 +102,7 @@ async function getQuery(query) {
             data = orders[0]
         }
 
-        return { status: 200, message: "Thành công !", data: data }
+        return { status: 200, message: "Success", data: data }
     } catch (error) {
         console.log(error);
         throw error;

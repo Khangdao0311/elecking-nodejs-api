@@ -35,9 +35,9 @@ router.post("/", async function (req, res, next) {
 
         await transporter.sendMail(mailOptions);
 
-        return res.status(200).json({ status: 200, message: "Thành công !" });
+        return res.status(200).json({ status: 200, message: "Success" });
     } catch (error) {
-        return res.status(500).json({ status: 500, message: "Lỗi hệ thống !" });
+        return res.status(500).json({ status: 500, message: "Internal Server Error" });
 
     }
 });

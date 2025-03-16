@@ -21,7 +21,7 @@ async function getById(id) {
             description: brand.description,
         };
 
-        return { status: 200, message: "Thành công !", data: data }
+        return { status: 200, message: "Success", data: data }
     } catch (error) {
         console.log(error);
         throw error;
@@ -82,7 +82,7 @@ async function getQuery(query) {
             description: brand.description,
         }));
 
-        return { status: 200, message: "Thành công !", data: data, total: brandsTotal.length }
+        return { status: 200, message: "Success", data: data, total: brandsTotal.length }
     } catch (error) {
         console.log(error);
         throw error;

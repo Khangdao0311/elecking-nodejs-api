@@ -1,3 +1,5 @@
+var fs = require("fs");
+
 var categoryModel = require("../models/category");
 
 module.exports = {
@@ -16,15 +18,15 @@ async function insert(body) {
         const categoryNew = new categoryModel({
             name: name,
             image: image,
-            status: 1,
             icon: icon,
+            status: 1,
             properties: JSON.parse(properties),
             description: description,
         })
 
         await categoryNew.save()
 
-        return { status: 200, message: "Thành công !" }
+        return { status: 200, message: "Success" }
     } catch (error) {
         console.log(error);
         throw error;
@@ -42,18 +44,25 @@ async function update(id, body) {
 
         if (!(typeof properties === 'string' && (() => { try { return Array.isArray(JSON.parse(properties)); } catch { return false; } })())) return { status: 400, message: "Property không đúng dữ liệu !" }
 
+        if (category.image !== "" && category.image !== image) {
+            fs.unlink(`./public/images/${category.image}`, function (err) {
+                if (err) return console.log(err);
+                console.log("file deleted successfully");
+            });
+        }
+
         await categoryModel.findByIdAndUpdate(id, {
             $set: {
                 name: name,
                 image: image,
-                status: +status,
                 icon: icon,
+                status: +status,
                 properties: JSON.parse(properties),
                 description: description
             }
         }, { new: true })
 
-        return { status: 200, message: "Thành công !" }
+        return { status: 200, message: "Success" }
     } catch (error) {
         console.log(error);
         throw error;

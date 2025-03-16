@@ -33,7 +33,7 @@ async function getById(id) {
             }
         };
 
-        return { status: 200, message: "Thành công !", data: data }
+        return { status: 200, message: "Success", data: data }
     } catch (error) {
         console.log(error);
         throw error;
@@ -105,7 +105,7 @@ async function getQuery(query) {
 
         }
 
-        return { status: 200, message: "Thành công !", data: data, total: reviewsTotal.length }
+        return { status: 200, message: "Success", data: data, total: reviewsTotal.length }
     } catch (error) {
         console.log(error);
         throw error;

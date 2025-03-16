@@ -15,10 +15,11 @@ async function getById(id) {
         const data = {
             id: payment_method._id,
             name: payment_method.name,
+            image: payment_method.image ? `${process.env.URL}${payment_method.image}` : "",
             description: payment_method.description,
         };
 
-        return { status: 200, message: "Thành công !", data: data }
+        return { status: 200, message: "Success", data: data }
     } catch (error) {
         console.log(error);
         throw error;
@@ -72,10 +73,11 @@ async function getQuery(query) {
         const data = payment_methods.map((payment_method) => ({
             id: payment_method._id,
             name: payment_method.name,
-            description: payment_methodModel.description,
+            image: payment_method.image ? `${process.env.URL}${payment_method.image}` : "",
+            description: payment_method.description,
         }));
 
-        return { status: 200, message: "Thành công !", data: data, total: payment_methodsTotal.length }
+        return { status: 200, message: "Success", data: data, total: payment_methodsTotal.length }
     } catch (error) {
         console.log(error);
         throw error;

@@ -26,7 +26,7 @@ async function getById(id) {
             wish: user.wish,
         }
 
-        return { status: 200, message: "Thành công !", data: data }
+        return { status: 200, message: "Success", data: data }
 
     } catch (error) {
         console.log(error);
@@ -92,7 +92,7 @@ async function getQuery(query) {
             // wish: user.cart,
         }));
 
-        return { status: 200, message: "Thành công !", data: data, total: usersTotal.length };
+        return { status: 200, message: "Success", data: data, total: usersTotal.length };
     } catch (error) {
         console.log(error);
         throw error;
@@ -126,7 +126,7 @@ async function getTotalPagesByQuery(query) {
 
         const data = Math.ceil(users.length / limit);
 
-        return { status: 200, message: "Thành công !", data: data };
+        return { status: 200, message: "Success", data: data };
     } catch (error) {
         console.log(error);
         throw error;

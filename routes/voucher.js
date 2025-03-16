@@ -9,7 +9,7 @@ router.get("/", async function (req, res, next) {
     const result = await voucherController.getQuery(req.query);
     return res.status(result.status).json(result);
   } catch (error) {
-    return res.status(500).json({ status: false, message: "Lỗi hệ thống" });
+    return res.status(500).json({ status: false, message: "Internal Server Error" });
   }
 });
 
@@ -20,7 +20,7 @@ router.get('/:id', async function (req, res, next) {
     const result = await voucherController.getById(id)
     return res.status(result.status).json(result);
   } catch (error) {
-    return res.status(500).json({ status: false, message: "Lỗi hệ thống" });
+    return res.status(500).json({ status: false, message: "Internal Server Error" });
   }
 });
 
@@ -29,7 +29,7 @@ router.post('/', async function (req, res, next) {
     const result = await voucherService.insert(req.body)
     return res.status(result.status).json(result);
   } catch (error) {
-    return res.status(500).json({ status: 500, message: "Lỗi hệ thống" });
+    return res.status(500).json({ status: 500, message: "Internal Server Error" });
   }
 });
 
@@ -39,7 +39,7 @@ router.put('/:id', async function (req, res, next) {
     const result = await voucherService.update(id, req.body)
     return res.status(result.status).json(result);
   } catch (error) {
-    return res.status(500).json({ status: 500, message: "Lỗi hệ thống" });
+    return res.status(500).json({ status: 500, message: "Internal Server Error" });
   }
 });
 
@@ -49,7 +49,7 @@ router.patch('/:id', async function (req, res, next) {
     const result = await voucherService.update(id, req.body)
     return res.status(result.status).json(result);
   } catch (error) {
-    return res.status(500).json({ status: 500, message: "Lỗi hệ thống" });
+    return res.status(500).json({ status: 500, message: "Internal Server Error" });
   }
 });
 
