@@ -30,8 +30,10 @@ async function getById(id) {
     }
 }
 
-async function getQuery({ id, search, orderby, page = 1, limit = 5 }) {
+async function getQuery(query) {
     try {
+        const { id, search, orderby, page = 1, limit = 5 } = query
+
         let matchCondition = {};
 
         if (search) {
@@ -56,15 +58,16 @@ async function getQuery({ id, search, orderby, page = 1, limit = 5 }) {
             sortCondition._id = -1;
         }
 
-        const skip = (page - 1) * limit;
-
         const pipeline = [
             { $match: matchCondition },
             { $sort: sortCondition },
-            { $skip: skip },
         ];
 
-        if (+limit) pipeline.push({ $limit: +limit })
+        if (+limit && !isNaN(+limit)) {
+            const skip = (page - 1) * limit;
+            pipeline.push({ $skip: skip },);
+            pipeline.push({ $limit: +limit });
+        }
 
         const pipelineTotal = [
             { $match: matchCondition },

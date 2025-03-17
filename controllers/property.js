@@ -75,7 +75,7 @@ async function getQuery(query) {
             { $sort: sortCondition },
         ];
 
-        if (limit && !isNaN(+limit)) {
+        if (+limit && !isNaN(+limit)) {
             const skip = (page - 1) * limit;
             pipeline.push({ $skip: skip },);
             pipeline.push({ $limit: +limit });

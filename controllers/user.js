@@ -62,14 +62,16 @@ async function getQuery(query) {
             sortCondition._id = -1;
         }
 
-        const skip = (page - 1) * limit;
-
         const pipeline = [
             { $match: matchCondition },
             { $sort: sortCondition },
-            { $skip: skip },
-            { $limit: +limit },
         ];
+
+        if (+limit && !isNaN(+limit)) {
+            const skip = (page - 1) * limit;
+            pipeline.push({ $skip: skip },);
+            pipeline.push({ $limit: +limit });
+        }
 
         const pipelineTotal = [
             { $match: matchCondition },

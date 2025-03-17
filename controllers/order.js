@@ -73,14 +73,16 @@ async function getQuery(query) {
             sortCondition.id = -1;
         }
 
-        const skip = (page - 1) * limit;
-
         const pipeline = [
             { $match: matchCondition },
             { $sort: sortCondition },
-            { $skip: skip },
-            { $limit: +limit },
         ];
+
+        if (+limit && !isNaN(+limit)) {
+            const skip = (page - 1) * limit;
+            pipeline.push({ $skip: skip },);
+            pipeline.push({ $limit: +limit });
+        }
 
         const pipelineTotal = [
             { $match: matchCondition },
@@ -123,23 +125,6 @@ async function getQuery(query) {
                 address_id: order.address_id,
             })
         }
-
-
-        // const data = orders.map((order) => ({
-        //     id: order._id,
-        //     total: order.total,
-        //     status: order.status,
-        //     payment_status: order.payment_status,
-        //     ordered_at: order.ordered_at,
-        //     updated_at: order.updated_at,
-        //     transaction_code: order.transaction_code,
-        //     price_ship: order.price_ship,
-        //     products: order.products,
-        //     user_id: order.user_id,
-        //     voucher_id: order.voucher_id,
-        //     payment_method_id: order.payment_method_id,
-        //     address_id: order.address_id,
-        // }));
 
         return { status: 200, message: "Success", data: data, total: ordersTotal.length }
     } catch (error) {

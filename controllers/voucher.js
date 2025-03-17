@@ -1,4 +1,5 @@
 var voucherModel = require("../models/voucher");
+const moment = require("moment");
 
 const { ObjectId } = require("mongodb");
 
@@ -35,7 +36,7 @@ async function getById(id) {
 
 async function getQuery(query) {
     try {
-        const { id, search, orderby, page = 1, limit = 5 } = query;
+        const { id, search, expired, orderby, page = 1, limit = 5 } = query;
 
         let matchCondition = {};
 
@@ -52,6 +53,22 @@ async function getQuery(query) {
             };
         }
 
+
+        if (expired) {
+            matchCondition.$or = [
+                {
+                    end_date: {
+                        [expired !== '1' ? "$lt" : "$gte"]: moment().format("YYYYMMDD")
+                    }
+                },
+                {
+                    quantity: {
+                        [expired !== '1' ? "$lte" : "$gt"]: 0
+                    }
+                }
+            ];
+        }
+
         let sortCondition = {};
 
         if (orderby) {
@@ -61,14 +78,16 @@ async function getQuery(query) {
             sortCondition._id = -1;
         }
 
-        const skip = (page - 1) * limit;
-
         const pipeline = [
             { $match: matchCondition },
             { $sort: sortCondition },
-            { $skip: skip },
-            { $limit: +limit },
         ];
+
+        if (+limit && !isNaN(+limit)) {
+            const skip = (page - 1) * limit;
+            pipeline.push({ $skip: skip });
+            pipeline.push({ $limit: +limit });
+        }
 
         const pipelineTotal = [
             { $match: matchCondition },

@@ -69,11 +69,7 @@ async function create(body) {
             }
         });
 
-
-
-
         let productsOrder = '';
-
 
         for (const [index, productOrder] of JSON.parse(products).entries()) {
             const product = await productModel.findById(productOrder.product.id)
