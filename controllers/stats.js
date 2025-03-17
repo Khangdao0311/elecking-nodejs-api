@@ -18,15 +18,17 @@ async function getQuery(query) {
             },
             {
                 $group: {
-                    _id: { $substr: ["$ordered_at", 4, 2] },
-                    total: { $sum: "$total" }
+                    _id: { $substr: ["$ordered_at", 4, 2] }, // Lấy tháng từ ordered_at
+                    total: { $sum: "$total" }, // Tổng số tiền theo tháng
+                    orderCount: { $sum: 1 } // Đếm số lượng đơn hàng theo tháng
                 }
             },
             {
                 $project: {
                     _id: 0,
                     month: { $toInt: "$_id" },
-                    total: 1
+                    total: 1,
+                    orderCount: 1
                 }
             },
             {
@@ -35,15 +37,22 @@ async function getQuery(query) {
                         {
                             $group: {
                                 _id: null,
-                                result: { $push: { k: { $toString: "$month" }, v: "$total" } },
-                                total: { $sum: "$total" } // Tổng tất cả các tháng
+                                result: {
+                                    $push: {
+                                        k: { $toString: "$month" },
+                                        v: { price: "$total", order: "$orderCount" }
+                                    }
+                                },
+                                totalPrice: { $sum: "$total" }, // Tổng tiền của cả năm
+                                totalOrder: { $sum: "$orderCount" } // Tổng đơn hàng của cả năm
                             }
                         },
                         {
                             $project: {
                                 _id: 0,
                                 data: { $arrayToObject: "$result" },
-                                total: 1
+                                totalPrice: 1,
+                                totalOrder: 1
                             }
                         }
                     ],
@@ -53,9 +62,18 @@ async function getQuery(query) {
                                 data: {
                                     $arrayToObject: [
                                         [
-                                            { k: "1", v: 0 }, { k: "2", v: 0 }, { k: "3", v: 0 }, { k: "4", v: 0 },
-                                            { k: "5", v: 0 }, { k: "6", v: 0 }, { k: "7", v: 0 }, { k: "8", v: 0 },
-                                            { k: "9", v: 0 }, { k: "10", v: 0 }, { k: "11", v: 0 }, { k: "12", v: 0 }
+                                            { k: "1", v: { price: 0, order: 0 } },
+                                            { k: "2", v: { price: 0, order: 0 } },
+                                            { k: "3", v: { price: 0, order: 0 } },
+                                            { k: "4", v: { price: 0, order: 0 } },
+                                            { k: "5", v: { price: 0, order: 0 } },
+                                            { k: "6", v: { price: 0, order: 0 } },
+                                            { k: "7", v: { price: 0, order: 0 } },
+                                            { k: "8", v: { price: 0, order: 0 } },
+                                            { k: "9", v: { price: 0, order: 0 } },
+                                            { k: "10", v: { price: 0, order: 0 } },
+                                            { k: "11", v: { price: 0, order: 0 } },
+                                            { k: "12", v: { price: 0, order: 0 } }
                                         ]
                                     ]
                                 }
@@ -72,30 +90,68 @@ async function getQuery(query) {
                             { $arrayElemAt: ["$salesData.data", 0] }
                         ]
                     },
-                    total: { $arrayElemAt: ["$salesData.total", 0] }
+                    totalPrice: { $arrayElemAt: ["$salesData.totalPrice", 0] },
+                    totalOrder: { $arrayElemAt: ["$salesData.totalOrder", 0] }
                 }
             },
             {
-                $replaceRoot: { newRoot: { $mergeObjects: ["$mergedData", { total: "$total" }] } }
+                $replaceRoot: { newRoot: { $mergeObjects: ["$mergedData", { totalPrice: "$totalPrice", totalOrder: "$totalOrder" }] } }
             }
         ]);
+
 
         var data;
 
         if (JSON.stringify(orders[0]) == "{}") {
             data = {
-                "1": 0,
-                "2": 0,
-                "3": 0,
-                "4": 0,
-                "5": 0,
-                "6": 0,
-                "7": 0,
-                "8": 0,
-                "9": 0,
-                "10": 0,
-                "11": 0,
-                "12": 0,
+                "1": {
+                    "price": 0,
+                    "order": 0
+                },
+                "2": {
+                    "price": 0,
+                    "order": 0
+                },
+                "3": {
+                    "price": 0,
+                    "order": 0
+                },
+                "4": {
+                    "price": 0,
+                    "order": 0
+                },
+                "5": {
+                    "price": 0,
+                    "order": 0
+                },
+                "6": {
+                    "price": 0,
+                    "order": 0
+                },
+                "7": {
+                    "price": 0,
+                    "order": 0
+                },
+                "8": {
+                    "price": 0,
+                    "order": 0
+                },
+                "9": {
+                    "price": 0,
+                    "order": 0
+                },
+                "10": {
+                    "price": 0,
+                    "order": 0
+                },
+                "11": {
+                    "price": 0,
+                    "order": 0
+                },
+                "12": {
+                    "price": 0,
+                    "order": 0
+                },
                 "total": 0
             };
         } else {
