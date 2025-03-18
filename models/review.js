@@ -8,6 +8,7 @@ const reviewSchema = new Schema({
     rating: { type: Number },
     created_at: { type: String },
     updated_at: { type: String },
+    like: [{ type: ObjectId, ref: "user" }],
     order_id: { type: ObjectId, ref: "order" },
     product_id: { type: ObjectId, ref: "product" },
     user_id: { type: ObjectId, ref: "user" },

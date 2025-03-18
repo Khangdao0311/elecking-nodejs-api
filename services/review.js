@@ -8,7 +8,8 @@ const moment = require('moment')
 
 module.exports = {
     insert,
-    update
+    update,
+    like
 };
 
 async function insert(body) {
@@ -99,3 +100,37 @@ async function update(id, body) {
         throw error;
     }
 }
+
+async function like(id, body) {
+    try {
+        const { user_id } = body
+
+        const review = await reviewModel.findById(id)
+        if (!review) return { status: 400, message: "Đánh giá không tồn tại !" }
+
+        const user = await userModel.findById(user_id)
+        if (!user) return { status: 400, message: "Người dùng không tồn tại !" }
+
+        console.log(review.like);
+
+
+        let check = review.like.some(e => e.equals(user._id))
+
+        let likeNew = []
+
+        if (check) {
+            likeNew = [...review.like].filter(e => !e.equals(user._id))
+        } else {
+            review.like.push(user._id)
+            likeNew = review.like
+        }
+
+        await reviewModel.findByIdAndUpdate(id, { $set: { like: likeNew } }, { new: true, runValidators: true })
+
+        return { status: 200, message: "Success" }
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+

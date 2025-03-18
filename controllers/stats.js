@@ -13,7 +13,8 @@ async function getQuery(query) {
         const orders = await orderModel.aggregate([
             {
                 $match: {
-                    ordered_at: { $regex: `^${year}` } // Chỉ lấy các đơn hàng có năm 2025
+                    ordered_at: { $regex: `^${year}` }, // Chỉ lấy các đơn hàng có năm 2025
+                    status: 1
                 }
             },
             {

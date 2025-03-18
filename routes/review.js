@@ -13,15 +13,6 @@ router.get("/", async function (req, res, next) {
   }
 });
 
-router.get("/total_pages", async function (req, res, next) {
-  try {
-    const result = await reviewController.getTotalPagesByQuery(req.query);
-    return res.status(result.status).json(result);
-  } catch (error) {
-    return res.status(500).json({ status: false, message: "Internal Server Error" });
-  }
-});
-
 router.get('/:id', async function (req, res, next) {
   try {
     const { id } = req.params
@@ -35,6 +26,16 @@ router.get('/:id', async function (req, res, next) {
 router.post('/', async function (req, res, next) {
   try {
     const result = await reviewService.insert(req.body)
+    return res.status(result.status).json(result);
+  } catch (error) {
+    return res.status(500).json({ status: 500, message: "Internal Server Error" });
+  }
+});
+
+router.post('/like/:id', async function (req, res, next) {
+  try {
+    const { id } = req.params
+    const result = await reviewService.like(id, req.body)
     return res.status(result.status).json(result);
   } catch (error) {
     return res.status(500).json({ status: 500, message: "Internal Server Error" });

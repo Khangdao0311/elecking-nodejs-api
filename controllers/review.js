@@ -24,6 +24,7 @@ async function getById(id) {
             rating: review.rating,
             created_at: review.created_at,
             updated_at: review.updated_at,
+            like: review.like,
             order_id: review.order_id,
             product_id: review.product_id,
             user: {
@@ -96,6 +97,7 @@ async function getQuery(query) {
                 rating: review.rating,
                 created_at: review.created_at,
                 updated_at: review.updated_at,
+                like: review.like,
                 order_id: review.order_id,
                 product_id: review.product_id,
                 user: {
