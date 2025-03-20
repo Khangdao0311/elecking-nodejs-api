@@ -107,28 +107,28 @@ async function getQuery(query) {
 
             data.push({
                 id: order._id,
-                // total: order.total,
-                // status: order.status,
-                // payment_status: order.payment_status,
-                // ordered_at: order.ordered_at,
-                // updated_at: order.updated_at,
-                // transaction_code: order.transaction_code,
-                // price_ship: order.price_ship,
-                // note: order.note,
-                // products: order.products,
-                // user: {
-                //     id: user._id,
-                //     fullname: user.fullname,
-                // },
-                // voucher: voucher ? {
-                //     id: voucher._id,
-                //     code: voucher.code
-                // } : null,
-                // payment_method: {
-                //     id: payment_method._id,
-                //     name: payment_method.name
-                // },
-                // address_id: order.address_id,
+                total: order.total,
+                status: order.status,
+                payment_status: order.payment_status,
+                ordered_at: order.ordered_at,
+                updated_at: order.updated_at,
+                transaction_code: order.transaction_code,
+                price_ship: order.price_ship,
+                note: order.note,
+                products: order.products,
+                user: {
+                    id: user._id,
+                    fullname: user.fullname,
+                },
+                voucher: voucher ? {
+                    id: voucher._id,
+                    code: voucher.code
+                } : null,
+                payment_method: {
+                    id: payment_method._id,
+                    name: payment_method.name
+                },
+                address_id: order.address_id,
             })
         }
 
