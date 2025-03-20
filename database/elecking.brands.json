@@ -1,202 +1,200 @@
-[
-  {
-    "_id": {
-      "$oid": "67b6cf123a893726b539855f"
-    },
-    "name": "Apple",
-    "logo": "Apple_logo_black.svg",
-    "banner": "apple-banner.png",
-    "status": 1,
-    "description": "Apple là thương hiệu công nghệ hàng đầu thế giới, nổi tiếng với thiết kế tinh tế, hiệu suất cao và hệ sinh thái đồng bộ. Thành lập năm 1976, Apple đã tạo ra những sản phẩm mang tính biểu tượng như iPhone, MacBook, iPad và Apple Watch, tập trung vào trải nghiệm người dùng, bảo mật và sáng tạo."
+[{
+  "_id": {
+    "$oid": "67b6cf123a893726b539855f"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf123a893726b5398560"
-    },
-    "name": "Samsung",
-    "logo": "samsung-logo.png",
-    "banner": "samsung-banner.png",
-    "status": 1,
-    "description": "Samsung là tập đoàn công nghệ toàn cầu, nổi bật với sự đổi mới và đa dạng sản phẩm. Thành lập năm 1938, Samsung dẫn đầu trong các lĩnh vực điện tử tiêu dùng, smartphone, TV, thiết bị gia dụng và linh kiện bán dẫn. Các dòng sản phẩm như Galaxy, QLED TV và chip Exynos thể hiện cam kết về chất lượng, hiệu suất và công nghệ tiên tiến."
+  "name": "Apple",
+  "logo": "apple_logo.png",
+  "banner": "apple-banner.png",
+  "status": 1,
+  "description": "Apple là thương hiệu công nghệ hàng đầu thế giới, nổi tiếng với thiết kế tinh tế, hiệu suất cao và hệ sinh thái đồng bộ. Thành lập năm 1976, Apple đã tạo ra những sản phẩm mang tính biểu tượng như iPhone, MacBook, iPad và Apple Watch, tập trung vào trải nghiệm người dùng, bảo mật và sáng tạo."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398560"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf123a893726b5398561"
-    },
-    "name": "Xiaomi",
-    "logo": "Xiaomi_logo.png",
-    "banner": "xiaomi-banner.png",
-    "status": 1,
-    "description": "Xiaomi là tập đoàn công nghệ Trung Quốc, nổi bật với các sản phẩm hiệu năng cao, giá cạnh tranh. Thành lập năm 2010, Xiaomi phát triển mạnh trong lĩnh vực smartphone, thiết bị nhà thông minh và điện tử tiêu dùng. Các dòng sản phẩm như Mi, Redmi, POCO và hệ sinh thái AIoT thể hiện sự sáng tạo và chiến lược tối ưu hóa chi phí."
+  "name": "Samsung",
+  "logo": "samsung-logo.png",
+  "banner": "samsung-banner.png",
+  "status": 1,
+  "description": "Samsung là tập đoàn công nghệ toàn cầu, nổi bật với sự đổi mới và đa dạng sản phẩm. Thành lập năm 1938, Samsung dẫn đầu trong các lĩnh vực điện tử tiêu dùng, smartphone, TV, thiết bị gia dụng và linh kiện bán dẫn. Các dòng sản phẩm như Galaxy, QLED TV và chip Exynos thể hiện cam kết về chất lượng, hiệu suất và công nghệ tiên tiến."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398561"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf123a893726b5398562"
-    },
-    "name": "OPPO",
-    "logo": "OPPO_LOGO_2019.png",
-    "banner": "oppo-banner.png",
-    "status": 1,
-    "description": "OPPO là thương hiệu công nghệ Trung Quốc, chuyên về smartphone và thiết bị thông minh. Thành lập năm 2004, OPPO nổi bật với thiết kế tinh tế, camera chất lượng cao và công nghệ sạc nhanh. Các dòng sản phẩm như Find, Reno và A-Series thể hiện sự đổi mới trong nhiếp ảnh di động và trải nghiệm người dùng."
+  "name": "Xiaomi",
+  "logo": "Xiaomi_logo.png",
+  "banner": "xiaomi-banner.png",
+  "status": 1,
+  "description": "Xiaomi là tập đoàn công nghệ Trung Quốc, nổi bật với các sản phẩm hiệu năng cao, giá cạnh tranh. Thành lập năm 2010, Xiaomi phát triển mạnh trong lĩnh vực smartphone, thiết bị nhà thông minh và điện tử tiêu dùng. Các dòng sản phẩm như Mi, Redmi, POCO và hệ sinh thái AIoT thể hiện sự sáng tạo và chiến lược tối ưu hóa chi phí."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398562"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf123a893726b5398563"
-    },
-    "name": "Vivo",
-    "logo": "vivo-logo.png",
-    "banner": "vivo-banner.png",
-    "status": 1,
-    "description": "Vivo là thương hiệu công nghệ Trung Quốc, chuyên về smartphone và thiết bị thông minh. Thành lập năm 2009, Vivo nổi bật với thiết kế thời trang, công nghệ camera tiên tiến và âm thanh chất lượng cao. Các dòng sản phẩm như X, V và Y-Series thể hiện sự đổi mới trong nhiếp ảnh di động, hiệu suất và trải nghiệm người dùng."
+  "name": "OPPO",
+  "logo": "OPPO_LOGO_2019.png",
+  "banner": "oppo-banner.png",
+  "status": 1,
+  "description": "OPPO là thương hiệu công nghệ Trung Quốc, chuyên về smartphone và thiết bị thông minh. Thành lập năm 2004, OPPO nổi bật với thiết kế tinh tế, camera chất lượng cao và công nghệ sạc nhanh. Các dòng sản phẩm như Find, Reno và A-Series thể hiện sự đổi mới trong nhiếp ảnh di động và trải nghiệm người dùng."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398563"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf123a893726b5398564"
-    },
-    "name": "Realme",
-    "logo": "Realme_logo.png",
-    "banner": "realme-banner.png",
-    "status": 1,
-    "description": "Realme là thương hiệu công nghệ Trung Quốc, chuyên về smartphone và thiết bị AIoT. Thành lập năm 2018, Realme tập trung vào hiệu năng mạnh mẽ, thiết kế trẻ trung và giá cả cạnh tranh. Các dòng sản phẩm như GT, Number Series và C-Series hướng đến người dùng trẻ, mang lại trải nghiệm công nghệ cao với mức giá hợp lý."
+  "name": "Vivo",
+  "logo": "vivo-logo.png",
+  "banner": "vivo-banner.png",
+  "status": 1,
+  "description": "Vivo là thương hiệu công nghệ Trung Quốc, chuyên về smartphone và thiết bị thông minh. Thành lập năm 2009, Vivo nổi bật với thiết kế thời trang, công nghệ camera tiên tiến và âm thanh chất lượng cao. Các dòng sản phẩm như X, V và Y-Series thể hiện sự đổi mới trong nhiếp ảnh di động, hiệu suất và trải nghiệm người dùng."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398564"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf123a893726b5398565"
-    },
-    "name": "MSI",
-    "logo": "Msi_logo.png",
-    "banner": "msi-banner.png",
-    "status": 1,
-    "description": "MSI (Micro-Star International) là thương hiệu Đài Loan chuyên sản xuất laptop gaming, bo mạch chủ, card đồ họa, màn hình và linh kiện máy tính. Họ nổi bật với hiệu suất cao, thiết kế mạnh mẽ và công nghệ tiên tiến, đặc biệt trong lĩnh vực gaming và sáng tạo nội dung."
+  "name": "Realme",
+  "logo": "Realme_logo.png",
+  "banner": "realme-banner.png",
+  "status": 1,
+  "description": "Realme là thương hiệu công nghệ Trung Quốc, chuyên về smartphone và thiết bị AIoT. Thành lập năm 2018, Realme tập trung vào hiệu năng mạnh mẽ, thiết kế trẻ trung và giá cả cạnh tranh. Các dòng sản phẩm như GT, Number Series và C-Series hướng đến người dùng trẻ, mang lại trải nghiệm công nghệ cao với mức giá hợp lý."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398565"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf123a893726b5398566"
-    },
-    "name": "Sony",
-    "logo": "sony-logo.png",
-    "banner": "sony-banner.png",
-    "status": 1,
-    "description": "Sony là tập đoàn công nghệ và giải trí Nhật Bản, nổi bật với các sản phẩm điện tử cao cấp. Thành lập năm 1946, Sony dẫn đầu trong các lĩnh vực âm thanh, hình ảnh, gaming và cảm biến camera. Các dòng sản phẩm như Xperia, Bravia, Alpha, PlayStation thể hiện chất lượng, sáng tạo và trải nghiệm vượt trội."
+  "name": "MSI",
+  "logo": "Msi_logo.png",
+  "banner": "msi-banner.png",
+  "status": 1,
+  "description": "MSI (Micro-Star International) là thương hiệu Đài Loan chuyên sản xuất laptop gaming, bo mạch chủ, card đồ họa, màn hình và linh kiện máy tính. Họ nổi bật với hiệu suất cao, thiết kế mạnh mẽ và công nghệ tiên tiến, đặc biệt trong lĩnh vực gaming và sáng tạo nội dung."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398566"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf123a893726b5398567"
-    },
-    "name": "Asus",
-    "logo": "AsusTek-black-logo.png",
-    "banner": "asus-banner.png",
-    "status": 1,
-    "description": "ASUS là tập đoàn công nghệ Đài Loan, chuyên về máy tính, gaming và linh kiện phần cứng. Thành lập năm 1989, ASUS nổi bật với hiệu suất mạnh mẽ, thiết kế bền bỉ và công nghệ tiên tiến. Các dòng sản phẩm như ROG, TUF, ZenBook và VivoBook hướng đến game thủ, dân văn phòng và người dùng sáng tạo."
+  "name": "Sony",
+  "logo": "sony-logo.png",
+  "banner": "sony-banner.png",
+  "status": 1,
+  "description": "Sony là tập đoàn công nghệ và giải trí Nhật Bản, nổi bật với các sản phẩm điện tử cao cấp. Thành lập năm 1946, Sony dẫn đầu trong các lĩnh vực âm thanh, hình ảnh, gaming và cảm biến camera. Các dòng sản phẩm như Xperia, Bravia, Alpha, PlayStation thể hiện chất lượng, sáng tạo và trải nghiệm vượt trội."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398567"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf123a893726b5398568"
-    },
-    "name": "Google",
-    "logo": "png-transparent-google-logo-google-text-trademark-logo.png",
-    "banner": "google-banner.png",
-    "status": 1,
-    "description": "Google là tập đoàn công nghệ Mỹ, nổi bật với công cụ tìm kiếm, trí tuệ nhân tạo và hệ sinh thái phần mềm. Thành lập năm 1998, Google phát triển các sản phẩm như Android, Chrome, Google Search, YouTube và Pixel, tập trung vào kết nối, dữ liệu và trải nghiệm người dùng thông minh."
+  "name": "Asus",
+  "logo": "AsusTek-black-logo.png",
+  "banner": "asus-banner.png",
+  "status": 1,
+  "description": "ASUS là tập đoàn công nghệ Đài Loan, chuyên về máy tính, gaming và linh kiện phần cứng. Thành lập năm 1989, ASUS nổi bật với hiệu suất mạnh mẽ, thiết kế bền bỉ và công nghệ tiên tiến. Các dòng sản phẩm như ROG, TUF, ZenBook và VivoBook hướng đến game thủ, dân văn phòng và người dùng sáng tạo."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398568"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf123a893726b5398569"
-    },
-    "name": "Huawei",
-    "logo": "Huawei_Standard_logo.png",
-    "banner": "huawei-banner.png",
-    "status": 1,
-    "description": "Huawei là tập đoàn công nghệ Trung Quốc, chuyên về viễn thông, smartphone và thiết bị thông minh. Thành lập năm 1987, Huawei dẫn đầu trong mạng 5G, chip Kirin và hệ sinh thái HarmonyOS. Các dòng sản phẩm như Mate, P-Series và Watch GT nổi bật với công nghệ camera tiên tiến, hiệu suất mạnh mẽ và thiết kế cao cấp."
+  "name": "Google",
+  "logo": "png-transparent-google-logo-google-text-trademark-logo.png",
+  "banner": "google-banner.png",
+  "status": 1,
+  "description": "Google là tập đoàn công nghệ Mỹ, nổi bật với công cụ tìm kiếm, trí tuệ nhân tạo và hệ sinh thái phần mềm. Thành lập năm 1998, Google phát triển các sản phẩm như Android, Chrome, Google Search, YouTube và Pixel, tập trung vào kết nối, dữ liệu và trải nghiệm người dùng thông minh."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398569"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf123a893726b539856a"
-    },
-    "name": "Nokia",
-    "logo": "nokia-3.svg",
-    "banner": "nokia-banner.png",
-    "status": 1,
-    "description": "Nokia là tập đoàn công nghệ Phần Lan, nổi tiếng với thiết bị viễn thông và điện thoại di động bền bỉ. Thành lập năm 1865, Nokia từng dẫn đầu thị trường di động và hiện tập trung vào mạng 5G, hạ tầng viễn thông và smartphone Android qua thương hiệu HMD Global."
+  "name": "Huawei",
+  "logo": "Huawei_Standard_logo.png",
+  "banner": "huawei-banner.png",
+  "status": 1,
+  "description": "Huawei là tập đoàn công nghệ Trung Quốc, chuyên về viễn thông, smartphone và thiết bị thông minh. Thành lập năm 1987, Huawei dẫn đầu trong mạng 5G, chip Kirin và hệ sinh thái HarmonyOS. Các dòng sản phẩm như Mate, P-Series và Watch GT nổi bật với công nghệ camera tiên tiến, hiệu suất mạnh mẽ và thiết kế cao cấp."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b539856a"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf123a893726b539856b"
-    },
-    "name": "DELL",
-    "logo": "Dell_Logo.png",
-    "banner": "dell-banner.png",
-    "status": 1,
-    "description": "Dell là một công ty công nghệ của Mỹ, chuyên sản xuất máy tính xách tay, máy tính để bàn, màn hình và thiết bị lưu trữ. Dell nổi tiếng với độ bền cao, hiệu suất ổn định và nhiều dòng sản phẩm phù hợp từ doanh nghiệp đến gaming."
+  "name": "Nokia",
+  "logo": "nokia-3.svg",
+  "banner": "nokia-banner.png",
+  "status": 1,
+  "description": "Nokia là tập đoàn công nghệ Phần Lan, nổi tiếng với thiết bị viễn thông và điện thoại di động bền bỉ. Thành lập năm 1865, Nokia từng dẫn đầu thị trường di động và hiện tập trung vào mạng 5G, hạ tầng viễn thông và smartphone Android qua thương hiệu HMD Global."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b539856b"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf123a893726b539856c"
-    },
-    "name": "Lenovo",
-    "logo": "Lenovo_logo_2015.png",
-    "banner": "lenovo-banner.png",
-    "status": 1,
-    "description": "Lenovo là tập đoàn công nghệ Trung Quốc, chuyên về máy tính, thiết bị di động và hạ tầng số. Thành lập năm 1984, Lenovo nổi bật với các dòng sản phẩm như ThinkPad, Legion, Yoga và IdeaPad, mang đến hiệu suất mạnh mẽ, thiết kế bền bỉ và giải pháp sáng tạo cho người dùng cá nhân lẫn doanh nghiệp."
+  "name": "DELL",
+  "logo": "Dell_Logo.png",
+  "banner": "dell-banner.png",
+  "status": 1,
+  "description": "Dell là một công ty công nghệ của Mỹ, chuyên sản xuất máy tính xách tay, máy tính để bàn, màn hình và thiết bị lưu trữ. Dell nổi tiếng với độ bền cao, hiệu suất ổn định và nhiều dòng sản phẩm phù hợp từ doanh nghiệp đến gaming."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b539856c"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf123a893726b539856d"
-    },
-    "name": "HP",
-    "logo": "hp.jpg",
-    "banner": "hp-banner.png",
-    "status": 1,
-    "description": "HP (Hewlett-Packard) là một trong những tập đoàn công nghệ hàng đầu thế giới, chuyên cung cấp các sản phẩm và dịch vụ về máy tính, máy in, giải pháp phần cứng và phần mềm. Thành lập năm 1939 tại Mỹ, HP đã trở thành thương hiệu đáng tin cậy trong lĩnh vực công nghệ thông tin, phục vụ cả doanh nghiệp và người tiêu dùng cá nhân."
+  "name": "Lenovo",
+  "logo": "Lenovo_logo_2015.png",
+  "banner": "lenovo-banner.png",
+  "status": 1,
+  "description": "Lenovo là tập đoàn công nghệ Trung Quốc, chuyên về máy tính, thiết bị di động và hạ tầng số. Thành lập năm 1984, Lenovo nổi bật với các dòng sản phẩm như ThinkPad, Legion, Yoga và IdeaPad, mang đến hiệu suất mạnh mẽ, thiết kế bền bỉ và giải pháp sáng tạo cho người dùng cá nhân lẫn doanh nghiệp."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b539856d"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf123a893726b539856e"
-    },
-    "name": "LG",
-    "logo": "av2e6etj8.webp",
-    "banner": "lg-banner.png",
-    "status": 1,
-    "description": "LG (Lucky Goldstar) là tập đoàn đa quốc gia của Hàn Quốc, chuyên sản xuất các sản phẩm điện tử, gia dụng và giải pháp công nghệ. Thành lập năm 1958, LG đã trở thành thương hiệu toàn cầu với danh tiếng về chất lượng, sự đổi mới và thiết kế tinh tế."
+  "name": "HP",
+  "logo": "hp.jpg",
+  "banner": "hp-banner.png",
+  "status": 1,
+  "description": "HP (Hewlett-Packard) là một trong những tập đoàn công nghệ hàng đầu thế giới, chuyên cung cấp các sản phẩm và dịch vụ về máy tính, máy in, giải pháp phần cứng và phần mềm. Thành lập năm 1939 tại Mỹ, HP đã trở thành thương hiệu đáng tin cậy trong lĩnh vực công nghệ thông tin, phục vụ cả doanh nghiệp và người tiêu dùng cá nhân."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b539856e"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf123a893726b539856f"
-    },
-    "name": "Razer",
-    "logo": "Razer_snake_logo.png",
-    "banner": "razer-banner.png",
-    "status": 1,
-    "description": "Razer là một trong những thương hiệu hàng đầu trong lĩnh vực thiết bị gaming, nổi tiếng với các sản phẩm dành cho game thủ chuyên nghiệp. Thành lập năm 2005 tại Singapore và Mỹ, Razer nhanh chóng trở thành biểu tượng trong cộng đồng gaming với thiết kế mạnh mẽ, hiệu suất cao và hệ sinh thái phần mềm độc quyền."
+  "name": "LG",
+  "logo": "av2e6etj8.webp",
+  "banner": "lg-banner.png",
+  "status": 1,
+  "description": "LG (Lucky Goldstar) là tập đoàn đa quốc gia của Hàn Quốc, chuyên sản xuất các sản phẩm điện tử, gia dụng và giải pháp công nghệ. Thành lập năm 1958, LG đã trở thành thương hiệu toàn cầu với danh tiếng về chất lượng, sự đổi mới và thiết kế tinh tế."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b539856f"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf123a893726b5398570"
-    },
-    "name": "HAVIT",
-    "logo": "havit-logo.png",
-    "banner": "havit-banner.png",
-    "status": 1,
-    "description": "HAVIT là một thương hiệu chuyên sản xuất phụ kiện công nghệ, đặc biệt là thiết bị gaming và âm thanh. Thành lập tại Trung Quốc, HAVIT nổi bật với các sản phẩm có giá thành hợp lý nhưng vẫn đảm bảo chất lượng tốt, phù hợp với cả game thủ và người dùng phổ thông."
+  "name": "Razer",
+  "logo": "Razer_snake_logo.png",
+  "banner": "razer-banner.png",
+  "status": 1,
+  "description": "Razer là một trong những thương hiệu hàng đầu trong lĩnh vực thiết bị gaming, nổi tiếng với các sản phẩm dành cho game thủ chuyên nghiệp. Thành lập năm 2005 tại Singapore và Mỹ, Razer nhanh chóng trở thành biểu tượng trong cộng đồng gaming với thiết kế mạnh mẽ, hiệu suất cao và hệ sinh thái phần mềm độc quyền."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398570"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf123a893726b5398571"
-    },
-    "name": "GIGABYTE",
-    "logo": "GIGABYTE.png",
-    "banner": "Gigabyte-banner.png",
-    "status": 1,
-    "description": "GIGABYTE là một trong những hãng công nghệ hàng đầu đến từ Đài Loan, chuyên sản xuất linh kiện máy tính và thiết bị chơi game. Thành lập năm 1986, GIGABYTE nổi tiếng với bo mạch chủ, card đồ họa và laptop gaming chất lượng cao, phục vụ từ người dùng phổ thông đến game thủ và dân công nghệ chuyên nghiệp."
+  "name": "HAVIT",
+  "logo": "havit-logo.png",
+  "banner": "havit-banner.png",
+  "status": 1,
+  "description": "HAVIT là một thương hiệu chuyên sản xuất phụ kiện công nghệ, đặc biệt là thiết bị gaming và âm thanh. Thành lập tại Trung Quốc, HAVIT nổi bật với các sản phẩm có giá thành hợp lý nhưng vẫn đảm bảo chất lượng tốt, phù hợp với cả game thủ và người dùng phổ thông."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398571"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf123a893726b5398572"
-    },
-    "name": "Masstel",
-    "logo": "Masstel-logo.png",
-    "banner": "masstel-banner.png",
-    "status": 1,
-    "description": "Masstel (Mass Technology) là thương hiệu công nghệ của Việt Nam, chuyên sản xuất điện thoại, máy tính bảng và thiết bị thông minh với mức giá hợp lý. Thành lập vào năm 2010, Masstel tập trung vào phân khúc phổ thông, đáp ứng nhu cầu của người dùng Việt với sản phẩm có độ bền cao, dễ sử dụng."
-  }
-]
+  "name": "GIGABYTE",
+  "logo": "GIGABYTE.png",
+  "banner": "Gigabyte-banner.png",
+  "status": 1,
+  "description": "GIGABYTE là một trong những hãng công nghệ hàng đầu đến từ Đài Loan, chuyên sản xuất linh kiện máy tính và thiết bị chơi game. Thành lập năm 1986, GIGABYTE nổi tiếng với bo mạch chủ, card đồ họa và laptop gaming chất lượng cao, phục vụ từ người dùng phổ thông đến game thủ và dân công nghệ chuyên nghiệp."
+},
+{
+  "_id": {
+    "$oid": "67b6cf123a893726b5398572"
+  },
+  "name": "Masstel",
+  "logo": "Masstel-logo.png",
+  "banner": "masstel-banner.png",
+  "status": 1,
+  "description": "Masstel (Mass Technology) là thương hiệu công nghệ của Việt Nam, chuyên sản xuất điện thoại, máy tính bảng và thiết bị thông minh với mức giá hợp lý. Thành lập vào năm 2010, Masstel tập trung vào phân khúc phổ thông, đáp ứng nhu cầu của người dùng Việt với sản phẩm có độ bền cao, dễ sử dụng."
+}]

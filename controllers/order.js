@@ -85,7 +85,6 @@ async function getQuery(query) {
             pipeline.push({ $limit: +limit });
         }
 
-
         const pipelineTotal = [
             { $match: matchCondition },
         ];
@@ -94,9 +93,6 @@ async function getQuery(query) {
         const ordersTotal = await orderModel.aggregate(pipelineTotal);
 
         const data = []
-
-
-
 
         for (const order of orders) {
 
