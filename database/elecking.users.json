@@ -30,7 +30,7 @@
     "register_date": "20250220",
     "cart": [
       {
-        "quantity": 18,
+        "quantity": 1,
         "product": {
           "id": {
             "$oid": "67b96ee667788c638a22e2c7"
@@ -40,7 +40,7 @@
         }
       },
       {
-        "quantity": 20,
+        "quantity": 2,
         "product": {
           "id": {
             "$oid": "67b96ee667788c638a22e2c7"
@@ -140,3 +140,4 @@
     "wish": []
   }
 ]
+
