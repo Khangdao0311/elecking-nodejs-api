@@ -21,6 +21,7 @@ const orderSchema = new Schema({
     updated_at: { type: String },
     transaction_code: { type: String },
     price_ship: { type: Number },
+    note: { type: Number },
     products: [orderProductSchema],
     user_id: { type: ObjectId, ref: "user" },
     voucher_id: { type: ObjectId, ref: "user" },

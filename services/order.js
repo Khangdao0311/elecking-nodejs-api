@@ -18,7 +18,7 @@ module.exports = {
 
 async function create(body) {
     try {
-        const { total, price_ship, products, user_id, voucher_id = null, payment_method_id, address_id } = body
+        const { total, price_ship, note, products, user_id, voucher_id = null, payment_method_id, address_id } = body
 
         const user = await userModel.findById(user_id)
         if (!user) return { status: 400, message: "Người dùng không tồn tại !" }
@@ -47,6 +47,7 @@ async function create(body) {
             updated_at: ordered_at,
             transaction_code: "",
             price_ship: +price_ship,
+            note: note,
             products: JSON.parse(products).map(product => ({
                 ...product,
                 product: {
@@ -130,6 +131,7 @@ async function create(body) {
                     <hr>
                     <p>Phương thức thanh toán: <b>${payment_method.name}</b></p>
                     <p>Giá trị đơn hàng: <b>${(+total).toLocaleString("vi-VN")} đ</b></p>
+                    <p>Lưu ý: <b>${note} đ</b></p>
                     <hr>
                     <p style="font-size: 18px; font-weight: bold;">Đơn hàng</p>
                     <table border="1" style="width: 100%;">

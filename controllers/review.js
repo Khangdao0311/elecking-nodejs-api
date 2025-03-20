@@ -43,7 +43,7 @@ async function getById(id) {
 
 async function getQuery(query) {
     try {
-        const { product_id, rating, orderby, page = 1, limit = 5 } = query;
+        const { product_id, rating, orderby,  page = 1, limit = null } = query;
 
         let matchCondition = {};
 

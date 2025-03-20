@@ -30,6 +30,7 @@ async function getById(id) {
             updated_at: order.updated_at,
             transaction_code: order.transaction_code,
             price_ship: order.price_ship,
+            note: order.note,
             products: order.products,
             user: {
                 id: user._id,
@@ -80,9 +81,10 @@ async function getQuery(query) {
 
         if (+limit && !isNaN(+limit)) {
             const skip = (page - 1) * limit;
-            pipeline.push({ $skip: skip },);
+            pipeline.push({ $skip: skip });
             pipeline.push({ $limit: +limit });
         }
+
 
         const pipelineTotal = [
             { $match: matchCondition },
@@ -92,6 +94,9 @@ async function getQuery(query) {
         const ordersTotal = await orderModel.aggregate(pipelineTotal);
 
         const data = []
+
+
+
 
         for (const order of orders) {
 
@@ -109,6 +114,7 @@ async function getQuery(query) {
                 updated_at: order.updated_at,
                 transaction_code: order.transaction_code,
                 price_ship: order.price_ship,
+                note: order.note,
                 products: order.products,
                 user: {
                     id: user._id,
