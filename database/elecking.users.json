@@ -1,143 +1,123 @@
-[
-  {
-    "_id": {
-      "$oid": "67b6b0bdbfe3474f1ec40f44"
-    },
-    "fullname": "Nguyễn Văn Admin",
-    "avatar": "image.png",
-    "email": "elecking.store@gmail.com",
-    "phone": "0976767676",
-    "username": "admin",
-    "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
-    "role": 1,
-    "status": 1,
-    "register_date": "20250220",
-    "cart": [],
-    "wish": []
+[{
+  "_id": {
+    "$oid": "67b6b0bdbfe3474f1ec40f44"
   },
-  {
-    "_id": {
-      "$oid": "67b6b0bdbfe3474f1ec40f45"
-    },
-    "fullname": "Đào Vĩnh Khang",
-    "avatar": "image.png",
-    "email": "khangdao0311@gmail.com",
-    "phone": "0976767676",
-    "username": "khangdao",
-    "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
-    "role": 0,
-    "status": 1,
-    "register_date": "20250220",
-    "cart": [
-      {
-        "quantity": 1,
-        "product": {
-          "id": {
-            "$oid": "67b96ee667788c638a22e2c7"
-          },
-          "variant": 0,
-          "color": 0
-        }
-      },
-      {
-        "quantity": 2,
-        "product": {
-          "id": {
-            "$oid": "67b96ee667788c638a22e2c7"
-          },
-          "variant": 2,
-          "color": 0
-        }
+  "fullname": "Nguyễn Văn Admin",
+  "avatar": "image.png",
+  "email": "elecking.store@gmail.com",
+  "phone": "0976767676",
+  "username": "admin",
+  "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
+  "role": 1,
+  "status": 1,
+  "register_date": "20250220",
+  "cart": [],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67b6b0bdbfe3474f1ec40f45"
+  },
+  "fullname": "Đào Vĩnh Khang",
+  "avatar": "image.png",
+  "email": "khangdao0311@gmail.com",
+  "phone": "0976767676",
+  "username": "khangdao",
+  "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250220",
+  "cart": [
+    {
+      "quantity": 1,
+      "product": {
+        "id": {
+          "$oid": "67b96ee667788c638a22e2e5"
+        },
+        "variant": 0,
+        "color": 0
       }
-    ],
-    "wish": [
-      {
-        "$oid": "67b96ee667788c638a22e2c7"
-      },
-      {
-        "$oid": "67b96ee667788c638a22e2c8"
-      }
-    ]
+    }
+  ],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67c3dc46a3c0c5e439598e18"
   },
-  {
-    "_id": {
-      "$oid": "67c3dc46a3c0c5e439598e18"
-    },
-    "fullname": "Nguyễn Văn A",
-    "avatar": "",
-    "email": "nguyenvana@gmail.com",
-    "phone": "0901234567",
-    "username": "nguyenvana",
-    "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
-    "role": 0,
-    "status": 1,
-    "register_date": "20250115",
-    "cart": [],
-    "wish": []
+  "fullname": "Nguyễn Văn A",
+  "avatar": "",
+  "email": "nguyenvana@gmail.com",
+  "phone": "0901234567",
+  "username": "nguyenvana",
+  "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250115",
+  "cart": [],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67c3dc46a3c0c5e439598e19"
   },
-  {
-    "_id": {
-      "$oid": "67c3dc46a3c0c5e439598e19"
-    },
-    "fullname": "Trần Thị B",
-    "avatar": "",
-    "email": "tranthib@gmail.com",
-    "phone": "0912345678",
-    "username": "tranthib",
-    "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
-    "role": 0,
-    "status": 1,
-    "register_date": "20250308",
-    "cart": [],
-    "wish": []
+  "fullname": "Trần Thị B",
+  "avatar": "",
+  "email": "tranthib@gmail.com",
+  "phone": "0912345678",
+  "username": "tranthib",
+  "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250308",
+  "cart": [],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67c3dc46a3c0c5e439598e1a"
   },
-  {
-    "_id": {
-      "$oid": "67c3dc46a3c0c5e439598e1a"
-    },
-    "fullname": "Lê Văn C",
-    "avatar": "",
-    "email": "levanc@gmail.com",
-    "phone": "0923456789",
-    "username": "levanc",
-    "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
-    "role": 0,
-    "status": 1,
-    "register_date": "20250222",
-    "cart": [],
-    "wish": []
+  "fullname": "Lê Văn C",
+  "avatar": "",
+  "email": "levanc@gmail.com",
+  "phone": "0923456789",
+  "username": "levanc",
+  "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250222",
+  "cart": [],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67c3dc46a3c0c5e439598e1b"
   },
-  {
-    "_id": {
-      "$oid": "67c3dc46a3c0c5e439598e1b"
-    },
-    "fullname": "Phạm Thị D",
-    "avatar": "",
-    "email": "phamthid@gmail.com",
-    "phone": "0934567890",
-    "username": "phamthid",
-    "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
-    "role": 0,
-    "status": 1,
-    "register_date": "20250130",
-    "cart": [],
-    "wish": []
+  "fullname": "Phạm Thị D",
+  "avatar": "",
+  "email": "phamthid@gmail.com",
+  "phone": "0934567890",
+  "username": "phamthid",
+  "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250130",
+  "cart": [],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67c3dc46a3c0c5e439598e1c"
   },
-  {
-    "_id": {
-      "$oid": "67c3dc46a3c0c5e439598e1c"
-    },
-    "fullname": "Hoàng Văn E",
-    "avatar": "",
-    "email": "hoangvane@gmail.com",
-    "phone": "0945678901",
-    "username": "hoangvane",
-    "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
-    "role": 0,
-    "status": 1,
-    "register_date": "20250410",
-    "cart": [],
-    "wish": []
-  }
-]
-
+  "fullname": "Hoàng Văn E",
+  "avatar": "",
+  "email": "hoangvane@gmail.com",
+  "phone": "0945678901",
+  "username": "hoangvane",
+  "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250410",
+  "cart": [],
+  "wish": []
+}]

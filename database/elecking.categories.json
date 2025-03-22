@@ -1,149 +1,147 @@
-[
-  {
-    "_id": {
-      "$oid": "67b6cf1a3a893726b5398574"
-    },
-    "name": "Điện Thoại",
-    "image": "dien_thoai.webp",
-    "status": 1,
-    "icon": "bi bi-phone",
-    "proptypes": [
-      {
-        "$oid": "67cbb9d9c27a2ba1c45b87ac"
-      },
-      {
-        "$oid": "67cbb9d9c27a2ba1c45b87ad"
-      }
-    ],
-    "description": "Điện thoại thông minh là thiết bị di động tích hợp nhiều chức năng, không chỉ để gọi điện mà còn để truy cập Internet, chạy các ứng dụng, chụp ảnh, và thực hiện các tác vụ hàng ngày. Nó có màn hình cảm ứng, chip xử lý mạnh mẽ, bộ nhớ lưu trữ lớn và kết nối mạng nhanh chóng, cung cấp trải nghiệm đa phương tiện và tiện ích cao."
+[{
+  "_id": {
+    "$oid": "67b6cf1a3a893726b5398574"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf1a3a893726b5398575"
+  "name": "Điện Thoại",
+  "image": "dien_thoai.webp",
+  "status": 1,
+  "icon": "bi bi-phone",
+  "proptypes": [
+    {
+      "$oid": "67cbb9d9c27a2ba1c45b87ac"
     },
-    "name": "Máy Tính Bảng",
-    "image": "may_tinh_bang.png",
-    "status": 1,
-    "icon": "bi bi-tablet-landscape",
-    "proptypes": [
-      {
-        "$oid": "67cbb9d9c27a2ba1c45b87ac"
-      },
-      {
-        "$oid": "67cbb9d9c27a2ba1c45b87ad"
-      }
-    ],
-    "description": "Máy tính bảng là thiết bị di động có kích thước màn hình lớn hơn điện thoại thông minh nhưng nhỏ gọn hơn laptop. Nó cho phép người dùng duyệt web, xem video, đọc sách điện tử, chơi game, và sử dụng các ứng dụng chuyên dụng. Máy tính bảng thường có màn hình cảm ứng đa điểm, pin dung lượng cao và hệ điều hành tương thích với nhiều ứng dụng, mang lại sự linh hoạt cho công việc và giải trí."
+    {
+      "$oid": "67cbb9d9c27a2ba1c45b87ad"
+    }
+  ],
+  "description": "Điện thoại thông minh là thiết bị di động tích hợp nhiều chức năng, không chỉ để gọi điện mà còn để truy cập Internet, chạy các ứng dụng, chụp ảnh, và thực hiện các tác vụ hàng ngày. Nó có màn hình cảm ứng, chip xử lý mạnh mẽ, bộ nhớ lưu trữ lớn và kết nối mạng nhanh chóng, cung cấp trải nghiệm đa phương tiện và tiện ích cao."
+},
+{
+  "_id": {
+    "$oid": "67b6cf1a3a893726b5398575"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf1a3a893726b5398576"
+  "name": "Máy Tính Bảng",
+  "image": "may_tinh_bang.png",
+  "status": 1,
+  "icon": "bi bi-tablet-landscape",
+  "proptypes": [
+    {
+      "$oid": "67cbb9d9c27a2ba1c45b87ac"
     },
-    "name": "Laptop",
-    "image": "laptop.png",
-    "status": 1,
-    "icon": "bi bi-laptop",
-    "proptypes": [
-      {
-        "$oid": "67cbb9d9c27a2ba1c45b87ae"
-      },
-      {
-        "$oid": "67cbb9d9c27a2ba1c45b87af"
-      },
-      {
-        "$oid": "67cbb9d9c27a2ba1c45b87ac"
-      },
-      {
-        "$oid": "67cbb9d9c27a2ba1c45b87b0"
-      },
-      {
-        "$oid": "67cbb9d9c27a2ba1c45b87b1"
-      },
-      {
-        "$oid": "67cbb9d9c27a2ba1c45b87b2"
-      },
-      {
-        "$oid": "67cbb9d9c27a2ba1c45b87b3"
-      },
-      {
-        "$oid": "67cbb9d9c27a2ba1c45b87b4"
-      }
-    ],
-    "description": "Laptop là máy tính xách tay nhỏ gọn, tích hợp màn hình, bàn phím, touchpad, và pin, cho phép làm việc, học tập, giải trí ở bất kỳ đâu. Nó có cấu hình đa dạng, từ các mẫu nhẹ phục vụ văn phòng đến các dòng hiệu năng cao dành cho lập trình, thiết kế đồ họa và gaming. Laptop hỗ trợ kết nối Wi-Fi, Bluetooth, USB và có thể chạy nhiều hệ điều hành như Windows, macOS, hoặc Linux."
+    {
+      "$oid": "67cbb9d9c27a2ba1c45b87ad"
+    }
+  ],
+  "description": "Máy tính bảng là thiết bị di động có kích thước màn hình lớn hơn điện thoại thông minh nhưng nhỏ gọn hơn laptop. Nó cho phép người dùng duyệt web, xem video, đọc sách điện tử, chơi game, và sử dụng các ứng dụng chuyên dụng. Máy tính bảng thường có màn hình cảm ứng đa điểm, pin dung lượng cao và hệ điều hành tương thích với nhiều ứng dụng, mang lại sự linh hoạt cho công việc và giải trí."
+},
+{
+  "_id": {
+    "$oid": "67b6cf1a3a893726b5398576"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf1a3a893726b5398577"
+  "name": "Laptop",
+  "image": "laptop.png",
+  "status": 1,
+  "icon": "bi bi-laptop",
+  "proptypes": [
+    {
+      "$oid": "67cbb9d9c27a2ba1c45b87ae"
     },
-    "name": "Màn Hình",
-    "image": "man_hinh.png",
-    "status": 1,
-    "icon": "bi bi-display",
-    "proptypes": [
-      {
-        "$oid": "67cbb9d9c27a2ba1c45b87b2"
-      },
-      {
-        "$oid": "67cbb9d9c27a2ba1c45b87b3"
-      },
-      {
-        "$oid": "67cbb9d9c27a2ba1c45b87b4"
-      }
-    ],
-    "description": "Màn hình là thiết bị hiển thị hình ảnh, video và thông tin từ máy tính, điện thoại, hoặc các thiết bị điện tử khác. Nó có nhiều loại như LCD, LED, OLED với độ phân giải và kích thước đa dạng. Màn hình có thể cảm ứng hoặc không, hỗ trợ tần số quét cao, góc nhìn rộng, và độ sáng tối ưu, đáp ứng nhu cầu làm việc, giải trí, và chơi game."
+    {
+      "$oid": "67cbb9d9c27a2ba1c45b87af"
+    },
+    {
+      "$oid": "67cbb9d9c27a2ba1c45b87ac"
+    },
+    {
+      "$oid": "67cbb9d9c27a2ba1c45b87b0"
+    },
+    {
+      "$oid": "67cbb9d9c27a2ba1c45b87b1"
+    },
+    {
+      "$oid": "67cbb9d9c27a2ba1c45b87b2"
+    },
+    {
+      "$oid": "67cbb9d9c27a2ba1c45b87b3"
+    },
+    {
+      "$oid": "67cbb9d9c27a2ba1c45b87b4"
+    }
+  ],
+  "description": "Laptop là máy tính xách tay nhỏ gọn, tích hợp màn hình, bàn phím, touchpad, và pin, cho phép làm việc, học tập, giải trí ở bất kỳ đâu. Nó có cấu hình đa dạng, từ các mẫu nhẹ phục vụ văn phòng đến các dòng hiệu năng cao dành cho lập trình, thiết kế đồ họa và gaming. Laptop hỗ trợ kết nối Wi-Fi, Bluetooth, USB và có thể chạy nhiều hệ điều hành như Windows, macOS, hoặc Linux."
+},
+{
+  "_id": {
+    "$oid": "67b6cf1a3a893726b5398577"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf1a3a893726b5398578"
+  "name": "Màn Hình",
+  "image": "man_hinh.png",
+  "status": 1,
+  "icon": "bi bi-display",
+  "proptypes": [
+    {
+      "$oid": "67cbb9d9c27a2ba1c45b87b2"
     },
-    "name": "TiVi",
-    "image": "tivi.png",
-    "status": 1,
-    "icon": "bi bi-tv",
-    "proptypes": [
-      {
-        "$oid": "67cbb9d9c27a2ba1c45b87b2"
-      },
-      {
-        "$oid": "67cbb9d9c27a2ba1c45b87b3"
-      },
-      {
-        "$oid": "67cbb9d9c27a2ba1c45b87b4"
-      }
-    ],
-    "description": "Tivi là thiết bị điện tử dùng để hiển thị hình ảnh và âm thanh, phục vụ nhu cầu giải trí, xem tin tức và kết nối Internet. Hiện nay, tivi có nhiều loại như LED, OLED, QLED với độ phân giải cao (Full HD, 4K, 8K), tích hợp các công nghệ hình ảnh và âm thanh tiên tiến. Smart TV còn hỗ trợ ứng dụng trực tuyến, điều khiển bằng giọng nói và kết nối với các thiết bị thông minh khác."
+    {
+      "$oid": "67cbb9d9c27a2ba1c45b87b3"
+    },
+    {
+      "$oid": "67cbb9d9c27a2ba1c45b87b4"
+    }
+  ],
+  "description": "Màn hình là thiết bị hiển thị hình ảnh, video và thông tin từ máy tính, điện thoại, hoặc các thiết bị điện tử khác. Nó có nhiều loại như LCD, LED, OLED với độ phân giải và kích thước đa dạng. Màn hình có thể cảm ứng hoặc không, hỗ trợ tần số quét cao, góc nhìn rộng, và độ sáng tối ưu, đáp ứng nhu cầu làm việc, giải trí, và chơi game."
+},
+{
+  "_id": {
+    "$oid": "67b6cf1a3a893726b5398578"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf1a3a893726b5398579"
+  "name": "TiVi",
+  "image": "tivi.png",
+  "status": 1,
+  "icon": "bi bi-tv",
+  "proptypes": [
+    {
+      "$oid": "67cbb9d9c27a2ba1c45b87b2"
     },
-    "name": "Tai Nghe",
-    "image": "tai_nghe.png",
-    "status": 1,
-    "icon": "bi bi-headset",
-    "proptypes": [],
-    "description": "Tai nghe là thiết bị âm thanh đeo tai, dùng để nghe nhạc, gọi điện hoặc chơi game mà không làm ảnh hưởng đến người xung quanh. Có nhiều loại như tai nghe có dây, không dây (Bluetooth), in-ear, on-ear, và over-ear. Một số mẫu cao cấp tích hợp công nghệ chống ồn chủ động (ANC), âm thanh vòm, micrô tích hợp và thời lượng pin dài, mang lại trải nghiệm nghe tốt hơn trong nhiều môi trường khác nhau."
+    {
+      "$oid": "67cbb9d9c27a2ba1c45b87b3"
+    },
+    {
+      "$oid": "67cbb9d9c27a2ba1c45b87b4"
+    }
+  ],
+  "description": "Tivi là thiết bị điện tử dùng để hiển thị hình ảnh và âm thanh, phục vụ nhu cầu giải trí, xem tin tức và kết nối Internet. Hiện nay, tivi có nhiều loại như LED, OLED, QLED với độ phân giải cao (Full HD, 4K, 8K), tích hợp các công nghệ hình ảnh và âm thanh tiên tiến. Smart TV còn hỗ trợ ứng dụng trực tuyến, điều khiển bằng giọng nói và kết nối với các thiết bị thông minh khác."
+},
+{
+  "_id": {
+    "$oid": "67b6cf1a3a893726b5398579"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf1a3a893726b539857a"
-    },
-    "name": "Loa",
-    "image": "loa.png",
-    "status": 1,
-    "icon": "bi bi-speaker-fill",
-    "proptypes": [],
-    "description": "Loa là thiết bị âm thanh dùng để khuếch đại và phát ra âm thanh từ các nguồn như điện thoại, máy tính, tivi hoặc dàn âm thanh. Có nhiều loại loa như loa Bluetooth, loa vi tính, loa soundbar, loa thùng… với công suất và chất lượng âm thanh khác nhau. Một số loa hiện đại hỗ trợ kết nối không dây, chống nước, điều khiển bằng giọng nói và âm thanh vòm, mang lại trải nghiệm nghe nhạc, xem phim và giải trí sống động."
+  "name": "Tai Nghe",
+  "image": "tai_nghe.png",
+  "status": 1,
+  "icon": "bi bi-headset",
+  "proptypes": [],
+  "description": "Tai nghe là thiết bị âm thanh đeo tai, dùng để nghe nhạc, gọi điện hoặc chơi game mà không làm ảnh hưởng đến người xung quanh. Có nhiều loại như tai nghe có dây, không dây (Bluetooth), in-ear, on-ear, và over-ear. Một số mẫu cao cấp tích hợp công nghệ chống ồn chủ động (ANC), âm thanh vòm, micrô tích hợp và thời lượng pin dài, mang lại trải nghiệm nghe tốt hơn trong nhiều môi trường khác nhau."
+},
+{
+  "_id": {
+    "$oid": "67b6cf1a3a893726b539857a"
   },
-  {
-    "_id": {
-      "$oid": "67b6cf1a3a893726b539857b"
-    },
-    "name": "Đồng Hồ Thông Minh",
-    "image": "dong_ho_thong_minh.png",
-    "status": 1,
-    "icon": "bi bi-smartwatch",
-    "proptypes": [],
-    "description": "Đồng hồ thông minh là thiết bị đeo tay thông minh có màn hình cảm ứng, tích hợp nhiều tính năng như theo dõi sức khỏe, đo nhịp tim, đếm bước chân, nhận thông báo từ điện thoại và hỗ trợ gọi điện, nhắn tin. Một số mẫu cao cấp còn có GPS, chống nước, đo nồng độ oxy trong máu và hỗ trợ trợ lý ảo. Đồng hồ thông minh kết nối với điện thoại qua Bluetooth hoặc Wi-Fi, giúp người dùng quản lý công việc và sức khỏe tiện lợi hơn."
-  }
-]
+  "name": "Loa",
+  "image": "loa.png",
+  "status": 1,
+  "icon": "bi bi-speaker-fill",
+  "proptypes": [],
+  "description": "Loa là thiết bị âm thanh dùng để khuếch đại và phát ra âm thanh từ các nguồn như điện thoại, máy tính, tivi hoặc dàn âm thanh. Có nhiều loại loa như loa Bluetooth, loa vi tính, loa soundbar, loa thùng… với công suất và chất lượng âm thanh khác nhau. Một số loa hiện đại hỗ trợ kết nối không dây, chống nước, điều khiển bằng giọng nói và âm thanh vòm, mang lại trải nghiệm nghe nhạc, xem phim và giải trí sống động."
+},
+{
+  "_id": {
+    "$oid": "67b6cf1a3a893726b539857b"
+  },
+  "name": "Đồng Hồ Thông Minh",
+  "image": "dong_ho_thong_minh.png",
+  "status": 1,
+  "icon": "bi bi-smartwatch",
+  "proptypes": [],
+  "description": "Đồng hồ thông minh là thiết bị đeo tay thông minh có màn hình cảm ứng, tích hợp nhiều tính năng như theo dõi sức khỏe, đo nhịp tim, đếm bước chân, nhận thông báo từ điện thoại và hỗ trợ gọi điện, nhắn tin. Một số mẫu cao cấp còn có GPS, chống nước, đo nồng độ oxy trong máu và hỗ trợ trợ lý ảo. Đồng hồ thông minh kết nối với điện thoại qua Bluetooth hoặc Wi-Fi, giúp người dùng quản lý công việc và sức khỏe tiện lợi hơn."
+}]
