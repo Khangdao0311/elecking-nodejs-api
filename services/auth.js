@@ -40,7 +40,7 @@ async function login(body) {
                 const data = {
                     user: {
                         id: user._id,
-                        fullname: user.username,
+                        fullname: user.fullname,
                         avatar: user.avatar ? `${process.env.URL}${user.avatar}` : "",
                         email: user.email,
                         phone: user.phone,
