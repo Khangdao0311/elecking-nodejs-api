@@ -1,104 +1,119 @@
-[
-  {
-    "_id": {
-      "$oid": "67be81d5447c10378c42365b"
-    },
-    "province": "Thành phố Hồ Chí Minh",
-    "district": "Quận 12",
-    "ward": "Phường Tân Thới Hiệp",
-    "description": "Đường Nguyễn Thị Đặng",
-    "phone": "0976676767",
-    "fullname": "Đào Vĩnh Khang",
-    "type": 2,
-    "status": 1,
-    "setDefault": true,
-    "user_id": {
-      "$oid": "67b6b0bdbfe3474f1ec40f45"
-    }
+[{
+  "_id": {
+    "$oid": "67be81d5447c10378c42365b"
   },
-  {
-    "_id": {
-      "$oid": "67c3dd33a3c0c5e439598e1f"
-    },
-    "province": "Thành phố Hồ Chí Minh",
-    "district": "Quận 12",
-    "ward": "Phường Hiệp Thành",
-    "description": "123 Lê Văn Khương, Hiệp Thành, Quận 12",
-    "phone": "0901234567",
-    "fullname": "Nguyễn Văn A",
-    "type": 1,
-    "status": 1,
-    "setDefault": true,
-    "user_id": {
-      "$oid": "67c3dc46a3c0c5e439598e18"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c3dd33a3c0c5e439598e20"
-    },
-    "province": "Thành phố Hồ Chí Minh",
-    "district": "Quận Gò Vấp",
-    "ward": "Phường 10",
-    "description": "456 Nguyễn Oanh, Phường 10, Gò Vấp",
-    "phone": "0912345678",
-    "fullname": "Trần Thị B",
-    "type": 2,
-    "status": 1,
-    "setDefault": false,
-    "user_id": {
-      "$oid": "67c3dc46a3c0c5e439598e18"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c3dd33a3c0c5e439598e21"
-    },
-    "province": "Thành phố Hồ Chí Minh",
-    "district": "Quận 12",
-    "ward": "Phường Tân Chánh Hiệp",
-    "description": "789 Hà Huy Giáp, Phường Tân Chánh Hiệp, Quận 12",
-    "phone": "0923456789",
-    "fullname": "Lê Văn C",
-    "type": 1,
-    "status": 1,
-    "setDefault": true,
-    "user_id": {
-      "$oid": "67c3dc46a3c0c5e439598e1a"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c3dd33a3c0c5e439598e22"
-    },
-    "province": "Thành phố Hồ Chí Minh",
-    "district": "Quận Gò Vấp",
-    "ward": "Phường 8",
-    "description": "567 Phan Văn Trị, Phường 8, Gò Vấp",
-    "phone": "0934567890",
-    "fullname": "Phạm Thị D",
-    "type": 2,
-    "status": 1,
-    "setDefault": true,
-    "user_id": {
-      "$oid": "67c3dc46a3c0c5e439598e1b"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c3dd33a3c0c5e439598e23"
-    },
-    "province": "Thành phố Hồ Chí Minh",
-    "district": "Quận 12",
-    "ward": "Phường Thới An",
-    "description": "321 Quốc Lộ 1A, Phường Thới An, Quận 12",
-    "phone": "0909876543",
-    "fullname": "Nguyễn Văn A",
-    "type": 1,
-    "status": 1,
-    "setDefault": false,
-    "user_id": {
-      "$oid": "67c3dc46a3c0c5e439598e18"
-    }
+  "province": "Thành phố Hồ Chí Minh",
+  "district": "Quận 12",
+  "ward": "Phường Tân Thới Hiệp",
+  "description": "Đường Nguyễn Thị Đặng",
+  "phone": "0976676767",
+  "fullname": "Đào Vĩnh Khang",
+  "type": 2,
+  "status": 1,
+  "setDefault": true,
+  "user_id": {
+    "$oid": "67b6b0bdbfe3474f1ec40f45"
   }
-]
+},
+{
+  "_id": {
+    "$oid": "67c3dd33a3c0c5e439598e1f"
+  },
+  "province": "Thành phố Hồ Chí Minh",
+  "district": "Quận 12",
+  "ward": "Phường Hiệp Thành",
+  "description": "123 Lê Văn Khương, Hiệp Thành, Quận 12",
+  "phone": "0901234567",
+  "fullname": "Nguyễn Văn A",
+  "type": 1,
+  "status": 1,
+  "setDefault": true,
+  "user_id": {
+    "$oid": "67c3dc46a3c0c5e439598e18"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c3dd33a3c0c5e439598e20"
+  },
+  "province": "Thành phố Hồ Chí Minh",
+  "district": "Quận Gò Vấp",
+  "ward": "Phường 10",
+  "description": "456 Nguyễn Oanh, Phường 10, Gò Vấp",
+  "phone": "0912345678",
+  "fullname": "Trần Thị B",
+  "type": 2,
+  "status": 1,
+  "setDefault": false,
+  "user_id": {
+    "$oid": "67c3dc46a3c0c5e439598e18"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c3dd33a3c0c5e439598e21"
+  },
+  "province": "Thành phố Hồ Chí Minh",
+  "district": "Quận 12",
+  "ward": "Phường Tân Chánh Hiệp",
+  "description": "789 Hà Huy Giáp, Phường Tân Chánh Hiệp, Quận 12",
+  "phone": "0923456789",
+  "fullname": "Lê Văn C",
+  "type": 1,
+  "status": 1,
+  "setDefault": true,
+  "user_id": {
+    "$oid": "67c3dc46a3c0c5e439598e1a"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c3dd33a3c0c5e439598e22"
+  },
+  "province": "Thành phố Hồ Chí Minh",
+  "district": "Quận Gò Vấp",
+  "ward": "Phường 8",
+  "description": "567 Phan Văn Trị, Phường 8, Gò Vấp",
+  "phone": "0934567890",
+  "fullname": "Phạm Thị D",
+  "type": 2,
+  "status": 1,
+  "setDefault": true,
+  "user_id": {
+    "$oid": "67c3dc46a3c0c5e439598e1b"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c3dd33a3c0c5e439598e23"
+  },
+  "province": "Thành phố Hồ Chí Minh",
+  "district": "Quận 12",
+  "ward": "Phường Thới An",
+  "description": "321 Quốc Lộ 1A, Phường Thới An, Quận 12",
+  "phone": "0909876543",
+  "fullname": "Nguyễn Văn A",
+  "type": 1,
+  "status": 1,
+  "setDefault": false,
+  "user_id": {
+    "$oid": "67c3dc46a3c0c5e439598e18"
+  }
+},
+{
+  "_id": {
+    "$oid": "67dcd1d7ff35904e7a40a6f3"
+  },
+  "province": "Thành phố Hồ Chí Minh",
+  "district": "Quận 12",
+  "ward": "Phường Tân Thới Hiệp",
+  "description": "Đường Nguyễn Thị Đặng",
+  "phone": "0976676767",
+  "fullname": "Đào Vĩnh Khang 2",
+  "type": 2,
+  "status": 1,
+  "setDefault": false,
+  "user_id": {
+    "$oid": "67b6b0bdbfe3474f1ec40f45"
+  }
+}]

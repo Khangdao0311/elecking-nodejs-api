@@ -3,9 +3,9 @@ const Schema = mongoose.Schema;
 const ObjectId = Schema.ObjectId;
 
 const addressSchema = new Schema({
-    province: { type: String },
-    district: { type: String },
-    ward: { type: String },
+    province: { code: { type: Number }, name: { type: String } },
+    district: { code: { type: Number }, name: { type: String } },
+    ward: { code: { type: Number }, name: { type: String } },
     description: { type: String },
     phone: { type: String },
     fullname: { type: String },

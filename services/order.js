@@ -33,7 +33,7 @@ async function create(body) {
             const voucher = await voucherModel.findById(voucher_id)
             if (!voucher) return { status: 400, message: "Voucher không tồn tại !" }
             if (+total < +voucher.min_order_value) return { status: 400, message: `Đơn hàng không đủ điều kiện để áp dụng voucher ${voucher.code}` }
-            await voucherModel.findByIdAndUpdate(voucher._id, { $set: { quantity: voucher.quantty - 1, status: voucher.quantty - 1 === 0 ? 0 : 1 } }, { new: true, runValidators: true })
+            await voucherModel.findByIdAndUpdate(voucher._id, { $set: { quantity: voucher.quantity - 1, status: voucher.quantity - 1 === 0 ? 0 : 1 } }, { new: true, runValidators: true })
         }
 
         const date = new Date();
@@ -124,14 +124,14 @@ async function create(body) {
                     <p>Email: <b>${user.email}</b></p>
                     <p>Số điện thoại: <b>${user.phone}</b></p>
                     <hr>
-                    <p>Địa chỉ: <b>${address.province}, ${address.district}, ${address.ward}, ${address.description}</b></p>
+                    <p>Địa chỉ: <b>${address.province.name}, ${address.district.name}, ${address.ward.name}, ${address.description}</b></p>
                     <p>Tên người nhận: <b>${address.fullname}</b></p>
                     <p>Số điện thoại: <b>${address.phone}</b></p>
                     <p>Loại địa chỉ: <b>${address.type == 1 ? "Nhà Riêng" : "Văn Phòng"}</b></p>
                     <hr>
                     <p>Phương thức thanh toán: <b>${payment_method.name}</b></p>
                     <p>Giá trị đơn hàng: <b>${(+total).toLocaleString("vi-VN")} đ</b></p>
-                    <p>Lưu ý: <b>${note} đ</b></p>
+                    <p>Lưu ý: <b>${note}</b></p>
                     <hr>
                     <p style="font-size: 18px; font-weight: bold;">Đơn hàng</p>
                     <table border="1" style="width: 100%;">
@@ -155,10 +155,10 @@ async function create(body) {
             `
         };
 
-        await orderNew.save();
+        const data = await orderNew.save();
         await transporter.sendMail(mailOptions);
 
-        return { status: 200, message: "Success" }
+        return { status: 200, message: "Success", data: data }
     } catch (error) {
         console.log(error);
         throw error;
@@ -219,14 +219,14 @@ async function updateStatus(id, body) {
 
         if (+status === 0) {
             for (const productOrder of order.products) {
-                const product = await productModel.findById(productOrder.product_id)
+                const product = await productModel.findById(productOrder.product.id)
                 await productModel.findByIdAndUpdate(product._id, {
                     $set: {
                         variants: product.variants.map((variant, iVariant) => {
-                            if (iVariant == productOrder.variant) return {
+                            if (iVariant == productOrder.product.variant) return {
                                 ...variant.toObject(),
                                 colors: variant.colors.map((color, iColor) => {
-                                    if (iColor == productOrder.color) return {
+                                    if (iColor == productOrder.product.color) return {
                                         ...color.toObject(),
                                         status: 1,
                                         quantity: color.quantity + productOrder.quantity
