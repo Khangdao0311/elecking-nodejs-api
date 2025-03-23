@@ -4,6 +4,7 @@ var payment_methodModel = require("../models/payment_method");
 var voucherModel = require("../models/voucher");
 var productModel = require("../models/product");
 var propertyModel = require("../models/property");
+var addressModel = require("../models/address");
 
 const { ObjectId } = require("mongodb");
 
@@ -21,7 +22,7 @@ async function getById(id) {
         const payment_method = await payment_methodModel.findById(order.payment_method_id)
         let voucher = null
         if (!order.voucher_id) voucher = await voucherModel.findById(order.voucher_id)
-
+        const address = await addressModel.findById(order.address_id)
 
         const productsOrder = []
 
@@ -41,6 +42,7 @@ async function getById(id) {
             productsOrder.push({
                 ...item.toObject(),
                 product: {
+                    ...item.product,
                     id: product.id,
                     name: name.join(" - "),
                     image: product.variants[item.product.variant].colors[item.product.color].image
@@ -76,7 +78,19 @@ async function getById(id) {
                 id: payment_method._id,
                 name: payment_method.name
             },
-            address_id: order.address_id,
+            address: {
+                id: address._id,
+                province: address.province,
+                district: address.district,
+                ward: address.ward,
+                description: address.description,
+                phone: address.phone,
+                fullname: address.fullname,
+                type: address.type,
+                status: address.status,
+                setDefault: address.setDefault,
+                user_id: address.user_id,
+            },
         };
 
         return { status: 200, message: "Success", data: data }
@@ -136,6 +150,8 @@ async function getQuery(query) {
             const payment_method = await payment_methodModel.findById(order.payment_method_id)
             let voucher = null
             if (!order.voucher_id) voucher = await voucherModel.findById(order.voucher_id)
+            const address = await addressModel.findById(order.address_id)
+
 
             const productsOrder = []
 
@@ -155,6 +171,7 @@ async function getQuery(query) {
                 productsOrder.push({
                     ...item,
                     product: {
+                        ...item.product,
                         id: product.id,
                         name: name.join(" - "),
                         image: product.variants[item.product.variant].colors[item.product.color].image
@@ -191,7 +208,17 @@ async function getQuery(query) {
                     id: payment_method._id,
                     name: payment_method.name
                 },
-                address_id: order.address_id,
+                address: {
+                    id: address._id,
+                    province: address.province,
+                    district: address.district,
+                    ward: address.ward,
+                    description: address.description,
+                    phone: address.phone,
+                    fullname: address.fullname,
+                    type: address.type,
+                    status: address.status,
+                },
             })
         }
 
