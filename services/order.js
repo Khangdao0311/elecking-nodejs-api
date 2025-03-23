@@ -41,7 +41,7 @@ async function create(body) {
 
         const orderNew = new orderModel({
             total: +total,
-            status: 1,
+            status: 2,
             payment_status: false,
             ordered_at: ordered_at,
             updated_at: ordered_at,
