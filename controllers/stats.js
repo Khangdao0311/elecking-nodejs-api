@@ -7,161 +7,92 @@ module.exports = {
 async function getQuery(query) {
     try {
         const { year } = query;
+        const today = new Date();
+        const currentYear = today.getFullYear();
+        const currentMonth = today.getMonth() + 1; // Lấy tháng hiện tại (1-12)
 
-        if (!year) return { status: 400, message: "Nhập số Năm cần thống kê !" }
+        let monthsToInclude = [];
 
-        const orders = await orderModel.aggregate([
-            {
-                $match: {
-                    ordered_at: { $regex: `^${year}` }, // Chỉ lấy các đơn hàng có năm 2025
-                    status: 1
-                }
-            },
-            {
-                $group: {
-                    _id: { $substr: ["$ordered_at", 4, 2] }, // Lấy tháng từ ordered_at
-                    total: { $sum: "$total" }, // Tổng số tiền theo tháng
-                    orderCount: { $sum: 1 } // Đếm số lượng đơn hàng theo tháng
-                }
-            },
-            {
-                $project: {
-                    _id: 0,
-                    month: { $toInt: "$_id" },
-                    total: 1,
-                    orderCount: 1
-                }
-            },
-            {
-                $facet: {
-                    salesData: [
-                        {
-                            $group: {
-                                _id: null,
-                                result: {
-                                    $push: {
-                                        k: { $toString: "$month" },
-                                        v: { price: "$total", order: "$orderCount" }
-                                    }
-                                },
-                                totalPrice: { $sum: "$total" }, // Tổng tiền của cả năm
-                                totalOrder: { $sum: "$orderCount" } // Tổng đơn hàng của cả năm
-                            }
-                        },
-                        {
-                            $project: {
-                                _id: 0,
-                                data: { $arrayToObject: "$result" },
-                                totalPrice: 1,
-                                totalOrder: 1
-                            }
-                        }
-                    ],
-                    allMonths: [
-                        {
-                            $project: {
-                                data: {
-                                    $arrayToObject: [
-                                        [
-                                            { k: "1", v: { price: 0, order: 0 } },
-                                            { k: "2", v: { price: 0, order: 0 } },
-                                            { k: "3", v: { price: 0, order: 0 } },
-                                            { k: "4", v: { price: 0, order: 0 } },
-                                            { k: "5", v: { price: 0, order: 0 } },
-                                            { k: "6", v: { price: 0, order: 0 } },
-                                            { k: "7", v: { price: 0, order: 0 } },
-                                            { k: "8", v: { price: 0, order: 0 } },
-                                            { k: "9", v: { price: 0, order: 0 } },
-                                            { k: "10", v: { price: 0, order: 0 } },
-                                            { k: "11", v: { price: 0, order: 0 } },
-                                            { k: "12", v: { price: 0, order: 0 } }
-                                        ]
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                $project: {
-                    mergedData: {
-                        $mergeObjects: [
-                            { $arrayElemAt: ["$allMonths.data", 0] },
-                            { $arrayElemAt: ["$salesData.data", 0] }
-                        ]
-                    },
-                    totalPrice: { $arrayElemAt: ["$salesData.totalPrice", 0] },
-                    totalOrder: { $arrayElemAt: ["$salesData.totalOrder", 0] }
-                }
-            },
-            {
-                $replaceRoot: { newRoot: { $mergeObjects: ["$mergedData", { totalPrice: "$totalPrice", totalOrder: "$totalOrder" }] } }
-            }
-        ]);
-
-
-        var data;
-
-        if (JSON.stringify(orders[0]) == "{}") {
-            data = {
-                "1": {
-                    "price": 0,
-                    "order": 0
-                },
-                "2": {
-                    "price": 0,
-                    "order": 0
-                },
-                "3": {
-                    "price": 0,
-                    "order": 0
-                },
-                "4": {
-                    "price": 0,
-                    "order": 0
-                },
-                "5": {
-                    "price": 0,
-                    "order": 0
-                },
-                "6": {
-                    "price": 0,
-                    "order": 0
-                },
-                "7": {
-                    "price": 0,
-                    "order": 0
-                },
-                "8": {
-                    "price": 0,
-                    "order": 0
-                },
-                "9": {
-                    "price": 0,
-                    "order": 0
-                },
-                "10": {
-                    "price": 0,
-                    "order": 0
-                },
-                "11": {
-                    "price": 0,
-                    "order": 0
-                },
-                "12": {
-                    "price": 0,
-                    "order": 0
-                },
-                "total": 0
-            };
+        if (year) {
+            // 🔹 Nếu có `year`, lấy đủ 12 tháng của năm đó
+            monthsToInclude = Array.from({ length: 12 }, (_, i) => ({
+                month: (i + 1).toString().padStart(2, "0"),
+                year: year,
+            }));
         } else {
-            data = orders[0]
+            // 🔹 Nếu không có `year`, lấy 6 tháng gần nhất
+            for (let i = 0; i < 6; i++) {
+                let month = currentMonth - i;
+                let yearVal = currentYear;
+                if (month <= 0) {
+                    month += 12;
+                    yearVal -= 1;
+                }
+                monthsToInclude.push({ month: month.toString().padStart(2, "0"), year: yearVal.toString() });
+            }
         }
 
-        return { status: 200, message: "Success", data: data }
+        // 🔹 Lọc theo danh sách tháng đã xác định
+        const matchStage = {
+            $match: {
+                $or: monthsToInclude.map(({ month, year }) => ({
+                    ordered_at: { $regex: `^${year}${month}` },
+                })),
+            },
+        };
+
+        const projectStage = {
+            $project: {
+                month: { $substr: ["$ordered_at", 4, 2] },
+                year: { $substr: ["$ordered_at", 0, 4] },
+                total: 1,
+            },
+        };
+
+        const groupStage = {
+            $group: {
+                _id: { month: "$month", year: "$year" },
+                price: { $sum: "$total" },
+                order: { $sum: 1 },
+            },
+        };
+
+        const sortStage = { $sort: { "_id.year": -1, "_id.month": -1 } };
+
+        const pipeline = [matchStage, projectStage, groupStage, sortStage];
+
+        // 🔹 Thực hiện aggregation
+        const result = await orderModel.aggregate(pipeline).exec();
+
+        // 🔹 Chuẩn bị dữ liệu JSON theo yêu cầu
+        const response = {};
+        let totalPrice = 0;
+        let totalOrder = 0;
+
+        // 🔹 Khởi tạo dữ liệu mặc định cho các tháng cần lấy
+        monthsToInclude.forEach(({ month, year }) => {
+            response[`${month}/${year}`] = { price: 0, order: 0 };
+        });
+
+        // 🔹 Cập nhật dữ liệu từ MongoDB
+        result.forEach(({ _id, price, order }) => {
+            const key = `${_id.month}/${_id.year}`;
+            if (response[key]) {
+                response[key].price = price;
+                response[key].order = order;
+                totalPrice += price;
+                totalOrder += order;
+            }
+        });
+
+        // 🔹 Thêm tổng price và order
+        response.totalPrice = totalPrice;
+        response.totalOrder = totalOrder;
+
+        return { status: 200, message: "Success", data: response };
     } catch (error) {
         console.log(error);
         throw error;
     }
 }
+
