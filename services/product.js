@@ -24,7 +24,7 @@ async function insert(body) {
         if (!category) return { status: 400, message: "Danh mục không tồn tại !" }
 
         if (!Array.isArray(JSON.parse(images)) || !JSON.parse(images).every(item => typeof item === 'string')) return { status: 400, message: "Images không đúng dữ liệu !" }
-        if (!Array.isArray(JSON.parse(variants)) || !isVariantProduct(JSON.parse(variants))) return { status: 400, message: "Variants không đúng dữ liệu !" }
+        if (!Array.isArray(JSON.parse(variants))) return { status: 400, message: "Variants không đúng dữ liệu !" }
 
         const productNew = new productModel({
             name: name,
