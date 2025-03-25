@@ -19,12 +19,13 @@ async function insert(body) {
         const order = await orderModel.findById(order_id)
         if (!order) return { status: 400, message: "Đơn hàng không tồn tại !" }
 
-        if (order.status !== 3) return { status: 400, message: "Đơn hàng chưa được giao Success" }
+        if (order.status !== 1) return { status: 400, message: "Đơn hàng chưa được giao Success" }
 
         const product = await productModel.findById(product_id)
+
         if (!product) return { status: 400, message: "Sản phẩm không tồn tại !" }
 
-        const checkProductOrder = order.products.find(e => e.product_id.equals(product._id))
+        const checkProductOrder = order.products.find(e => e.product.id.equals(product._id))
         if (!checkProductOrder) return { status: 400, message: "Sản phẩm đánh giá không trong đơn hàng !" }
 
         if (![0, 1, 2, 3, 4, 5].includes(+rating)) return { status: 400, message: "Đánh giá không tồn tại !" }
@@ -47,12 +48,8 @@ async function insert(body) {
         await reviewNew.save()
 
         const productsOrder = order.products.map(productOrder => ({
-            product_id: productOrder.product_id,
-            variant: productOrder.variant,
-            color: productOrder.color,
-            quantity: productOrder.quantity,
-            price: productOrder.price,
-            reviewed: productOrder.product_id.equals(product._id) || productOrder.reviewed
+            ...productOrder.toObject(),
+            reviewed: productOrder.product.id.equals(product._id) || productOrder.reviewed
         }))
 
         await orderModel.findByIdAndUpdate(order._id, { $set: { products: productsOrder } }, { new: true, runValidators: true })

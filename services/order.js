@@ -208,12 +208,16 @@ async function updateStatus(id, body) {
         const date = new Date();
         const updated_at = moment(date).format('YYYYMMDDHHmmss');
 
-        await orderModel.findByIdAndUpdate(id,
+        const update = {
+            status: +status,
+            updated_at: updated_at
+        }
+
+        if (+status === 1) update.payment_status = true
+
+        await orderModel.findByIdAndUpdate(order._id,
             {
-                $set: {
-                    status: +status,
-                    updated_at: updated_at
-                }
+                $set: update
             },
             { new: true, runValidators: true })
 

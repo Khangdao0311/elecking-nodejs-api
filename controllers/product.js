@@ -48,7 +48,7 @@ async function getById(id) {
 
         const reviews = await reviewModel.find({ product_id: product._id })
         let rating = null
-        if (reviews.length) rating = reviews.reduce((sum, e) => sum + e.rating, 0) / reviews.length
+        if (reviews.length) rating = +(reviews.reduce((sum, e) => sum + e.rating, 0) / reviews.length).toFixed(1);
 
         const brand = await brandModel.findById(product.brand_id)
         const category = await categoryModel.findById(product.category_id)
@@ -247,7 +247,7 @@ async function getQuery(query) {
             // tính toán xem sản phẩm bao nhiêu sao
             const reviews = await reviewModel.find({ product_id: product._id })
             let rating = null
-            if (reviews.length) rating = reviews.reduce((sum, e) => sum + e.rating, 0) / reviews.length
+            if (reviews.length) rating = +(reviews.reduce((sum, e) => sum + e.rating, 0) / reviews.length).toFixed(1);
 
             const brand = await brandModel.findById(product.brand_id)
             const category = await categoryModel.findById(product.category_id)
@@ -325,7 +325,7 @@ async function getSame(query) {
 
             const reviews = await reviewModel.find({ product_id: product._id })
             let rating = null
-            if (reviews.length) rating = reviews.reduce((sum, e) => sum + e.rating, 0) / reviews.length
+            if (reviews.length) rating = +(reviews.reduce((sum, e) => sum + e.rating, 0) / reviews.length).toFixed(1);
 
             const brand = await brandModel.findById(product.brand_id)
             const category = await categoryModel.findById(product.category_id)

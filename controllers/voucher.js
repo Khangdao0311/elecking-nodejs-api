@@ -1,7 +1,9 @@
 var voucherModel = require("../models/voucher");
+var userModel = require("../models/user");
 const moment = require("moment");
 
 const { ObjectId } = require("mongodb");
+const user = require("../models/user");
 
 module.exports = {
     getById,
@@ -36,7 +38,7 @@ async function getById(id) {
 
 async function getQuery(query) {
     try {
-        const { id, search, expired, orderby,  page = 1, limit = null } = query;
+        const { id, search, expired, user_id, orderby, page = 1, limit = null } = query;
 
         let matchCondition = {};
 
@@ -58,15 +60,31 @@ async function getQuery(query) {
             matchCondition.$or = [
                 {
                     end_date: {
-                        [expired !== '1' ? "$lt" : "$gte"]: moment().format("YYYYMMDD")
+                        [expired === '1' ? "$lt" : "$gte"]: moment().format("YYYYMMDD")
                     }
                 },
                 {
                     quantity: {
-                        [expired !== '1' ? "$lte" : "$gt"]: 0
+                        [expired === '1' ? "$lte" : "$gt"]: 0
                     }
                 }
             ];
+        }
+
+        if (user_id) {
+            const user = await userModel.findById(user_id)
+            if (!user) return { status: 400, mesage: "Người dùng không tồn tại !" }
+
+            matchCondition.$or = [
+                {
+                    user_id: user._id
+                },
+                {
+                    user_id: null
+                }
+            ];
+        } else {
+            matchCondition.user_id = null
         }
 
         let sortCondition = {};

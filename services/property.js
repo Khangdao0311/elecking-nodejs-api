@@ -42,7 +42,7 @@ async function update(id, body) {
         await propertyModel.findByIdAndUpdate(id, {
             $set: {
                 name: name,
-                property_id: property._id,
+                proptype_id: proptype._id,
             }
         }, { new: true })
 
