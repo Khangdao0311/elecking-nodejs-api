@@ -38,7 +38,7 @@ async function getById(id) {
 
 async function getQuery(query) {
     try {
-        const { id, search, expired, user_id, orderby, page = 1, limit = null } = query;
+        const { id, search, expired = "0", user_id, orderby, page = 1, limit = null } = query;
 
         let matchCondition = {};
 
@@ -56,35 +56,32 @@ async function getQuery(query) {
         }
 
 
-        if (expired) {
-            matchCondition.$or = [
-                {
-                    end_date: {
-                        [expired === '1' ? "$lt" : "$gte"]: moment().format("YYYYMMDD")
+        matchCondition.$and = [
+            {
+                [expired === '1' ? "$or" : "$and"]: [
+                    {
+                        end_date: {
+                            [expired === '1' ? "$lt" : "$gte"]: moment().format("YYYYMMDD")
+                        }
+                    },
+                    {
+                        quantity: {
+                            [expired === '1' ? "$eq" : "$gt"]: 0
+                        }
                     }
-                },
-                {
-                    quantity: {
-                        [expired === '1' ? "$lte" : "$gt"]: 0
-                    }
-                }
-            ];
-        }
+                ]
+            }
+        ];
 
         if (user_id) {
             const user = await userModel.findById(user_id)
             if (!user) return { status: 400, mesage: "Người dùng không tồn tại !" }
-
-            matchCondition.$or = [
-                {
-                    user_id: user._id
-                },
-                {
-                    user_id: null
-                }
-            ];
-        } else {
-            matchCondition.user_id = null
+            matchCondition.$and.push({
+                $or: [
+                    { user_id: user._id },
+                    { user_id: null }
+                ]
+            });
         }
 
         let sortCondition = {};
