@@ -38,7 +38,7 @@ async function getById(id) {
 
 async function getQuery(query) {
     try {
-        const { id, search, expired = "0", user_id, orderby, page = 1, limit = null } = query;
+        const { id, search, expired = "0", user_id, orderby, page = 1, limit = '' } = query;
 
         let matchCondition = {};
 

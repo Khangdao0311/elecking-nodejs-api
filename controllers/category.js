@@ -13,13 +13,23 @@ async function getById(id) {
         const category = await categoryModel.findById(id);
         if (!category) return { status: 400, message: "Danh mục không tồn tại !" }
 
+        const proptypes = []
+
+        for (const proptype_id of category.proptypes) {
+            const proptype = await proptypeModel.findById(proptype_id)
+            proptypes.push({
+                id: proptype._id,
+                name: proptype.name
+            })
+        }
+
         const data = {
             id: category._id,
             name: category.name,
             image: category.image ? `${process.env.URL}${category.image}` : "",
             status: category.status,
             icon: category.icon,
-            proptypes: category.proptypes,
+            proptypes: proptypes,
             description: category.description,
         };
 
@@ -32,7 +42,7 @@ async function getById(id) {
 
 async function getQuery(query) {
     try {
-        const { id, search, orderby, page = 1, limit = null } = query
+        const { id, search, status = "1", orderby, page = 1, limit = '' } = query
 
         let matchCondition = {};
 
@@ -47,6 +57,10 @@ async function getQuery(query) {
             matchCondition._id = {
                 $in: id.split("-").map((_id) => new ObjectId(_id)),
             };
+        }
+
+        if (status) {
+            matchCondition.status = +status
         }
 
         let sortCondition = {};

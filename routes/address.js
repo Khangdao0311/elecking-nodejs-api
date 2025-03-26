@@ -32,7 +32,7 @@ router.post('/', async function (req, res, next) {
   }
 });
 
-router.put('/:id', async function (req, res, next) {
+router.put('/update/:id', async function (req, res, next) {
   try {
     const { id } = req.params
     const result = await addressService.update(id, req.body)
@@ -42,10 +42,30 @@ router.put('/:id', async function (req, res, next) {
   }
 });
 
-router.patch('/:id', async function (req, res, next) {
+router.patch('/update/:id', async function (req, res, next) {
   try {
     const { id } = req.params
     const result = await addressService.update(id, req.body)
+    return res.status(result.status).json(result);
+  } catch (error) {
+    return res.status(500).json({ status: 500, message: "Internal Server Error" });
+  }
+});
+
+router.put('/edit/:id', async function (req, res, next) {
+  try {
+    const { id } = req.params
+    const result = await addressService.edit(id, req.body)
+    return res.status(result.status).json(result);
+  } catch (error) {
+    return res.status(500).json({ status: 500, message: "Internal Server Error" });
+  }
+});
+
+router.patch('/edit/:id', async function (req, res, next) {
+  try {
+    const { id } = req.params
+    const result = await addressService.edit(id, req.body)
     return res.status(result.status).json(result);
   } catch (error) {
     return res.status(500).json({ status: 500, message: "Internal Server Error" });

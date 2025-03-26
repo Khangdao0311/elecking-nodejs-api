@@ -36,7 +36,7 @@ async function getById(id) {
 
 async function getQuery(query) {
     try {
-        const { id, user_id, search, orderby, page = 1, limit = null } = query;
+        const { id, user_id, search, status = "1", orderby, page = 1, limit = '' } = query;
 
         let matchCondition = {};
 
@@ -57,6 +57,10 @@ async function getQuery(query) {
             const user = await userModel.findById(user_id)
             if (!user) return { status: 400, message: "Người dùng không tồn tại !" }
             matchCondition.user_id = user._id
+        }
+
+        if (status) {
+            matchCondition.status = +status
         }
 
         let sortCondition = {};

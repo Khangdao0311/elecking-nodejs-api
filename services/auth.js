@@ -10,7 +10,8 @@ module.exports = {
     register,
     updateCart,
     updateWish,
-    getToken
+    getToken,
+    loginAdmin
 };
 
 async function login(body) {
@@ -57,6 +58,62 @@ async function login(body) {
             }
         } else {
             return { status: 400, message: 'Người dùng không tồn tại !' }
+        }
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
+async function loginAdmin(body) {
+    try {
+        const { account, password } = body
+
+        const user = await userModel.findOne({
+            $or: [{ username: account }, { email: account }, { phone: account }],
+        });
+        console.log(user.role);
+
+        if (user) {
+            if (user.role === 1) {
+                if (bcryptjs.compareSync(password, user.password)) {
+                    const userToken = {
+                        id: user._id,
+                        fullname: user.username,
+                        username: user.username,
+                        role: user.role
+                    }
+
+                    const access_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
+                        expiresIn: "30s",
+                    });
+                    const refresh_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
+                        expiresIn: "4h",
+                    });
+
+                    const data = {
+                        user: {
+                            id: user._id,
+                            fullname: user.fullname,
+                            avatar: user.avatar ? `${process.env.URL}${user.avatar}` : "",
+                            email: user.email,
+                            phone: user.phone,
+                            username: user.username,
+                        },
+                        access_token: access_token,
+                        refresh_token: refresh_token
+                    }
+
+                    return { status: 200, message: 'Success', data: data }
+
+                } else {
+                    return { status: 400, message: 'Mật khẩu người dùng không đúng !' }
+                }
+            } else {
+                return { status: 403, message: 'Không có quyền truy cập' }
+            }
+        } else {
+            return { status: 403, message: 'Tài khoản không tồn tại !' }
         }
     } catch (error) {
         console.log(error);

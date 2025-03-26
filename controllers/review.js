@@ -43,7 +43,7 @@ async function getById(id) {
 
 async function getQuery(query) {
     try {
-        const { product_id, rating, orderby,  page = 1, limit = null } = query;
+        const { product_id, rating, orderby, page = 1, limit = '' } = query;
 
         let matchCondition = {};
 
@@ -54,7 +54,6 @@ async function getQuery(query) {
         if (rating) {
             matchCondition.rating = +rating
         }
-
 
         let sortCondition = {};
 
@@ -102,7 +101,7 @@ async function getQuery(query) {
                 product_id: review.product_id,
                 user: {
                     id: user._id,
-                    avatar: user.avatar,
+                    avatar: user.avatar ? `${process.env.URL}${user.avatar}` : "",
                     fullname: user.fullname
                 }
             })

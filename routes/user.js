@@ -23,20 +23,40 @@ router.get('/:id', async function (req, res, next) {
   }
 });
 
-router.put('/:id', async function (req, res, next) {
+router.put('/status/:id', async function (req, res, next) {
   try {
     const { id } = req.params
-    const result = await userService.update(id, req.body)
+    const result = await userService.updateStatus(id, req.body)
     return res.status(result.status).json(result);
   } catch (error) {
     return res.status(500).json({ status: 500, message: "Internal Server Error" });
   }
 });
 
-router.patch('/:id', async function (req, res, next) {
+router.patch('/status/:id', async function (req, res, next) {
   try {
     const { id } = req.params
-    const result = await userService.update(id, req.body)
+    const result = await userService.updateStatus(id, req.body)
+    return res.status(result.status).json(result);
+  } catch (error) {
+    return res.status(500).json({ status: 500, message: "Internal Server Error" });
+  }
+});
+
+router.put('/profile/:id', async function (req, res, next) {
+  try {
+    const { id } = req.params
+    const result = await userService.updateProfile(id, req.body)
+    return res.status(result.status).json(result);
+  } catch (error) {
+    return res.status(500).json({ status: 500, message: "Internal Server Error" });
+  }
+});
+
+router.patch('/profile/:id', async function (req, res, next) {
+  try {
+    const { id } = req.params
+    const result = await userService.updateProfile(id, req.body)
     return res.status(result.status).json(result);
   } catch (error) {
     return res.status(500).json({ status: 500, message: "Internal Server Error" });

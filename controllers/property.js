@@ -33,7 +33,7 @@ async function getById(id) {
 
 async function getQuery(query) {
     try {
-        const { id, search, proptype_id, orderby, page = 1, limit = null } = query;
+        const { id, search, proptype_id, orderby, page = 1, limit = '' } = query;
 
         let matchCondition = {};
 

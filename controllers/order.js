@@ -102,7 +102,7 @@ async function getById(id) {
 
 async function getQuery(query) {
     try {
-        const { status, user_id, orderby, page = 1, limit = null } = query;
+        const { status, user_id, orderby, page = 1, limit = '' } = query;
 
         let matchCondition = {};
 
@@ -152,13 +152,11 @@ async function getQuery(query) {
             if (!order.voucher_id) voucher = await voucherModel.findById(order.voucher_id)
             const address = await addressModel.findById(order.address_id)
 
-
             const productsOrder = []
 
             for (const item of order.products) {
 
                 const product = await productModel.findById(item.product.id)
-
 
                 const name = [product.name];
 
@@ -181,9 +179,7 @@ async function getQuery(query) {
                     },
 
                 })
-
             }
-
 
             data.push({
                 id: order._id,
