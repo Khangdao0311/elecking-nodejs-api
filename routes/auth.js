@@ -30,6 +30,26 @@ router.post("/register", async function (req, res, next) {
     }
 });
 
+router.put("/change-password/:id", async function (req, res, next) {
+    try {
+        const { id } = req.params
+        const result = await authService.changePassword(id, req.body);
+        return res.status(result.status).json(result);
+    } catch (error) {
+        return res.status(500).json({ status: 500, message: "Internal Server Error" });
+    }
+});
+
+router.patch("/change-password/:id", async function (req, res, next) {
+    try {
+        const { id } = req.params
+        const result = await authService.changePassword(id, req.body);
+        return res.status(result.status).json(result);
+    } catch (error) {
+        return res.status(500).json({ status: 500, message: "Internal Server Error" });
+    }
+});
+
 router.post('/cart/:id', async function (req, res, next) {
     try {
         const { id } = req.params

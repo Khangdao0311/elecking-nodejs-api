@@ -11,7 +11,8 @@ module.exports = {
     updateCart,
     updateWish,
     getToken,
-    loginAdmin
+    loginAdmin,
+    changePassword
 };
 
 async function login(body) {
@@ -172,6 +173,37 @@ async function register(body) {
         await userNew.save()
 
         return { status: 200, message: "Success" }
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
+async function changePassword(id, body) {
+    try {
+        const { passwordOld, passwordNew } = body
+
+        const user = await userModel.findById(id)
+
+        if (!passwordOld || !passwordNew) return { status: 400, message: "Không đủ dữ liệu để đổi mật khẩu !" }
+
+        if (user) {
+            if (bcryptjs.compareSync(passwordOld, user.password)) {
+
+                const salt = bcryptjs.genSaltSync(10);
+                const hash = bcryptjs.hashSync(passwordNew, salt);
+
+                await userModel.findByIdAndUpdate(user._id, {
+                    $set: { password: hash, }
+                })
+
+                return { status: 200, message: "Success" }
+            } else {
+                return { status: 400, message: 'Mật khẩu người dùng không đúng !' }
+            }
+        } else {
+            return { status: 400, message: 'Tài khoản không tồn tại !' }
+        }
     } catch (error) {
         console.log(error);
         throw error;
