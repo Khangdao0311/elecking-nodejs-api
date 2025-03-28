@@ -1,9 +1,19 @@
 var bcryptjs = require("bcryptjs");
 var moment = require("moment");
 var jwt = require("jsonwebtoken");
+var { ObjectId } = require('mongodb')
+var nodemailer = require("nodemailer");
+
 var userModel = require("../models/user");
 var productModel = require("../models/product");
-var { ObjectId } = require('mongodb')
+
+const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+        user: "elecking.store@gmail.com",
+        pass: "zauy tcqh mvjh frtj"
+    }
+});
 
 module.exports = {
     login,
@@ -12,7 +22,9 @@ module.exports = {
     updateWish,
     getToken,
     loginAdmin,
-    changePassword
+    changePassword,
+    forgotPassword,
+    resetPassword
 };
 
 async function login(body) {
@@ -27,8 +39,10 @@ async function login(body) {
             if (bcryptjs.compareSync(password, user.password)) {
                 const userToken = {
                     id: user._id,
-                    fullname: user.username,
+                    fullname: user.fullname,
                     username: user.username,
+                    email: user.email,
+                    phone: user.phone,
                     role: user.role
                 }
 
@@ -124,10 +138,10 @@ async function loginAdmin(body) {
 
 async function register(body) {
     try {
-        const { fullname, email = '', phone = '', username, password } = body
+        const { fullname, email, phone = '', username, password } = body
 
         if (!fullname) return { status: 400, message: "Trường fullname bị trống !" }
-        if (!email && !phone) return { status: 400, message: "Bắt buộc phải có trường email hoặc số điện thoại !" }
+        if (!email) return { status: 400, message: "Bắt buộc phải có trường email hoặc số điện thoại !" }
         if (!username) return { status: 400, message: "Trường tên đăng nhập bị trống !" }
         if (!password) return { status: 400, message: "Trường mật khẩu bị trống !" }
 
@@ -292,7 +306,90 @@ async function getToken(body) {
 
             return { status: 200, message: "Success", data: access_token }
         });
-        // throw new Error("???");
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
+async function forgotPassword(body) {
+    try {
+        const { email } = body
+
+        const user = await userModel.findOne({ email: email });
+
+        if (!user) return { status: 400, message: 'Tài khoản không tồn tại !' }
+
+        const token = jwt.sign({
+            user: {
+                id: user._id,
+                fullname: user.fullname,
+                username: user.username,
+                email: user.email,
+            }
+        }, process.env.JWTSECRET, {
+            expiresIn: "2m",
+        });
+
+        const mailOptions = {
+            from: '"Elecking"<elecking.store@gmail.com>',
+            to: email,
+            subject: `Thiết Lập Lại mật khẩu`,
+            html: `
+                 <div style="margin: 0 auto; width: 600px;">
+                    <p>Xin chào <strong>${user.username}</strong>,</p>
+                    <p>Chúng tôi nhận được yêu cầu thiết lập lại mật khẩu cho tài khoản Elecking của bạn.</p>
+                    <p>Nhấn <a href="${process.env.DOMAIN}/reset-password/${token}" style="color: red; text-decoration: none; font-weight: bold;">tại đây</a> để thiết lập mật khẩu mới cho tài khoản Elecking của bạn.</p>
+                    <p>Hoặc vui lòng copy và dán đường dẫn bên dưới lên trình duyệt: <a href="${process.env.DOMAIN}/reset-password/${token}" style="color: blue; word-wrap: break-word;">${process.env.DOMAIN}/forgot-password/change/${token}</a></p>
+                    <p>Trân trọng,</p>
+                    <p><strong>Elecking</strong></p>
+                </div>
+            `
+        };
+
+        await transporter.sendMail(mailOptions);
+        return { status: 200, message: 'Success' }
+
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
+async function resetPassword(body) {
+    try {
+        const { token, passwordNew } = body
+
+        if (!token) return { status: 400, message: 'Token không tồn tại !' }
+        if (!passwordNew) return { status: 400, message: 'Không đủ trường !' }
+
+        const decoded = jwt.decode(token);
+
+        // (!decoded || !decoded.exp)
+        if (!decoded) return { status: 401, message: "Invalid Refresh Token" }
+
+        const expirationTime = decoded.exp * 1000;
+        const currentTime = Date.now();
+
+        if (currentTime > expirationTime) return { status: 401, message: "Refresh Token Expired" }
+
+        return await jwt.verify(token, process.env.JWTSECRET, async (error, data) => {
+            if (error) {
+                return res.status(401).json({ status: 401, message: "Invalid Refresh Token" });
+            }
+
+            const salt = bcryptjs.genSaltSync(10);
+            const hash = bcryptjs.hashSync(passwordNew, salt);
+
+            await userModel.findByIdAndUpdate(data.user.id, {
+                $set: {
+                    password: hash,
+                }
+            }, { new: true, runValidators: true })
+
+            return { status: 200, message: "Success" }
+        });
+
     } catch (error) {
         console.log(error);
         throw error;

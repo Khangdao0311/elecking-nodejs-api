@@ -10,7 +10,6 @@ const voucherSchema = new Schema({
   max_discount: { type: Number },
   start_date: { type: String },
   end_date: { type: String },
-  status: { type: Number },
   quantity: { type: Number },
   user_id: { type: ObjectId, ref: "user" },
 

@@ -36,7 +36,6 @@ async function insert(body) {
             max_discount: +discount_type == 1 ? +discount_value : +max_discount,
             start_date: start_date,
             end_date: end_date,
-            status: 1,
             quantity: +quantity,
             user_id: user_id ? new ObjectId(user_id) : null
         })
@@ -76,8 +75,7 @@ async function update(id, body) {
                 max_discount: +discount_type == 1 ? +discount_value : +max_discount,
                 start_date: start_date,
                 end_date: end_date,
-                status: 1,
-                quantity: +quantity,
+                 quantity: +quantity,
                 user_id: user_id ? new ObjectId(user_id) : null
             }
         }, { new: true })

@@ -24,7 +24,6 @@ async function getById(id) {
             max_discount: voucher.max_discount,
             start_date: voucher.start_date,
             end_date: voucher.end_date,
-            status: voucher.status,
             quantity: voucher.quantity,
             user_id: voucher.user_id,
         };
@@ -120,7 +119,6 @@ async function getQuery(query) {
             max_discount: voucher.max_discount,
             start_date: voucher.start_date,
             end_date: voucher.end_date,
-            status: voucher.status,
             quantity: voucher.quantity,
             user_id: voucher.user_id,
         }));

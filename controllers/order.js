@@ -107,7 +107,7 @@ async function getQuery(query) {
         let matchCondition = {};
 
         if (status) {
-            if (![0, 1, 2, 3].includes(+status)) return { status: 400, message: "Trạng thái không tồn tại !" }
+            if (![0, 1, 2, 3, 4].includes(+status)) return { status: 400, message: "Trạng thái không tồn tại !" }
             matchCondition.status = +status
         }
 

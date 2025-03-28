@@ -15,6 +15,13 @@ module.exports = {
     updateTransactionCode,
     updateStatus
 };
+const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+        user: "elecking.store@gmail.com",
+        pass: "zauy tcqh mvjh frtj"
+    }
+});
 
 async function create(body) {
     try {
@@ -60,14 +67,6 @@ async function create(body) {
             voucher_id: voucher_id ? new ObjectId(voucher_id) : null,
             payment_method_id: payment_method_id,
             address_id: new ObjectId(address_id)
-        });
-
-        const transporter = nodemailer.createTransport({
-            service: "gmail",
-            auth: {
-                user: "elecking.store@gmail.com",
-                pass: "zauy tcqh mvjh frtj"
-            }
         });
 
         let productsOrder = '';
@@ -198,7 +197,7 @@ async function updateStatus(id, body) {
     try {
         const { status } = body
 
-        if (![0, 1, 2, 3].includes(+status)) return { status: 400, message: "Trạng thái không hợp lệ !" }
+        if (![0, 1, 2, 3, 4].includes(+status)) return { status: 400, message: "Trạng thái không hợp lệ !" }
 
         const order = await orderModel.findById(id)
         if (!order) return { status: 400, message: "Đơn hàng không tồn tại !" }
