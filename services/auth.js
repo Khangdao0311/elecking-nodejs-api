@@ -375,7 +375,7 @@ async function resetPassword(body) {
 
         return await jwt.verify(token, process.env.JWTSECRET, async (error, data) => {
             if (error) {
-                return res.status(401).json({ status: 401, message: "Invalid Refresh Token" });
+                return ({ status: 401, message: "Invalid Refresh Token" });
             }
 
             const salt = bcryptjs.genSaltSync(10);
