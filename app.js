@@ -39,7 +39,6 @@ var statsRouter = require('./routes/stats');
 
 var app = express();
 
-
 app.use(cors(corsOptionsDelegate));
 // app.use(cors({
 //   origin: "http://localhost:3000", // Cho phép gọi từ Next.js
