@@ -1,3 +1,7 @@
+const { ObjectId } = require("mongodb");
+const moment = require("moment");
+var nodemailer = require("nodemailer");
+
 var orderModel = require("../models/order");
 var userModel = require("../models/user");
 var voucherModel = require("../models/voucher");
@@ -5,10 +9,6 @@ var payment_methodModel = require("../models/payment_method");
 var addressModel = require("../models/address");
 var productModel = require("../models/product");
 var propertyModel = require("../models/property");
-
-const { ObjectId } = require("mongodb");
-const moment = require("moment");
-var nodemailer = require("nodemailer");
 
 module.exports = {
     create,
@@ -156,6 +156,7 @@ async function create(body) {
         };
 
         const data = await orderNew.save();
+
         await transporter.sendMail(mailOptions);
 
         return { status: 200, message: "Success", data: data }

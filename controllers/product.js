@@ -28,7 +28,14 @@ async function getById(id) {
             for (const property_id of variant.property_ids) {
                 const property = await propertyModel.findById(property_id);
                 const proptype = await proptypeModel.findById(property.proptype_id)
-                properties.push({ name: property?.name, proptype: proptype?.name });
+                properties.push({
+                    id: property._id,
+                    name: property?.name,
+                    proptype: {
+                        id: proptype?._id,
+                        name: proptype?.name
+                    }
+                });
             }
 
             // thêm variant vào variants
@@ -81,7 +88,7 @@ async function getById(id) {
 async function getQuery(query) {
     try {
 
-        const { search, id, categoryid, brandid, price, orderby,  page = 1, limit = null} = query
+        const { search, id, categoryid, brandid, price, orderby, page = 1, limit = null } = query
 
         let matchCondition = {};
 

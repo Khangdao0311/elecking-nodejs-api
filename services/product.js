@@ -1,11 +1,8 @@
 const { ObjectId } = require("mongodb");
 
 const productModel = require("../models/product");
-const userModel = require("../models/user");
 const brandModel = require("../models/brand");
 const categoryModel = require("../models/category");
-
-const { isVariantProduct } = require("../helpers");
 
 module.exports = {
     insert,
