@@ -3,7 +3,7 @@
     "$oid": "67b6b0bdbfe3474f1ec40f44"
   },
   "fullname": "Nguyễn Văn Admin",
-  "avatar": "image.png",
+  "avatar": "",
   "email": "elecking.store@gmail.com",
   "phone": "0976767676",
   "username": "admin",
@@ -19,105 +19,454 @@
     "$oid": "67b6b0bdbfe3474f1ec40f45"
   },
   "fullname": "Đào Vĩnh Khang",
-  "avatar": "image.png",
+  "avatar": "",
   "email": "khangdao0311@gmail.com",
   "phone": "0976767676",
   "username": "khangdao",
   "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
-  "role": 0,
+  "role": 1,
   "status": 1,
   "register_date": "20250220",
-  "cart": [
+  "cart": [],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67e7b1b6fa360dffdb459621"
+  },
+  "fullname": "Phạm Thiên Trường",
+  "avatar": "",
+  "email": "pttruong1992@gmail.com",
+  "phone": "",
+  "username": "pttruong",
+  "password": "$2a$10$oWaWoR4eCoXrOeb7YHmsRuhNWH1LoA4hr.ZSqGAp3hdQIdcSXaFXy",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250329153917",
+  "cart": [],
+  "wish": [
     {
-      "quantity": 1,
-      "product": {
-        "id": {
-          "$oid": "67b96ee667788c638a22e2e5"
-        },
-        "variant": 0,
-        "color": 0
-      }
+      "$oid": "67b96ee667788c638a22e2c7"
+    },
+    {
+      "$oid": "67b96ee667788c638a22e2c8"
     }
-  ],
-  "wish": []
+  ]
 },
 {
   "_id": {
-    "$oid": "67c3dc46a3c0c5e439598e18"
+    "$oid": "67e7c0b5ffa238ffcdb9db6a"
   },
-  "fullname": "Nguyễn Văn A",
+  "fullname": "Nguyễn Đặng Hưng",
   "avatar": "",
-  "email": "nguyenvana@gmail.com",
-  "phone": "0901234567",
-  "username": "nguyenvana",
-  "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
+  "email": "songtu1456@gmail.com",
+  "phone": "",
+  "username": "hungnguyen",
+  "password": "$2a$10$nQK87qkOJcZ/IelGXUk.AuwU4HTv/h4iKI5XyPjOx6EWUtse1kZT.",
   "role": 0,
   "status": 1,
-  "register_date": "20250115",
+  "register_date": "20250329164317",
   "cart": [],
   "wish": []
 },
 {
   "_id": {
-    "$oid": "67c3dc46a3c0c5e439598e19"
+    "$oid": "67e7c713ffa238ffcdb9fc15"
   },
-  "fullname": "Trần Thị B",
+  "fullname": "Vĩnh Khang",
   "avatar": "",
-  "email": "tranthib@gmail.com",
-  "phone": "0912345678",
-  "username": "tranthib",
-  "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
+  "email": "khangdvps36671@fpl.edu.vn",
+  "phone": "",
+  "username": "khang",
+  "password": "$2a$10$PO2HhcpPHBZfYrHGrBYA1uxJJoTTQh9NRehLU/okdvfwqmjegNfDm",
   "role": 0,
   "status": 1,
-  "register_date": "20250308",
+  "register_date": "20250329171027",
   "cart": [],
   "wish": []
 },
 {
   "_id": {
-    "$oid": "67c3dc46a3c0c5e439598e1a"
+    "$oid": "67e7cb55ffa238ffcdba1bc5"
   },
-  "fullname": "Lê Văn C",
+  "fullname": "Dương Gia Khang",
   "avatar": "",
-  "email": "levanc@gmail.com",
-  "phone": "0923456789",
-  "username": "levanc",
-  "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
+  "email": "giakhang@gmail.com",
+  "phone": "",
+  "username": "duongkhang",
+  "password": "$2a$10$JS1JPSK4yMt86D4apz8T6.sEEhbVtF9h30bhryCCseRGB8p8TcEqi",
   "role": 0,
   "status": 1,
-  "register_date": "20250222",
+  "register_date": "20250329172836",
   "cart": [],
   "wish": []
 },
 {
   "_id": {
-    "$oid": "67c3dc46a3c0c5e439598e1b"
+    "$oid": "67e7cf2effa238ffcdba363c"
   },
-  "fullname": "Phạm Thị D",
+  "fullname": "Hoàng Văn Minh",
   "avatar": "",
-  "email": "phamthid@gmail.com",
-  "phone": "0934567890",
-  "username": "phamthid",
-  "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
+  "email": "vanminh@gmail.com",
+  "phone": "",
+  "username": "vanminh",
+  "password": "$2a$10$CHb5EQnyiJosmVLx0spxxu/tvT9fHYK9.uHCb4ujlONgHQBa2Ugwa",
   "role": 0,
   "status": 1,
-  "register_date": "20250130",
+  "register_date": "20250329174502",
   "cart": [],
   "wish": []
 },
 {
   "_id": {
-    "$oid": "67c3dc46a3c0c5e439598e1c"
+    "$oid": "67e8be03004a3ecca8078f50"
   },
-  "fullname": "Hoàng Văn E",
+  "fullname": "Nguyễn Tính",
   "avatar": "",
-  "email": "hoangvane@gmail.com",
-  "phone": "0945678901",
-  "username": "hoangvane",
-  "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
+  "email": "nguyentinh@gmail.com",
+  "phone": "",
+  "username": "nguyentinh",
+  "password": "$2a$10$j2JX8lVkZgw4Od.YLEjA1ecucwA99fnEO2s6ICsGUxziVADa2fjEu",
   "role": 0,
   "status": 1,
-  "register_date": "20250410",
+  "register_date": "20250330104403",
+  "cart": [],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67e8c23d004a3ecca8079f08"
+  },
+  "fullname": "Thanh Tú",
+  "avatar": "",
+  "email": "thanhtu@gmail.com",
+  "phone": "",
+  "username": "thanhtu",
+  "password": "$2a$10$IGVgCGkW3CcFVeq6f865ceDXb9qOEEaK2q5Zh5XHka4oWqfVXkjSG",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250330110205",
+  "cart": [],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67e8c5fb004a3ecca807b328"
+  },
+  "fullname": "Hoàng Dũng",
+  "avatar": "",
+  "email": "hoangdung@gmail.com",
+  "phone": "",
+  "username": "hoangdung",
+  "password": "$2a$10$DTcUsClTS6OZSvBcietgdOEb1A7YiKFPYoqDK3XSIidWs53etgC8a",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250330111803",
+  "cart": [],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67e8c989004a3ecca807c3be"
+  },
+  "fullname": "Đình Toàn",
+  "avatar": "",
+  "email": "dinhtoan@gmail.com",
+  "phone": "",
+  "username": "dinhtoan",
+  "password": "$2a$10$oILIgBGyiJInyGMs76uYEuqd4lvbicPalbi09asav9XoLcvx7.rE.",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250330113313",
+  "cart": [],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67e8cccc004a3ecca807d22d"
+  },
+  "fullname": "Trần Văn Cường",
+  "avatar": "",
+  "email": "vancuong@gmail.com",
+  "phone": "",
+  "username": "vancuong",
+  "password": "$2a$10$usXN3CUSPYMrcrs7OAh33uWhLnw631WPRdlmH7GHwkwYnslwultFu",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250330114708",
+  "cart": [],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67e8cf92004a3ecca807e2c9"
+  },
+  "fullname": "Trương Quốc Tuấn",
+  "avatar": "",
+  "email": "quoctuan@gmail.com",
+  "phone": "",
+  "username": "quoctuan",
+  "password": "$2a$10$7BWtMNMTDrHKxbGfRG/MXufOIE3zPikrevVzRJmQYouWJw/LvFRGy",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250330115858",
+  "cart": [],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67e8d1f4004a3ecca807f249"
+  },
+  "fullname": "Lê Phương",
+  "avatar": "",
+  "email": "lephuong@gmail.com",
+  "phone": "",
+  "username": "lephuong",
+  "password": "$2a$10$dAVamhvJbBIy8Q/ufBGL3Oalq0bemYMpABxT0zj5nMgscEcW2hTdi",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250330120907",
+  "cart": [],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67e8d3e9004a3ecca80801b8"
+  },
+  "fullname": "Bá Trình",
+  "avatar": "",
+  "email": "batrinh@gmail.com",
+  "phone": "",
+  "username": "batrinh",
+  "password": "$2a$10$6.ELg8nicsoowRSvy3YjQOd3Ewa47T.88/3Xfm74x5YxnYgvBtnsa",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250330121729",
+  "cart": [],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67e8d5b0004a3ecca8080e4e"
+  },
+  "fullname": "Minh Hoàng",
+  "avatar": "",
+  "email": "minhhoang@gmail.com",
+  "phone": "",
+  "username": "minhhoang",
+  "password": "$2a$10$idwfyzzNHqPGUQY.iC/z0ea2Nsske2F9WmZJy6TOzCBHhpCZbiYny",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250330122504",
+  "cart": [],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67e8d744004a3ecca8081ace"
+  },
+  "fullname": "Phương Tuấn",
+  "avatar": "",
+  "email": "domdom@gmail.com",
+  "phone": "",
+  "username": "phuongtuan",
+  "password": "$2a$10$7EHIZ0qZSSrDwLRc10Dg5uooLjG15Zsg0qixdu7gBLeBgW5Wu6iem",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250330123148",
+  "cart": [],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67e8d947004a3ecca808262f"
+  },
+  "fullname": "Hoàng Vi Rút",
+  "avatar": "",
+  "email": "hoang@gmail.com",
+  "phone": "",
+  "username": "hoang",
+  "password": "$2a$10$DTCCVYFYjhO884Inemh3lOWWwfoQrQSdvoXB3b7ZiEJAUVAj0cYDC",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250330124023",
+  "cart": [],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67e8db97004a3ecca8083279"
+  },
+  "fullname": "Nguyễn Duy Thiên",
+  "avatar": "",
+  "email": "duythien@gmail.com",
+  "phone": "",
+  "username": "duythien",
+  "password": "$2a$10$q5WFm2b/UcFwIcomn34oxOXHUXEORFAuO5axs.qngIOYtf/muOhU6",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250330125014",
+  "cart": [],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67e8dd5f004a3ecca8083d8c"
+  },
+  "fullname": "Duy Khang",
+  "avatar": "",
+  "email": "duykhang@gmail.com",
+  "phone": "",
+  "username": "duykhang",
+  "password": "$2a$10$9ostrNeszSYxr.Hle7qBtuPvrNYjNuovfuP5UUFvfcF6wI73vOV52",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250330125751",
+  "cart": [],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67e8ded6004a3ecca8084cf5"
+  },
+  "fullname": "Phong Trần",
+  "avatar": "",
+  "email": "phongtran@gmail.com",
+  "phone": "",
+  "username": "phongtran",
+  "password": "$2a$10$v149OZsHsEo8K5sBQ7u5ROE1ZCp0TFSf5r4cF8lavBRwsbsInyGKu",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250330130406",
+  "cart": [],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67e8eb31004a3ecca808c351"
+  },
+  "fullname": "Bùi Trường Linh",
+  "avatar": "",
+  "email": "truonglinh@gmail.com",
+  "phone": "",
+  "username": "truonglinh",
+  "password": "$2a$10$35DM/nLFvZ796G8l/hLlkOQA1ccRrsvnVhDhAvkEeUrRWGnc.DSym",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250330135648",
+  "cart": [],
+  "wish": [
+    {
+      "$oid": "67b96ee667788c638a22e2c8"
+    },
+    {
+      "$oid": "67b96ee667788c638a22e2d7"
+    },
+    {
+      "$oid": "67b96ee667788c638a22e2ec"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67e8ef7d004a3ecca808d796"
+  },
+  "fullname": "Hoàng Văn Minh",
+  "avatar": "",
+  "email": "hoangminh@gmail.com",
+  "phone": "",
+  "username": "hoangminh",
+  "password": "$2a$10$O81.i2DiPRfJbuUXup4Otemu0rEzrTYWDXQn2ZMcoc05NHiwjafnS",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250330141509",
+  "cart": [],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67e8f1b5004a3ecca808e694"
+  },
+  "fullname": "Hoàng Đức ",
+  "avatar": "",
+  "email": "hoangduc@gmail.com",
+  "phone": "",
+  "username": "hoangduc",
+  "password": "$2a$10$1Rz8KQMjAb0jvL18uFj1NuhINUMKZo09GIFsg7NaaP8FU9fp0J5TC",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250330142437",
+  "cart": [],
+  "wish": [
+    {
+      "$oid": "67b96ee667788c638a22e2c8"
+    },
+    {
+      "$oid": "67b96ee667788c638a22e2c9"
+    },
+    {
+      "$oid": "67b96ee667788c638a22e2e9"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67e8f3b2004a3ecca808f23b"
+  },
+  "fullname": "Tiến Dũng",
+  "avatar": "",
+  "email": "tiendung@gmail.com",
+  "phone": "",
+  "username": "tiendung",
+  "password": "$2a$10$WaGNWKEpwskr6618kUx1neSgf6zLDH0MrMy5OetMWJMHzeU0SwwQG",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250330143306",
+  "cart": [],
+  "wish": [
+    {
+      "$oid": "67b96ee667788c638a22e2d7"
+    },
+    {
+      "$oid": "67b96ee667788c638a22e2e9"
+    },
+    {
+      "$oid": "67b96ee667788c638a22e2d4"
+    },
+    {
+      "$oid": "67b96ee667788c638a22e2ee"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67e90436004a3ecca8092b25"
+  },
+  "fullname": "Ngọc Dương",
+  "avatar": "",
+  "email": "ngocduong@gmail.com",
+  "phone": "",
+  "username": "ngocduong",
+  "password": "$2a$10$Y9JFDYdcLbaiKtPGtLsI8uNbHxrpYY/6MYNhxGAUiSk2XSpcXOMIC",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250330154333",
+  "cart": [],
+  "wish": []
+},
+{
+  "_id": {
+    "$oid": "67e90a2c004a3ecca80944ab"
+  },
+  "fullname": "Tuấn Định",
+  "avatar": "",
+  "email": "tuandinh@gmail.com",
+  "phone": "",
+  "username": "tuandinh",
+  "password": "$2a$10$/D7LXGUbILqwpWwoxmx1NeQCCv73utCsLDcCdwlJbJTxHLZ7ugNey",
+  "role": 0,
+  "status": 1,
+  "register_date": "20250330160859",
   "cart": [],
   "wish": []
 }]

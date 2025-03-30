@@ -144,4 +144,40 @@
   "icon": "bi bi-smartwatch",
   "proptypes": [],
   "description": "Đồng hồ thông minh là thiết bị đeo tay thông minh có màn hình cảm ứng, tích hợp nhiều tính năng như theo dõi sức khỏe, đo nhịp tim, đếm bước chân, nhận thông báo từ điện thoại và hỗ trợ gọi điện, nhắn tin. Một số mẫu cao cấp còn có GPS, chống nước, đo nồng độ oxy trong máu và hỗ trợ trợ lý ảo. Đồng hồ thông minh kết nối với điện thoại qua Bluetooth hoặc Wi-Fi, giúp người dùng quản lý công việc và sức khỏe tiện lợi hơn."
+},
+{
+  "_id": {
+    "$oid": "67e3af7c82a58741cbde7c95"
+  },
+  "name": "Điện thoại mới",
+  "image": "1.png",
+  "status": 0,
+  "icon": "",
+  "description": "<p>Điện thoại mới chính hãng</p>",
+  "proptypes": [
+    {
+      "$oid": "67cbb9d9c27a2ba1c45b87ac"
+    },
+    {
+      "$oid": "67cbb9d9c27a2ba1c45b87ad"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67e3bccb82a58741cbde8a8e"
+  },
+  "name": "Điện thoại chính hãng",
+  "image": "1.png",
+  "status": 0,
+  "icon": "",
+  "description": "<p>Điện thoại chính hãng</p>",
+  "proptypes": [
+    {
+      "$oid": "67cbb9d9c27a2ba1c45b87ac"
+    },
+    {
+      "$oid": "67cbb9d9c27a2ba1c45b87ad"
+    }
+  ]
 }]

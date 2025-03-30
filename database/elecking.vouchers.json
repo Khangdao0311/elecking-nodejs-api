@@ -10,7 +10,7 @@
   "start_date": "20250301",
   "end_date": "20250331",
   "status": 1,
-  "quantity": 10,
+  "quantity": 5,
   "user_id": null
 },
 {
@@ -55,7 +55,7 @@
   "start_date": "20250310",
   "end_date": "20250410",
   "status": 1,
-  "quantity": 10,
+  "quantity": 9,
   "user_id": null
 },
 {
@@ -70,7 +70,7 @@
   "start_date": "20250315",
   "end_date": "20250330",
   "status": 1,
-  "quantity": 10,
+  "quantity": 9,
   "user_id": null
 },
 {
@@ -85,7 +85,7 @@
   "start_date": "20250320",
   "end_date": "20250420",
   "status": 1,
-  "quantity": 10,
+  "quantity": 7,
   "user_id": null
 },
 {
@@ -115,7 +115,7 @@
   "start_date": "20250305",
   "end_date": "20250331",
   "status": 1,
-  "quantity": 10,
+  "quantity": 4,
   "user_id": null
 },
 {

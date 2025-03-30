@@ -1,3206 +1,3204 @@
-[
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3d8"
-    },
-    "name": "2GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ac"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3d9"
-    },
-    "name": "3GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ac"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3da"
-    },
-    "name": "4GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ac"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3db"
-    },
-    "name": "6GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ac"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3dc"
-    },
-    "name": "8GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ac"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3dd"
-    },
-    "name": "12GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ac"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3de"
-    },
-    "name": "16GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ac"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3df"
-    },
-    "name": "32GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ac"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3e0"
-    },
-    "name": "64GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ac"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3e1"
-    },
-    "name": "128GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ac"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3e2"
-    },
-    "name": "256GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ac"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3e3"
-    },
-    "name": "512GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ac"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3e4"
-    },
-    "name": "16GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ad"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3e5"
-    },
-    "name": "32GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ad"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3e6"
-    },
-    "name": "64GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ad"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3e7"
-    },
-    "name": "128GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ad"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3e8"
-    },
-    "name": "256GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ad"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3e9"
-    },
-    "name": "512GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ad"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3ea"
-    },
-    "name": "1TB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ad"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3eb"
-    },
-    "name": "2TB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ad"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3ec"
-    },
-    "name": "4TB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ad"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3ed"
-    },
-    "name": "8TB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ad"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3ee"
-    },
-    "name": "i3-1215U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3ef"
-    },
-    "name": "i3-1305U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3f0"
-    },
-    "name": "i3-3220",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3f1"
-    },
-    "name": "i3-4130",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3f2"
-    },
-    "name": "i3-4150",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3f3"
-    },
-    "name": "i3-4330",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3f4"
-    },
-    "name": "i3-4360",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3f5"
-    },
-    "name": "i3-5005U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3f6"
-    },
-    "name": "i3-5020U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3f7"
-    },
-    "name": "i3-6006U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3f8"
-    },
-    "name": "i3-6100",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3f9"
-    },
-    "name": "i3-6300",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3fa"
-    },
-    "name": "i3-7100",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3fb"
-    },
-    "name": "i3-7300",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3fc"
-    },
-    "name": "i3-8100",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3fd"
-    },
-    "name": "i3-8350K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3fe"
-    },
-    "name": "i3-9100",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e3ff"
-    },
-    "name": "i3-9350K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e400"
-    },
-    "name": "i3-10100",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e401"
-    },
-    "name": "i3-10100F",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e402"
-    },
-    "name": "i3-10100T",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e403"
-    },
-    "name": "i3-1115G4",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e404"
-    },
-    "name": "i5-2400",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e405"
-    },
-    "name": "i5-2500",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e406"
-    },
-    "name": "i5-3470",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e407"
-    },
-    "name": "i5-3550",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e408"
-    },
-    "name": "i5-3570",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e409"
-    },
-    "name": "i5-4570",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e40a"
-    },
-    "name": "i5-4670",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e40b"
-    },
-    "name": "i5-4690",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e40c"
-    },
-    "name": "i5-5200U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e40d"
-    },
-    "name": "i5-5300U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e40e"
-    },
-    "name": "i5-6300U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e40f"
-    },
-    "name": "i5-6400",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e410"
-    },
-    "name": "i5-6500",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e411"
-    },
-    "name": "i5-6600K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e412"
-    },
-    "name": "i5-7200U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e413"
-    },
-    "name": "i5-7400",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e414"
-    },
-    "name": "i5-7500",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e415"
-    },
-    "name": "i5-7600K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e416"
-    },
-    "name": "i5-8250U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e417"
-    },
-    "name": "i5-8400",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e418"
-    },
-    "name": "i5-8500",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e419"
-    },
-    "name": "i5-8600K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e41a"
-    },
-    "name": "i5-9400F",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e41b"
-    },
-    "name": "i5-9600K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e41c"
-    },
-    "name": "i5-1035G1",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e41d"
-    },
-    "name": "i5-1035G7",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e41e"
-    },
-    "name": "i5-10400",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e41f"
-    },
-    "name": "i5-10600K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e420"
-    },
-    "name": "i5-11400",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e421"
-    },
-    "name": "i5-1235U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e422"
-    },
-    "name": "i5-12600KF",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e423"
-    },
-    "name": "i5-13600K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e424"
-    },
-    "name": "i7-2600",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e425"
-    },
-    "name": "i7-2600K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e426"
-    },
-    "name": "i7-2700K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e427"
-    },
-    "name": "i7-3770",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e428"
-    },
-    "name": "i7-3770K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e429"
-    },
-    "name": "i7-3820",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e42a"
-    },
-    "name": "i7-3930K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e42b"
-    },
-    "name": "i7-3960X",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e42c"
-    },
-    "name": "i7-4770",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e42d"
-    },
-    "name": "i7-4770K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e42e"
-    },
-    "name": "i7-4790K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e42f"
-    },
-    "name": "i7-4930K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e430"
-    },
-    "name": "i7-4960X",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e431"
-    },
-    "name": "i7-5500U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e432"
-    },
-    "name": "i7-5600U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e433"
-    },
-    "name": "i7-6500U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e434"
-    },
-    "name": "i7-6600U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e435"
-    },
-    "name": "i7-7500U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e436"
-    },
-    "name": "i7-7700HQ",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e437"
-    },
-    "name": "i7-7700K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e438"
-    },
-    "name": "i7-8086K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e439"
-    },
-    "name": "i7-8550U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e43a"
-    },
-    "name": "i7-8665U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e43b"
-    },
-    "name": "i7-8700K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e43c"
-    },
-    "name": "i7-9700K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e43d"
-    },
-    "name": "i7-1065G7",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e43e"
-    },
-    "name": "i7-10700K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e43f"
-    },
-    "name": "i7-1165G7",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e440"
-    },
-    "name": "i7-11700K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e441"
-    },
-    "name": "i7-12700K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e442"
-    },
-    "name": "i7-13700K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e443"
-    },
-    "name": "i7-13700KF",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e444"
-    },
-    "name": "i9-7900X",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e445"
-    },
-    "name": "i9-9900K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e446"
-    },
-    "name": "i9-9980XE",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e447"
-    },
-    "name": "i9-10900K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e448"
-    },
-    "name": "i9-10900KF",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e449"
-    },
-    "name": "i9-10980XE",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e44a"
-    },
-    "name": "i9-11900K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e44b"
-    },
-    "name": "i9-12900K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e44c"
-    },
-    "name": "i9-12900KF",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e44d"
-    },
-    "name": "i9-13900K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e44e"
-    },
-    "name": "R3 1200",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e44f"
-    },
-    "name": "R3 1300X",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e450"
-    },
-    "name": "R3 2200G",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e451"
-    },
-    "name": "R3 2300X",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e452"
-    },
-    "name": "R3 3100",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e453"
-    },
-    "name": "R3 3200G",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e454"
-    },
-    "name": "R3 3250U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e455"
-    },
-    "name": "R3 3300X",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e456"
-    },
-    "name": "R3 4300U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e457"
-    },
-    "name": "R5 1400",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e458"
-    },
-    "name": "R5 1500X",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e459"
-    },
-    "name": "R5 1600",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e45a"
-    },
-    "name": "R5 2400G",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e45b"
-    },
-    "name": "R5 2500U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e45c"
-    },
-    "name": "R5 2600",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e45d"
-    },
-    "name": "R5 3500X",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e45e"
-    },
-    "name": "R5 3500U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e45f"
-    },
-    "name": "R5 3550H",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e460"
-    },
-    "name": "R5 3600",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e461"
-    },
-    "name": "R5 3600X",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e462"
-    },
-    "name": "R5 4500U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e463"
-    },
-    "name": "R5 5600X",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e464"
-    },
-    "name": "R5 5600G",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e465"
-    },
-    "name": "R7 1700",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e466"
-    },
-    "name": "R7 1700X",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e467"
-    },
-    "name": "R7 1800X",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e468"
-    },
-    "name": "R7 2700",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e469"
-    },
-    "name": "R7 2700X",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e46a"
-    },
-    "name": "R7 3700X",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e46b"
-    },
-    "name": "R7 3700U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e46c"
-    },
-    "name": "R7 3750H",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e46d"
-    },
-    "name": "R7 3800X",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e46e"
-    },
-    "name": "R7 4800H",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e46f"
-    },
-    "name": "R7 4800U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e470"
-    },
-    "name": "R7 5800X",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e471"
-    },
-    "name": "R7 5800X3D",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e472"
-    },
-    "name": "R7 5800U",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e473"
-    },
-    "name": "R9 3900X",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e474"
-    },
-    "name": "R9 3900XT",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e475"
-    },
-    "name": "R9 3950X",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e476"
-    },
-    "name": "R9 4900H",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e477"
-    },
-    "name": "R9 4900HS",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e478"
-    },
-    "name": "R9 5900X",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e479"
-    },
-    "name": "R9 5900HX",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e47a"
-    },
-    "name": "R9 5950X",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e47b"
-    },
-    "name": "R9 7900X",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e47c"
-    },
-    "name": "R9 7950X",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e47d"
-    },
-    "name": "M1",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e47e"
-    },
-    "name": "M1 Pro",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e47f"
-    },
-    "name": "M1 Max",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e480"
-    },
-    "name": "M1 Ultra",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e481"
-    },
-    "name": "M2",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e482"
-    },
-    "name": "M2 Pro",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e483"
-    },
-    "name": "M2 Max",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e484"
-    },
-    "name": "M2 Ultra",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87ae"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e485"
-    },
-    "name": "M1",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e486"
-    },
-    "name": "M2",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e487"
-    },
-    "name": "M3",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e488"
-    },
-    "name": "M4",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e489"
-    },
-    "name": "Adreno",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e48a"
-    },
-    "name": "MX570A",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e48b"
-    },
-    "name": "MX550",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e48c"
-    },
-    "name": "Intel HD",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e48d"
-    },
-    "name": "Intel Arc",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e48e"
-    },
-    "name": "Intel Arc 140V",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e48f"
-    },
-    "name": "Intel UHD",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e490"
-    },
-    "name": "Intel Graphics",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e491"
-    },
-    "name": "Intel Iris Xe",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e492"
-    },
-    "name": "RTX 2050",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e493"
-    },
-    "name": "RTX 2060",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e494"
-    },
-    "name": "RTX 3050",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e495"
-    },
-    "name": "RTX 3050 Ti",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e496"
-    },
-    "name": "RTX 3060 Ti",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e497"
-    },
-    "name": "RTX 3060",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e498"
-    },
-    "name": "RTX 3070",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e499"
-    },
-    "name": "RTX 3080",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e49a"
-    },
-    "name": "RTX 3090",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e49b"
-    },
-    "name": "RTX 4050",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e49c"
-    },
-    "name": "RTX 4060",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e49d"
-    },
-    "name": "RTX 4060 Ti",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e49e"
-    },
-    "name": "RTX 4070",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e49f"
-    },
-    "name": "RTX 4080",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4a0"
-    },
-    "name": "RTX 4090",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4a1"
-    },
-    "name": "RTX 5070",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4a2"
-    },
-    "name": "RTX 5070 Ti",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4a3"
-    },
-    "name": "RTX 5080",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4a4"
-    },
-    "name": "RTX 5090",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4a5"
-    },
-    "name": "GTX 1660 SUPER",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4a6"
-    },
-    "name": "GTX 1650",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4a7"
-    },
-    "name": "GTX 1660 Ti",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4a8"
-    },
-    "name": "AMD 890M",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4a9"
-    },
-    "name": "AMD Radeon",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4aa"
-    },
-    "name": "Radeon 880M",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4ab"
-    },
-    "name": "RX 6600 XT",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4ac"
-    },
-    "name": "RX 6600",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4ad"
-    },
-    "name": "RX 6700 XT",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4ae"
-    },
-    "name": "RX 7600S XT",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4af"
-    },
-    "name": "RX 7700 XT",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4b0"
-    },
-    "name": "RX 7800 XT",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4b1"
-    },
-    "name": "RX 6750 XT",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4b2"
-    },
-    "name": "RX 7900 XT",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87af"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4b3"
-    },
-    "name": "120GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4b4"
-    },
-    "name": "128GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4b5"
-    },
-    "name": "240GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4b6"
-    },
-    "name": "250GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4b7"
-    },
-    "name": "256GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4b8"
-    },
-    "name": "480GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4b9"
-    },
-    "name": "500GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4ba"
-    },
-    "name": "512GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4bb"
-    },
-    "name": "960GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4bc"
-    },
-    "name": "1TB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4bd"
-    },
-    "name": "2TB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4be"
-    },
-    "name": "4TB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4bf"
-    },
-    "name": "8TB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4c0"
-    },
-    "name": "500GB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4c1"
-    },
-    "name": "1TB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4c2"
-    },
-    "name": "2TB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4c3"
-    },
-    "name": "4TB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4c4"
-    },
-    "name": "6TB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4c5"
-    },
-    "name": "8TB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4c6"
-    },
-    "name": "10TB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4c7"
-    },
-    "name": "12TB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4c8"
-    },
-    "name": "14TB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4c9"
-    },
-    "name": "16TB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4ca"
-    },
-    "name": "18TB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4cb"
-    },
-    "name": "20TB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4cc"
-    },
-    "name": "22TB",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4cd"
-    },
-    "name": "1.44 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4ce"
-    },
-    "name": "1.77 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4cf"
-    },
-    "name": "1.8 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4d0"
-    },
-    "name": "2.4 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4d1"
-    },
-    "name": "2.8 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4d2"
-    },
-    "name": "3 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4d3"
-    },
-    "name": "3.5 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4d4"
-    },
-    "name": "4 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4d5"
-    },
-    "name": "4.3 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4d6"
-    },
-    "name": "4.7 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4d7"
-    },
-    "name": "5 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4d8"
-    },
-    "name": "5.5 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4d9"
-    },
-    "name": "5.99 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4da"
-    },
-    "name": "6 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4db"
-    },
-    "name": "6.1 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4dc"
-    },
-    "name": "6.2 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4dd"
-    },
-    "name": "6.3 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4de"
-    },
-    "name": "6.4 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4df"
-    },
-    "name": "6.5 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4e0"
-    },
-    "name": "6.6 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4e1"
-    },
-    "name": "6.67 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4e2"
-    },
-    "name": "6.7 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4e3"
-    },
-    "name": "6.8 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4e4"
-    },
-    "name": "6.9 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4e5"
-    },
-    "name": "7 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4e6"
-    },
-    "name": "7.9 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4e7"
-    },
-    "name": "8 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4e8"
-    },
-    "name": "8.3 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4e9"
-    },
-    "name": "8.7 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4ea"
-    },
-    "name": "9 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4eb"
-    },
-    "name": "9.7 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4ec"
-    },
-    "name": "10 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4ed"
-    },
-    "name": "10.1 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4ee"
-    },
-    "name": "10.2 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4ef"
-    },
-    "name": "10.4 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4f0"
-    },
-    "name": "10.5 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4f1"
-    },
-    "name": "10.9 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4f2"
-    },
-    "name": "11 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4f3"
-    },
-    "name": "12 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4f4"
-    },
-    "name": "12.3 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4f5"
-    },
-    "name": "12.4 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4f6"
-    },
-    "name": "12.9 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4f7"
-    },
-    "name": "13 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4f8"
-    },
-    "name": "13.3 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4f9"
-    },
-    "name": "13.6 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4fa"
-    },
-    "name": "14 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4fb"
-    },
-    "name": "14.2 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4fc"
-    },
-    "name": "15 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4fd"
-    },
-    "name": "15.3 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4fe"
-    },
-    "name": "15.6 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e4ff"
-    },
-    "name": "16 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e500"
-    },
-    "name": "16.2 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e501"
-    },
-    "name": "17 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e502"
-    },
-    "name": "17.3 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e503"
-    },
-    "name": "18 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e504"
-    },
-    "name": "19 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e505"
-    },
-    "name": "20 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e506"
-    },
-    "name": "21 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e507"
-    },
-    "name": "22 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e508"
-    },
-    "name": "23.8 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e509"
-    },
-    "name": "24 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e50a"
-    },
-    "name": "24.5 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e50b"
-    },
-    "name": "25 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e50c"
-    },
-    "name": "27 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e50d"
-    },
-    "name": "29 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e50e"
-    },
-    "name": "30 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e50f"
-    },
-    "name": "31.5 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e510"
-    },
-    "name": "32 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e511"
-    },
-    "name": "34 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e512"
-    },
-    "name": "40 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e513"
-    },
-    "name": "42 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e514"
-    },
-    "name": "43 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e515"
-    },
-    "name": "48 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e516"
-    },
-    "name": "49 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e517"
-    },
-    "name": "50 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e518"
-    },
-    "name": "55 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e519"
-    },
-    "name": "60 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e51a"
-    },
-    "name": "65 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e51b"
-    },
-    "name": "70 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e51c"
-    },
-    "name": "75 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e51d"
-    },
-    "name": "77 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e51e"
-    },
-    "name": "85 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e51f"
-    },
-    "name": "86 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e520"
-    },
-    "name": "98 inch",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e521"
-    },
-    "name": "30Hz",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e522"
-    },
-    "name": "48Hz",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e523"
-    },
-    "name": "50Hz",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e524"
-    },
-    "name": "60Hz",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e525"
-    },
-    "name": "75Hz",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e526"
-    },
-    "name": "90Hz",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e527"
-    },
-    "name": "100Hz",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e528"
-    },
-    "name": "120Hz",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e529"
-    },
-    "name": "144Hz",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e52a"
-    },
-    "name": "165Hz",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e52b"
-    },
-    "name": "170Hz",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e52c"
-    },
-    "name": "180Hz",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e52d"
-    },
-    "name": "200Hz",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e52e"
-    },
-    "name": "240Hz",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e52f"
-    },
-    "name": "300Hz",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e530"
-    },
-    "name": "360Hz",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e531"
-    },
-    "name": "480Hz",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e532"
-    },
-    "name": "500Hz",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e533"
-    },
-    "name": "540Hz",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e534"
-    },
-    "name": "600Hz",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e535"
-    },
-    "name": "HD",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b4"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e536"
-    },
-    "name": "Full HD",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b4"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e537"
-    },
-    "name": "2K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b4"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e538"
-    },
-    "name": "4K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b4"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e539"
-    },
-    "name": "5K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b4"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e53a"
-    },
-    "name": "6K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b4"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "67c1838bf8fb1305fa86e53b"
-    },
-    "name": "8K",
-    "proptype_id": {
-      "$oid": "67cbb9d9c27a2ba1c45b87b4"
-    }
+[{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3d8"
+  },
+  "name": "2GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ac"
   }
-]
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3d9"
+  },
+  "name": "3GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ac"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3da"
+  },
+  "name": "4GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ac"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3db"
+  },
+  "name": "6GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ac"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3dc"
+  },
+  "name": "8GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ac"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3dd"
+  },
+  "name": "12GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ac"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3de"
+  },
+  "name": "16GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ac"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3df"
+  },
+  "name": "32GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ac"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3e0"
+  },
+  "name": "64GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ac"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3e1"
+  },
+  "name": "128GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ac"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3e2"
+  },
+  "name": "256GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ac"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3e3"
+  },
+  "name": "512GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ac"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3e4"
+  },
+  "name": "16GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ad"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3e5"
+  },
+  "name": "32GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ad"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3e6"
+  },
+  "name": "64GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ad"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3e7"
+  },
+  "name": "128GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ad"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3e8"
+  },
+  "name": "256GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ad"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3e9"
+  },
+  "name": "512GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ad"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3ea"
+  },
+  "name": "1TB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ad"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3eb"
+  },
+  "name": "2TB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ad"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3ec"
+  },
+  "name": "4TB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ad"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3ed"
+  },
+  "name": "8TB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ad"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3ee"
+  },
+  "name": "i3-1215U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3ef"
+  },
+  "name": "i3-1305U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3f0"
+  },
+  "name": "i3-3220",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3f1"
+  },
+  "name": "i3-4130",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3f2"
+  },
+  "name": "i3-4150",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3f3"
+  },
+  "name": "i3-4330",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3f4"
+  },
+  "name": "i3-4360",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3f5"
+  },
+  "name": "i3-5005U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3f6"
+  },
+  "name": "i3-5020U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3f7"
+  },
+  "name": "i3-6006U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3f8"
+  },
+  "name": "i3-6100",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3f9"
+  },
+  "name": "i3-6300",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3fa"
+  },
+  "name": "i3-7100",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3fb"
+  },
+  "name": "i3-7300",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3fc"
+  },
+  "name": "i3-8100",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3fd"
+  },
+  "name": "i3-8350K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3fe"
+  },
+  "name": "i3-9100",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e3ff"
+  },
+  "name": "i3-9350K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e400"
+  },
+  "name": "i3-10100",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e401"
+  },
+  "name": "i3-10100F",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e402"
+  },
+  "name": "i3-10100T",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e403"
+  },
+  "name": "i3-1115G4",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e404"
+  },
+  "name": "i5-2400",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e405"
+  },
+  "name": "i5-2500",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e406"
+  },
+  "name": "i5-3470",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e407"
+  },
+  "name": "i5-3550",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e408"
+  },
+  "name": "i5-3570",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e409"
+  },
+  "name": "i5-4570",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e40a"
+  },
+  "name": "i5-4670",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e40b"
+  },
+  "name": "i5-4690",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e40c"
+  },
+  "name": "i5-5200U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e40d"
+  },
+  "name": "i5-5300U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e40e"
+  },
+  "name": "i5-6300U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e40f"
+  },
+  "name": "i5-6400",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e410"
+  },
+  "name": "i5-6500",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e411"
+  },
+  "name": "i5-6600K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e412"
+  },
+  "name": "i5-7200U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e413"
+  },
+  "name": "i5-7400",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e414"
+  },
+  "name": "i5-7500",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e415"
+  },
+  "name": "i5-7600K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e416"
+  },
+  "name": "i5-8250U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e417"
+  },
+  "name": "i5-8400",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e418"
+  },
+  "name": "i5-8500",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e419"
+  },
+  "name": "i5-8600K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e41a"
+  },
+  "name": "i5-9400F",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e41b"
+  },
+  "name": "i5-9600K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e41c"
+  },
+  "name": "i5-1035G1",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e41d"
+  },
+  "name": "i5-1035G7",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e41e"
+  },
+  "name": "i5-10400",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e41f"
+  },
+  "name": "i5-10600K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e420"
+  },
+  "name": "i5-11400",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e421"
+  },
+  "name": "i5-1235U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e422"
+  },
+  "name": "i5-12600KF",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e423"
+  },
+  "name": "i5-13600K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e424"
+  },
+  "name": "i7-2600",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e425"
+  },
+  "name": "i7-2600K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e426"
+  },
+  "name": "i7-2700K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e427"
+  },
+  "name": "i7-3770",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e428"
+  },
+  "name": "i7-3770K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e429"
+  },
+  "name": "i7-3820",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e42a"
+  },
+  "name": "i7-3930K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e42b"
+  },
+  "name": "i7-3960X",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e42c"
+  },
+  "name": "i7-4770",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e42d"
+  },
+  "name": "i7-4770K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e42e"
+  },
+  "name": "i7-4790K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e42f"
+  },
+  "name": "i7-4930K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e430"
+  },
+  "name": "i7-4960X",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e431"
+  },
+  "name": "i7-5500U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e432"
+  },
+  "name": "i7-5600U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e433"
+  },
+  "name": "i7-6500U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e434"
+  },
+  "name": "i7-6600U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e435"
+  },
+  "name": "i7-7500U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e436"
+  },
+  "name": "i7-7700HQ",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e437"
+  },
+  "name": "i7-7700K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e438"
+  },
+  "name": "i7-8086K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e439"
+  },
+  "name": "i7-8550U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e43a"
+  },
+  "name": "i7-8665U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e43b"
+  },
+  "name": "i7-8700K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e43c"
+  },
+  "name": "i7-9700K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e43d"
+  },
+  "name": "i7-1065G7",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e43e"
+  },
+  "name": "i7-10700K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e43f"
+  },
+  "name": "i7-1165G7",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e440"
+  },
+  "name": "i7-11700K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e441"
+  },
+  "name": "i7-12700K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e442"
+  },
+  "name": "i7-13700K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e443"
+  },
+  "name": "i7-13700KF",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e444"
+  },
+  "name": "i9-7900X",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e445"
+  },
+  "name": "i9-9900K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e446"
+  },
+  "name": "i9-9980XE",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e447"
+  },
+  "name": "i9-10900K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e448"
+  },
+  "name": "i9-10900KF",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e449"
+  },
+  "name": "i9-10980XE",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e44a"
+  },
+  "name": "i9-11900K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e44b"
+  },
+  "name": "i9-12900K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e44c"
+  },
+  "name": "i9-12900KF",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e44d"
+  },
+  "name": "i9-13900K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e44e"
+  },
+  "name": "R3 1200",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e44f"
+  },
+  "name": "R3 1300X",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e450"
+  },
+  "name": "R3 2200G",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e451"
+  },
+  "name": "R3 2300X",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e452"
+  },
+  "name": "R3 3100",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e453"
+  },
+  "name": "R3 3200G",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e454"
+  },
+  "name": "R3 3250U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e455"
+  },
+  "name": "R3 3300X",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e456"
+  },
+  "name": "R3 4300U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e457"
+  },
+  "name": "R5 1400",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e458"
+  },
+  "name": "R5 1500X",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e459"
+  },
+  "name": "R5 1600",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e45a"
+  },
+  "name": "R5 2400G",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e45b"
+  },
+  "name": "R5 2500U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e45c"
+  },
+  "name": "R5 2600",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e45d"
+  },
+  "name": "R5 3500X",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e45e"
+  },
+  "name": "R5 3500U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e45f"
+  },
+  "name": "R5 3550H",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e460"
+  },
+  "name": "R5 3600",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e461"
+  },
+  "name": "R5 3600X",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e462"
+  },
+  "name": "R5 4500U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e463"
+  },
+  "name": "R5 5600X",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e464"
+  },
+  "name": "R5 5600G",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e465"
+  },
+  "name": "R7 1700",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e466"
+  },
+  "name": "R7 1700X",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e467"
+  },
+  "name": "R7 1800X",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e468"
+  },
+  "name": "R7 2700",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e469"
+  },
+  "name": "R7 2700X",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e46a"
+  },
+  "name": "R7 3700X",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e46b"
+  },
+  "name": "R7 3700U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e46c"
+  },
+  "name": "R7 3750H",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e46d"
+  },
+  "name": "R7 3800X",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e46e"
+  },
+  "name": "R7 4800H",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e46f"
+  },
+  "name": "R7 4800U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e470"
+  },
+  "name": "R7 5800X",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e471"
+  },
+  "name": "R7 5800X3D",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e472"
+  },
+  "name": "R7 5800U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e473"
+  },
+  "name": "R9 3900X",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e474"
+  },
+  "name": "R9 3900XT",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e475"
+  },
+  "name": "R9 3950X",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e476"
+  },
+  "name": "R9 4900H",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e477"
+  },
+  "name": "R9 4900HS",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e478"
+  },
+  "name": "R9 5900X",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e479"
+  },
+  "name": "R9 5900HX",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e47a"
+  },
+  "name": "R9 5950X",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e47b"
+  },
+  "name": "R9 7900X",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e47c"
+  },
+  "name": "R9 7950X",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e47d"
+  },
+  "name": "M1",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e47e"
+  },
+  "name": "M1 Pro",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e47f"
+  },
+  "name": "M1 Max",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e480"
+  },
+  "name": "M1 Ultra",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e481"
+  },
+  "name": "M2",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e482"
+  },
+  "name": "M2 Pro",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e483"
+  },
+  "name": "M2 Max",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e484"
+  },
+  "name": "M2 Ultra",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e485"
+  },
+  "name": "M1",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e486"
+  },
+  "name": "M2",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e487"
+  },
+  "name": "M3",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e488"
+  },
+  "name": "M4",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e489"
+  },
+  "name": "Adreno",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e48a"
+  },
+  "name": "MX570A",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e48b"
+  },
+  "name": "MX550",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e48c"
+  },
+  "name": "Intel HD",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e48d"
+  },
+  "name": "Intel Arc",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e48e"
+  },
+  "name": "Intel Arc 140V",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e48f"
+  },
+  "name": "Intel UHD",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e490"
+  },
+  "name": "Intel Graphics",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e491"
+  },
+  "name": "Intel Iris Xe",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e492"
+  },
+  "name": "RTX 2050",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e493"
+  },
+  "name": "RTX 2060",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e494"
+  },
+  "name": "RTX 3050",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e495"
+  },
+  "name": "RTX 3050 Ti",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e496"
+  },
+  "name": "RTX 3060 Ti",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e497"
+  },
+  "name": "RTX 3060",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e498"
+  },
+  "name": "RTX 3070",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e499"
+  },
+  "name": "RTX 3080",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e49a"
+  },
+  "name": "RTX 3090",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e49b"
+  },
+  "name": "RTX 4050",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e49c"
+  },
+  "name": "RTX 4060",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e49d"
+  },
+  "name": "RTX 4060 Ti",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e49e"
+  },
+  "name": "RTX 4070",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e49f"
+  },
+  "name": "RTX 4080",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4a0"
+  },
+  "name": "RTX 4090",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4a1"
+  },
+  "name": "RTX 5070",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4a2"
+  },
+  "name": "RTX 5070 Ti",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4a3"
+  },
+  "name": "RTX 5080",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4a4"
+  },
+  "name": "RTX 5090",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4a5"
+  },
+  "name": "GTX 1660 SUPER",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4a6"
+  },
+  "name": "GTX 1650",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4a7"
+  },
+  "name": "GTX 1660 Ti",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4a8"
+  },
+  "name": "AMD 890M",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4a9"
+  },
+  "name": "AMD Radeon",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4aa"
+  },
+  "name": "Radeon 880M",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ab"
+  },
+  "name": "RX 6600 XT",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ac"
+  },
+  "name": "RX 6600",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ad"
+  },
+  "name": "RX 6700 XT",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ae"
+  },
+  "name": "RX 7600S XT",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4af"
+  },
+  "name": "RX 7700 XT",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4b0"
+  },
+  "name": "RX 7800 XT",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4b1"
+  },
+  "name": "RX 6750 XT",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4b2"
+  },
+  "name": "RX 7900 XT",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87af"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4b3"
+  },
+  "name": "120GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b0"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4b4"
+  },
+  "name": "128GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b0"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4b5"
+  },
+  "name": "240GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b0"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4b6"
+  },
+  "name": "250GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b0"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4b7"
+  },
+  "name": "256GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b0"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4b8"
+  },
+  "name": "480GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b0"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4b9"
+  },
+  "name": "500GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b0"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ba"
+  },
+  "name": "512GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b0"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4bb"
+  },
+  "name": "960GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b0"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4bc"
+  },
+  "name": "1TB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b0"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4bd"
+  },
+  "name": "2TB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b0"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4be"
+  },
+  "name": "4TB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b0"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4bf"
+  },
+  "name": "8TB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b0"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4c0"
+  },
+  "name": "500GB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b1"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4c1"
+  },
+  "name": "1TB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b1"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4c2"
+  },
+  "name": "2TB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b1"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4c3"
+  },
+  "name": "4TB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b1"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4c4"
+  },
+  "name": "6TB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b1"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4c5"
+  },
+  "name": "8TB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b1"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4c6"
+  },
+  "name": "10TB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b1"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4c7"
+  },
+  "name": "12TB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b1"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4c8"
+  },
+  "name": "14TB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b1"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4c9"
+  },
+  "name": "16TB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b1"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ca"
+  },
+  "name": "18TB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b1"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4cb"
+  },
+  "name": "20TB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b1"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4cc"
+  },
+  "name": "22TB",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b1"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4cd"
+  },
+  "name": "1.44 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ce"
+  },
+  "name": "1.77 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4cf"
+  },
+  "name": "1.8 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4d0"
+  },
+  "name": "2.4 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4d1"
+  },
+  "name": "2.8 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4d2"
+  },
+  "name": "3 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4d3"
+  },
+  "name": "3.5 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4d4"
+  },
+  "name": "4 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4d5"
+  },
+  "name": "4.3 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4d6"
+  },
+  "name": "4.7 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4d7"
+  },
+  "name": "5 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4d8"
+  },
+  "name": "5.5 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4d9"
+  },
+  "name": "5.99 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4da"
+  },
+  "name": "6 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4db"
+  },
+  "name": "6.1 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4dc"
+  },
+  "name": "6.2 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4dd"
+  },
+  "name": "6.3 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4de"
+  },
+  "name": "6.4 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4df"
+  },
+  "name": "6.5 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4e0"
+  },
+  "name": "6.6 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4e1"
+  },
+  "name": "6.67 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4e2"
+  },
+  "name": "6.7 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4e3"
+  },
+  "name": "6.8 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4e4"
+  },
+  "name": "6.9 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4e5"
+  },
+  "name": "7 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4e6"
+  },
+  "name": "7.9 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4e7"
+  },
+  "name": "8 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4e8"
+  },
+  "name": "8.3 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4e9"
+  },
+  "name": "8.7 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ea"
+  },
+  "name": "9 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4eb"
+  },
+  "name": "9.7 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ec"
+  },
+  "name": "10 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ed"
+  },
+  "name": "10.1 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ee"
+  },
+  "name": "10.2 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ef"
+  },
+  "name": "10.4 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4f0"
+  },
+  "name": "10.5 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4f1"
+  },
+  "name": "10.9 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4f2"
+  },
+  "name": "11 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4f3"
+  },
+  "name": "12 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4f4"
+  },
+  "name": "12.3 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4f5"
+  },
+  "name": "12.4 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4f6"
+  },
+  "name": "12.9 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4f7"
+  },
+  "name": "13 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4f8"
+  },
+  "name": "13.3 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4f9"
+  },
+  "name": "13.6 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4fa"
+  },
+  "name": "14 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4fb"
+  },
+  "name": "14.2 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4fc"
+  },
+  "name": "15 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4fd"
+  },
+  "name": "15.3 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4fe"
+  },
+  "name": "15.6 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e4ff"
+  },
+  "name": "16 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e500"
+  },
+  "name": "16.2 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e501"
+  },
+  "name": "17 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e502"
+  },
+  "name": "17.3 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e503"
+  },
+  "name": "18 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e504"
+  },
+  "name": "19 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e505"
+  },
+  "name": "20 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e506"
+  },
+  "name": "21 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e507"
+  },
+  "name": "22 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e508"
+  },
+  "name": "23.8 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e509"
+  },
+  "name": "24 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e50a"
+  },
+  "name": "24.5 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e50b"
+  },
+  "name": "25 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e50c"
+  },
+  "name": "27 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e50d"
+  },
+  "name": "29 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e50e"
+  },
+  "name": "30 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e50f"
+  },
+  "name": "31.5 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e510"
+  },
+  "name": "32 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e511"
+  },
+  "name": "34 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e512"
+  },
+  "name": "40 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e513"
+  },
+  "name": "42 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e514"
+  },
+  "name": "43 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e515"
+  },
+  "name": "48 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e516"
+  },
+  "name": "49 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e517"
+  },
+  "name": "50 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e518"
+  },
+  "name": "55 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e519"
+  },
+  "name": "60 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e51a"
+  },
+  "name": "65 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e51b"
+  },
+  "name": "70 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e51c"
+  },
+  "name": "75 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e51d"
+  },
+  "name": "77 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e51e"
+  },
+  "name": "85 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e51f"
+  },
+  "name": "86 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e520"
+  },
+  "name": "98 inch",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e521"
+  },
+  "name": "30Hz",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b3"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e522"
+  },
+  "name": "48Hz",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b3"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e523"
+  },
+  "name": "50Hz",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b3"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e524"
+  },
+  "name": "60Hz",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b3"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e525"
+  },
+  "name": "75Hz",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b3"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e526"
+  },
+  "name": "90Hz",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b3"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e527"
+  },
+  "name": "100Hz",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b3"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e528"
+  },
+  "name": "120Hz",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b3"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e529"
+  },
+  "name": "144Hz",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b3"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e52a"
+  },
+  "name": "165Hz",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b3"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e52b"
+  },
+  "name": "170Hz",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b3"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e52c"
+  },
+  "name": "180Hz",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b3"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e52d"
+  },
+  "name": "200Hz",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b3"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e52e"
+  },
+  "name": "240Hz",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b3"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e52f"
+  },
+  "name": "300Hz",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b3"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e530"
+  },
+  "name": "360Hz",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b3"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e531"
+  },
+  "name": "480Hz",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b3"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e532"
+  },
+  "name": "500Hz",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b3"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e533"
+  },
+  "name": "540Hz",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b3"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e534"
+  },
+  "name": "600Hz",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b3"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e535"
+  },
+  "name": "HD",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b4"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e536"
+  },
+  "name": "Full HD",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b4"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e537"
+  },
+  "name": "2K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b4"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e538"
+  },
+  "name": "4K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b4"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e539"
+  },
+  "name": "5K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b4"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e53a"
+  },
+  "name": "6K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b4"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1838bf8fb1305fa86e53b"
+  },
+  "name": "8K",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87b4"
+  }
+}]
