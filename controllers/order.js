@@ -136,9 +136,9 @@ async function getQuery(query) {
         }
 
         // Pipeline đếm tổng số đơn hàng theo từng status
-        const pipelineStatusCount = [
-            { $group: { _id: "$status", count: { $sum: 1 } } }
-        ];
+        const pipelineStatusCount = [];
+        if (user_id) pipelineStatusCount.push({ $match: { user_id: new ObjectId(user_id) } });
+        pipelineStatusCount.push({ $group: { _id: "$status", count: { $sum: 1 } } });
 
         const orders = await orderModel.aggregate(pipeline);
         const ordersTotal = await orderModel.aggregate([{ $match: matchCondition }]);
@@ -226,8 +226,10 @@ async function getQuery(query) {
             status: 200,
             message: "Success",
             data: data,
-            total: ordersTotal.length,
-            totalByStatus // Tổng số đơn hàng theo từng trạng thái
+            total: {
+                "all": ordersTotal.length,
+                ...totalByStatus
+            },
         };
 
     } catch (error) {
