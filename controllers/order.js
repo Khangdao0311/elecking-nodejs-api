@@ -108,7 +108,7 @@ async function getQuery(query) {
 
         if (status) {
             if (![0, 1, 2, 3, 4].includes(+status)) return { status: 400, message: "Trạng thái không tồn tại !" }
-            matchCondition.status = +status
+            matchCondition.status = +status;
         }
 
         if (user_id) {
@@ -135,36 +135,41 @@ async function getQuery(query) {
             pipeline.push({ $limit: +limit });
         }
 
-        const pipelineTotal = [
-            { $match: matchCondition },
+        // Pipeline đếm tổng số đơn hàng theo từng status
+        const pipelineStatusCount = [
+            { $group: { _id: "$status", count: { $sum: 1 } } }
         ];
 
         const orders = await orderModel.aggregate(pipeline);
-        const ordersTotal = await orderModel.aggregate(pipelineTotal);
+        const ordersTotal = await orderModel.aggregate([{ $match: matchCondition }]);
+        const statusCounts = await orderModel.aggregate(pipelineStatusCount);
 
-        const data = []
+        // Chuyển danh sách statusCounts thành object để dễ truy xuất
+        const totalByStatus = { '0': 0, '1': 0, '2': 0, '3': 0, '4': 0 };
+        statusCounts.forEach(item => {
+            totalByStatus[item._id] = item.count;
+        });
+
+        const data = [];
 
         for (const order of orders) {
+            const user = await userModel.findById(order.user_id);
+            const payment_method = await payment_methodModel.findById(order.payment_method_id);
+            let voucher = null;
+            if (order.voucher_id) voucher = await voucherModel.findById(order.voucher_id);
+            const address = await addressModel.findById(order.address_id);
 
-            const user = await userModel.findById(order.user_id)
-            const payment_method = await payment_methodModel.findById(order.payment_method_id)
-            let voucher = null
-            if (!order.voucher_id) voucher = await voucherModel.findById(order.voucher_id)
-            const address = await addressModel.findById(order.address_id)
-
-            const productsOrder = []
+            const productsOrder = [];
 
             for (const item of order.products) {
-
-                const product = await productModel.findById(item.product.id)
-
+                const product = await productModel.findById(item.product.id);
                 const name = [product.name];
 
                 for (const property_id of product.variants[item.product.variant].property_ids) {
                     const property = await propertyModel.findById(property_id);
                     name.push(property?.name);
                 }
-                name.push(product.variants[item.product.variant].colors[item.product.color].name)
+                name.push(product.variants[item.product.variant].colors[item.product.color].name);
 
                 productsOrder.push({
                     ...item,
@@ -177,8 +182,7 @@ async function getQuery(query) {
                             : "",
                         price: item.product.price
                     },
-
-                })
+                });
             }
 
             data.push({
@@ -215,10 +219,17 @@ async function getQuery(query) {
                     type: address.type,
                     status: address.status,
                 },
-            })
+            });
         }
 
-        return { status: 200, message: "Success", data: data, total: ordersTotal.length }
+        return {
+            status: 200,
+            message: "Success",
+            data: data,
+            total: ordersTotal.length,
+            totalByStatus // Tổng số đơn hàng theo từng trạng thái
+        };
+
     } catch (error) {
         console.log(error);
         throw error;

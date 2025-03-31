@@ -1,9 +1,9 @@
 var voucherModel = require("../models/voucher");
 var userModel = require("../models/user");
+var orderModel = require("../models/order");
 const moment = require("moment");
 
 const { ObjectId } = require("mongodb");
-const user = require("../models/user");
 
 module.exports = {
     getById,
@@ -110,18 +110,23 @@ async function getQuery(query) {
         const vouchers = await voucherModel.aggregate(pipeline);
         const vouchersTotal = await voucherModel.aggregate(pipelineTotal);
 
-        const data = vouchers.map((voucher) => ({
-            id: voucher._id,
-            code: voucher.code,
-            discount_type: voucher.discount_type,
-            discount_value: voucher.discount_value,
-            min_order_value: voucher.min_order_value,
-            max_discount: voucher.max_discount,
-            start_date: voucher.start_date,
-            end_date: voucher.end_date,
-            quantity: voucher.quantity,
-            user_id: voucher.user_id,
-        }));
+        const data = []
+
+        for (const voucher of vouchers) {
+            data.push({
+                id: voucher._id,
+                code: voucher.code,
+                discount_type: voucher.discount_type,
+                discount_value: voucher.discount_value,
+                min_order_value: voucher.min_order_value,
+                max_discount: voucher.max_discount,
+                start_date: voucher.start_date,
+                end_date: voucher.end_date,
+                quantity: voucher.quantity,
+                used: await orderModel.countDocuments({ voucher_id: voucher._id }),
+                user_id: voucher.user_id,
+            })
+        }
 
         return { status: 200, message: "Success", data: data, total: vouchersTotal.length }
     } catch (error) {

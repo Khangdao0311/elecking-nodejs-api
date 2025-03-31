@@ -14,13 +14,11 @@ async function getQuery(query) {
         let monthsToInclude = [];
 
         if (year) {
-            // 🔹 Nếu có `year`, lấy đủ 12 tháng của năm đó
             monthsToInclude = Array.from({ length: 12 }, (_, i) => ({
                 month: (i + 1).toString().padStart(2, "0"),
                 year: year,
             }));
         } else {
-            // 🔹 Nếu không có `year`, lấy 6 tháng gần nhất
             for (let i = 0; i < 6; i++) {
                 let month = currentMonth - i;
                 let yearVal = currentYear;
@@ -36,9 +34,9 @@ async function getQuery(query) {
         const matchStage = {
             $match: {
                 $or: monthsToInclude.map(({ month, year }) => ({
-                    ordered_at: { $regex: `^${year}${month}` },
-                })),
-            },
+                    ordered_at: { $regex: `^${year}${month}` }
+                }))
+            }
         };
 
         const projectStage = {
@@ -46,15 +44,20 @@ async function getQuery(query) {
                 month: { $substr: ["$ordered_at", 4, 2] },
                 year: { $substr: ["$ordered_at", 0, 4] },
                 total: 1,
-            },
+                payment_status: 1, // Thêm trạng thái thanh toán
+            }
         };
 
         const groupStage = {
             $group: {
                 _id: { month: "$month", year: "$year" },
-                price: { $sum: "$total" },
-                order: { $sum: 1 },
-            },
+                price: {
+                    $sum: {
+                        $cond: [{ $eq: ["$payment_status", true] }, "$total", 0] // Chỉ tính price nếu payment_status == true
+                    }
+                },
+                order: { $sum: 1 }, // Tổng số order không cần điều kiện
+            }
         };
 
         const sortStage = { $sort: { "_id.year": -1, "_id.month": -1 } };
@@ -94,5 +97,6 @@ async function getQuery(query) {
         console.log(error);
         throw error;
     }
+
 }
 

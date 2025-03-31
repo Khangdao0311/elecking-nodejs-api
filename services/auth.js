@@ -87,7 +87,6 @@ async function loginAdmin(body) {
         const user = await userModel.findOne({
             $or: [{ username: account }, { email: account }, { phone: account }],
         });
-        console.log(user.role);
 
         if (user) {
             if (user.role === 1) {
@@ -302,7 +301,6 @@ async function getToken(body) {
             const access_token = jwt.sign({ user: data.user }, process.env.JWTSECRET, {
                 expiresIn: "10s",
             });
-            console.log(access_token);
 
             return { status: 200, message: "Success", data: access_token }
         });
