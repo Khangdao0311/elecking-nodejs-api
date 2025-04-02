@@ -7,6 +7,7 @@ var propertyModel = require("../models/property");
 var addressModel = require("../models/address");
 
 const { ObjectId } = require("mongodb");
+const order = require("../models/order");
 
 module.exports = {
     getById,
@@ -102,7 +103,7 @@ async function getById(id) {
 
 async function getQuery(query) {
     try {
-        const { status, user_id, orderby, page = 1, limit = '' } = query;
+        const { status, user_id, payment_status, orderby, page = 1, limit = '' } = query;
 
         let matchCondition = {};
 
@@ -113,6 +114,10 @@ async function getQuery(query) {
 
         if (user_id) {
             matchCondition.user_id = new ObjectId(user_id);
+        }
+
+        if (payment_status) {
+            matchCondition.payment_status = JSON.parse(payment_status);
         }
 
         let sortCondition = {};
@@ -135,20 +140,32 @@ async function getQuery(query) {
             pipeline.push({ $limit: +limit });
         }
 
+        
         // Pipeline đếm tổng số đơn hàng theo từng status
         const pipelineStatusCount = [];
         if (user_id) pipelineStatusCount.push({ $match: { user_id: new ObjectId(user_id) } });
         pipelineStatusCount.push({ $group: { _id: "$status", count: { $sum: 1 } } });
 
+        const pipelinePaymentStatusCount = [];
+        if (user_id) pipelinePaymentStatusCount.push({ $match: { user_id: new ObjectId(user_id) } });
+        pipelinePaymentStatusCount.push({ $match: { payment_status: true } });
+        
+        const matchConditionTotal = {};
+        if (user_id) pipelineTotalCount.user_id = new ObjectId(user_id);
+
         const orders = await orderModel.aggregate(pipeline);
         const ordersTotal = await orderModel.aggregate([{ $match: matchCondition }]);
+
         const statusCounts = await orderModel.aggregate(pipelineStatusCount);
+        const paymentStatusCounts = await orderModel.aggregate(pipelinePaymentStatusCount);
+        const totalCounts = await orderModel.aggregate([{ $match: matchConditionTotal }]);
 
         // Chuyển danh sách statusCounts thành object để dễ truy xuất
         const totalByStatus = { '0': 0, '1': 0, '2': 0, '3': 0, '4': 0 };
         statusCounts.forEach(item => {
             totalByStatus[item._id] = item.count;
         });
+        totalByStatus['payment_status'] = paymentStatusCounts.length;
 
         const data = [];
 
@@ -226,8 +243,9 @@ async function getQuery(query) {
             status: 200,
             message: "Success",
             data: data,
-            total: {
-                "all": ordersTotal.length,
+            total: ordersTotal.length,
+            totalOrder: {
+                "all": totalCounts.length,
                 ...totalByStatus
             },
         };

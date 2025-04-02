@@ -50,7 +50,7 @@ async function login(body) {
                     expiresIn: "30s",
                 });
                 const refresh_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
-                    expiresIn: "4h",
+                    expiresIn: "2h",
                 });
 
                 const data = {
@@ -102,7 +102,7 @@ async function loginAdmin(body) {
                         expiresIn: "30s",
                     });
                     const refresh_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
-                        expiresIn: "4h",
+                        expiresIn: "8h",
                     });
 
                     const data = {
