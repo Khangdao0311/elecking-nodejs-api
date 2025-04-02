@@ -151,7 +151,7 @@ async function getQuery(query) {
         pipelinePaymentStatusCount.push({ $match: { payment_status: true } });
         
         const matchConditionTotal = {};
-        if (user_id) pipelineTotalCount.user_id = new ObjectId(user_id);
+        if (user_id) matchConditionTotal.user_id = new ObjectId(user_id);
 
         const orders = await orderModel.aggregate(pipeline);
         const ordersTotal = await orderModel.aggregate([{ $match: matchCondition }]);
