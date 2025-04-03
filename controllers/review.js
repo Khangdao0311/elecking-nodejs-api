@@ -79,8 +79,23 @@ async function getQuery(query) {
             { $match: matchCondition },
         ];
 
+        const pipelineStatusCount = [];
+        if (product_id) pipelineStatusCount.push({ $match: { product_id: new ObjectId(product_id) } });
+        pipelineStatusCount.push({ $group: { _id: "$rating", count: { $sum: 1 } } });
+
+        const matchConditionTotal = {};
+        if (product_id) matchConditionTotal.product_id = new ObjectId(product_id);
+
         const reviews = await reviewModel.aggregate(pipeline);
         const reviewsTotal = await reviewModel.aggregate(pipelineTotal);
+
+        const statusCounts = await reviewModel.aggregate(pipelineStatusCount);
+        const totalCounts = await reviewModel.aggregate([{ $match: matchConditionTotal }]);
+
+        const totalByStatus = { '1': 0, '2': 0, '3': 0, '4': 0, '5': 0 };
+        statusCounts.forEach(item => {
+            totalByStatus[item._id] = item.count;
+        });
 
         const data = [];
 
@@ -108,7 +123,12 @@ async function getQuery(query) {
 
         }
 
-        return { status: 200, message: "Success", data: data, total: reviewsTotal.length }
+        return {
+            status: 200, message: "Success", data: data, total: reviewsTotal.length, totalReview: {
+                "all": totalCounts.length,
+                ...totalByStatus
+            }
+        }
     } catch (error) {
         console.log(error);
         throw error;
