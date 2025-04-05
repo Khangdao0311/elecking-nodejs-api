@@ -13,7 +13,7 @@ const storage = multer.diskStorage({
 });
 
 const checkfile = (req, file, cb) => {
-    if (!file.originalname.match(/\.(jpg|png|jpeg|web)$/)) {
+    if (!file.originalname.match(/\.(jpg|png|jpeg|webp)$/)) {
         return cb(new Error("Bạn chỉ được upload file ảnh"));
     }
     return cb(null, true);
