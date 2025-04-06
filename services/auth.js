@@ -36,8 +36,8 @@ async function login(body) {
         });
 
         if (user) {
-            if (user.status) {
-                if (bcryptjs.compareSync(password, user.password)) {
+            if (bcryptjs.compareSync(password, user.password)) {
+                if (user.status) {
                     const userToken = {
                         id: user._id,
                         fullname: user.fullname,
@@ -68,13 +68,13 @@ async function login(body) {
                     }
 
                     return { status: 200, message: 'Success', data: data }
-
                 } else {
-                    return { status: 400, message: 'Mật khẩu người dùng không đúng !' }
+                    return { status: 400, message: 'Tài khoản bạn đã bị khóa !' }
                 }
             } else {
-                return { status: 400, message: 'Tài khoản bạn đã bị khóa !' }
+                return { status: 400, message: 'Đăng nhập thất bại !' }
             }
+
 
         } else {
             return { status: 400, message: 'Người dùng không tồn tại !' }
@@ -94,9 +94,9 @@ async function loginAdmin(body) {
         });
 
         if (user) {
-            if (user.status) {
-                if (user.role === 1) {
-                    if (bcryptjs.compareSync(password, user.password)) {
+            if (user.role === 1) {
+                if (bcryptjs.compareSync(password, user.password)) {
+                    if (user.status) {
                         const userToken = {
                             id: user._id,
                             username: user.username,
@@ -125,17 +125,15 @@ async function loginAdmin(body) {
                         }
 
                         return { status: 200, message: 'Success', data: data }
-
                     } else {
-                        return { status: 400, message: 'Mật khẩu người dùng không đúng !' }
+                        return { status: 400, message: 'Tài khoản bạn đã bị khóa !' }
                     }
                 } else {
-                    return { status: 403, message: 'Không có quyền truy cập' }
+                    return { status: 400, message: 'Mật khẩu người dùng không đúng !' }
                 }
             } else {
-                return { status: 400, message: 'Tài khoản bạn đã bị khóa !' }
+                return { status: 403, message: 'Không có quyền truy cập' }
             }
-
         } else {
             return { status: 403, message: 'Tài khoản không tồn tại !' }
         }
