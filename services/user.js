@@ -34,13 +34,15 @@ async function updateProfile(id, body) {
         const user = await userModel.findById(id)
         if (!user) return { status: 400, message: "Người dùng không tồn tại !" }
 
-        const { fullname, email, phone, avatar } = body
+        const { fullname, email, phone = '', avatar } = body
 
         const checkEmail = await userModel.findOne({ email: email, _id: { $ne: user._id } })
         if (checkEmail) return { status: 400, message: "Trùng Email !" }
 
-        const checkPhone = await userModel.findOne({ phone: phone, _id: { $ne: user._id } })
-        if (checkPhone) return { status: 400, message: "Trùng Số điện thoại !" }
+        if (phone) {
+            const checkPhone = await userModel.findOne({ phone: phone, _id: { $ne: user._id } })
+            if (checkPhone) return { status: 400, message: "Trùng Số điện thoại !" }
+        }
 
         if (user.avatar !== "" && user.avatar !== avatar) {
             fs.unlink(`./public/images/${user.avatar}`, function (err) {

@@ -36,41 +36,46 @@ async function login(body) {
         });
 
         if (user) {
-            if (bcryptjs.compareSync(password, user.password)) {
-                const userToken = {
-                    id: user._id,
-                    fullname: user.fullname,
-                    username: user.username,
-                    email: user.email,
-                    phone: user.phone,
-                    role: user.role
-                }
-
-                const access_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
-                    expiresIn: "30s",
-                });
-                const refresh_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
-                    expiresIn: "8h",
-                });
-
-                const data = {
-                    user: {
+            if (user.status) {
+                if (bcryptjs.compareSync(password, user.password)) {
+                    const userToken = {
                         id: user._id,
                         fullname: user.fullname,
-                        avatar: user.avatar ? `${process.env.URL}${user.avatar}` : "",
+                        username: user.username,
                         email: user.email,
                         phone: user.phone,
-                        username: user.username,
-                    },
-                    access_token: access_token,
-                    refresh_token: refresh_token
+                        role: user.role
+                    }
+
+                    const access_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
+                        expiresIn: "30s",
+                    });
+                    const refresh_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
+                        expiresIn: "8h",
+                    });
+
+                    const data = {
+                        user: {
+                            id: user._id,
+                            fullname: user.fullname,
+                            avatar: user.avatar ? `${process.env.URL}${user.avatar}` : "",
+                            email: user.email,
+                            phone: user.phone,
+                            username: user.username,
+                        },
+                        access_token: access_token,
+                        refresh_token: refresh_token
+                    }
+
+                    return { status: 200, message: 'Success', data: data }
+
+                } else {
+                    return { status: 400, message: 'Mật khẩu người dùng không đúng !' }
                 }
-
-                return { status: 200, message: 'Success', data: data }
-
             } else {
-                return { status: 400, message: 'Mật khẩu người dùng không đúng !' }
+                return { status: 400, message: 'Tài khoản bạn đã bị khóa !' }
             }
+
         } else {
             return { status: 400, message: 'Người dùng không tồn tại !' }
         }
@@ -89,43 +94,48 @@ async function loginAdmin(body) {
         });
 
         if (user) {
-            if (user.role === 1) {
-                if (bcryptjs.compareSync(password, user.password)) {
-                    const userToken = {
-                        id: user._id,
-                        username: user.username,
-                        fullname: user.fullname,
-                        role: user.role
-                    }
-
-                    const access_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
-                        expiresIn: "30s",
-                    });
-                    const refresh_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
-                        expiresIn: "8h",
-                    });
-
-                    const data = {
-                        user: {
+            if (user.status) {
+                if (user.role === 1) {
+                    if (bcryptjs.compareSync(password, user.password)) {
+                        const userToken = {
                             id: user._id,
                             username: user.username,
                             fullname: user.fullname,
-                            avatar: user.avatar ? `${process.env.URL}${user.avatar}` : "",
-                            email: user.email,
-                            phone: user.phone,
-                        },
-                        access_token: access_token,
-                        refresh_token: refresh_token
+                            role: user.role
+                        }
+
+                        const access_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
+                            expiresIn: "30s",
+                        });
+                        const refresh_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
+                            expiresIn: "8h",
+                        });
+
+                        const data = {
+                            user: {
+                                id: user._id,
+                                username: user.username,
+                                fullname: user.fullname,
+                                avatar: user.avatar ? `${process.env.URL}${user.avatar}` : "",
+                                email: user.email,
+                                phone: user.phone,
+                            },
+                            access_token: access_token,
+                            refresh_token: refresh_token
+                        }
+
+                        return { status: 200, message: 'Success', data: data }
+
+                    } else {
+                        return { status: 400, message: 'Mật khẩu người dùng không đúng !' }
                     }
-
-                    return { status: 200, message: 'Success', data: data }
-
                 } else {
-                    return { status: 400, message: 'Mật khẩu người dùng không đúng !' }
+                    return { status: 403, message: 'Không có quyền truy cập' }
                 }
             } else {
-                return { status: 403, message: 'Không có quyền truy cập' }
+                return { status: 400, message: 'Tài khoản bạn đã bị khóa !' }
             }
+
         } else {
             return { status: 403, message: 'Tài khoản không tồn tại !' }
         }
