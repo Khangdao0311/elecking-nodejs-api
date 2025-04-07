@@ -15,7 +15,7 @@ async function getById(id) {
         const data = {
             id: user._id,
             fullname: user.fullname,
-            avatar: user.avatar ? `${process.env.URL}${user.avatar}` : "",
+            avatar: user.avatar ? `${process.env.URL_IMAGE}${user.avatar}` : "",
             email: user.email,
             phone: user.phone,
             username: user.username,
@@ -83,7 +83,7 @@ async function getQuery(query) {
         const data = users.map((user) => ({
             id: user._id,
             fullname: user.fullname,
-            avatar: user.avatar ? `${process.env.URL}${user.avatar}` : "",
+            avatar: user.avatar ? `${process.env.URL_IMAGE}${user.avatar}` : "",
             email: user.email,
             phone: user.phone,
             username: user.username,

@@ -45,7 +45,7 @@ async function getById(id) {
                 price_sale: variant.price_sale,
                 colors: variant.colors.map((color) => ({
                     name: color.name,
-                    image: `${process.env.URL}${color.image}`,
+                    image: `${process.env.URL_IMAGE}${color.image}`,
                     price_extra: color.price_extra,
                     status: color.status,
                     quantity: color.quantity,
@@ -63,7 +63,7 @@ async function getById(id) {
         const data = {
             id: product._id,
             name: product.name,
-            images: product.images.map((image) => `${process.env.URL}${image}`),
+            images: product.images.map((image) => `${process.env.URL_IMAGE}${image}`),
             variants: variants,
             view: product.view,
             rating: rating,
@@ -243,7 +243,7 @@ async function getQuery(query) {
                     price_sale: variant.price_sale,
                     colors: variant.colors.map((color) => ({
                         name: color.name,
-                        image: `${process.env.URL}${color.image}`,
+                        image: `${process.env.URL_IMAGE}${color.image}`,
                         price_extra: color.price_extra,
                         status: color.status,
                         quantity: color.quantity,
@@ -262,7 +262,7 @@ async function getQuery(query) {
             data.push({
                 id: product._id,
                 name: product.name,
-                images: product.images.map((image) => `${process.env.URL}${image}`),
+                images: product.images.map((image) => `${process.env.URL_IMAGE}${image}`),
                 variants: variants,
                 view: product.view,
                 rating: rating,
@@ -322,7 +322,7 @@ async function getSame(query) {
                     price_sale: variant.price_sale,
                     colors: variant.colors.map((color) => ({
                         name: color.name,
-                        image: `${process.env.URL}${color.image}`,
+                        image: `${process.env.URL_IMAGE}${color.image}`,
                         price_extra: color.price_extra,
                         status: product.status,
                         quantity: color.quantity,
@@ -340,7 +340,7 @@ async function getSame(query) {
             data.push({
                 id: product._id,
                 name: product.name,
-                images: product.images.map((image) => `${process.env.URL}${image}`),
+                images: product.images.map((image) => `${process.env.URL_IMAGE}${image}`),
                 variants: variants,
                 view: product.view,
                 rating: rating,

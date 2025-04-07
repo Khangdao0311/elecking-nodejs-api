@@ -58,7 +58,7 @@ async function login(body) {
                         user: {
                             id: user._id,
                             fullname: user.fullname,
-                            avatar: user.avatar ? `${process.env.URL}${user.avatar}` : "",
+                            avatar: user.avatar ? `${process.env.URL_IMAGE}${user.avatar}` : "",
                             email: user.email,
                             phone: user.phone,
                             username: user.username,
@@ -116,7 +116,7 @@ async function loginAdmin(body) {
                                 id: user._id,
                                 username: user.username,
                                 fullname: user.fullname,
-                                avatar: user.avatar ? `${process.env.URL}${user.avatar}` : "",
+                                avatar: user.avatar ? `${process.env.URL_IMAGE}${user.avatar}` : "",
                                 email: user.email,
                                 phone: user.phone,
                             },
@@ -345,8 +345,8 @@ async function forgotPassword(body) {
                  <div style="margin: 0 auto; width: 600px;">
                     <p>Xin chào <strong>${user.username}</strong>,</p>
                     <p>Chúng tôi nhận được yêu cầu thiết lập lại mật khẩu cho tài khoản Elecking của bạn.</p>
-                    <p>Nhấn <a href="${process.env.DOMAIN}/auth/reset-password/${token}" style="color: red; text-decoration: none; font-weight: bold;">tại đây</a> để thiết lập mật khẩu mới cho tài khoản Elecking của bạn.</p>
-                    <p>Hoặc vui lòng copy và dán đường dẫn bên dưới lên trình duyệt: <a href="${process.env.DOMAIN}/auth/reset-password/${token}" style="color: blue; word-wrap: break-word;">${process.env.DOMAIN}/auth/forgot-password/change/${token}</a></p>
+                    <p>Nhấn <a href="${process.env.URL}/auth/reset-password/${token}" style="color: red; text-decoration: none; font-weight: bold;">tại đây</a> để thiết lập mật khẩu mới cho tài khoản Elecking của bạn.</p>
+                    <p>Hoặc vui lòng copy và dán đường dẫn bên dưới lên trình duyệt: <a href="${process.env.URL}/auth/reset-password/${token}" style="color: blue; word-wrap: break-word;">${process.env.URL}/auth/forgot-password/change/${token}</a></p>
                     <p>Trân trọng,</p>
                     <p><strong>Elecking</strong></p>
                 </div>

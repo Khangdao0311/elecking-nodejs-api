@@ -15,8 +15,8 @@ async function getById(id) {
         const data = {
             id: brand._id,
             name: brand.name,
-            logo: brand.logo ? `${process.env.URL}${brand.logo}` : "",
-            banner: brand.banner ? `${process.env.URL}${brand.banner}` : "",
+            logo: brand.logo ? `${process.env.URL_IMAGE}${brand.logo}` : "",
+            banner: brand.banner ? `${process.env.URL_IMAGE}${brand.banner}` : "",
             status: brand.status,
             description: brand.description,
         };
@@ -81,8 +81,8 @@ async function getQuery(query) {
         const data = brands.map((brand) => ({
             id: brand._id,
             name: brand.name,
-            logo: brand.logo ? `${process.env.URL}${brand.logo}` : "",
-            banner: brand.banner ? `${process.env.URL}${brand.banner}` : "",
+            logo: brand.logo ? `${process.env.URL_IMAGE}${brand.logo}` : "",
+            banner: brand.banner ? `${process.env.URL_IMAGE}${brand.banner}` : "",
             status: brand.status,
             description: brand.description,
         }));

@@ -68,7 +68,7 @@ async function updateProfile(id, body) {
         const data = {
             id: userNew._id,
             fullname: userNew.fullname,
-            avatar: userNew.avatar ? `${process.env.URL}${userNew.avatar}` : "",
+            avatar: userNew.avatar ? `${process.env.URL_IMAGE}${userNew.avatar}` : "",
             email: userNew.email,
             phone: userNew.phone,
             username: userNew.username,

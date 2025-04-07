@@ -15,7 +15,7 @@ async function getById(id) {
         const data = {
             id: payment_method._id,
             name: payment_method.name,
-            image: payment_method.image ? `${process.env.URL}${payment_method.image}` : "",
+            image: payment_method.image ? `${process.env.URL_IMAGE}${payment_method.image}` : "",
             description: payment_method.description,
         };
 
@@ -75,7 +75,7 @@ async function getQuery(query) {
         const data = payment_methods.map((payment_method) => ({
             id: payment_method._id,
             name: payment_method.name,
-            image: payment_method.image ? `${process.env.URL}${payment_method.image}` : "",
+            image: payment_method.image ? `${process.env.URL_IMAGE}${payment_method.image}` : "",
             description: payment_method.description,
         }));
 

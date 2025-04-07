@@ -20,7 +20,7 @@ async function getById(id) {
         const data = {
             id: review._id,
             content: review.content,
-            images: review.images.length == 0 ? [] : review.images.map((image) => `${process.env.URL}${image}`),
+            images: review.images.length == 0 ? [] : review.images.map((image) => `${process.env.URL_IMAGE}${image}`),
             rating: review.rating,
             created_at: review.created_at,
             updated_at: review.updated_at,
@@ -29,7 +29,7 @@ async function getById(id) {
             product_id: review.product_id,
             user: {
                 id: user._id,
-                avatar: user.avatar ? `${process.env.URL}${user.avatar}` : "",
+                avatar: user.avatar ? `${process.env.URL_IMAGE}${user.avatar}` : "",
                 fullname: user.fullname
             }
         };
@@ -107,7 +107,7 @@ async function getQuery(query) {
             data.push({
                 id: review._id,
                 content: review.content,
-                images: review.images.length == 0 ? [] : review.images.map((image) => `${process.env.URL}${image}`),
+                images: review.images.length == 0 ? [] : review.images.map((image) => `${process.env.URL_IMAGE}${image}`),
                 rating: review.rating,
                 created_at: review.created_at,
                 updated_at: review.updated_at,
@@ -116,7 +116,7 @@ async function getQuery(query) {
                 product_id: review.product_id,
                 user: {
                     id: user._id,
-                    avatar: user.avatar ? `${process.env.URL}${user.avatar}` : "",
+                    avatar: user.avatar ? `${process.env.URL_IMAGE}${user.avatar}` : "",
                     fullname: user.fullname
                 }
             })

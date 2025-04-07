@@ -26,7 +26,7 @@ async function getById(id) {
         const data = {
             id: category._id,
             name: category.name,
-            image: category.image ? `${process.env.URL}${category.image}` : "",
+            image: category.image ? `${process.env.URL_IMAGE}${category.image}` : "",
             status: category.status,
             icon: category.icon,
             proptypes: proptypes,
@@ -107,7 +107,7 @@ async function getQuery(query) {
             data.push({
                 id: category._id,
                 name: category.name,
-                image: category.image ? `${process.env.URL}${category.image}` : "",
+                image: category.image ? `${process.env.URL_IMAGE}${category.image}` : "",
                 status: category.status,
                 icon: category.icon,
                 proptypes: proptypes,

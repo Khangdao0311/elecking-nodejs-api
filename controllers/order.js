@@ -47,7 +47,7 @@ async function getById(id) {
                     id: product.id,
                     name: name.join(" - "),
                     image: product.variants[item.product.variant].colors[item.product.color].image
-                        ? `${process.env.URL}${product.variants[item.product.variant].colors[item.product.color].image}`
+                        ? `${process.env.URL_IMAGE}${product.variants[item.product.variant].colors[item.product.color].image}`
                         : "",
                     price: item.product.price
                 },
@@ -195,7 +195,7 @@ async function getQuery(query) {
                         id: product.id,
                         name: name.join(" - "),
                         image: product.variants[item.product.variant].colors[item.product.color].image
-                            ? `${process.env.URL}${product.variants[item.product.variant].colors[item.product.color].image}`
+                            ? `${process.env.URL_IMAGE}${product.variants[item.product.variant].colors[item.product.color].image}`
                             : "",
                         price: item.product.price
                     },
