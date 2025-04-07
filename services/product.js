@@ -6,7 +6,8 @@ const categoryModel = require("../models/category");
 
 module.exports = {
     insert,
-    update
+    update,
+    viewUp
 };
 
 async function insert(body) {
@@ -75,3 +76,24 @@ async function update(id, body) {
         throw error;
     }
 }
+
+async function viewUp(id) {
+    try {
+        const product = await productModel.findById(id)
+        if (!product) return { status: 400, message: "Sản phẩm không tồn tại !" }
+
+
+        await productModel.findByIdAndUpdate(id, {
+            $set: {
+                view: product.view + 1
+            }
+        }, { new: true })
+
+        return { status: 200, message: "Success" }
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
+
