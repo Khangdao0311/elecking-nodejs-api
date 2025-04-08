@@ -20,6 +20,7 @@ var corsOptionsDelegate = function (req, callback) {
   callback(null, corsOptions);
 };
 
+var indexRouter = require('./routes/index');
 var categoryRouter = require('./routes/category');
 var brandRouter = require('./routes/brand');
 var productRouter = require('./routes/product');
@@ -56,6 +57,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/', indexRouter);
 app.use('/category', categoryRouter);
 app.use('/brand', brandRouter);
 app.use('/product', productRouter);
