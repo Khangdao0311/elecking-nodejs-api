@@ -139,7 +139,6 @@ async function getQuery(query) {
             pipeline.push({ $skip: skip });
             pipeline.push({ $limit: +limit });
         }
-
         
         // Pipeline đếm tổng số đơn hàng theo từng status
         const pipelineStatusCount = [];
