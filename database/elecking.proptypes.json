@@ -51,10 +51,4 @@
     "$oid": "67cbb9d9c27a2ba1c45b87b4"
   },
   "name": "resolution"
-},
-{
-  "_id": {
-    "$oid": "67e763ae1b8593749a2ceb9e"
-  },
-  "name": "testram"
 }]

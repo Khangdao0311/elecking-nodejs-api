@@ -19,7 +19,7 @@
     "$oid": "67b6b0bdbfe3474f1ec40f45"
   },
   "fullname": "Đào Vĩnh Khang",
-  "avatar": "khi48.png",
+  "avatar": "z3781836275273_d6caeb994e163b6f4843dbf499fb7d73.jpg",
   "email": "khangdao0311@gmail.com",
   "phone": "0976767676",
   "username": "khangdao",
@@ -27,7 +27,18 @@
   "role": 1,
   "status": 1,
   "register_date": "20250220",
-  "cart": [],
+  "cart": [
+    {
+      "quantity": 1,
+      "product": {
+        "id": {
+          "$oid": "67b96ee667788c638a22e2c8"
+        },
+        "variant": 1,
+        "color": 1
+      }
+    }
+  ],
   "wish": []
 },
 {
@@ -39,19 +50,12 @@
   "email": "pttruong1992@gmail.com",
   "phone": "0932916341",
   "username": "pttruong",
-  "password": "$2a$10$oWaWoR4eCoXrOeb7YHmsRuhNWH1LoA4hr.ZSqGAp3hdQIdcSXaFXy",
+  "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
   "role": 0,
   "status": 1,
   "register_date": "20250329153917",
   "cart": [],
-  "wish": [
-    {
-      "$oid": "67b96ee667788c638a22e2c7"
-    },
-    {
-      "$oid": "67b96ee667788c638a22e2c8"
-    }
-  ]
+  "wish": []
 },
 {
   "_id": {
@@ -62,7 +66,7 @@
   "email": "songtu1456@gmail.com",
   "phone": "",
   "username": "hungnguyen",
-  "password": "$2a$10$nQK87qkOJcZ/IelGXUk.AuwU4HTv/h4iKI5XyPjOx6EWUtse1kZT.",
+  "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
   "role": 0,
   "status": 1,
   "register_date": "20250329164317",

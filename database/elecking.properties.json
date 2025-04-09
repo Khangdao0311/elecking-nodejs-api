@@ -3201,4 +3201,31 @@
   "proptype_id": {
     "$oid": "67cbb9d9c27a2ba1c45b87b4"
   }
+},
+{
+  "_id": {
+    "$oid": "67f51d6679ff19cbdf85e5aa"
+  },
+  "name": "M3",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67f5200079ff19cbdf85ef64"
+  },
+  "name": "i7-13620H",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "67f540a879ff19cbdf86c6c2"
+  },
+  "name": "i5-13500H",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
 }]
