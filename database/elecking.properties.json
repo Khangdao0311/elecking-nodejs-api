@@ -3228,4 +3228,13 @@
   "proptype_id": {
     "$oid": "67cbb9d9c27a2ba1c45b87ae"
   }
+},
+{
+  "_id": {
+    "$oid": "67f60dace67ef01f5b3107ed"
+  },
+  "name": "i5-1335U",
+  "proptype_id": {
+    "$oid": "67cbb9d9c27a2ba1c45b87ae"
+  }
 }]
