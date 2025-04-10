@@ -43,7 +43,7 @@ async function getQuery(query) {
 
         if (search) {
             matchCondition.code = {
-                $regex: search,
+                $regex: search.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"),
                 $options: "i",
             };
         }

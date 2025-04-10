@@ -42,8 +42,8 @@ async function getQuery(query) {
 
         if (search) {
             matchCondition.$or = [
-                { fullname: { $regex: search, $options: "i" } },
-                { username: { $regex: search, $options: "i" } }
+                { fullname: { $regex: search.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), $options: "i" } },
+                { username: { $regex: search.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), $options: "i" } }
             ];
         }
 
@@ -95,40 +95,6 @@ async function getQuery(query) {
         }));
 
         return { status: 200, message: "Success", data: data, total: usersTotal.length };
-    } catch (error) {
-        console.log(error);
-        throw error;
-    }
-}
-
-async function getTotalPagesByQuery(query) {
-    try {
-        const { id, search, limit = 5 } = query;
-
-        let matchCondition = {};
-
-        if (search) {
-            matchCondition.$or = [
-                { fullname: { $regex: search, $options: "i" } },
-                { username: { $regex: search, $options: "i" } }
-            ];
-        }
-
-        if (id) {
-            matchCondition._id = {
-                $in: id.split("-").map((_id) => new ObjectId(_id)),
-            };
-        }
-
-        const pipeline = [
-            { $match: matchCondition },
-        ];
-
-        const users = await userModel.aggregate(pipeline);
-
-        const data = Math.ceil(users.length / limit);
-
-        return { status: 200, message: "Success", data: data };
     } catch (error) {
         console.log(error);
         throw error;

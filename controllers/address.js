@@ -42,7 +42,7 @@ async function getQuery(query) {
 
         if (search) {
             matchCondition.fullname = {
-                $regex: search,
+                $regex: search.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"),
                 $options: "i",
             };
         }

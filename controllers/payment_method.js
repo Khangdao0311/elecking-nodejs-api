@@ -34,7 +34,7 @@ async function getQuery(query) {
 
         if (search) {
             matchCondition.name = {
-                $regex: search,
+                $regex: search.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"),
                 $options: "i",
             };
         }
