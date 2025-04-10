@@ -95,7 +95,7 @@ async function getQuery(query) {
         // Tìm kiếm sản phẩm theo tên
         if (search) {
             matchCondition.name = {
-                $regex: search,
+                $regex: search.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"),
                 $options: "i",
             };
         }
