@@ -248,6 +248,7 @@ async function updateStatus(id, body) {
 
             const user = await userModel.findById(order.user_id)
             const address = await addressModel.findById(order.address_id)
+            const payment_method = await payment_methodModel.findById(order.payment_method_id)
 
             const mailOptions = {
                 from: '"Elecking"<elecking.store@gmail.com>',
@@ -268,7 +269,7 @@ async function updateStatus(id, body) {
                         <hr>
                         <p>Phương thức thanh toán: <b>${payment_method.name}</b></p>
                         <p>Giá trị đơn hàng: <b>${(order.total).toLocaleString("vi-VN")} đ</b></p>
-                        <p>Lưu ý: <b>${note}</b></p>
+                        <p>Lưu ý: <b>${order.note}</b></p>
                     </div>
                 `
             };

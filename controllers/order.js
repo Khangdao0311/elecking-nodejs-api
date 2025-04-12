@@ -5,6 +5,7 @@ var voucherModel = require("../models/voucher");
 var productModel = require("../models/product");
 var propertyModel = require("../models/property");
 var addressModel = require("../models/address");
+const moment = require("moment");
 
 const { ObjectId } = require("mongodb");
 const order = require("../models/order");
@@ -103,7 +104,16 @@ async function getById(id) {
 
 async function getQuery(query) {
     try {
-        const { status, user_id, payment_status, orderby, page = 1, limit = '' } = query;
+        const { status, user_id, payment_status, day, month, year, orderby, page = 1, limit = '' } = query;
+
+        let sortCondition = {};
+
+        if (orderby) {
+            const [sort, so] = orderby.split("-");
+            sortCondition[sort == "id" ? "_id" : sort] = so ? so == "desc" ? -1 : 1 : -1;
+        } else {
+            sortCondition._id = -1;
+        }
 
         let matchCondition = {};
 
@@ -120,15 +130,6 @@ async function getQuery(query) {
             matchCondition.payment_status = JSON.parse(payment_status);
         }
 
-        let sortCondition = {};
-
-        if (orderby) {
-            const [sort, so] = orderby.split("-");
-            sortCondition[sort == "id" ? "_id" : sort] = so ? so == "desc" ? -1 : 1 : -1;
-        } else {
-            sortCondition._id = -1;
-        }
-
         const pipeline = [
             { $match: matchCondition },
             { $sort: sortCondition },
@@ -139,32 +140,64 @@ async function getQuery(query) {
             pipeline.push({ $skip: skip });
             pipeline.push({ $limit: +limit });
         }
-        
-        // Pipeline đếm tổng số đơn hàng theo từng status
-        const pipelineStatusCount = [];
-        if (user_id) pipelineStatusCount.push({ $match: { user_id: new ObjectId(user_id) } });
-        pipelineStatusCount.push({ $group: { _id: "$status", count: { $sum: 1 } } });
 
+        const pipelineStatusCount = [];
         const pipelinePaymentStatusCount = [];
-        if (user_id) pipelinePaymentStatusCount.push({ $match: { user_id: new ObjectId(user_id) } });
+
+        let matchConditionQueryTotal = {};
+        let matchConditionStatus = {}
+        let matchConditionPaymentStatus = {}
+        let matchConditionOrderTotal = {};
+
+        if (user_id) {
+            matchConditionStatus.push({ user_id: new ObjectId(user_id) });
+            matchConditionPaymentStatus.push({ user_id: new ObjectId(user_id) });
+            matchConditionOrderTotal.user_id = new ObjectId(user_id);
+        }
+
+        if (year) {
+            const paddedMonth = month?.padStart(2, '0') || '01';
+            const paddedDay = day?.padStart(2, '0') || '01';
+
+            let startMoment, endMoment;
+
+            if (year && month && day) {
+                startMoment = moment(`${year}-${paddedMonth}-${paddedDay} 00:00:00`, 'YYYY-MM-DD HH:mm:ss');
+                endMoment = moment(`${year}-${paddedMonth}-${paddedDay} 23:59:59`, 'YYYY-MM-DD HH:mm:ss');
+            } else if (year && month) {
+                startMoment = moment(`${year}-${paddedMonth}-01 00:00:00`, 'YYYY-MM-DD HH:mm:ss');
+                endMoment = moment(startMoment).endOf('month').set({ hour: 23, minute: 59, second: 59 });
+            } else {
+                startMoment = moment(`${year}-01-01 00:00:00`, 'YYYY-MM-DD HH:mm:ss');
+                endMoment = moment(`${year}-12-31 23:59:59`, 'YYYY-MM-DD HH:mm:ss');
+            }
+
+            const start = startMoment.format('YYYYMMDDHHmmss')
+            const end = endMoment.format('YYYYMMDDHHmmss')
+
+            matchCondition.ordered_at = { $gte: start, $lte: end };
+            matchConditionQueryTotal.ordered_at = { $gte: start, $lte: end };
+            matchConditionStatus.ordered_at = { $gte: start, $lte: end };
+            matchConditionPaymentStatus.ordered_at = { $gte: start, $lte: end };
+            matchConditionOrderTotal.ordered_at = { $gte: start, $lte: end };
+        }
+
+        pipelineStatusCount.push({ $match: matchConditionStatus },)
+        pipelineStatusCount.push({ $group: { _id: "$status", count: { $sum: 1 } } });
+        pipelinePaymentStatusCount.push({ $match: matchConditionPaymentStatus },)
         pipelinePaymentStatusCount.push({ $match: { payment_status: true } });
-        
-        const matchConditionTotal = {};
-        if (user_id) matchConditionTotal.user_id = new ObjectId(user_id);
 
         const orders = await orderModel.aggregate(pipeline);
-        const ordersTotal = await orderModel.aggregate([{ $match: matchCondition }]);
-
+        const queryTotal = await orderModel.aggregate([{ $match: matchConditionQueryTotal }]);
         const statusCounts = await orderModel.aggregate(pipelineStatusCount);
         const paymentStatusCounts = await orderModel.aggregate(pipelinePaymentStatusCount);
-        const totalCounts = await orderModel.aggregate([{ $match: matchConditionTotal }]);
+        const orderTotal = await orderModel.aggregate([{ $match: matchConditionOrderTotal }]);
 
         // Chuyển danh sách statusCounts thành object để dễ truy xuất
-        const totalByStatus = { '0': 0, '1': 0, '2': 0, '3': 0, '4': 0 };
+        const totalByStatus = { '0': 0, '1': 0, '2': 0, '3': 0, '4': 0, payment_status: paymentStatusCounts.length };
         statusCounts.forEach(item => {
             totalByStatus[item._id] = item.count;
         });
-        totalByStatus['payment_status'] = paymentStatusCounts.length;
 
         const data = [];
 
@@ -242,9 +275,9 @@ async function getQuery(query) {
             status: 200,
             message: "Success",
             data: data,
-            total: ordersTotal.length,
+            total: queryTotal.length,
             totalOrder: {
-                "all": totalCounts.length,
+                "all": orderTotal.length,
                 ...totalByStatus
             },
         };
