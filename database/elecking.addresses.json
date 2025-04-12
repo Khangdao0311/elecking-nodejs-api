@@ -1271,4 +1271,212 @@
   "user_id": {
     "$oid": "67f2279fb2b53570b7ddd515"
   }
+},
+{
+  "_id": {
+    "$oid": "67f76e1ebedd2638e5e1b631"
+  },
+  "province": {
+    "code": 96,
+    "name": "Tỉnh Cà Mau"
+  },
+  "district": {
+    "code": 966,
+    "name": "Huyện U Minh"
+  },
+  "ward": {
+    "code": 32047,
+    "name": "Xã Khánh Hòa"
+  },
+  "description": "pug pug",
+  "phone": "012346578",
+  "fullname": "Khoa pug",
+  "type": 1,
+  "status": 1,
+  "setDefault": true,
+  "user_id": {
+    "$oid": "67f76dd3bedd2638e5e1ae0f"
+  }
+},
+{
+  "_id": {
+    "$oid": "67f77332bedd2638e5e22c60"
+  },
+  "province": {
+    "code": 1,
+    "name": "Thành phố Hà Nội"
+  },
+  "district": {
+    "code": 1,
+    "name": "Quận Ba Đình"
+  },
+  "ward": {
+    "code": 1,
+    "name": "Phường Phúc Xá"
+  },
+  "description": "nhà ngọc kem",
+  "phone": "09897561",
+  "fullname": "Peter",
+  "type": 1,
+  "status": 1,
+  "setDefault": true,
+  "user_id": {
+    "$oid": "67f77216bedd2638e5e20f53"
+  }
+},
+{
+  "_id": {
+    "$oid": "67f777417ab9c6df855a21ff"
+  },
+  "province": {
+    "code": 2,
+    "name": "Tỉnh Hà Giang"
+  },
+  "district": {
+    "code": 24,
+    "name": "Thành phố Hà Giang"
+  },
+  "ward": {
+    "code": 691,
+    "name": "Phường Trần Phú"
+  },
+  "description": "meow meow",
+  "phone": "097874856",
+  "fullname": "Chị Phiến",
+  "type": 1,
+  "status": 1,
+  "setDefault": true,
+  "user_id": {
+    "$oid": "67f776117ab9c6df855a0218"
+  }
+},
+{
+  "_id": {
+    "$oid": "67f77bda7ab9c6df855abb7e"
+  },
+  "province": {
+    "code": 2,
+    "name": "Tỉnh Hà Giang"
+  },
+  "district": {
+    "code": 26,
+    "name": "Huyện Đồng Văn"
+  },
+  "ward": {
+    "code": 712,
+    "name": "Thị trấn Phó Bảng"
+  },
+  "description": "...",
+  "phone": "010568912",
+  "fullname": "Thoại",
+  "type": 1,
+  "status": 1,
+  "setDefault": true,
+  "user_id": {
+    "$oid": "67f77b837ab9c6df855aaf4e"
+  }
+},
+{
+  "_id": {
+    "$oid": "67f8a65eba7e32f0447384e1"
+  },
+  "province": {
+    "code": 83,
+    "name": "Tỉnh Bến Tre"
+  },
+  "district": {
+    "code": 829,
+    "name": "Thành phố Bến Tre"
+  },
+  "ward": {
+    "code": 28756,
+    "name": "Phường Phú Khương"
+  },
+  "description": "45/34/54 phường Phú Khương",
+  "phone": "03569847",
+  "fullname": "Jack",
+  "type": 1,
+  "status": 1,
+  "setDefault": true,
+  "user_id": {
+    "$oid": "67f8a57cba7e32f044737966"
+  }
+},
+{
+  "_id": {
+    "$oid": "67f8c7b7a351e3542a9a8daa"
+  },
+  "province": {
+    "code": 79,
+    "name": "Thành phố Hồ Chí Minh"
+  },
+  "district": {
+    "code": 760,
+    "name": "Quận 1"
+  },
+  "ward": {
+    "code": 26734,
+    "name": "Phường Tân Định"
+  },
+  "description": "47/27",
+  "phone": "098765421",
+  "fullname": "Misthy",
+  "type": 1,
+  "status": 1,
+  "setDefault": true,
+  "user_id": {
+    "$oid": "67f8c64da351e3542a9a7c39"
+  }
+},
+{
+  "_id": {
+    "$oid": "67f8d0f8a351e3542a9b1a1f"
+  },
+  "province": {
+    "code": 79,
+    "name": "Thành phố Hồ Chí Minh"
+  },
+  "district": {
+    "code": 766,
+    "name": "Quận Tân Bình"
+  },
+  "ward": {
+    "code": 26998,
+    "name": "Phường 8"
+  },
+  "description": "25/41",
+  "phone": "09874561",
+  "fullname": "Tú senna",
+  "type": 1,
+  "status": 1,
+  "setDefault": true,
+  "user_id": {
+    "$oid": "67f8cde3a351e3542a9b012b"
+  }
+},
+{
+  "_id": {
+    "$oid": "67f8da9ca351e3542a9bbc3c"
+  },
+  "province": {
+    "code": 6,
+    "name": "Tỉnh Bắc Kạn"
+  },
+  "district": {
+    "code": 60,
+    "name": "Huyện Pác Nặm"
+  },
+  "ward": {
+    "code": 1861,
+    "name": "Xã Nhạn Môn"
+  },
+  "description": "15/25",
+  "phone": "09845615",
+  "fullname": "Ronando",
+  "type": 1,
+  "status": 1,
+  "setDefault": true,
+  "user_id": {
+    "$oid": "67f8d9bfa351e3542a9ba9fe"
+  }
 }]
