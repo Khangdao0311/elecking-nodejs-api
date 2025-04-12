@@ -150,8 +150,9 @@ async function getQuery(query) {
         let matchConditionOrderTotal = {};
 
         if (user_id) {
-            matchConditionStatus.push({ user_id: new ObjectId(user_id) });
-            matchConditionPaymentStatus.push({ user_id: new ObjectId(user_id) });
+            matchConditionQueryTotal.user_id = new ObjectId(user_id)
+            matchConditionStatus.user_id = new ObjectId(user_id)
+            matchConditionPaymentStatus.user_id = new ObjectId(user_id)
             matchConditionOrderTotal.user_id = new ObjectId(user_id);
         }
 
