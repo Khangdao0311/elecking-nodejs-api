@@ -222,61 +222,6 @@ async function updateStatus(id, body) {
             },
             { new: true, runValidators: true })
 
-        if (+status === 0) {
-            for (const productOrder of order.products) {
-                const product = await productModel.findById(productOrder.product.id)
-                await productModel.findByIdAndUpdate(product._id, {
-                    $set: {
-                        variants: product.variants.map((variant, iVariant) => {
-                            if (iVariant == productOrder.product.variant) return {
-                                ...variant.toObject(),
-                                colors: variant.colors.map((color, iColor) => {
-                                    if (iColor == productOrder.product.color) return {
-                                        ...color.toObject(),
-                                        status: 1,
-                                        quantity: color.quantity + productOrder.quantity
-                                    }
-
-                                    return color
-                                })
-                            }
-                            return variant
-                        })
-                    }
-                }, { new: true, runValidators: true })
-            }
-
-            const user = await userModel.findById(order.user_id)
-            const address = await addressModel.findById(order.address_id)
-            const payment_method = await payment_methodModel.findById(order.payment_method_id)
-
-            const mailOptions = {
-                from: '"Elecking"<elecking.store@gmail.com>',
-                to: "elecking.store@gmail.com",
-                subject: `Đã Hủy Đơn hàng ${id.toUpperCase()} của ${user.fullname}`,
-                html: `
-                     <div style="padding: 10px;">
-                        <h1 style="text-align: center;">Thông Tin Đơn Hàng Đã Hủy</h1>
-                        <p style="font-size: 18px;">Mẫ đơn hàng: <b style="font-size: 24px;">${id.toUpperCase()}</b></p>
-                        <p>Khách hàng: <b>${user.fullname}</b></p>
-                        <p>Email: <b>${user.email}</b></p>
-                        <p>Số điện thoại: <b>${user.phone}</b></p>
-                        <hr>
-                        <p>Địa chỉ: <b>${address.province.name}, ${address.district.name}, ${address.ward.name}, ${address.description}</b></p>
-                        <p>Tên người nhận: <b>${address.fullname}</b></p>
-                        <p>Số điện thoại: <b>${address.phone}</b></p>
-                        <p>Loại địa chỉ: <b>${address.type == 1 ? "Nhà Riêng" : "Văn Phòng"}</b></p>
-                        <hr>
-                        <p>Phương thức thanh toán: <b>${payment_method.name}</b></p>
-                        <p>Giá trị đơn hàng: <b>${(order.total).toLocaleString("vi-VN")} đ</b></p>
-                        <p>Lưu ý: <b>${order.note}</b></p>
-                    </div>
-                `
-            };
-            await transporter.sendMail(mailOptions);
-
-        }
-
         return { status: 200, message: "Success" }
     } catch (error) {
         console.log(error);

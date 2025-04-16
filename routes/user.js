@@ -43,24 +43,4 @@ router.patch('/status/:id', async function (req, res, next) {
   }
 });
 
-router.put('/profile/:id', async function (req, res, next) {
-  try {
-    const { id } = req.params
-    const result = await userService.updateProfile(id, req.body)
-    return res.status(result.status).json(result);
-  } catch (error) {
-    return res.status(500).json({ status: 500, message: "Internal Server Error" });
-  }
-});
-
-router.patch('/profile/:id', async function (req, res, next) {
-  try {
-    const { id } = req.params
-    const result = await userService.updateProfile(id, req.body)
-    return res.status(result.status).json(result);
-  } catch (error) {
-    return res.status(500).json({ status: 500, message: "Internal Server Error" });
-  }
-});
-
 module.exports = router;

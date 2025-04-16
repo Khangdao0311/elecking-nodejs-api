@@ -4,7 +4,7 @@ var userModel = require("../models/user");
 module.exports = {
     insert,
     update,
-    edit
+    // edit
 };
 
 const toBoolean = (str) => str === 'true' ? true : str === 'false' ? false : str;
@@ -27,7 +27,7 @@ async function insert(body) {
 
         const addresses = await addressModel.find({ user_id: user._id, status: 1 })
 
-        if (addresses.length && toBoolean(setDefault)) {
+        if (addresses.length > 0 && toBoolean(setDefault)) {
             await addressModel.updateMany(
                 { user_id: user._id },
                 { $set: { setDefault: false } }
@@ -43,7 +43,7 @@ async function insert(body) {
             fullname: fullname,
             type: type,
             status: 1,
-            setDefault: addresses.length ? toBoolean(setDefault) : true,
+            setDefault: addresses.length > 0 ? toBoolean(setDefault) : true,
             user_id: user._id,
         })
 
@@ -74,19 +74,21 @@ async function update(id, body) {
 
         const addresses = await addressModel.find({ user_id: address.user_id, status: 1 })
 
-        if (addresses.length > 0 && (toBoolean(setDefault))) {
+        if (addresses.length > 1 && (toBoolean(setDefault)) === true) {
             await addressModel.updateMany(
-                { user_id: address.user_id, status: 1 },
+                { user_id: address.user_id },
                 { $set: { setDefault: false } }
             );
         }
 
-        const checkDefault = await addressModel.findOne({
-            user_id: address.user_id,
-            _id: { $ne: address._id },
-            status: { $ne: 0 },
-            setDefault: true
-        }) ? true : false
+        // if (addresses.length > 1 && (toBoolean(setDefault)) === false) {
+        //     checkDefault = await addressModel.findOne({
+        //         user_id: address.user_id,
+        //         _id: { $ne: address._id },
+        //         status: { $ne: 0 },
+        //         setDefault: true
+        //     }) ? true : false
+        // }
 
         await addressModel.findByIdAndUpdate(id, {
             $set: {
@@ -97,7 +99,7 @@ async function update(id, body) {
                 phone: phone,
                 fullname: fullname,
                 type: type,
-                setDefault: addresses.length ? checkDefault ? false : true : true
+                setDefault: toBoolean(setDefault)
             }
         }, { new: true })
 

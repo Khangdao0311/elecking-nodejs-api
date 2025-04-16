@@ -3,6 +3,7 @@ var router = express.Router();
 
 const addressController = require('../controllers/address')
 const addressService = require('../services/address')
+const { authentication, authorization } = require('../middleware/auth')
 
 router.get("/", async function (req, res, next) {
   try {
@@ -23,7 +24,7 @@ router.get('/:id', async function (req, res, next) {
   }
 });
 
-router.post('/', async function (req, res, next) {
+router.post('/', authentication, async function (req, res, next) {
   try {
     const result = await addressService.insert(req.body)
     return res.status(result.status).json(result);
@@ -32,7 +33,7 @@ router.post('/', async function (req, res, next) {
   }
 });
 
-router.put('/update/:id', async function (req, res, next) {
+router.put('/update/:id', authentication, async function (req, res, next) {
   try {
     const { id } = req.params
     const result = await addressService.update(id, req.body)
@@ -42,7 +43,7 @@ router.put('/update/:id', async function (req, res, next) {
   }
 });
 
-router.patch('/update/:id', async function (req, res, next) {
+router.patch('/update/:id', authentication, async function (req, res, next) {
   try {
     const { id } = req.params
     const result = await addressService.update(id, req.body)

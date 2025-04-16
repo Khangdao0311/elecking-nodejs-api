@@ -3,9 +3,13 @@ var moment = require("moment");
 var jwt = require("jsonwebtoken");
 var { ObjectId } = require('mongodb')
 var nodemailer = require("nodemailer");
+var fs = require("fs")
 
 var userModel = require("../models/user");
 var productModel = require("../models/product");
+var orderModel = require("../models/order");
+var addressModel = require("../models/address");
+var payment_methodModel = require("../models/payment_method");
 
 const transporter = nodemailer.createTransport({
     service: "gmail",
@@ -24,7 +28,10 @@ module.exports = {
     loginAdmin,
     changePassword,
     forgotPassword,
-    resetPassword
+    resetPassword,
+    updateProfile,
+    cancelOrder,
+    removeAddress
 };
 
 async function login(body) {
@@ -48,7 +55,7 @@ async function login(body) {
                     }
 
                     const access_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
-                        expiresIn: "30s",
+                        expiresIn: "5s",
                     });
                     const refresh_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
                         expiresIn: "8h",
@@ -96,41 +103,46 @@ async function loginAdmin(body) {
         if (user) {
             if (user.role === 1) {
                 if (bcryptjs.compareSync(password, user.password)) {
-                    if (user.status) {
-                        const userToken = {
-                            id: user._id,
-                            username: user.username,
-                            fullname: user.fullname,
-                            role: user.role
-                        }
-
-                        const access_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
-                            expiresIn: "30s",
-                        });
-                        const refresh_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
-                            expiresIn: "8h",
-                        });
-
-                        const data = {
-                            user: {
+                    if (user.status === 1) {
+                        if (user.status) {
+                            const userToken = {
                                 id: user._id,
                                 username: user.username,
                                 fullname: user.fullname,
-                                avatar: user.avatar ? `${process.env.URL_IMAGE}${user.avatar}` : "",
-                                email: user.email,
-                                phone: user.phone,
-                            },
-                            access_token: access_token,
-                            refresh_token: refresh_token
-                        }
+                                role: user.role
+                            }
 
-                        return { status: 200, message: 'Success', data: data }
+                            const access_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
+                                expiresIn: "30s",
+                            });
+                            const refresh_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
+                                expiresIn: "8h",
+                            });
+
+                            const data = {
+                                user: {
+                                    id: user._id,
+                                    username: user.username,
+                                    fullname: user.fullname,
+                                    avatar: user.avatar ? `${process.env.URL_IMAGE}${user.avatar}` : "",
+                                    email: user.email,
+                                    phone: user.phone,
+                                },
+                                access_token: access_token,
+                                refresh_token: refresh_token
+                            }
+
+                            return { status: 200, message: 'Success', data: data }
+                        } else {
+                            return { status: 403, message: 'Tài khoản bạn đã bị khóa !' }
+                        }
                     } else {
                         return { status: 400, message: 'Tài khoản bạn đã bị khóa !' }
                     }
                 } else {
-                    return { status: 400, message: 'Mật khẩu người dùng không đúng !' }
+                    return { status: 400, message: 'Đăng nhập thất bại !' }
                 }
+
             } else {
                 return { status: 403, message: 'Không có quyền truy cập' }
             }
@@ -345,8 +357,8 @@ async function forgotPassword(body) {
                  <div style="margin: 0 auto; width: 600px;">
                     <p>Xin chào <strong>${user.username}</strong>,</p>
                     <p>Chúng tôi nhận được yêu cầu thiết lập lại mật khẩu cho tài khoản Elecking của bạn.</p>
-                    <p>Nhấn <a href="${process.env.URL}/auth/reset-password/${token}" style="color: red; text-decoration: none; font-weight: bold;">tại đây</a> để thiết lập mật khẩu mới cho tài khoản Elecking của bạn.</p>
-                    <p>Hoặc vui lòng copy và dán đường dẫn bên dưới lên trình duyệt: <a href="${process.env.URL}/auth/reset-password/${token}" style="color: blue; word-wrap: break-word;">${process.env.URL}/auth/forgot-password/change/${token}</a></p>
+                    <p>Nhấn <a href="${process.env.URL}/reset-password/${token}" style="color: red; text-decoration: none; font-weight: bold;">tại đây</a> để thiết lập mật khẩu mới cho tài khoản Elecking của bạn.</p>
+                    <p>Hoặc vui lòng copy và dán đường dẫn bên dưới lên trình duyệt: <a href="${process.env.URL}/reset-password/${token}" style="color: blue; word-wrap: break-word;">${process.env.URL}/auth/forgot-password/change/${token}</a></p>
                     <p>Trân trọng,</p>
                     <p><strong>Elecking</strong></p>
                 </div>
@@ -396,6 +408,173 @@ async function resetPassword(body) {
             return { status: 200, message: "Success" }
         });
 
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
+async function updateProfile(id, body) {
+    try {
+        const user = await userModel.findById(id)
+        if (!user) return { status: 400, message: "Người dùng không tồn tại !" }
+
+        const { fullname, email, phone = '', avatar = '' } = body
+
+        const checkEmail = await userModel.findOne({ email: email, _id: { $ne: user._id } })
+        if (checkEmail) return { status: 400, message: "Email đã được sử dụng !" }
+
+        if (phone) {
+            const checkPhone = await userModel.findOne({ phone: phone, _id: { $ne: user._id } })
+            if (checkPhone) return { status: 400, message: "Số điện thoại đã được sử dụng !" }
+        }
+
+        if (avatar) {
+            if (user.avatar !== "" && user.avatar !== avatar) {
+                fs.unlink(`./public/images/${user.avatar}`, function (err) {
+                    if (err) return console.log(err);
+                    console.log("file deleted successfully");
+                });
+            }
+        }
+
+        const userSet = {
+            fullname: fullname,
+            email: email,
+            phone: phone
+        }
+
+        if (avatar) {
+            userSet.avatar = avatar
+        }
+
+        const userNew = await userModel.findByIdAndUpdate(id, {
+            $set: userSet
+        }, { new: true })
+
+        const data = {
+            id: userNew._id,
+            fullname: userNew.fullname,
+            avatar: userNew.avatar ? `${process.env.URL_IMAGE}${userNew.avatar}` : "",
+            email: userNew.email,
+            phone: userNew.phone,
+            username: userNew.username,
+        }
+
+        return { status: 200, message: "Success", data: data }
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
+async function cancelOrder(id) {
+    try {
+        const order = await orderModel.findById(id)
+        if (!order) return { status: 400, message: "Đơn hàng không tồn tại !" }
+        if (order.status !== 2 || order.payment_status === true) return { status: 400, message: "Đơn hàng này không được hủy !" }
+
+        const date = new Date();
+        const updated_at = moment(date).format('YYYYMMDDHHmmss');
+
+        await orderModel.findByIdAndUpdate(order._id,
+            {
+                $set: {
+                    status: 0,
+                    updated_at: updated_at
+                }
+            },
+            { new: true, runValidators: true })
+
+        for (const productOrder of order.products) {
+            const product = await productModel.findById(productOrder.product.id)
+            await productModel.findByIdAndUpdate(product._id, {
+                $set: {
+                    variants: product.variants.map((variant, iVariant) => {
+                        if (iVariant == productOrder.product.variant) return {
+                            ...variant.toObject(),
+                            colors: variant.colors.map((color, iColor) => {
+                                if (iColor == productOrder.product.color) return {
+                                    ...color.toObject(),
+                                    status: 1,
+                                    quantity: color.quantity + productOrder.quantity
+                                }
+
+                                return color
+                            })
+                        }
+                        return variant
+                    })
+                }
+            }, { new: true, runValidators: true })
+        }
+
+        const user = await userModel.findById(order.user_id)
+        const address = await addressModel.findById(order.address_id)
+        const payment_method = await payment_methodModel.findById(order.payment_method_id)
+
+        const mailOptions = {
+            from: '"Elecking"<elecking.store@gmail.com>',
+            to: "elecking.store@gmail.com",
+            subject: `Đã Hủy Đơn hàng ${id.toUpperCase()} của ${user.fullname}`,
+            html: `
+                    <div style="padding: 10px;">
+                    <h1 style="text-align: center;">Thông Tin Đơn Hàng Đã Hủy</h1>
+                    <p style="font-size: 18px;">Mẫ đơn hàng: <b style="font-size: 24px;">${id.toUpperCase()}</b></p>
+                    <p>Khách hàng: <b>${user.fullname}</b></p>
+                    <p>Email: <b>${user.email}</b></p>
+                    <p>Số điện thoại: <b>${user.phone}</b></p>
+                    <hr>
+                    <p>Địa chỉ: <b>${address.province.name}, ${address.district.name}, ${address.ward.name}, ${address.description}</b></p>
+                    <p>Tên người nhận: <b>${address.fullname}</b></p>
+                    <p>Số điện thoại: <b>${address.phone}</b></p>
+                    <p>Loại địa chỉ: <b>${address.type == 1 ? "Nhà Riêng" : "Văn Phòng"}</b></p>
+                    <hr>
+                    <p>Phương thức thanh toán: <b>${payment_method.name}</b></p>
+                    <p>Giá trị đơn hàng: <b>${(order.total).toLocaleString("vi-VN")} đ</b></p>
+                    <p>Lưu ý: <b>${order.note}</b></p>
+                </div>
+            `
+        };
+        await transporter.sendMail(mailOptions);
+
+        return { status: 200, message: "Success" }
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
+async function removeAddress(id) {
+    try {
+        const address = await addressModel.findById(id)
+        if (!address) return { status: 400, message: "Địa chỉ không tồn tại !" }
+
+        await addressModel.findByIdAndUpdate(id, {
+            $set: {
+                status: 0,
+                setDefault: false
+            }
+        }, { new: true })
+
+        const addresses = await addressModel.find({ user_id: address.user_id, status: 1 }).sort({ _id: 1 })
+
+        const checkDefault = await addressModel.findOne({
+            user_id: address.user_id,
+            status: { $ne: 0 },
+            setDefault: true
+        }) ? true : false
+
+
+        if (addresses.length > 0 && !checkDefault) {
+            await addressModel.findByIdAndUpdate(addresses[0]._id, {
+                $set: {
+                    setDefault: true
+                }
+            }, { new: true })
+        }
+
+        return { status: 200, message: "Success" }
     } catch (error) {
         console.log(error);
         throw error;
