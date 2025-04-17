@@ -4,7 +4,7 @@ var userModel = require("../models/user");
 module.exports = {
     insert,
     update,
-    // edit
+    edit
 };
 
 const toBoolean = (str) => str === 'true' ? true : str === 'false' ? false : str;
