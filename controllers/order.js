@@ -1,3 +1,6 @@
+const moment = require("moment");
+const { ObjectId } = require("mongodb");
+
 var orderModel = require("../models/order");
 var userModel = require("../models/user");
 var payment_methodModel = require("../models/payment_method");
@@ -5,10 +8,7 @@ var voucherModel = require("../models/voucher");
 var productModel = require("../models/product");
 var propertyModel = require("../models/property");
 var addressModel = require("../models/address");
-const moment = require("moment");
 
-const { ObjectId } = require("mongodb");
-const order = require("../models/order");
 
 module.exports = {
     getById,
