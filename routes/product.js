@@ -4,6 +4,7 @@ var router = express.Router();
 const productController = require('../controllers/product')
 const productService = require('../services/product')
 const { authentication, authorization } = require('../middleware/auth')
+const { upload } = require('../services/upload')
 
 router.get('/', async function (req, res, next) {
   try {
@@ -43,7 +44,7 @@ router.get('/:id', async function (req, res, next) {
   }
 });
 
-router.post('/', authorization, async function (req, res, next) {
+router.post('/', authorization, upload.array("galleries"), async function (req, res, next) {
   try {
     const result = await productService.insert(req.body)
     return res.status(result.status).json(result);
@@ -52,7 +53,7 @@ router.post('/', authorization, async function (req, res, next) {
   }
 });
 
-router.put('/:id', authorization, async function (req, res, next) {
+router.put('/:id', authorization, upload.array("galleries"), async function (req, res, next) {
   try {
     const { id } = req.params
     const result = await productService.update(id, req.body)
@@ -62,7 +63,7 @@ router.put('/:id', authorization, async function (req, res, next) {
   }
 });
 
-router.patch('/:id', authorization, async function (req, res, next) {
+router.patch('/:id', authorization, upload.array("galleries"), async function (req, res, next) {
   try {
     const { id } = req.params
     const result = await productService.update(id, req.body)
