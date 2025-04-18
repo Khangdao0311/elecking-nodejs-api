@@ -9,9 +9,11 @@ module.exports = {
 
 async function insert(body) {
     try {
-        const { name, image = "", icon = '', description = "", proptypes = "[]" } = body
+        const { name, image, icon = '', description = "", proptypes = "[]" } = body
 
         if (!name) return { status: 400, message: "Tên danh mục không được trống !" }
+        if (!image) return { status: 400, message: "Hình ảnh không được trống !" }
+        if (!icon) return { status: 400, message: "Biểu tượng không được trống !" }
 
         if (!(typeof proptypes === 'string' && (() => { try { return Array.isArray(JSON.parse(proptypes)); } catch { return false; } })())) return { status: 400, message: "Property không đúng dữ liệu !" }
 
@@ -39,6 +41,10 @@ async function update(id, body) {
         if (!category) return { status: 400, message: "Danh mục không tồn tại !" }
 
         const { name, image, status, icon, description, proptypes } = body
+
+        if (!name) return { status: 400, message: "Tên danh mục không được trống !" }
+        if (!image) return { status: 400, message: "Hình ảnh không được trống !" }
+        if (!icon) return { status: 400, message: "Biểu tượng không được trống !" }
 
         if (![0, 1, 2].includes(+status)) return { status: 400, message: "Trạng thái danh mục không hợp lệ !" }
 

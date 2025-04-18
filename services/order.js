@@ -1,6 +1,5 @@
 const { ObjectId } = require("mongodb");
 const moment = require("moment");
-var nodemailer = require("nodemailer");
 
 var orderModel = require("../models/order");
 var userModel = require("../models/user");
@@ -9,6 +8,7 @@ var payment_methodModel = require("../models/payment_method");
 var addressModel = require("../models/address");
 var productModel = require("../models/product");
 var propertyModel = require("../models/property");
+var { sendMailer } = require('./email')
 
 module.exports = {
     create,
@@ -16,13 +16,6 @@ module.exports = {
     updateStatus
 };
 
-const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-        user: "elecking.store@gmail.com",
-        pass: "zauy tcqh mvjh frtj"
-    }
-});
 
 async function create(body) {
     try {
@@ -113,11 +106,9 @@ async function create(body) {
             `
         }
 
-        const mailOptions = {
-            from: '"Elecking"<elecking.store@gmail.com>',
-            to: "elecking.store@gmail.com",
-            subject: `Đơn hàng của ${user.fullname}`,
-            html: `
+        const data = await orderNew.save();
+
+        await sendMailer('"Elecking"<elecking.store@gmail.com>', "elecking.store@gmail.com", `Đơn hàng của ${user.fullname}`, `
                  <div style="padding: 10px;">
                     <h1 style="text-align: center;">Thông Tin Đơn Hàng</h1>
                     <p style="font-size: 18px;">Khách hàng: <b style="font-size: 24px;">${user.fullname}</b></p>
@@ -149,15 +140,8 @@ async function create(body) {
                             ${productsOrder}
                         </tbody>
                     </table>
-
-
                 </div>
-            `
-        };
-
-        const data = await orderNew.save();
-
-        await transporter.sendMail(mailOptions);
+            `)
 
         return { status: 200, message: "Success", data: data }
     } catch (error) {

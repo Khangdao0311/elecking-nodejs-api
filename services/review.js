@@ -2,19 +2,17 @@ const orderModel = require("../models/order");
 const productModel = require("../models/product");
 const reviewModel = require("../models/review");
 const userModel = require("../models/user");
-const { ObjectId } = require("mongodb");
 
 const moment = require('moment')
 
 module.exports = {
     insert,
-    update,
     like
 };
 
 async function insert(body) {
     try {
-        const { content = "", images = '[]', rating, order_id, product_id } = body
+        const { content = "", images = [], rating, order_id, product_id, indexReview } = body
 
         const order = await orderModel.findById(order_id)
         if (!order) return { status: 400, message: "Đơn hàng không tồn tại !" }
@@ -30,14 +28,12 @@ async function insert(body) {
 
         if (![0, 1, 2, 3, 4, 5].includes(+rating)) return { status: 400, message: "Đánh giá không tồn tại !" }
 
-        if (!Array.isArray(JSON.parse(images))) return { status: 400, message: "Images không đúng dữ liệu !" }
-
         const date = new Date()
         const created_at = moment(date).format('YYYYMMDDHHmmss');
 
         const reviewNew = new reviewModel({
             content: content,
-            images: (JSON.parse(images)),
+            images: images,
             rating: rating,
             created_at: created_at,
             updated_at: created_at,
@@ -47,49 +43,12 @@ async function insert(body) {
 
         await reviewNew.save()
 
-        const productsOrder = order.products.map(productOrder => ({
+        const productsOrder = order.products.map((productOrder, index) => ({
             ...productOrder.toObject(),
-            reviewed: productOrder.product.id.equals(product._id) || productOrder.reviewed
+            reviewed: index === +indexReview || productOrder.reviewed
         }))
 
         await orderModel.findByIdAndUpdate(order._id, { $set: { products: productsOrder } }, { new: true, runValidators: true })
-
-        return { status: 200, message: "Success" }
-    } catch (error) {
-        console.log(error);
-        throw error;
-    }
-}
-
-async function update(id, body) {
-    try {
-        const review = await reviewModel.findById(id)
-        if (!review) return { status: 400, message: "Đánh giá không tồn tại !" }
-
-        const { content, images, rating } = body
-
-        if (!Array.isArray(JSON.parse(images))) return { status: 400, message: "Images không đúng dữ liệu !" }
-
-        if (![0, 1, 2, 3, 4, 5].includes(+rating)) return { status: 400, message: "Đánh giá không tồn tại !" }
-
-        if (review.images.length > 0) {
-            review.images.forEach(image => {
-                if (!JSON.parse(images).includes(image)) {
-                    fs.unlink(`./public/images/${review.image}`, function (err) {
-                        if (err) return console.log(err);
-                        console.log("file deleted successfully");
-                    });
-                }
-            });
-        }
-
-        await reviewModel.findByIdAndUpdate(id, {
-            $set: {
-                content: content,
-                images: JSON.parse(images),
-                rating: +rating,
-            }
-        }, { new: true })
 
         return { status: 200, message: "Success" }
     } catch (error) {

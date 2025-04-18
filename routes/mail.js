@@ -1,8 +1,9 @@
 var express = require("express");
 var router = express.Router();
-var nodemailer = require("nodemailer");
 var emailValidator = require("email-validator");
 var emailExistence = require("email-existence");
+
+var { sendMailer } = require('../services/email')
 
 router.post("/", async function (req, res, next) {
     try {
@@ -17,23 +18,7 @@ router.post("/", async function (req, res, next) {
             if (!exists) return res.status(400).json({ status: 400, message: "Email không tồn tại !" });
         });
 
-        const transporter = nodemailer.createTransport({
-            service: "gmail",
-            auth: {
-                user: "elecking.store@gmail.com",
-                pass: "zauy tcqh mvjh frtj"
-            }
-        });
-
-        const mailOptions = {
-            from: '"Elecking"<elecking.store@gmail.com>',
-            to: to,
-            subject: subject,
-            // text: "text",
-            html: content
-        };
-
-        await transporter.sendMail(mailOptions);
+        await sendMailer('"Elecking"<elecking.store@gmail.com>', to, subject, content)
 
         return res.status(200).json({ status: 200, message: "Success" });
     } catch (error) {

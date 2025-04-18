@@ -4,6 +4,7 @@ var router = express.Router();
 const reviewController = require('../controllers/review')
 const reviewService = require('../services/review')
 const { authentication, authorization } = require('../middleware/auth')
+const { upload } = require('../services/upload');
 
 router.get("/", async function (req, res, next) {
   try {
@@ -24,15 +25,6 @@ router.get('/:id', async function (req, res, next) {
   }
 });
 
-router.post('/', authentication, async function (req, res, next) {
-  try {
-    const result = await reviewService.insert(req.body)
-    return res.status(result.status).json(result);
-  } catch (error) {
-    return res.status(500).json({ status: 500, message: "Internal Server Error" });
-  }
-});
-
 router.post('/like/:id', authentication, async function (req, res, next) {
   try {
     const { id } = req.params
@@ -43,20 +35,11 @@ router.post('/like/:id', authentication, async function (req, res, next) {
   }
 });
 
-router.put('/:id', authentication, async function (req, res, next) {
+router.post('/', authentication, upload.array('images'), async function (req, res, next) {
   try {
-    const { id } = req.params
-    const result = await reviewService.update(id, req.body)
-    return res.status(result.status).json(result);
-  } catch (error) {
-    return res.status(500).json({ status: 500, message: "Internal Server Error" });
-  }
-});
-
-router.patch('/:id', authentication, async function (req, res, next) {
-  try {
-    const { id } = req.params
-    const result = await reviewService.update(id, req.body)
+    const body = req.body
+    body.images = req.files.map((file) => file.originalname);
+    const result = await reviewService.insert(body)
     return res.status(result.status).json(result);
   } catch (error) {
     return res.status(500).json({ status: 500, message: "Internal Server Error" });

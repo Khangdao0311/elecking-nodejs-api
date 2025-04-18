@@ -9,7 +9,10 @@ module.exports = {
 
 async function insert(body) {
     try {
-        const { name, image = '', description = '' } = body
+        const { name, image, description = '' } = body
+
+        if (!name) return { status: 400, message: "Tên không được trống !" }
+        if (!image) return { status: 400, message: "Hình ảnh không được trống !" }
 
         const payment_method = await payment_methodModel.findOne({
             name: {
@@ -17,8 +20,6 @@ async function insert(body) {
                 $options: "i"
             }
         })
-
-        if (!name) return { status: 400, message: "Trường name không tồn tại !" }
 
         if (payment_method) return { status: 400, message: "Phương thức thanh toán đã tồn tại !" }
 
@@ -42,7 +43,10 @@ async function update(id, body) {
         const payment_method = await payment_methodModel.findById(id)
         if (!payment_method) return { status: 400, message: "Địa chỉ không tồn tại !" }
 
-        const { name, image, description } = body
+        const { name, image, description = '' } = body
+
+        if (!name) return { status: 400, message: "Tên không được trống !" }
+        if (!image) return { status: 400, message: "Hình ảnh không được trống !" }
 
         if (payment_method.image !== "" && payment_method.image !== image) {
             fs.unlink(`./public/images/${payment_method.image}`, function (err) {

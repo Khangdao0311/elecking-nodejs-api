@@ -2,7 +2,6 @@ var bcryptjs = require("bcryptjs");
 var moment = require("moment");
 var jwt = require("jsonwebtoken");
 var { ObjectId } = require('mongodb')
-var nodemailer = require("nodemailer");
 var fs = require("fs")
 
 var userModel = require("../models/user");
@@ -10,14 +9,7 @@ var productModel = require("../models/product");
 var orderModel = require("../models/order");
 var addressModel = require("../models/address");
 var payment_methodModel = require("../models/payment_method");
-
-const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-        user: "elecking.store@gmail.com",
-        pass: "zauy tcqh mvjh frtj"
-    }
-});
+var { sendMailer } = require('./email')
 
 module.exports = {
     login,
@@ -55,7 +47,7 @@ async function login(body) {
                     }
 
                     const access_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
-                        expiresIn: "5s",
+                        expiresIn: "30s",
                     });
                     const refresh_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
                         expiresIn: "8h",
@@ -319,7 +311,7 @@ async function getToken(body) {
             }
 
             const access_token = jwt.sign({ user: data.user }, process.env.JWTSECRET, {
-                expiresIn: "10s",
+                expiresIn: "30s",
             });
 
             return { status: 200, message: "Success", data: access_token }
@@ -349,11 +341,7 @@ async function forgotPassword(body) {
             expiresIn: "2m",
         });
 
-        const mailOptions = {
-            from: '"Elecking"<elecking.store@gmail.com>',
-            to: email,
-            subject: `Thiết Lập Lại mật khẩu`,
-            html: `
+        await sendMailer('"Elecking"<elecking.store@gmail.com>', email, `Thiết Lập Lại mật khẩu`, `
                  <div style="margin: 0 auto; width: 600px;">
                     <p>Xin chào <strong>${user.username}</strong>,</p>
                     <p>Chúng tôi nhận được yêu cầu thiết lập lại mật khẩu cho tài khoản Elecking của bạn.</p>
@@ -362,12 +350,9 @@ async function forgotPassword(body) {
                     <p>Trân trọng,</p>
                     <p><strong>Elecking</strong></p>
                 </div>
-            `
-        };
+            `)
 
-        await transporter.sendMail(mailOptions);
         return { status: 200, message: 'Success' }
-
     } catch (error) {
         console.log(error);
         throw error;
@@ -513,11 +498,7 @@ async function cancelOrder(id) {
         const address = await addressModel.findById(order.address_id)
         const payment_method = await payment_methodModel.findById(order.payment_method_id)
 
-        const mailOptions = {
-            from: '"Elecking"<elecking.store@gmail.com>',
-            to: "elecking.store@gmail.com",
-            subject: `Đã Hủy Đơn hàng ${id.toUpperCase()} của ${user.fullname}`,
-            html: `
+        await sendMailer('"Elecking"<elecking.store@gmail.com>', "elecking.store@gmail.com", `Đã Hủy Đơn hàng ${id.toUpperCase()} của ${user.fullname}`, `
                     <div style="padding: 10px;">
                     <h1 style="text-align: center;">Thông Tin Đơn Hàng Đã Hủy</h1>
                     <p style="font-size: 18px;">Mẫ đơn hàng: <b style="font-size: 24px;">${id.toUpperCase()}</b></p>
@@ -534,9 +515,7 @@ async function cancelOrder(id) {
                     <p>Giá trị đơn hàng: <b>${(order.total).toLocaleString("vi-VN")} đ</b></p>
                     <p>Lưu ý: <b>${order.note}</b></p>
                 </div>
-            `
-        };
-        await transporter.sendMail(mailOptions);
+            `)
 
         return { status: 200, message: "Success" }
     } catch (error) {
