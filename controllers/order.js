@@ -146,7 +146,9 @@ async function getQuery(query) {
 
         let matchConditionQueryTotal = {};
         let matchConditionStatus = {}
-        let matchConditionPaymentStatus = {}
+        let matchConditionPaymentStatus = {
+            payment_status: true
+        }
         let matchConditionOrderTotal = {};
 
         if (user_id) {
@@ -186,7 +188,7 @@ async function getQuery(query) {
         pipelineStatusCount.push({ $match: matchConditionStatus },)
         pipelineStatusCount.push({ $group: { _id: "$status", count: { $sum: 1 } } });
         pipelinePaymentStatusCount.push({ $match: matchConditionPaymentStatus },)
-        pipelinePaymentStatusCount.push({ $match: { payment_status: true } });
+        // pipelinePaymentStatusCount.push({ $match: });
 
         const orders = await orderModel.aggregate(pipeline);
         const queryTotal = await orderModel.aggregate([{ $match: matchConditionQueryTotal }]);
