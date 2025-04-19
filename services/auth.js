@@ -107,7 +107,7 @@ async function loginAdmin(body) {
                             const access_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
                                 expiresIn: "30s",
                             });
-                            const refresh_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
+                            const refresh_token = jwt.sign({ data: userToken }, process.env.JWTSECRET, {
                                 expiresIn: "3d",
                             });
 
