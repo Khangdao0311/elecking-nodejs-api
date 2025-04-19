@@ -36,7 +36,7 @@ async function getById(id) {
 
 async function getQuery(query) {
     try {
-        const { id, search, orderby, page = 1, limit = '' } = query;
+        const { id, search, role, orderby, page = 1, limit = '' } = query;
 
         let matchCondition = {};
 
@@ -51,6 +51,10 @@ async function getQuery(query) {
             matchCondition._id = {
                 $in: id.split("-").map((_id) => new ObjectId(_id)),
             };
+        }
+
+        if (role) {
+            matchCondition.role = +role
         }
 
         let sortCondition = {};
