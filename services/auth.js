@@ -49,8 +49,8 @@ async function login(body) {
                     const access_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
                         expiresIn: "30s",
                     });
-                    const refresh_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
-                        expiresIn: "8h",
+                    const refresh_token = jwt.sign({ data: userToken }, process.env.JWTSECRET, {
+                        expiresIn: "3d",
                     });
 
                     const data = {
@@ -108,7 +108,7 @@ async function loginAdmin(body) {
                                 expiresIn: "30s",
                             });
                             const refresh_token = jwt.sign({ user: userToken }, process.env.JWTSECRET, {
-                                expiresIn: "8h",
+                                expiresIn: "3d",
                             });
 
                             const data = {
@@ -310,7 +310,7 @@ async function getToken(body) {
                 return res.status(401).json({ status: 401, message: "Invalid Refresh Token" });
             }
 
-            const access_token = jwt.sign({ user: data.user }, process.env.JWTSECRET, {
+            const access_token = jwt.sign({ user: data.data }, process.env.JWTSECRET, {
                 expiresIn: "30s",
             });
 

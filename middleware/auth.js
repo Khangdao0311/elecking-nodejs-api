@@ -22,7 +22,7 @@ async function authentication(req, res, next) {
       if (currentTime > expirationTime) return res.status(401).json({ status: 401, message: "Token Expired" });
 
       jwt.verify(token, process.env.JWTSECRET, (error, data) => {
-        if (error) {
+        if (error || !data.user) {
           return res.status(403).json({ status: 403, message: "Forbidden" });
         }
         req.user = data.user;
@@ -53,7 +53,7 @@ async function authorization(req, res, next) {
       if (currentTime > expirationTime) return res.status(401).json({ status: 401, message: "Token Expired" });
 
       jwt.verify(token, process.env.JWTSECRET, (error, data) => {
-        if (error || !data.user.role) {
+        if (error || !data.user || !data.user.role) {
           return res.status(403).json({ status: 403, message: "Forbidden" });
         }
         req.user = data.user;

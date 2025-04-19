@@ -44,7 +44,7 @@
           "image": "galaxy-s24-ultra-vang_1_3.webp",
           "price_extra": 0,
           "status": 1,
-          "quantity": 100
+          "quantity": 0
         },
         {
           "name": "Đen",
@@ -79,28 +79,28 @@
           "image": "galaxy-s24-ultra-xam_1_3.webp",
           "price_extra": 0,
           "status": 1,
-          "quantity": 100
+          "quantity": 0
         },
         {
           "name": "Vàng",
           "image": "galaxy-s24-ultra-vang_1_3.webp",
           "price_extra": 0,
           "status": 1,
-          "quantity": 100
+          "quantity": 0
         },
         {
           "name": "Đen",
           "image": "galaxy-s24-ultra-den-1_1_3.webp",
           "price_extra": 0,
           "status": 1,
-          "quantity": 100
+          "quantity": 0
         },
         {
           "name": "Tím",
           "image": "galaxy-s24-ultra-tim_1_3.webp",
           "price_extra": 0,
           "status": 1,
-          "quantity": 100
+          "quantity": 0
         }
       ]
     },
