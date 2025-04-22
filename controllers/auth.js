@@ -137,7 +137,7 @@ async function getOrdersQuery(query) {
 
         const pipelineStatusCount = [];
 
-        let matchConditionQueryTotal = {};
+        let matchConditionQueryTotal = matchCondition;
         let matchConditionStatus = {}
         let matchConditionOrderTotal = {};
 
