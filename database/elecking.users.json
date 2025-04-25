@@ -1,945 +1,886 @@
-[{
-  "_id": {
-    "$oid": "67b6b0bdbfe3474f1ec40f44"
+[
+  {
+    "_id": {
+      "$oid": "67b6b0bdbfe3474f1ec40f44"
+    },
+    "fullname": "Nguyễn Văn Admin",
+    "avatar": "admin.jpg",
+    "email": "elecking.store@gmail.com",
+    "phone": "0343852748",
+    "username": "admin",
+    "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
+    "role": 1,
+    "status": 1,
+    "register_date": "20250220",
+    "cart": [],
+    "wish": []
   },
-  "fullname": "Nguyễn Văn Admin",
-  "avatar": "admin.jpg",
-  "email": "elecking.store@gmail.com",
-  "phone": "0343852748",
-  "username": "admin",
-  "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
-  "role": 1,
-  "status": 1,
-  "register_date": "20250220",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67b6b0bdbfe3474f1ec40f45"
-  },
-  "fullname": "ĐÀO VĨNH KHANG",
-  "avatar": "z3781836275273_d6caeb994e163b6f4843dbf499fb7d73.jpg",
-  "email": "khangdao0311@gmail.com",
-  "phone": "0976382553",
-  "username": "khangdao",
-  "password": "$2a$10$HL7gA1F8hNe8r2q0aohivOKwKPE3RM7Ig7VuVe56TxJYZj.e9JFzq",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250220",
-  "cart": [
-    {
-      "quantity": 1,
-      "product": {
-        "id": {
-          "$oid": "67b96ee667788c638a22e2c7"
-        },
-        "variant": 0,
-        "color": 0
+  {
+    "_id": {
+      "$oid": "67b6b0bdbfe3474f1ec40f45"
+    },
+    "fullname": "ĐÀO VĨNH KHANG",
+    "avatar": "z3781836275273_d6caeb994e163b6f4843dbf499fb7d73.jpg",
+    "email": "khangdao0311@gmail.com",
+    "phone": "0976382553",
+    "username": "khangdao",
+    "password": "$2a$10$HL7gA1F8hNe8r2q0aohivOKwKPE3RM7Ig7VuVe56TxJYZj.e9JFzq",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250220",
+    "cart": [],
+    "wish": [
+      {
+        "$oid": "67b96ee667788c638a22e2e5"
       }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67e7b1b6fa360dffdb459621"
     },
-    {
-      "quantity": 1,
-      "product": {
-        "id": {
-          "$oid": "67b96ee667788c638a22e2c7"
-        },
-        "variant": 0,
-        "color": 3
-      }
-    }
-  ],
-  "wish": [
-    {
-      "$oid": "67b96ee667788c638a22e2e5"
-    }
-  ]
-},
-{
-  "_id": {
-    "$oid": "67e7b1b6fa360dffdb459621"
+    "fullname": "Phạm Thiên Trường",
+    "avatar": "khi1.png",
+    "email": "pttruong1992@gmail.com",
+    "phone": "0932916341",
+    "username": "pttruong",
+    "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250329153917",
+    "cart": [],
+    "wish": []
   },
-  "fullname": "Phạm Thiên Trường",
-  "avatar": "khi1.png",
-  "email": "pttruong1992@gmail.com",
-  "phone": "0932916341",
-  "username": "pttruong",
-  "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250329153917",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67e7c0b5ffa238ffcdb9db6a"
-  },
-  "fullname": "Nguyễn Đặng Hưng",
-  "avatar": "",
-  "email": "songtu1456@gmail.com",
-  "phone": "",
-  "username": "hungnguyen",
-  "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250329164317",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67e7c713ffa238ffcdb9fc15"
-  },
-  "fullname": "Vĩnh Khang",
-  "avatar": "khi2.png",
-  "email": "khangdvps36671@fpl.edu.vn",
-  "phone": "0123456789",
-  "username": "khang",
-  "password": "$2a$10$PO2HhcpPHBZfYrHGrBYA1uxJJoTTQh9NRehLU/okdvfwqmjegNfDm",
-  "role": 0,
-  "status": 0,
-  "register_date": "20250329171027",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67e7cb55ffa238ffcdba1bc5"
-  },
-  "fullname": "Dương Gia Khang",
-  "avatar": "khi3.png",
-  "email": "giakhang@gmail.com",
-  "phone": "03365412385",
-  "username": "duongkhang",
-  "password": "$2a$10$JS1JPSK4yMt86D4apz8T6.sEEhbVtF9h30bhryCCseRGB8p8TcEqi",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250329172836",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67e7cf2effa238ffcdba363c"
-  },
-  "fullname": "Hoàng Văn Minh",
-  "avatar": "khi22.png",
-  "email": "vanminh@gmail.com",
-  "phone": "09842563147",
-  "username": "vanminh",
-  "password": "$2a$10$CHb5EQnyiJosmVLx0spxxu/tvT9fHYK9.uHCb4ujlONgHQBa2Ugwa",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250329174502",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67e8be03004a3ecca8078f50"
-  },
-  "fullname": "Nguyễn Tính",
-  "avatar": "khi4.webp",
-  "email": "nguyentinh@gmail.com",
-  "phone": "09331238546",
-  "username": "nguyentinh",
-  "password": "$2a$10$j2JX8lVkZgw4Od.YLEjA1ecucwA99fnEO2s6ICsGUxziVADa2fjEu",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250330104403",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67e8c23d004a3ecca8079f08"
-  },
-  "fullname": "Thanh Tú",
-  "avatar": "khi6.webp",
-  "email": "thanhtu@gmail.com",
-  "phone": "0987364157",
-  "username": "thanhtu",
-  "password": "$2a$10$IGVgCGkW3CcFVeq6f865ceDXb9qOEEaK2q5Zh5XHka4oWqfVXkjSG",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250330110205",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67e8c5fb004a3ecca807b328"
-  },
-  "fullname": "Hoàng Dũng",
-  "avatar": "khi7.jpg",
-  "email": "hoangdung@gmail.com",
-  "phone": "0764258245",
-  "username": "hoangdung",
-  "password": "$2a$10$DTcUsClTS6OZSvBcietgdOEb1A7YiKFPYoqDK3XSIidWs53etgC8a",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250330111803",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67e8c989004a3ecca807c3be"
-  },
-  "fullname": "Đình Toàn",
-  "avatar": "khi8.jpg",
-  "email": "dinhtoan@gmail.com",
-  "phone": "0977458621",
-  "username": "dinhtoan",
-  "password": "$2a$10$oILIgBGyiJInyGMs76uYEuqd4lvbicPalbi09asav9XoLcvx7.rE.",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250330113313",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67e8cccc004a3ecca807d22d"
-  },
-  "fullname": "Trần Văn Cường",
-  "avatar": "khi9.jpg",
-  "email": "vancuong@gmail.com",
-  "phone": "0358457961",
-  "username": "vancuong",
-  "password": "$2a$10$usXN3CUSPYMrcrs7OAh33uWhLnw631WPRdlmH7GHwkwYnslwultFu",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250330114708",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67e8cf92004a3ecca807e2c9"
-  },
-  "fullname": "Trương Quốc Tuấn",
-  "avatar": "khi10.jpg",
-  "email": "quoctuan@gmail.com",
-  "phone": "0933478951",
-  "username": "quoctuan",
-  "password": "$2a$10$7BWtMNMTDrHKxbGfRG/MXufOIE3zPikrevVzRJmQYouWJw/LvFRGy",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250330115858",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67e8d1f4004a3ecca807f249"
-  },
-  "fullname": "Lê Phương",
-  "avatar": "khi11.jpeg",
-  "email": "lephuong@gmail.com",
-  "phone": "0856345852",
-  "username": "lephuong",
-  "password": "$2a$10$dAVamhvJbBIy8Q/ufBGL3Oalq0bemYMpABxT0zj5nMgscEcW2hTdi",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250330120907",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67e8d3e9004a3ecca80801b8"
-  },
-  "fullname": "Bá Trình",
-  "avatar": "khi13.webp",
-  "email": "batrinh@gmail.com",
-  "phone": "0925674132",
-  "username": "batrinh",
-  "password": "$2a$10$6.ELg8nicsoowRSvy3YjQOd3Ewa47T.88/3Xfm74x5YxnYgvBtnsa",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250330121729",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67e8d5b0004a3ecca8080e4e"
-  },
-  "fullname": "Minh Hoàng",
-  "avatar": "khi14.jpg",
-  "email": "minhhoang@gmail.com",
-  "phone": "0932489751",
-  "username": "minhhoang",
-  "password": "$2a$10$idwfyzzNHqPGUQY.iC/z0ea2Nsske2F9WmZJy6TOzCBHhpCZbiYny",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250330122504",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67e8d744004a3ecca8081ace"
-  },
-  "fullname": "Phương Tuấn",
-  "avatar": "khi15.jpg",
-  "email": "domdom@gmail.com",
-  "phone": "0325461258",
-  "username": "phuongtuan",
-  "password": "$2a$10$7EHIZ0qZSSrDwLRc10Dg5uooLjG15Zsg0qixdu7gBLeBgW5Wu6iem",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250330123148",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67e8d947004a3ecca808262f"
-  },
-  "fullname": "Hoàng Vi Rút",
-  "avatar": "khi16.jpg",
-  "email": "hoang@gmail.com",
-  "phone": "0914562314",
-  "username": "hoang",
-  "password": "$2a$10$DTCCVYFYjhO884Inemh3lOWWwfoQrQSdvoXB3b7ZiEJAUVAj0cYDC",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250330124023",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67e8db97004a3ecca8083279"
-  },
-  "fullname": "Nguyễn Duy Thiên",
-  "avatar": "khi17.png",
-  "email": "duythien@gmail.com",
-  "phone": "0932564441",
-  "username": "duythien",
-  "password": "$2a$10$q5WFm2b/UcFwIcomn34oxOXHUXEORFAuO5axs.qngIOYtf/muOhU6",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250330125014",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67e8dd5f004a3ecca8083d8c"
-  },
-  "fullname": "Duy Khang",
-  "avatar": "",
-  "email": "duykhang@gmail.com",
-  "phone": "0324512643",
-  "username": "duykhang",
-  "password": "$2a$10$9ostrNeszSYxr.Hle7qBtuPvrNYjNuovfuP5UUFvfcF6wI73vOV52",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250330125751",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67e8ded6004a3ecca8084cf5"
-  },
-  "fullname": "Phong Trần",
-  "avatar": "khi20.jpg",
-  "email": "phongtran@gmail.com",
-  "phone": "0985441223",
-  "username": "phongtran",
-  "password": "$2a$10$v149OZsHsEo8K5sBQ7u5ROE1ZCp0TFSf5r4cF8lavBRwsbsInyGKu",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250330130406",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67e8eb31004a3ecca808c351"
-  },
-  "fullname": "Bùi Trường Linh",
-  "avatar": "khi21.jpg",
-  "email": "truonglinh@gmail.com",
-  "phone": "0799523412",
-  "username": "truonglinh",
-  "password": "$2a$10$35DM/nLFvZ796G8l/hLlkOQA1ccRrsvnVhDhAvkEeUrRWGnc.DSym",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250330135648",
-  "cart": [],
-  "wish": [
-    {
-      "$oid": "67b96ee667788c638a22e2c8"
+  {
+    "_id": {
+      "$oid": "67e7c0b5ffa238ffcdb9db6a"
     },
-    {
-      "$oid": "67b96ee667788c638a22e2d7"
+    "fullname": "Nguyễn Đặng Hưng",
+    "avatar": "",
+    "email": "songtu1456@gmail.com",
+    "phone": "",
+    "username": "hungnguyen",
+    "password": "$2a$10$m5S24p7jYf8WsEMWHV6UuOt7BApQQ.g8ql.6MAW0wXxEu7wt5diK2",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250329164317",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67e7c713ffa238ffcdb9fc15"
     },
-    {
-      "$oid": "67b96ee667788c638a22e2ec"
-    }
-  ]
-},
-{
-  "_id": {
-    "$oid": "67e8ef7d004a3ecca808d796"
+    "fullname": "Vĩnh Khang",
+    "avatar": "khi2.png",
+    "email": "khangdvps36671@fpl.edu.vn",
+    "phone": "0123456789",
+    "username": "khang",
+    "password": "$2a$10$PO2HhcpPHBZfYrHGrBYA1uxJJoTTQh9NRehLU/okdvfwqmjegNfDm",
+    "role": 0,
+    "status": 0,
+    "register_date": "20250329171027",
+    "cart": [],
+    "wish": []
   },
-  "fullname": "Hoàng Văn Minh",
-  "avatar": "",
-  "email": "hoangminh@gmail.com",
-  "phone": "",
-  "username": "hoangminh",
-  "password": "$2a$10$O81.i2DiPRfJbuUXup4Otemu0rEzrTYWDXQn2ZMcoc05NHiwjafnS",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250330141509",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67e8f1b5004a3ecca808e694"
-  },
-  "fullname": "Hoàng Đức ",
-  "avatar": "khi23.jpg",
-  "email": "hoangduc@gmail.com",
-  "phone": "0976441587",
-  "username": "hoangduc",
-  "password": "$2a$10$1Rz8KQMjAb0jvL18uFj1NuhINUMKZo09GIFsg7NaaP8FU9fp0J5TC",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250330142437",
-  "cart": [],
-  "wish": [
-    {
-      "$oid": "67b96ee667788c638a22e2c8"
+  {
+    "_id": {
+      "$oid": "67e7cb55ffa238ffcdba1bc5"
     },
-    {
-      "$oid": "67b96ee667788c638a22e2c9"
+    "fullname": "Dương Gia Khang",
+    "avatar": "khi3.png",
+    "email": "giakhang@gmail.com",
+    "phone": "03365412385",
+    "username": "duongkhang",
+    "password": "$2a$10$JS1JPSK4yMt86D4apz8T6.sEEhbVtF9h30bhryCCseRGB8p8TcEqi",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250329172836",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67e7cf2effa238ffcdba363c"
     },
-    {
-      "$oid": "67b96ee667788c638a22e2e9"
-    }
-  ]
-},
-{
-  "_id": {
-    "$oid": "67e8f3b2004a3ecca808f23b"
+    "fullname": "Hoàng Văn Minh",
+    "avatar": "khi22.png",
+    "email": "vanminh@gmail.com",
+    "phone": "09842563147",
+    "username": "vanminh",
+    "password": "$2a$10$CHb5EQnyiJosmVLx0spxxu/tvT9fHYK9.uHCb4ujlONgHQBa2Ugwa",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250329174502",
+    "cart": [],
+    "wish": []
   },
-  "fullname": "Tiến Dũng",
-  "avatar": "khi24.jpg",
-  "email": "tiendung@gmail.com",
-  "phone": "0965471369",
-  "username": "tiendung",
-  "password": "$2a$10$WaGNWKEpwskr6618kUx1neSgf6zLDH0MrMy5OetMWJMHzeU0SwwQG",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250330143306",
-  "cart": [],
-  "wish": [
-    {
-      "$oid": "67b96ee667788c638a22e2d7"
+  {
+    "_id": {
+      "$oid": "67e8be03004a3ecca8078f50"
     },
-    {
-      "$oid": "67b96ee667788c638a22e2e9"
+    "fullname": "Nguyễn Tính",
+    "avatar": "khi4.webp",
+    "email": "nguyentinh@gmail.com",
+    "phone": "09331238546",
+    "username": "nguyentinh",
+    "password": "$2a$10$j2JX8lVkZgw4Od.YLEjA1ecucwA99fnEO2s6ICsGUxziVADa2fjEu",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250330104403",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67e8c23d004a3ecca8079f08"
     },
-    {
-      "$oid": "67b96ee667788c638a22e2d4"
+    "fullname": "Thanh Tú",
+    "avatar": "khi6.webp",
+    "email": "thanhtu@gmail.com",
+    "phone": "0987364157",
+    "username": "thanhtu",
+    "password": "$2a$10$IGVgCGkW3CcFVeq6f865ceDXb9qOEEaK2q5Zh5XHka4oWqfVXkjSG",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250330110205",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67e8c5fb004a3ecca807b328"
     },
-    {
-      "$oid": "67b96ee667788c638a22e2ee"
-    }
-  ]
-},
-{
-  "_id": {
-    "$oid": "67e90436004a3ecca8092b25"
+    "fullname": "Hoàng Dũng",
+    "avatar": "khi7.jpg",
+    "email": "hoangdung@gmail.com",
+    "phone": "0764258245",
+    "username": "hoangdung",
+    "password": "$2a$10$DTcUsClTS6OZSvBcietgdOEb1A7YiKFPYoqDK3XSIidWs53etgC8a",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250330111803",
+    "cart": [],
+    "wish": []
   },
-  "fullname": "Ngọc Dương",
-  "avatar": "khi25.jpg",
-  "email": "ngocduong@gmail.com",
-  "phone": "0325897654",
-  "username": "ngocduong",
-  "password": "$2a$10$Y9JFDYdcLbaiKtPGtLsI8uNbHxrpYY/6MYNhxGAUiSk2XSpcXOMIC",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250330154333",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67e90a2c004a3ecca80944ab"
-  },
-  "fullname": "Tuấn Định",
-  "avatar": "khi26.png",
-  "email": "tuandinh@gmail.com",
-  "phone": "0936555149",
-  "username": "tuandinh",
-  "password": "$2a$10$/D7LXGUbILqwpWwoxmx1NeQCCv73utCsLDcCdwlJbJTxHLZ7ugNey",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250330160859",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f0d98fc21224beac47bf2d"
-  },
-  "fullname": "Nguyễn Văn Anh",
-  "avatar": "khi26.png",
-  "email": "nguyenvananh@gmail.com",
-  "phone": "0935123456",
-  "username": "vananh",
-  "password": "$2a$10$YiaphYlO0XtFcEGyixcB2uorkALwAXs918EZniHUQK0wLyfMVSNve",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250405141943",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f0de09c21224beac47d04a"
-  },
-  "fullname": "Trần Thị Bích",
-  "avatar": "khi27.gif",
-  "email": "tranthibich@gmail.com",
-  "phone": "0367234567",
-  "username": "bichtran",
-  "password": "$2a$10$Vpzqbt1ZduicdlP37ihRPu.tQpdd43RDaqr9YYHUDECi1JPcAna6i",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250405143849",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f0e17ac21224beac47dfab"
-  },
-  "fullname": "Lê Hoàng Chương",
-  "avatar": "khi28.jpg",
-  "email": "lehoangchuong@gmail.com",
-  "phone": "0912345678",
-  "username": "hoangchuong",
-  "password": "$2a$10$PkQwQjI/uByXz7wTuvrkPuBrhrNvB7OCSsnlE..bEJgTaray5W/ii",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250405145330",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f0e46cc21224beac47f09c"
-  },
-  "fullname": "Phạm Ngọc Diệp",
-  "avatar": "khi29.jpg",
-  "email": "phamngocdiep@gmail.com",
-  "phone": "0856456789",
-  "username": "ngocdiep",
-  "password": "$2a$10$TbRfiZ1Iw3Ak495LDTvD9OH.GIDE28yKWFe6uvZG8QKbfK083/I2m",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250405150604",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f0e776c21224beac480014"
-  },
-  "fullname": "Hoàng Minh Đức",
-  "avatar": "khi30.jpg",
-  "email": "hoangminhduc@gmail.com",
-  "phone": "0978567890",
-  "username": "minhduc",
-  "password": "$2a$10$IBxwuXFPGlzxTgmWnQGXuuiDIdHbjRwuTbyhjNdrsaI8J1.E9Owlu",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250405151902",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f0ea24c21224beac481335"
-  },
-  "fullname": "Vũ Thị Hạnh",
-  "avatar": "khi31.jpg",
-  "email": "vuthihanh@gmail.com",
-  "phone": "0345678901",
-  "username": "vuthihanh",
-  "password": "$2a$10$N/QKZDlaqMLpD/W36IgATe7kJCMm9Odp0ihjFj/tLmuzQKxGT4otm",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250405153028",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f0ec4fc21224beac4823d7"
-  },
-  "fullname": "Bùi Văn Hùng",
-  "avatar": "khi32.jpg",
-  "email": "vanhung@gmail.com",
-  "phone": "0903789012",
-  "username": "vanhung",
-  "password": "$2a$10$jkGyxYYvOUITb/22qaY8Zu8Q6AB.EFOUtuW7JEHFF9vddkekIJyiC",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250405153943",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f0ee97c21224beac4837ca"
-  },
-  "fullname": "Đặng Thu Hương",
-  "avatar": "khi33.webp",
-  "email": "thuhuong@gmail.com",
-  "phone": "0389890123",
-  "username": "thuhuong",
-  "password": "$2a$10$YuRXvCDWLAMRjW/3B3PBoeZntCua7sPY4VCqqDdKnGCJKT/KXr7NW",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250405154927",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f0f07cc21224beac4848e7"
-  },
-  "fullname": "Trương Quốc Khánh",
-  "avatar": "khi34.png",
-  "email": "quockhanh@gmail.com",
-  "phone": "0921901234",
-  "username": "quockhanh",
-  "password": "$2a$10$JXKySjR0GPbSOOc600pLUexLTF.tkgl652Q8HQJCgYaq6yy3Y3h5m",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250405155732",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f0f391c21224beac485934"
-  },
-  "fullname": "Ngô Lan Khuê",
-  "avatar": "khi35.jpg",
-  "email": "lankhue@gmail.com",
-  "phone": "0876012345",
-  "username": "lankhue",
-  "password": "$2a$10$JyCp4mujnfLtJOhkmeSjO.vf.QkVPwRk4WE.GVrjdQ.ZmNhCLFHlm",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250405161041",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f1f5a6b2b53570b7dd4c0b"
-  },
-  "fullname": "Nguyễn Văn An",
-  "avatar": "khi36.jpg",
-  "email": "nguyenvanan@gmail.com",
-  "phone": "0901234567",
-  "username": "vanan",
-  "password": "$2a$10$kmYZYYRvkAo8CfAZAEG5/..cCAB54O.e7FZdjZStEHmNlANWdmto2",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250406103149",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f1fa54b2b53570b7dd5c4a"
-  },
-  "fullname": "Trần Thị Mai",
-  "avatar": "khi37.jpg",
-  "email": "tranthimai@gmail.com",
-  "phone": "0934567890",
-  "username": "thimai",
-  "password": "$2a$10$yEIIYTy8gQP3PQ6LgoapLupv2uBcY989gERogQPpjSyfQ6/0GTufO",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250406105148",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f1fdbeb2b53570b7dd6b9c"
-  },
-  "fullname": "Lê Hồng Phúc",
-  "avatar": "khi38.jpg",
-  "email": "lehongphuc@gmail.com",
-  "phone": "0987654321",
-  "username": "hongphuc",
-  "password": "$2a$10$ANQzDRS1UmXvwiNKVhWdWOluATe5uXlW8/Gm2fChowwg9w17hdaT2",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250406110622",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f20e06b2b53570b7dd7efb"
-  },
-  "fullname": "Phạm Minh Tâm",
-  "avatar": "khi39.jpg",
-  "email": "phamminhtam@gmail.com",
-  "phone": "0912345679",
-  "username": "minhtam",
-  "password": "$2a$10$63fssQriiq/4G2zE5YSSS.XPNvb1Uik9FjGllM1.FLwEdEttjEh2m",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250406121550",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f2101fb2b53570b7dd8c93"
-  },
-  "fullname": "Đặng Thị Lan",
-  "avatar": "khi40.jpg",
-  "email": "dangthilan@gmail.com",
-  "phone": "0909876543",
-  "username": "thilan",
-  "password": "$2a$10$2QSCvFYFdgVVF0d5Ew7yU.n4R/bXE5wSVL8Szdgq5hNIByG6VE/32",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250406122447",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f2119ab2b53570b7dd9a05"
-  },
-  "fullname": "Vũ Quốc Cường",
-  "avatar": "khi41.webp",
-  "email": "vuquoccuong@gmail.com",
-  "phone": "0978321456",
-  "username": "quoccuong",
-  "password": "$2a$10$KSwBbYKeiGEe0Zfe3/fFwu6n5JI5bVhOcl4rr94omgYjFvEfhoUkS",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250406123106",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f221f3b2b53570b7dda962"
-  },
-  "fullname": "Bùi Thanh Hương",
-  "avatar": "",
-  "email": "buithanhhuong@gmail.com",
-  "phone": "0966112233",
-  "username": "thanhhuong",
-  "password": "$2a$10$ayy1BDmM1yD3dW17qSRl8OiJJrKHrZ091bLf1j8AvcILGseP7TM0i",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250406134051",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f2256eb2b53570b7ddb8dd"
-  },
-  "fullname": "Ngô Văn Đức",
-  "avatar": "khi43.jpg",
-  "email": "ngovanduc@gmail.com",
-  "phone": "0933444555",
-  "username": "vanduc",
-  "password": "$2a$10$CDF5EE6SSrg4AzRV0/bdaeGOJl9Hfb.6exqt6.c0djkb/TKGUNVXy",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250406135541",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f226cab2b53570b7ddc76a"
-  },
-  "fullname": "Lâm Ngọc Yến",
-  "avatar": "khi44.jpg",
-  "email": "lamngocyen@gmail.com",
-  "phone": "0919333777",
-  "username": "ngocyen",
-  "password": "$2a$10$VFhJp8Gzx6gTfHA.B4DAb.Gw2JxCJzYXV0kqMSO8OTDJqFNwQIKv6",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250406140130",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f2279fb2b53570b7ddd515"
-  },
-  "fullname": "Hoàng Tuấn Kiệt",
-  "avatar": "khi45.jpg",
-  "email": "hoangtuankiet@gmail.com",
-  "phone": "0902888999",
-  "username": "tuankiet",
-  "password": "$2a$10$7BaF2U3U.QTX3wyz2xsbvu5.4v9.4CXXMdoZV2PadbtnI1Vc7XJyi",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250406140503",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f76dd3bedd2638e5e1ae0f"
-  },
-  "fullname": "Khoa pug",
-  "avatar": "photo-1-16762563081731179415697-1676257108792-1676257112183230529221-1676261721517-16762617226173896363.webp",
-  "email": "pugpug@gmail.com",
-  "phone": "",
-  "username": "pugpug",
-  "password": "$2a$10$lnb4wIKClMC5R9DU11J9l.pTI5uNQO6jXomYPHByQbNpiSHYkbcoq",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250410140554",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f77216bedd2638e5e20f53"
-  },
-  "fullname": "Hoàng thợ săn (Viruss)",
-  "avatar": "drama-viruss-jack-misthy-450x253.jpg",
-  "email": "thosanbabytree@gmail.com",
-  "phone": "",
-  "username": "viruss",
-  "password": "$2a$10$fPXOwCg/RCR0zA2eY0VPwuXIHV9h/zZaDGmAbajnVn1JnD/avYN36",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250410142406",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f776117ab9c6df855a0218"
-  },
-  "fullname": "Chị Phiến",
-  "avatar": "hq720.jpg",
-  "email": "conmeokeusao@gmail.com",
-  "phone": "",
-  "username": "meokeumeomeo",
-  "password": "$2a$10$J39AOzexeLdxJAdQF4F1NeRcnlLQduPVvoVrsEhP8ghpCk9q.vps6",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250410144104",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f77b837ab9c6df855aaf4e"
-  },
-  "fullname": "Phạm Thoại",
-  "avatar": "images (2).jpg",
-  "email": "quyengopbebap@gmail.com",
-  "phone": "",
-  "username": "phamthoai",
-  "password": "$2a$10$ZFkb3kq/Web.q1qWMWLl4uhViYo5F8h5kTy//EauOIN3zr2XAkuJC",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250410150419",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f8a57cba7e32f044737966"
-  },
-  "fullname": "Jack",
-  "avatar": "images (3).jpg",
-  "email": "j97@gmail.com",
-  "phone": "",
-  "username": "jack",
-  "password": "$2a$10$LWWXRkl.XFxPV27e0gMhIOwHkEUM12QIilrvDmfK59Uy3fwSrRVJa",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250411121540",
-  "cart": [],
-  "wish": [
-    {
-      "$oid": "67f620c0e67ef01f5b313da2"
+  {
+    "_id": {
+      "$oid": "67e8c989004a3ecca807c3be"
     },
-    {
-      "$oid": "67f4e892f1a87243c793c339"
-    }
-  ]
-},
-{
-  "_id": {
-    "$oid": "67f8c64da351e3542a9a7c39"
+    "fullname": "Đình Toàn",
+    "avatar": "khi8.jpg",
+    "email": "dinhtoan@gmail.com",
+    "phone": "0977458621",
+    "username": "dinhtoan",
+    "password": "$2a$10$oILIgBGyiJInyGMs76uYEuqd4lvbicPalbi09asav9XoLcvx7.rE.",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250330113313",
+    "cart": [],
+    "wish": []
   },
-  "fullname": "Misthy",
-  "avatar": "2fd8ea8254447afe6b0bdfd1b486ea5b.jpg",
-  "email": "misthy@gmail.com",
-  "phone": "",
-  "username": "misthy",
-  "password": "$2a$10$Cr5x8RHZAEU87NrU1yTwVOtr1ZL77PWeyz/kG8n0cE2GHNZfJ14Me",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250411143541",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f8cde3a351e3542a9b012b"
+  {
+    "_id": {
+      "$oid": "67e8cccc004a3ecca807d22d"
+    },
+    "fullname": "Trần Văn Cường",
+    "avatar": "khi9.jpg",
+    "email": "vancuong@gmail.com",
+    "phone": "0358457961",
+    "username": "vancuong",
+    "password": "$2a$10$usXN3CUSPYMrcrs7OAh33uWhLnw631WPRdlmH7GHwkwYnslwultFu",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250330114708",
+    "cart": [],
+    "wish": []
   },
-  "fullname": "Tú Sena",
-  "avatar": "40ba80b67b5a92100b3f8b921391a5727544afdfb3eb29e45d4aea07e8.jpg",
-  "email": "sena@gmail.com",
-  "phone": "",
-  "username": "tusena",
-  "password": "$2a$10$SLCwmj3w2FjhXMqKrVYlCuvU9PSf5JmIRnBzCMBTP69.MZERI9.kC",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250411150803",
-  "cart": [],
-  "wish": []
-},
-{
-  "_id": {
-    "$oid": "67f8d9bfa351e3542a9ba9fe"
+  {
+    "_id": {
+      "$oid": "67e8cf92004a3ecca807e2c9"
+    },
+    "fullname": "Trương Quốc Tuấn",
+    "avatar": "khi10.jpg",
+    "email": "quoctuan@gmail.com",
+    "phone": "0933478951",
+    "username": "quoctuan",
+    "password": "$2a$10$7BWtMNMTDrHKxbGfRG/MXufOIE3zPikrevVzRJmQYouWJw/LvFRGy",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250330115858",
+    "cart": [],
+    "wish": []
   },
-  "fullname": "Ronando",
-  "avatar": "images (5).jpg",
-  "email": "messi@gmail.com",
-  "phone": "",
-  "username": "ronando",
-  "password": "$2a$10$wlolYNBdmyAf6y/9bm7DlOUyJvczhcz3.w0yVWiKlSZ50R0OYSCay",
-  "role": 0,
-  "status": 1,
-  "register_date": "20250411155839",
-  "cart": [],
-  "wish": []
-}]
+  {
+    "_id": {
+      "$oid": "67e8d1f4004a3ecca807f249"
+    },
+    "fullname": "Lê Phương",
+    "avatar": "khi11.jpeg",
+    "email": "lephuong@gmail.com",
+    "phone": "0856345852",
+    "username": "lephuong",
+    "password": "$2a$10$dAVamhvJbBIy8Q/ufBGL3Oalq0bemYMpABxT0zj5nMgscEcW2hTdi",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250330120907",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67e8d3e9004a3ecca80801b8"
+    },
+    "fullname": "Bá Trình",
+    "avatar": "khi13.webp",
+    "email": "batrinh@gmail.com",
+    "phone": "0925674132",
+    "username": "batrinh",
+    "password": "$2a$10$6.ELg8nicsoowRSvy3YjQOd3Ewa47T.88/3Xfm74x5YxnYgvBtnsa",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250330121729",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67e8d5b0004a3ecca8080e4e"
+    },
+    "fullname": "Minh Hoàng",
+    "avatar": "khi14.jpg",
+    "email": "minhhoang@gmail.com",
+    "phone": "0932489751",
+    "username": "minhhoang",
+    "password": "$2a$10$idwfyzzNHqPGUQY.iC/z0ea2Nsske2F9WmZJy6TOzCBHhpCZbiYny",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250330122504",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67e8d744004a3ecca8081ace"
+    },
+    "fullname": "Phương Tuấn",
+    "avatar": "khi15.jpg",
+    "email": "domdom@gmail.com",
+    "phone": "0325461258",
+    "username": "phuongtuan",
+    "password": "$2a$10$7EHIZ0qZSSrDwLRc10Dg5uooLjG15Zsg0qixdu7gBLeBgW5Wu6iem",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250330123148",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67e8d947004a3ecca808262f"
+    },
+    "fullname": "Hoàng Vi Rút",
+    "avatar": "khi16.jpg",
+    "email": "hoang@gmail.com",
+    "phone": "0914562314",
+    "username": "hoang",
+    "password": "$2a$10$DTCCVYFYjhO884Inemh3lOWWwfoQrQSdvoXB3b7ZiEJAUVAj0cYDC",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250330124023",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67e8db97004a3ecca8083279"
+    },
+    "fullname": "Nguyễn Duy Thiên",
+    "avatar": "khi17.png",
+    "email": "duythien@gmail.com",
+    "phone": "0932564441",
+    "username": "duythien",
+    "password": "$2a$10$q5WFm2b/UcFwIcomn34oxOXHUXEORFAuO5axs.qngIOYtf/muOhU6",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250330125014",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67e8dd5f004a3ecca8083d8c"
+    },
+    "fullname": "Duy Khang",
+    "avatar": "",
+    "email": "duykhang@gmail.com",
+    "phone": "0324512643",
+    "username": "duykhang",
+    "password": "$2a$10$9ostrNeszSYxr.Hle7qBtuPvrNYjNuovfuP5UUFvfcF6wI73vOV52",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250330125751",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67e8ded6004a3ecca8084cf5"
+    },
+    "fullname": "Phong Trần",
+    "avatar": "khi20.jpg",
+    "email": "phongtran@gmail.com",
+    "phone": "0985441223",
+    "username": "phongtran",
+    "password": "$2a$10$v149OZsHsEo8K5sBQ7u5ROE1ZCp0TFSf5r4cF8lavBRwsbsInyGKu",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250330130406",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67e8eb31004a3ecca808c351"
+    },
+    "fullname": "Bùi Trường Linh",
+    "avatar": "khi21.jpg",
+    "email": "truonglinh@gmail.com",
+    "phone": "0799523412",
+    "username": "truonglinh",
+    "password": "$2a$10$35DM/nLFvZ796G8l/hLlkOQA1ccRrsvnVhDhAvkEeUrRWGnc.DSym",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250330135648",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67e8ef7d004a3ecca808d796"
+    },
+    "fullname": "Hoàng Văn Minh",
+    "avatar": "",
+    "email": "hoangminh@gmail.com",
+    "phone": "",
+    "username": "hoangminh",
+    "password": "$2a$10$O81.i2DiPRfJbuUXup4Otemu0rEzrTYWDXQn2ZMcoc05NHiwjafnS",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250330141509",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67e8f1b5004a3ecca808e694"
+    },
+    "fullname": "Hoàng Đức ",
+    "avatar": "khi23.jpg",
+    "email": "hoangduc@gmail.com",
+    "phone": "0976441587",
+    "username": "hoangduc",
+    "password": "$2a$10$1Rz8KQMjAb0jvL18uFj1NuhINUMKZo09GIFsg7NaaP8FU9fp0J5TC",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250330142437",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67e8f3b2004a3ecca808f23b"
+    },
+    "fullname": "Tiến Dũng",
+    "avatar": "khi24.jpg",
+    "email": "tiendung@gmail.com",
+    "phone": "0965471369",
+    "username": "tiendung",
+    "password": "$2a$10$WaGNWKEpwskr6618kUx1neSgf6zLDH0MrMy5OetMWJMHzeU0SwwQG",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250330143306",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67e90436004a3ecca8092b25"
+    },
+    "fullname": "Ngọc Dương",
+    "avatar": "khi25.jpg",
+    "email": "ngocduong@gmail.com",
+    "phone": "0325897654",
+    "username": "ngocduong",
+    "password": "$2a$10$Y9JFDYdcLbaiKtPGtLsI8uNbHxrpYY/6MYNhxGAUiSk2XSpcXOMIC",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250330154333",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67e90a2c004a3ecca80944ab"
+    },
+    "fullname": "Tuấn Định",
+    "avatar": "khi26.png",
+    "email": "tuandinh@gmail.com",
+    "phone": "0936555149",
+    "username": "tuandinh",
+    "password": "$2a$10$/D7LXGUbILqwpWwoxmx1NeQCCv73utCsLDcCdwlJbJTxHLZ7ugNey",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250330160859",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f0d98fc21224beac47bf2d"
+    },
+    "fullname": "Nguyễn Văn Anh",
+    "avatar": "khi26.png",
+    "email": "nguyenvananh@gmail.com",
+    "phone": "0935123456",
+    "username": "vananh",
+    "password": "$2a$10$YiaphYlO0XtFcEGyixcB2uorkALwAXs918EZniHUQK0wLyfMVSNve",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250405141943",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f0de09c21224beac47d04a"
+    },
+    "fullname": "Trần Thị Bích",
+    "avatar": "khi27.gif",
+    "email": "tranthibich@gmail.com",
+    "phone": "0367234567",
+    "username": "bichtran",
+    "password": "$2a$10$Vpzqbt1ZduicdlP37ihRPu.tQpdd43RDaqr9YYHUDECi1JPcAna6i",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250405143849",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f0e17ac21224beac47dfab"
+    },
+    "fullname": "Lê Hoàng Chương",
+    "avatar": "khi28.jpg",
+    "email": "lehoangchuong@gmail.com",
+    "phone": "0912345678",
+    "username": "hoangchuong",
+    "password": "$2a$10$PkQwQjI/uByXz7wTuvrkPuBrhrNvB7OCSsnlE..bEJgTaray5W/ii",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250405145330",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f0e46cc21224beac47f09c"
+    },
+    "fullname": "Phạm Ngọc Diệp",
+    "avatar": "khi29.jpg",
+    "email": "phamngocdiep@gmail.com",
+    "phone": "0856456789",
+    "username": "ngocdiep",
+    "password": "$2a$10$TbRfiZ1Iw3Ak495LDTvD9OH.GIDE28yKWFe6uvZG8QKbfK083/I2m",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250405150604",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f0e776c21224beac480014"
+    },
+    "fullname": "Hoàng Minh Đức",
+    "avatar": "khi30.jpg",
+    "email": "hoangminhduc@gmail.com",
+    "phone": "0978567890",
+    "username": "minhduc",
+    "password": "$2a$10$IBxwuXFPGlzxTgmWnQGXuuiDIdHbjRwuTbyhjNdrsaI8J1.E9Owlu",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250405151902",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f0ea24c21224beac481335"
+    },
+    "fullname": "Vũ Thị Hạnh",
+    "avatar": "khi31.jpg",
+    "email": "vuthihanh@gmail.com",
+    "phone": "0345678901",
+    "username": "vuthihanh",
+    "password": "$2a$10$N/QKZDlaqMLpD/W36IgATe7kJCMm9Odp0ihjFj/tLmuzQKxGT4otm",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250405153028",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f0ec4fc21224beac4823d7"
+    },
+    "fullname": "Bùi Văn Hùng",
+    "avatar": "khi32.jpg",
+    "email": "vanhung@gmail.com",
+    "phone": "0903789012",
+    "username": "vanhung",
+    "password": "$2a$10$jkGyxYYvOUITb/22qaY8Zu8Q6AB.EFOUtuW7JEHFF9vddkekIJyiC",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250405153943",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f0ee97c21224beac4837ca"
+    },
+    "fullname": "Đặng Thu Hương",
+    "avatar": "khi33.webp",
+    "email": "thuhuong@gmail.com",
+    "phone": "0389890123",
+    "username": "thuhuong",
+    "password": "$2a$10$YuRXvCDWLAMRjW/3B3PBoeZntCua7sPY4VCqqDdKnGCJKT/KXr7NW",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250405154927",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f0f07cc21224beac4848e7"
+    },
+    "fullname": "Trương Quốc Khánh",
+    "avatar": "khi34.png",
+    "email": "quockhanh@gmail.com",
+    "phone": "0921901234",
+    "username": "quockhanh",
+    "password": "$2a$10$JXKySjR0GPbSOOc600pLUexLTF.tkgl652Q8HQJCgYaq6yy3Y3h5m",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250405155732",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f0f391c21224beac485934"
+    },
+    "fullname": "Ngô Lan Khuê",
+    "avatar": "khi35.jpg",
+    "email": "lankhue@gmail.com",
+    "phone": "0876012345",
+    "username": "lankhue",
+    "password": "$2a$10$JyCp4mujnfLtJOhkmeSjO.vf.QkVPwRk4WE.GVrjdQ.ZmNhCLFHlm",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250405161041",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f1f5a6b2b53570b7dd4c0b"
+    },
+    "fullname": "Nguyễn Văn An",
+    "avatar": "khi36.jpg",
+    "email": "nguyenvanan@gmail.com",
+    "phone": "0901234567",
+    "username": "vanan",
+    "password": "$2a$10$kmYZYYRvkAo8CfAZAEG5/..cCAB54O.e7FZdjZStEHmNlANWdmto2",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250406103149",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f1fa54b2b53570b7dd5c4a"
+    },
+    "fullname": "Trần Thị Mai",
+    "avatar": "khi37.jpg",
+    "email": "tranthimai@gmail.com",
+    "phone": "0934567890",
+    "username": "thimai",
+    "password": "$2a$10$yEIIYTy8gQP3PQ6LgoapLupv2uBcY989gERogQPpjSyfQ6/0GTufO",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250406105148",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f1fdbeb2b53570b7dd6b9c"
+    },
+    "fullname": "Lê Hồng Phúc",
+    "avatar": "khi38.jpg",
+    "email": "lehongphuc@gmail.com",
+    "phone": "0987654321",
+    "username": "hongphuc",
+    "password": "$2a$10$ANQzDRS1UmXvwiNKVhWdWOluATe5uXlW8/Gm2fChowwg9w17hdaT2",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250406110622",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f20e06b2b53570b7dd7efb"
+    },
+    "fullname": "Phạm Minh Tâm",
+    "avatar": "khi39.jpg",
+    "email": "phamminhtam@gmail.com",
+    "phone": "0912345679",
+    "username": "minhtam",
+    "password": "$2a$10$63fssQriiq/4G2zE5YSSS.XPNvb1Uik9FjGllM1.FLwEdEttjEh2m",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250406121550",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f2101fb2b53570b7dd8c93"
+    },
+    "fullname": "Đặng Thị Lan",
+    "avatar": "khi40.jpg",
+    "email": "dangthilan@gmail.com",
+    "phone": "0909876543",
+    "username": "thilan",
+    "password": "$2a$10$2QSCvFYFdgVVF0d5Ew7yU.n4R/bXE5wSVL8Szdgq5hNIByG6VE/32",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250406122447",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f2119ab2b53570b7dd9a05"
+    },
+    "fullname": "Vũ Quốc Cường",
+    "avatar": "khi41.webp",
+    "email": "vuquoccuong@gmail.com",
+    "phone": "0978321456",
+    "username": "quoccuong",
+    "password": "$2a$10$KSwBbYKeiGEe0Zfe3/fFwu6n5JI5bVhOcl4rr94omgYjFvEfhoUkS",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250406123106",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f221f3b2b53570b7dda962"
+    },
+    "fullname": "Bùi Thanh Hương",
+    "avatar": "",
+    "email": "buithanhhuong@gmail.com",
+    "phone": "0966112233",
+    "username": "thanhhuong",
+    "password": "$2a$10$ayy1BDmM1yD3dW17qSRl8OiJJrKHrZ091bLf1j8AvcILGseP7TM0i",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250406134051",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f2256eb2b53570b7ddb8dd"
+    },
+    "fullname": "Ngô Văn Đức",
+    "avatar": "khi43.jpg",
+    "email": "ngovanduc@gmail.com",
+    "phone": "0933444555",
+    "username": "vanduc",
+    "password": "$2a$10$CDF5EE6SSrg4AzRV0/bdaeGOJl9Hfb.6exqt6.c0djkb/TKGUNVXy",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250406135541",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f226cab2b53570b7ddc76a"
+    },
+    "fullname": "Lâm Ngọc Yến",
+    "avatar": "khi44.jpg",
+    "email": "lamngocyen@gmail.com",
+    "phone": "0919333777",
+    "username": "ngocyen",
+    "password": "$2a$10$VFhJp8Gzx6gTfHA.B4DAb.Gw2JxCJzYXV0kqMSO8OTDJqFNwQIKv6",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250406140130",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f2279fb2b53570b7ddd515"
+    },
+    "fullname": "Hoàng Tuấn Kiệt",
+    "avatar": "khi45.jpg",
+    "email": "hoangtuankiet@gmail.com",
+    "phone": "0902888999",
+    "username": "tuankiet",
+    "password": "$2a$10$7BaF2U3U.QTX3wyz2xsbvu5.4v9.4CXXMdoZV2PadbtnI1Vc7XJyi",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250406140503",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f76dd3bedd2638e5e1ae0f"
+    },
+    "fullname": "Khoa pug",
+    "avatar": "photo-1-16762563081731179415697-1676257108792-1676257112183230529221-1676261721517-16762617226173896363.webp",
+    "email": "pugpug@gmail.com",
+    "phone": "",
+    "username": "pugpug",
+    "password": "$2a$10$lnb4wIKClMC5R9DU11J9l.pTI5uNQO6jXomYPHByQbNpiSHYkbcoq",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250410140554",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f77216bedd2638e5e20f53"
+    },
+    "fullname": "Hoàng thợ săn (Viruss)",
+    "avatar": "drama-viruss-jack-misthy-450x253.jpg",
+    "email": "thosanbabytree@gmail.com",
+    "phone": "",
+    "username": "viruss",
+    "password": "$2a$10$fPXOwCg/RCR0zA2eY0VPwuXIHV9h/zZaDGmAbajnVn1JnD/avYN36",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250410142406",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f776117ab9c6df855a0218"
+    },
+    "fullname": "Chị Phiến",
+    "avatar": "hq720.jpg",
+    "email": "conmeokeusao@gmail.com",
+    "phone": "",
+    "username": "meokeumeomeo",
+    "password": "$2a$10$J39AOzexeLdxJAdQF4F1NeRcnlLQduPVvoVrsEhP8ghpCk9q.vps6",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250410144104",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f77b837ab9c6df855aaf4e"
+    },
+    "fullname": "Phạm Thoại",
+    "avatar": "images (2).jpg",
+    "email": "quyengopbebap@gmail.com",
+    "phone": "",
+    "username": "phamthoai",
+    "password": "$2a$10$ZFkb3kq/Web.q1qWMWLl4uhViYo5F8h5kTy//EauOIN3zr2XAkuJC",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250410150419",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f8a57cba7e32f044737966"
+    },
+    "fullname": "Jack",
+    "avatar": "images (3).jpg",
+    "email": "j97@gmail.com",
+    "phone": "",
+    "username": "jack",
+    "password": "$2a$10$LWWXRkl.XFxPV27e0gMhIOwHkEUM12QIilrvDmfK59Uy3fwSrRVJa",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250411121540",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f8c64da351e3542a9a7c39"
+    },
+    "fullname": "Misthy",
+    "avatar": "2fd8ea8254447afe6b0bdfd1b486ea5b.jpg",
+    "email": "misthy@gmail.com",
+    "phone": "",
+    "username": "misthy",
+    "password": "$2a$10$Cr5x8RHZAEU87NrU1yTwVOtr1ZL77PWeyz/kG8n0cE2GHNZfJ14Me",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250411143541",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f8cde3a351e3542a9b012b"
+    },
+    "fullname": "Tú Sena",
+    "avatar": "40ba80b67b5a92100b3f8b921391a5727544afdfb3eb29e45d4aea07e8.jpg",
+    "email": "sena@gmail.com",
+    "phone": "",
+    "username": "tusena",
+    "password": "$2a$10$SLCwmj3w2FjhXMqKrVYlCuvU9PSf5JmIRnBzCMBTP69.MZERI9.kC",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250411150803",
+    "cart": [],
+    "wish": []
+  },
+  {
+    "_id": {
+      "$oid": "67f8d9bfa351e3542a9ba9fe"
+    },
+    "fullname": "Ronando",
+    "avatar": "images (5).jpg",
+    "email": "messi@gmail.com",
+    "phone": "",
+    "username": "ronando",
+    "password": "$2a$10$wlolYNBdmyAf6y/9bm7DlOUyJvczhcz3.w0yVWiKlSZ50R0OYSCay",
+    "role": 0,
+    "status": 1,
+    "register_date": "20250411155839",
+    "cart": [],
+    "wish": []
+  }
+]

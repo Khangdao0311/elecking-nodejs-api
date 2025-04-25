@@ -5431,4 +5431,888 @@
   "product_id": {
     "$oid": "67b96ee667788c638a22e2c8"
   }
+},
+{
+  "_id": {
+    "$oid": "68032efca77bff5a5e199b9b"
+  },
+  "content": "cái máy này hơi bị xịn nha mọi người, xài rất là ok.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419120500",
+  "updated_at": "20250419120500",
+  "like": [],
+  "order_id": {
+    "$oid": "68032e60a77bff5a5e198aba"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "680332aca77bff5a5e19bfeb"
+  },
+  "content": "điện thoại chụp hình siêu đẹp luôn. Tôi rất thích",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419122044",
+  "updated_at": "20250419122044",
+  "like": [],
+  "order_id": {
+    "$oid": "68032fe4a77bff5a5e19a414"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68033502a77bff5a5e19d942"
+  },
+  "content": "tôi đã xài điện thoại nhiều năm và tôi thấy đây là sản phẩm tuyệt vời nhất năm nay.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419123042",
+  "updated_at": "20250419123042",
+  "like": [],
+  "order_id": {
+    "$oid": "680333f7a77bff5a5e19c85d"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68033729a77bff5a5e19fbe4"
+  },
+  "content": "Màn hình chống chói tuyệt vời, hiển thị rõ ràng dưới ánh sáng mạnh",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419123953",
+  "updated_at": "20250419123953",
+  "like": [],
+  "order_id": {
+    "$oid": "68033587a77bff5a5e19dfe6"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68033805a77bff5a5e1a154a"
+  },
+  "content": "Khung viền titan mới giúp máy nhẹ và bền hơn.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419124333",
+  "updated_at": "20250419124333",
+  "like": [],
+  "order_id": {
+    "$oid": "680337b3a77bff5a5e1a0455"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "680338f5a77bff5a5e1a2cf3"
+  },
+  "content": "Camera 200MP cho ảnh sắc nét, zoom xa ấn tượng.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419124733",
+  "updated_at": "20250419124733",
+  "like": [],
+  "order_id": {
+    "$oid": "6803384ba77bff5a5e1a1bea"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "680339eda77bff5a5e1a4fb1"
+  },
+  "content": "Tích hợp AI thông minh, hỗ trợ dịch thuật và chỉnh sửa ảnh.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419125141",
+  "updated_at": "20250419125141",
+  "like": [],
+  "order_id": {
+    "$oid": "6803397fa77bff5a5e1a3e8c"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68033acca77bff5a5e1a72c0"
+  },
+  "content": "Hiệu năng mạnh mẽ với Snapdragon 8 Gen 3.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419125524",
+  "updated_at": "20250419125524",
+  "like": [],
+  "order_id": {
+    "$oid": "68033a68a77bff5a5e1a61b1"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68033bc4a77bff5a5e1a95ea"
+  },
+  "content": "Thời lượng pin 5.000 mAh kéo dài cả ngày. ",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419125932",
+  "updated_at": "20250419125932",
+  "like": [],
+  "order_id": {
+    "$oid": "68033b14a77bff5a5e1a7960"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68033c87a77bff5a5e1aba93"
+  },
+  "content": "S Pen tích hợp tiện lợi cho ghi chú và vẽ.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419130247",
+  "updated_at": "20250419130247",
+  "like": [],
+  "order_id": {
+    "$oid": "68033c55a77bff5a5e1aa968"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68033ceda77bff5a5e1ad268"
+  },
+  "content": "Thiết kế sang trọng, đẳng cấp với mặt kính chống trầy.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419130429",
+  "updated_at": "20250419130429",
+  "like": [],
+  "order_id": {
+    "$oid": "68033cbda77bff5a5e1ac137"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68033daea77bff5a5e1b1815"
+  },
+  "content": "Chạy mượt các game nặng như Genshin Impact.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419130742",
+  "updated_at": "20250419130742",
+  "like": [],
+  "order_id": {
+    "$oid": "68033d0fa77bff5a5e1ad906"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68033e96a77bff5a5e1b4108"
+  },
+  "content": "Giao diện One UI thân thiện, dễ sử dụng.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419131134",
+  "updated_at": "20250419131134",
+  "like": [],
+  "order_id": {
+    "$oid": "68033e26a77bff5a5e1b2fc3"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68033f33a77bff5a5e1b6452"
+  },
+  "content": "Hỗ trợ cập nhật phần mềm lâu dài.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419131411",
+  "updated_at": "20250419131411",
+  "like": [],
+  "order_id": {
+    "$oid": "68033eeea77bff5a5e1b52f9"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68033fcea77bff5a5e1b7c45"
+  },
+  "content": "Tính năng \"Circle to Search\" tiện lợi cho tra cứu nhanh.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419131646",
+  "updated_at": "20250419131646",
+  "like": [],
+  "order_id": {
+    "$oid": "68033f99a77bff5a5e1b6ae4"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68034072a77bff5a5e1ba000"
+  },
+  "content": "Chế độ chụp đêm cải tiến, ảnh sáng rõ hơn.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419131930",
+  "updated_at": "20250419131930",
+  "like": [],
+  "order_id": {
+    "$oid": "68034013a77bff5a5e1b82e3"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "680341432e098e65505dc845"
+  },
+  "content": "Âm thanh stereo sống động, chất lượng cao.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419132259",
+  "updated_at": "20250419132259",
+  "like": [],
+  "order_id": {
+    "$oid": "680340fa2e098e65505dbc85"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "680341892e098e65505ddb03"
+  },
+  "content": "Hỗ trợ sạc nhanh, tiết kiệm thời gian.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419132409",
+  "updated_at": "20250419132409",
+  "like": [],
+  "order_id": {
+    "$oid": "680341682e098e65505dcee5"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "680341c82e098e65505dee35"
+  },
+  "content": "Khả năng chống nước và bụi đạt chuẩn IP68.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419132512",
+  "updated_at": "20250419132512",
+  "like": [],
+  "order_id": {
+    "$oid": "680341a82e098e65505de1fb"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "6803421e2e098e65505e00b9"
+  },
+  "content": "Màn hình lớn 6.8 inch, trải nghiệm xem phim tuyệt vời.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419132638",
+  "updated_at": "20250419132638",
+  "like": [],
+  "order_id": {
+    "$oid": "680341f62e098e65505df4e3"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "680343832e098e65505e1fea"
+  },
+  "content": "Tính năng AI hỗ trợ chỉnh sửa ảnh chuyên nghiệp. ",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419133235",
+  "updated_at": "20250419133235",
+  "like": [],
+  "order_id": {
+    "$oid": "680342d22e098e65505e0d5c"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "680344142e098e65505e3fd8"
+  },
+  "content": "Độ sáng màn hình cao, dễ dàng sử dụng ngoài trời.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419133500",
+  "updated_at": "20250419133500",
+  "like": [],
+  "order_id": {
+    "$oid": "680343d92e098e65505e333e"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "680344642e098e65505e586d"
+  },
+  "content": "Khả năng quay video 8K chất lượng cao.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419133620",
+  "updated_at": "20250419133620",
+  "like": [],
+  "order_id": {
+    "$oid": "680344452e098e65505e4c75"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "680344d32e098e65505e6b21"
+  },
+  "content": "Thiết kế phẳng, dễ cầm nắm và sử dụng.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419133811",
+  "updated_at": "20250419133811",
+  "like": [],
+  "order_id": {
+    "$oid": "680344b22e098e65505e5f1b"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "680345a22e098e65505e89c8"
+  },
+  "content": "Tùy chọn lưu trữ lên đến 1TB, thoải mái lưu trữ dữ liệu.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419134138",
+  "updated_at": "20250419134138",
+  "like": [],
+  "order_id": {
+    "$oid": "6803454a2e098e65505e7dc8"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "680346802e098e65505ebb49"
+  },
+  "content": "Tích hợp nhiều tính năng bảo mật tiên tiến.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419134520",
+  "updated_at": "20250419134520",
+  "like": [],
+  "order_id": {
+    "$oid": "680346602e098e65505eaf40"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "680346d92e098e65505ecdf4"
+  },
+  "content": "Hỗ trợ kết nối 5G tốc độ cao.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419134649",
+  "updated_at": "20250419134649",
+  "like": [],
+  "order_id": {
+    "$oid": "680346b72e098e65505ec1eb"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "6803472c2e098e65505ee09b"
+  },
+  "content": "Giao diện người dùng tùy biến linh hoạt.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419134812",
+  "updated_at": "20250419134812",
+  "like": [],
+  "order_id": {
+    "$oid": "680346f72e098e65505ed490"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "680347b62e098e65505eff88"
+  },
+  "content": "Tính năng chia đôi màn hình tiện lợi cho đa nhiệm.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419135030",
+  "updated_at": "20250419135030",
+  "like": [],
+  "order_id": {
+    "$oid": "6803475d2e098e65505eed40"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "680348012e098e65505f1247"
+  },
+  "content": "Chế độ tiết kiệm pin hiệu quả.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419135145",
+  "updated_at": "20250419135145",
+  "like": [],
+  "order_id": {
+    "$oid": "680347df2e098e65505f0628"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "680348782e098e65505f253d"
+  },
+  "content": "Hỗ trợ sạc không dây tiện lợi.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419135344",
+  "updated_at": "20250419135344",
+  "like": [],
+  "order_id": {
+    "$oid": "6803481e2e098e65505f18e7"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "680348d62e098e65505f3816"
+  },
+  "content": "Khả năng kết nối với các thiết bị Samsung khác dễ dàng.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419135518",
+  "updated_at": "20250419135518",
+  "like": [],
+  "order_id": {
+    "$oid": "680348ae2e098e65505f2beb"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "680349382e098e65505f4b79"
+  },
+  "content": "Tính năng DeX biến điện thoại thành máy tính để bàn.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419135656",
+  "updated_at": "20250419135656",
+  "like": [],
+  "order_id": {
+    "$oid": "680349192e098e65505f3eb6"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "6803497e2e098e65505f5e3c"
+  },
+  "content": "Chế độ chụp ảnh chuyên nghiệp với nhiều tùy chỉnh.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419135806",
+  "updated_at": "20250419135806",
+  "like": [],
+  "order_id": {
+    "$oid": "6803495e2e098e65505f520f"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "680349bc2e098e65505f710f"
+  },
+  "content": "Hỗ trợ quay video siêu chậm 960fps.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419135908",
+  "updated_at": "20250419135908",
+  "like": [],
+  "order_id": {
+    "$oid": "6803499d2e098e65505f64d2"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68034a022e098e65505f83e4"
+  },
+  "content": "Tính năng Live Focus tạo hiệu ứng bokeh đẹp mắt.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419140018",
+  "updated_at": "20250419140018",
+  "like": [],
+  "order_id": {
+    "$oid": "680349de2e098e65505f77af"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68034a532e098e65505f976a"
+  },
+  "content": "Chế độ chụp ảnh góc rộng mở rộng khung hình.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419140139",
+  "updated_at": "20250419140139",
+  "like": [],
+  "order_id": {
+    "$oid": "68034a242e098e65505f8a76"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68034a9c2e098e65505faa58"
+  },
+  "content": "Tính năng AR Emoji thú vị và sáng tạo",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419140252",
+  "updated_at": "20250419140252",
+  "like": [],
+  "order_id": {
+    "$oid": "68034a782e098e65505f9e01"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68034ae62e098e65505fbd45"
+  },
+  "content": "Hỗ trợ kết nối Wi-Fi 6E tốc độ cao.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419140406",
+  "updated_at": "20250419140406",
+  "like": [],
+  "order_id": {
+    "$oid": "68034ac42e098e65505fb100"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68034b1d2e098e65505fd026"
+  },
+  "content": "Tính năng chia sẻ nhanh Quick Share tiện lợi.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419140501",
+  "updated_at": "20250419140501",
+  "like": [],
+  "order_id": {
+    "$oid": "68034b062e098e65505fc3d5"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68034b5d2e098e65505fe30d"
+  },
+  "content": "Chế độ Game Booster tối ưu hóa trải nghiệm chơi game.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419140605",
+  "updated_at": "20250419140605",
+  "like": [],
+  "order_id": {
+    "$oid": "68034b422e098e65505fd6bc"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68034b962e098e65505ff5f6"
+  },
+  "content": "Tính năng Screen Recorder ghi lại màn hình dễ dàng.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419140702",
+  "updated_at": "20250419140702",
+  "like": [],
+  "order_id": {
+    "$oid": "68034b772e098e65505fe99d"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68034bd22e098e655060091b"
+  },
+  "content": "Chế độ Dark Mode giúp tiết kiệm pin và bảo vệ mắt.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419140802",
+  "updated_at": "20250419140802",
+  "like": [],
+  "order_id": {
+    "$oid": "68034bb72e098e65505ffc88"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68034c0d2e098e6550601c6e"
+  },
+  "content": "Tính năng Always On Display hiển thị thông tin nhanh chóng.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419140901",
+  "updated_at": "20250419140901",
+  "like": [],
+  "order_id": {
+    "$oid": "68034bec2e098e6550600fe1"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68034c5f2e098e655060367e"
+  },
+  "content": "Hỗ trợ nhiều ngôn ngữ, phù hợp với người dùng toàn cầu.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419141023",
+  "updated_at": "20250419141023",
+  "like": [],
+  "order_id": {
+    "$oid": "68034c2e2e098e6550602995"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68034ca62e098e6550604a11"
+  },
+  "content": "Tính năng Smart Switch giúp chuyển dữ liệu dễ dàng.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419141134",
+  "updated_at": "20250419141134",
+  "like": [],
+  "order_id": {
+    "$oid": "68034c892e098e6550603d56"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68034cea2e098e6550605dc4"
+  },
+  "content": "Chế độ Kids Mode an toàn cho trẻ em.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419141242",
+  "updated_at": "20250419141242",
+  "like": [],
+  "order_id": {
+    "$oid": "68034cc72e098e65506050ed"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68034d272e098e6550607179"
+  },
+  "content": "Hỗ trợ eSIM tiện lợi cho việc sử dụng nhiều số.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419141343",
+  "updated_at": "20250419141343",
+  "like": [],
+  "order_id": {
+    "$oid": "68034d0b2e098e65506064b6"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68034d8f2e098e6550608584"
+  },
+  "content": "Tính năng Find My Mobile giúp tìm kiếm thiết bị thất lạc.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419141527",
+  "updated_at": "20250419141527",
+  "like": [],
+  "order_id": {
+    "$oid": "68034d412e098e6550607851"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68034de12e098e6550609999"
+  },
+  "content": "Chế độ Focus Mode giúp tập trung vào công việc.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419141649",
+  "updated_at": "20250419141649",
+  "like": [],
+  "order_id": {
+    "$oid": "68034dc42e098e6550608c96"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68034e1c2e098e655060adc6"
+  },
+  "content": "Tính năng Bixby Routines tự động hóa các tác vụ hàng ngày.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419141748",
+  "updated_at": "20250419141748",
+  "like": [],
+  "order_id": {
+    "$oid": "68034e022e098e655060a0a5"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68034e552e098e655060c1bd"
+  },
+  "content": "Giá cao nhưng xứng đáng với những gì mang lại.",
+  "images": [],
+  "rating": 5,
+  "created_at": "20250419141845",
+  "updated_at": "20250419141845",
+  "like": [],
+  "order_id": {
+    "$oid": "68034e3b2e098e655060b4ea"
+  },
+  "product_id": {
+    "$oid": "67b96ee667788c638a22e2c7"
+  }
 }]

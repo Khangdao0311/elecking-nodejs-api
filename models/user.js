@@ -3,6 +3,7 @@ const Schema = mongoose.Schema;
 const ObjectId = Schema.ObjectId;
 
 const cartItemSchema = new Schema({
+  checked: { type: Boolean },
   quantity: { type: Number },
   product: {
     id: { type: ObjectId, ref: "product" },
