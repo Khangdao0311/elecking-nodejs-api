@@ -88,7 +88,7 @@ async function getById(id) {
 async function getQuery(query) {
     try {
 
-        const { search, id, categoryid, brandid, price, orderby, page = 1, limit = null } = query
+        const { search, id, categoryid, brandid, ramid = '', storageid = '', ssdid = '', hddid = '', screen_sizeid = '', refresh_rateid = '', resolutionid = '', price, orderby, page = 1, limit = null } = query
 
         let matchCondition = {};
 
@@ -117,6 +117,23 @@ async function getQuery(query) {
         if (brandid) {
             matchCondition.brand_id = {
                 $in: brandid.split("-").map((idBrand) => new ObjectId(idBrand)),
+            };
+        }
+
+        if (ramid || storageid || ssdid || hddid || screen_sizeid || refresh_rateid || resolutionid) {
+            matchCondition["variants"] = {
+                $elemMatch: {
+                    property_ids: {
+                        $in: [...ramid.split("-"),
+                        ...storageid.split("-"),
+                        ...ssdid.split("-"),
+                        ...hddid.split("-"),
+                        ...screen_sizeid.split("-"),
+                        ...refresh_rateid.split("-"),
+                        ...resolutionid.split("-")]
+                            .filter(e => e).map((idRam) => new ObjectId(idRam))
+                    }
+                }
             };
         }
 
