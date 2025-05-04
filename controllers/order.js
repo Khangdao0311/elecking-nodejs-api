@@ -112,7 +112,10 @@ async function getQuery(query) {
             const [sort, so] = orderby.split("-");
             sortCondition[sort == "id" ? "_id" : sort] = so ? so == "desc" ? -1 : 1 : -1;
         } else {
-            sortCondition._id = -1;
+            sortCondition = {
+                statusPriority: 1,
+                _id: -1
+            };
         }
 
         let matchCondition = {};
@@ -131,6 +134,13 @@ async function getQuery(query) {
         }
 
         const pipeline = [
+            {
+                $addFields: {
+                    statusPriority: {
+                        $cond: [{ $eq: ["$status", 2] }, 0, 1]
+                    }
+                }
+            },
             { $match: matchCondition },
             { $sort: sortCondition },
         ];
